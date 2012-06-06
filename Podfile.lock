@@ -1,0 +1,7 @@
+PODS:
+  - JSONKit (1.4)
+  - SVProgressHUD (0.7)
+
+DEPENDENCIES:
+  - JSONKit
+  - SVProgressHUD
