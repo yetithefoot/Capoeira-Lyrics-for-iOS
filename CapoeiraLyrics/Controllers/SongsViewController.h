@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CapoeiraLyricsAPI.h"
+#import "BaseViewController.h"
 
-@interface SongsViewController : UIViewController<UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate, UISearchDisplayDelegate>{
+@interface SongsViewController : BaseViewController<UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate, UISearchDisplayDelegate, CapoeiraLyricsAPIDelegate>{
     NSMutableArray * _songs;
     NSMutableArray  *_filteredSongs;   // The content filtered as a result of a search.
     

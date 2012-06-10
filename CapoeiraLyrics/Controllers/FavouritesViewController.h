@@ -1,5 +1,5 @@
 //
-//  SecondViewController.h
+//  FavouritesViewController.h
 //  CapoeiraLyrics
 //
 //  Created by Vlad Tsepelev on 06.06.12.
@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface SecondViewController : UIViewController
+@interface FavouritesViewController : BaseViewController
 
 @end

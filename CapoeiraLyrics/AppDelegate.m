@@ -10,19 +10,17 @@
 
 #import "SongsViewController.h"
 
-#import "SecondViewController.h"
-
+#import "FavouritesViewController.h"
 
 
 @implementation AppDelegate
 
 @synthesize window = _window;
-@synthesize tabBarController = _tabBarController;
 
 - (void)dealloc
 {
     [_window release];
-    [_tabBarController release];
+    [_navigationRoot release];
     [super dealloc];
 }
 
@@ -31,14 +29,13 @@
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     UIViewController *viewController1 = [[[SongsViewController alloc] initWithNibName:@"SongsViewController" bundle:nil] autorelease];
-    UIViewController *viewController2 = [[[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil] autorelease];
-    self.tabBarController = [[[UITabBarController alloc] init] autorelease];
-    self.tabBarController.viewControllers = [NSArray arrayWithObjects:viewController1, viewController2, nil];
-    self.window.rootViewController = self.tabBarController;
+    _navigationRoot = [[UINavigationController alloc]initWithRootViewController:viewController1];
+    self.window.rootViewController = _navigationRoot;
     [self.window makeKeyAndVisible];
     
     // colorize elements
     UIColor * mainTintColor = [UIColor colorWithRed:0.0915 green:0.4354 blue:0.2077 alpha:1.0000];
+    [[UINavigationBar appearance] setTintColor:mainTintColor];   
     [[UITabBar appearance] setTintColor:mainTintColor];
     [[UIToolbar appearance] setTintColor:mainTintColor];
     [[UISearchBar appearance] setTintColor:mainTintColor];

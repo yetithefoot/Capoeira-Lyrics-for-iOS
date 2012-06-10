@@ -1,25 +1,25 @@
 //
-//  SecondViewController.m
+//  FavouritesViewController.m
 //  CapoeiraLyrics
 //
 //  Created by Vlad Tsepelev on 06.06.12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "SecondViewController.h"
+#import "FavouritesViewController.h"
 
-@interface SecondViewController ()
+@interface FavouritesViewController ()
 
 @end
 
-@implementation SecondViewController
+@implementation FavouritesViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = NSLocalizedString(@"Artists", @"Artists");
-        self.tabBarItem.image = [UIImage imageNamed:@"microphone"];
+        self.title = NSLocalizedString(@"Favorites", @"Favorites");
+        self.tabBarItem.image = [UIImage imageNamed:@"star"];
     }
     return self;
 }

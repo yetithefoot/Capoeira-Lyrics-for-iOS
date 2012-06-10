@@ -9,6 +9,8 @@
 #import "SongsViewController.h"
 #import "AFJSONRequestOperation.h"
 
+#import "DetailsViewController.h"
+
 
 
 
@@ -24,6 +26,8 @@
         self.tabBarItem.image = [UIImage imageNamed:@"note"];
         _songs = [[NSMutableArray alloc]init];
         _filteredSongs = [[NSMutableArray alloc] initWithCapacity:[_songs count]];
+        
+        
             
     }
     return self;
@@ -50,22 +54,9 @@
     [self.searchDisplayController.searchBar setSelectedScopeButtonIndex:0];
     [_tableSongs setContentOffset:CGPointMake(0, 44)];
     
+    [_api getAllSongsFull];
+    
 
-    
-    NSURL *url = [NSURL URLWithString:@"http://capoeiralyrics.info/JSONAPI/AllSongsFull"];
-    NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    
-    AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request 
-                                                                                        success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
-        NSLog(@"http://capoeiralyrics.info/JSONAPI/AllSongsFull request JSON: %@", JSON );
-        [_songs removeAllObjects];
-        [_songs addObjectsFromArray:JSON];
-        [_tableSongs reloadData];
-
-    }
-                                                                                        failure:nil];
-    
-    [operation start];
     
 }
 
@@ -150,6 +141,30 @@
     
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSDictionary * songDict;
+    if (tableView == self.searchDisplayController.searchResultsTableView)
+	{
+        songDict = [_filteredSongs objectAtIndex:indexPath.row];
+    }
+	else
+	{
+        songDict = [_songs objectAtIndex:indexPath.row];
+    }
+    
+    
+    
+    if (songDict) {
+        Song * song = [Song songWithDictionary:songDict];
+        DetailsViewController * detailsController = [[DetailsViewController alloc] initWithSong:song];
+
+        [self.navigationController pushViewController: detailsController animated: YES];
+        [detailsController release];
+
+        
+    }
+}
+
 #pragma mark Content Filtering
 
 - (void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope
@@ -214,6 +229,19 @@
     // Return YES to cause the search result table view to be reloaded.
     return YES;
 }
+
+#pragma mark api delegate
+
+-(void)songsDidLoad:(NSArray *)songs{
+    [_songs removeAllObjects];
+    [_songs addObjectsFromArray:songs];
+    [_tableSongs reloadData];
+}
+
+-(void)didFail{
+    [self showAlertWithTitle:@"Error" andMessage:@"Can't load songs. Try again later!"];
+}
+
 
 
 @end

@@ -7,10 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D0114E7E15851BEB00D27777 /* Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = D0114E7D15851BEB00D27777 /* Configuration.m */; };
+		D0114E8215851E5100D27777 /* CapoeiraLyricsAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = D0114E8115851E5100D27777 /* CapoeiraLyricsAPI.m */; };
+		D0114E8515851FAC00D27777 /* Song.m in Sources */ = {isa = PBXBuildFile; fileRef = D0114E8415851FAC00D27777 /* Song.m */; };
+		D0114E881585241500D27777 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0114E871585241500D27777 /* BaseViewController.m */; };
+		D0114E8A158528DC00D27777 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = D0114E89158528DC00D27777 /* star.png */; };
+		D0114E911585297800D27777 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0114E8F1585297800D27777 /* DetailsViewController.m */; };
+		D0114E94158529A400D27777 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0114E93158529A400D27777 /* DetailsViewController.xib */; };
 		D07E1831157F8BFD00AA5987 /* SongsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D07E1824157F8BFD00AA5987 /* SongsViewController.m */; };
-		D07E1832157F8BFD00AA5987 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D07E1826157F8BFD00AA5987 /* SecondViewController.m */; };
+		D07E1832157F8BFD00AA5987 /* FavouritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D07E1826157F8BFD00AA5987 /* FavouritesViewController.m */; };
 		D07E1837157F8BFD00AA5987 /* SongsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D07E182F157F8BFD00AA5987 /* SongsViewController.xib */; };
-		D07E1838157F8BFD00AA5987 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D07E1830157F8BFD00AA5987 /* SecondViewController.xib */; };
+		D07E1838157F8BFD00AA5987 /* FavouritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D07E1830157F8BFD00AA5987 /* FavouritesViewController.xib */; };
 		D07E183E157F8D4F00AA5987 /* group.png in Resources */ = {isa = PBXBuildFile; fileRef = D07E1839157F8D4F00AA5987 /* group.png */; };
 		D07E183F157F8D4F00AA5987 /* microphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D07E183A157F8D4F00AA5987 /* microphone.png */; };
 		D07E1840157F8D4F00AA5987 /* note.png in Resources */ = {isa = PBXBuildFile; fileRef = D07E183B157F8D4F00AA5987 /* note.png */; };
@@ -32,12 +39,24 @@
 /* Begin PBXFileReference section */
 		35E8594728BF4B41AECDDE16 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E487E0840E14CE6BAD9DB39 /* Pods.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		D0114E7C15851BEB00D27777 /* Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Configuration.h; sourceTree = "<group>"; };
+		D0114E7D15851BEB00D27777 /* Configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Configuration.m; sourceTree = "<group>"; };
+		D0114E8015851E5100D27777 /* CapoeiraLyricsAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CapoeiraLyricsAPI.h; sourceTree = "<group>"; };
+		D0114E8115851E5100D27777 /* CapoeiraLyricsAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CapoeiraLyricsAPI.m; sourceTree = "<group>"; };
+		D0114E8315851FAC00D27777 /* Song.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Song.h; sourceTree = "<group>"; };
+		D0114E8415851FAC00D27777 /* Song.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Song.m; sourceTree = "<group>"; };
+		D0114E861585241500D27777 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		D0114E871585241500D27777 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		D0114E89158528DC00D27777 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		D0114E8E1585297800D27777 /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		D0114E8F1585297800D27777 /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
+		D0114E93158529A400D27777 /* DetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
 		D07E1823157F8BFD00AA5987 /* SongsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SongsViewController.h; sourceTree = "<group>"; };
 		D07E1824157F8BFD00AA5987 /* SongsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongsViewController.m; sourceTree = "<group>"; };
-		D07E1825157F8BFD00AA5987 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		D07E1826157F8BFD00AA5987 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		D07E1825157F8BFD00AA5987 /* FavouritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavouritesViewController.h; sourceTree = "<group>"; };
+		D07E1826157F8BFD00AA5987 /* FavouritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavouritesViewController.m; sourceTree = "<group>"; };
 		D07E182F157F8BFD00AA5987 /* SongsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SongsViewController.xib; sourceTree = "<group>"; };
-		D07E1830157F8BFD00AA5987 /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
+		D07E1830157F8BFD00AA5987 /* FavouritesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavouritesViewController.xib; sourceTree = "<group>"; };
 		D07E1839157F8D4F00AA5987 /* group.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = group.png; sourceTree = "<group>"; };
 		D07E183A157F8D4F00AA5987 /* microphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = microphone.png; sourceTree = "<group>"; };
 		D07E183B157F8D4F00AA5987 /* note.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = note.png; sourceTree = "<group>"; };
@@ -74,13 +93,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D0114E7B15851BEB00D27777 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D0114E7C15851BEB00D27777 /* Configuration.h */,
+				D0114E7D15851BEB00D27777 /* Configuration.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		D07E1822157F8BFD00AA5987 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				D07E1823157F8BFD00AA5987 /* SongsViewController.h */,
 				D07E1824157F8BFD00AA5987 /* SongsViewController.m */,
-				D07E1825157F8BFD00AA5987 /* SecondViewController.h */,
-				D07E1826157F8BFD00AA5987 /* SecondViewController.m */,
+				D07E1825157F8BFD00AA5987 /* FavouritesViewController.h */,
+				D07E1826157F8BFD00AA5987 /* FavouritesViewController.m */,
+				D0114E861585241500D27777 /* BaseViewController.h */,
+				D0114E871585241500D27777 /* BaseViewController.m */,
+				D0114E8E1585297800D27777 /* DetailsViewController.h */,
+				D0114E8F1585297800D27777 /* DetailsViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -88,6 +120,10 @@
 		D07E1827157F8BFD00AA5987 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D0114E8015851E5100D27777 /* CapoeiraLyricsAPI.h */,
+				D0114E8115851E5100D27777 /* CapoeiraLyricsAPI.m */,
+				D0114E8315851FAC00D27777 /* Song.h */,
+				D0114E8415851FAC00D27777 /* Song.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -103,6 +139,7 @@
 		D07E1829157F8BFD00AA5987 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				D0114E89158528DC00D27777 /* star.png */,
 				D07E184F157F9FDB00AA5987 /* cell_pattern.png */,
 				D07E1847157F916F00AA5987 /* Default.png */,
 				D07E1848157F916F00AA5987 /* Default@2x.png */,
@@ -119,8 +156,9 @@
 		D07E182E157F8BFD00AA5987 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D0114E93158529A400D27777 /* DetailsViewController.xib */,
 				D07E182F157F8BFD00AA5987 /* SongsViewController.xib */,
-				D07E1830157F8BFD00AA5987 /* SecondViewController.xib */,
+				D07E1830157F8BFD00AA5987 /* FavouritesViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -157,6 +195,7 @@
 		D08DB9BE157F4EBE00994BDC /* CapoeiraLyrics */ = {
 			isa = PBXGroup;
 			children = (
+				D0114E7B15851BEB00D27777 /* Classes */,
 				D07E1822157F8BFD00AA5987 /* Controllers */,
 				D07E1827157F8BFD00AA5987 /* Model */,
 				D07E1828157F8BFD00AA5987 /* Resources */,
@@ -232,7 +271,7 @@
 			files = (
 				D08DB9C3157F4EBE00994BDC /* InfoPlist.strings in Resources */,
 				D07E1837157F8BFD00AA5987 /* SongsViewController.xib in Resources */,
-				D07E1838157F8BFD00AA5987 /* SecondViewController.xib in Resources */,
+				D07E1838157F8BFD00AA5987 /* FavouritesViewController.xib in Resources */,
 				D07E183E157F8D4F00AA5987 /* group.png in Resources */,
 				D07E183F157F8D4F00AA5987 /* microphone.png in Resources */,
 				D07E1840157F8D4F00AA5987 /* note.png in Resources */,
@@ -242,6 +281,8 @@
 				D07E1849157F916F00AA5987 /* Default.png in Resources */,
 				D07E184A157F916F00AA5987 /* Default@2x.png in Resources */,
 				D07E1850157F9FDB00AA5987 /* cell_pattern.png in Resources */,
+				D0114E8A158528DC00D27777 /* star.png in Resources */,
+				D0114E94158529A400D27777 /* DetailsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +313,12 @@
 				D08DB9C5157F4EBE00994BDC /* main.m in Sources */,
 				D08DB9C9157F4EBE00994BDC /* AppDelegate.m in Sources */,
 				D07E1831157F8BFD00AA5987 /* SongsViewController.m in Sources */,
-				D07E1832157F8BFD00AA5987 /* SecondViewController.m in Sources */,
+				D07E1832157F8BFD00AA5987 /* FavouritesViewController.m in Sources */,
+				D0114E7E15851BEB00D27777 /* Configuration.m in Sources */,
+				D0114E8215851E5100D27777 /* CapoeiraLyricsAPI.m in Sources */,
+				D0114E8515851FAC00D27777 /* Song.m in Sources */,
+				D0114E881585241500D27777 /* BaseViewController.m in Sources */,
+				D0114E911585297800D27777 /* DetailsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
