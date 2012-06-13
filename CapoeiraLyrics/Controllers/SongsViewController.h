@@ -10,16 +10,22 @@
 #import "CapoeiraLyricsAPI.h"
 #import "BaseViewController.h"
 
-@interface SongsViewController : BaseViewController<UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate, UISearchDisplayDelegate, CapoeiraLyricsAPIDelegate>{
+@interface SongsViewController : BaseViewController<UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate, UISearchDisplayDelegate, CapoeiraLyricsAPIDelegate, UITabBarDelegate, EGORefreshTableHeaderDelegate>{
+    
+    EGORefreshTableHeaderView *_refreshHeaderView;
+    
     NSMutableArray * _songs;
     NSMutableArray  *_filteredSongs;   // The content filtered as a result of a search.
     
 
     IBOutlet UITableView *_tableSongs;
+    IBOutlet UITabBar *_tabBar;
     
-
 }
 
+
+- (void)reloadTableViewDataSource;
+- (void)doneLoadingTableViewData;
 
 
 @end

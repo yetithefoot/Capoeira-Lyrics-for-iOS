@@ -41,7 +41,7 @@ static CapoeiraLyricsAPI * _instance;
         }
         failure: ^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON){
             if([self.delegate respondsToSelector:@selector(didFail)]){
-                [self.delegate performSelector:@selector(songsDidFail)];
+                [self.delegate performSelector:@selector(didFail)];
             }
         }];
     

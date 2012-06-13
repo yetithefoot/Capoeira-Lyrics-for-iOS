@@ -1,9 +1,13 @@
 PODS:
   - AFNetworking (1.0RC1)
+  - EGOTableViewPullRefresh (0.1.0)
   - JSONKit (1.4)
   - SVProgressHUD (0.7)
+  - TTTAttributedLabel (1.2.1)
 
 DEPENDENCIES:
   - AFNetworking
+  - EGOTableViewPullRefresh
   - JSONKit
   - SVProgressHUD
+  - TTTAttributedLabel

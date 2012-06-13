@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
 
-@interface FavouritesViewController : BaseViewController
+@interface FavouritesViewController : BaseViewController<UITabBarDelegate>{
+    
+    IBOutlet UITabBar *_tabBar;
+}
 
 @end

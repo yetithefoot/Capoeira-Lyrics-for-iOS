@@ -10,6 +10,7 @@
 #import "AFJSONRequestOperation.h"
 
 #import "DetailsViewController.h"
+#import "FavouritesViewController.h"
 
 
 
@@ -34,6 +35,7 @@
 }
 
 -(void)dealloc{
+    _refreshHeaderView=nil; // only niling, its retained by tableview
     
     [_songs release];
     _songs = nil;
@@ -42,6 +44,7 @@
 
 
     [_tableSongs release];
+    [_tabBar release];
     [super dealloc];
 }
 							
@@ -50,25 +53,112 @@
     [super viewDidLoad];
 	
     
+    if (_refreshHeaderView == nil) {
+		
+		EGORefreshTableHeaderView *view = [[EGORefreshTableHeaderView alloc] initWithFrame:CGRectMake(0.0f, 0.0f - _tableSongs.bounds.size.height, self.view.frame.size.width, _tableSongs.bounds.size.height)];
+		view.delegate = self;
+		[_tableSongs addSubview:view];
+		_refreshHeaderView = view;
+		[view release];
+		
+	}
+	
+	//  update the last update date
+	[_refreshHeaderView refreshLastUpdatedDate];
+
+    
     [self.searchDisplayController setActive:NO];
     [self.searchDisplayController.searchBar setSelectedScopeButtonIndex:0];
     [_tableSongs setContentOffset:CGPointMake(0, 44)];
     
+    // show waiting hud
+    [SVProgressHUD showWithStatus:@"Loading songs update..." maskType:SVProgressHUDMaskTypeBlack];
+    // start load songs async
     [_api getAllSongsFull];
     
+}
 
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    // select tabbar item "songs"
+    // actually we need select item with name "songs"
+    [_tabBar setSelectedItem:[_tabBar.items objectAtIndex:0]];
     
 }
 
 - (void)viewDidUnload
 {
 
-
+    _refreshHeaderView=nil;
     [_tableSongs release];
     _tableSongs = nil;
+    [_tabBar release];
+    _tabBar = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
+
+#pragma mark -
+#pragma mark Data Source Loading / Reloading Methods
+
+- (void)reloadTableViewDataSource{
+	
+	//  should be calling your tableviews data source model to reload
+	//  put here just for demo
+    
+    // show waiting hud
+    [SVProgressHUD showWithStatus:@"Loading songs update..." maskType:SVProgressHUDMaskTypeBlack];
+    // start load songs async
+    [_api getAllSongsFull];
+}
+
+- (void)doneLoadingTableViewData{
+	
+	//  model should call this when its done loading
+
+	[_refreshHeaderView egoRefreshScrollViewDataSourceDidFinishedLoading:_tableSongs];
+	
+}
+
+
+#pragma mark -
+#pragma mark UIScrollViewDelegate Methods
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{	
+	
+	[_refreshHeaderView egoRefreshScrollViewDidScroll:scrollView];
+    
+}
+
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate{
+	
+	[_refreshHeaderView egoRefreshScrollViewDidEndDragging:scrollView];
+	
+}
+
+
+#pragma mark -
+#pragma mark EGORefreshTableHeaderDelegate Methods
+
+- (void)egoRefreshTableHeaderDidTriggerRefresh:(EGORefreshTableHeaderView*)view{
+	
+	[self reloadTableViewDataSource];
+	[self performSelector:@selector(doneLoadingTableViewData) withObject:nil afterDelay:3.0];
+	
+}
+
+- (BOOL)egoRefreshTableHeaderDataSourceIsLoading:(EGORefreshTableHeaderView*)view{
+	
+	return NO; // should return if data source model is reloading
+	
+}
+
+- (NSDate*)egoRefreshTableHeaderDataSourceLastUpdated:(EGORefreshTableHeaderView*)view{
+	
+	return [NSDate date]; // should return date data source was last changed
+	
+}
+
 
 
 #pragma tableview datasource + delegate
@@ -164,6 +254,20 @@
         
     }
 }
+#pragma mark UITabBar delegate
+
+-(void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item{
+    if(item == [tabBar.items objectAtIndex:1]){
+        
+        UINavigationController * nav = self.navigationController;
+        
+        [nav popToRootViewControllerAnimated:NO];
+        FavouritesViewController * controller = [[FavouritesViewController alloc] initWithNibName: @"FavouritesViewController" bundle: nil];
+        [nav pushViewController: controller animated: YES];
+        [controller release];
+    }
+}
+
 
 #pragma mark Content Filtering
 
@@ -236,10 +340,11 @@
     [_songs removeAllObjects];
     [_songs addObjectsFromArray:songs];
     [_tableSongs reloadData];
+    [SVProgressHUD showSuccessWithStatus:@"Success!"];
 }
 
 -(void)didFail{
-    [self showAlertWithTitle:@"Error" andMessage:@"Can't load songs. Try again later!"];
+    [SVProgressHUD showErrorWithStatus:@"Update failed! Try again later!"];
 }
 
 

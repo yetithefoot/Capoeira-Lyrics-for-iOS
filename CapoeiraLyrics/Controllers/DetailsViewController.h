@@ -8,15 +8,21 @@
 
 #import "BaseViewController.h"
 
-@interface DetailsViewController : BaseViewController{
-    Song * _song;
+#import "TagsView.h"
 
+
+@interface DetailsViewController : BaseViewController< TagsViewProtocol> {
+    IBOutlet UIScrollView* _scrollView;
+    IBOutlet TagsView *_tagsView;
     IBOutlet UILabel *_labelTitle;
     IBOutlet UILabel *_labelText;
+    Song * _song;
+    
+    
 }
 
 -(id) initWithSong: (Song *)song;
 
 
-
 @end
+

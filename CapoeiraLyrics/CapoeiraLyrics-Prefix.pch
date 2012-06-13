@@ -12,4 +12,6 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
     #import "Configuration.h"
+    #import "SVProgressHUD.h"
+    #import "EGORefreshTableHeaderView.h"
 #endif
