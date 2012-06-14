@@ -14,6 +14,7 @@ static Configuration* _instance;
 
 @synthesize serverUrl;
 @synthesize securityToken;
+@synthesize favoriteSongsIds;
 
 
 
@@ -27,13 +28,28 @@ static Configuration* _instance;
 }
 
 
+-(NSString *) FILEPATH_FAVORITE_SONGS_IDS{
+    NSString* documentsPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    NSString* foofile = [documentsPath stringByAppendingPathComponent:@"favorite_songs_ids.txt"];
+    return foofile;
+}
 -(id) init{
 	
 	if((self = [super init]))
 	{
-		// initialize option values
-    
-    
+		// load favorites array
+        /* NSString* documentsPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+        NSString* foofile = [documentsPath stringByAppendingPathComponent:FILE_FAVORITE_SONGS_IDS];*/
+        NSString * filename = [self FILEPATH_FAVORITE_SONGS_IDS];
+        BOOL fileExists = [[NSFileManager defaultManager] fileExistsAtPath:filename];
+        if(fileExists)
+            self.favoriteSongsIds = [NSMutableArray arrayWithContentsOfFile:filename];
+        else{
+            self.favoriteSongsIds = [NSMutableArray array];
+            [self.favoriteSongsIds writeToFile:filename atomically:YES];
+        }
+            
+
 		
 	}
 	return self;
@@ -72,8 +88,6 @@ static Configuration* _instance;
 
 
 
-
-
 + (void)registerDefaultsFromSettingsBundle 
 { 
 	NSString *settingsBundle = [[NSBundle mainBundle] pathForResource:@"Settings" ofType:@"bundle"]; 
@@ -103,6 +117,9 @@ static Configuration* _instance;
 {
 	NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
 
+    // save favorite songs ids
+    [[Configuration sharedInstance].favoriteSongsIds writeToFile:[[Configuration sharedInstance] FILEPATH_FAVORITE_SONGS_IDS] atomically:YES];
+    
 	// save user settings here
 	[prefs synchronize];
 }
@@ -117,7 +134,8 @@ static Configuration* _instance;
 }
 
 - (void)dealloc {
-
+    
+    [favoriteSongsIds release];
     [super dealloc];
 }
 

@@ -33,11 +33,13 @@
     _labelText.frame = CGRectMake(0, y, 320, size.height);
     y += _labelText.frame.size.height+VERTICAL_MARGIN_6;
     
-    
+#warning uncomment for tags view reposition   
+    /*
     [_tagsView sizeToFit];
     rect = _tagsView.bounds;
     _tagsView.frame = CGRectMake(0, y, 320, rect.size.height);
     y += _tagsView.frame.size.height+VERTICAL_MARGIN_5;
+     */
     
     
     _scrollView.contentSize = CGSizeMake(_scrollView.contentSize.width, y);
@@ -71,8 +73,7 @@
     [_labelText release];
     _labelText = nil;
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
+
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

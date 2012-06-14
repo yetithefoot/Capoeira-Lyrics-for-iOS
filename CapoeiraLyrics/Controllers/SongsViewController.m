@@ -26,7 +26,7 @@
 #warning make retina icons
         self.tabBarItem.image = [UIImage imageNamed:@"note"];
         _songs = [[NSMutableArray alloc]init];
-        _filteredSongs = [[NSMutableArray alloc] initWithCapacity:[_songs count]];
+        _filteredSongs = [[NSMutableArray alloc] init];
         
         
             
@@ -159,7 +159,35 @@
 	
 }
 
+-(BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer{
+    return YES;
+}
 
+-(void)imageViewClicked :(id) sender
+{
+    UITapGestureRecognizer *gesture = (UITapGestureRecognizer *) sender;
+    NSLog(@"cell wants to be favorite, index = %d", gesture.view.tag);
+    
+    // get song
+    Song * song = nil; 
+    
+    if (_tableSongs == self.searchDisplayController.searchResultsTableView){
+        song = [_filteredSongs objectAtIndex:gesture.view.tag];
+    }
+	else{
+        song = [_songs objectAtIndex:gesture.view.tag];
+    }
+    
+    BOOL isFavorite = song.favorite;
+    
+    song.favorite = !isFavorite;
+    
+    [_tableSongs reloadData];
+    
+    //[self tableView:_tableSongs cellForRowAtIndexPath:gesture.view.tag].imageView;
+    
+    
+}
 
 #pragma tableview datasource + delegate
 
@@ -180,10 +208,7 @@
 //}
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-	/*
-	 If the requesting table view is the search display controller's table view, return the count of
-     the filtered list, otherwise return the count of the main list.
-	 */
+
 	if (tableView == self.searchDisplayController.searchResultsTableView)
 	{
         return [_filteredSongs count];
@@ -208,51 +233,61 @@
         cell.accessoryType = UITableViewCellAccessoryNone;
         cell.textLabel.font = [UIFont boldSystemFontOfSize:14];
         cell.backgroundView = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"cell_pattern.png"]]autorelease];
-        
     }
     
-    NSString * song =  nil;
-    NSString * artist = nil;
-    if (tableView == self.searchDisplayController.searchResultsTableView)
-	{
-        song = [[_filteredSongs objectAtIndex:indexPath.row] objectForKey:@"Name"];
-        artist = [[_filteredSongs objectAtIndex:indexPath.row] objectForKey:@"Artist"];
+    // fill favorite song image
+    Song * song = nil; 
+    
+    if (tableView == self.searchDisplayController.searchResultsTableView){
+        song = [_filteredSongs objectAtIndex:indexPath.row];
     }
-	else
-	{
-        song = [[_songs objectAtIndex:indexPath.row] objectForKey:@"Name"];
-        artist = [[_songs objectAtIndex:indexPath.row] objectForKey:@"Artist"];
+	else{
+        song = [_songs objectAtIndex:indexPath.row];
     }
     
-    cell.textLabel.text = song;
-    cell.detailTextLabel.text = artist;
+    // set favorite icon
+    if(song.favorite){
+        cell.imageView.image = [UIImage imageNamed:@"star_enabled.png"];
+    }else{
+        cell.imageView.image = [UIImage imageNamed:@"star_disabled.png"];
+    }
+    
+    cell.imageView.userInteractionEnabled = YES;
+    cell.imageView.tag = indexPath.row;
+    
+    UITapGestureRecognizer *tapped = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(imageViewClicked:)];
+    tapped.numberOfTapsRequired = 1;
+    [cell.imageView addGestureRecognizer:tapped];   
+    [tapped release];
+    
+    // fill ui
+    cell.textLabel.text = song.name;
+    cell.detailTextLabel.text = song.artist;
     
     return cell;
     
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    NSDictionary * songDict;
+    Song * song = nil;
     if (tableView == self.searchDisplayController.searchResultsTableView)
 	{
-        songDict = [_filteredSongs objectAtIndex:indexPath.row];
+        song = [_filteredSongs objectAtIndex:indexPath.row];
     }
 	else
 	{
-        songDict = [_songs objectAtIndex:indexPath.row];
+        song = [_songs objectAtIndex:indexPath.row];
     }
     
     
-    
-    if (songDict) {
-        Song * song = [Song songWithDictionary:songDict];
+    if (song) {
         DetailsViewController * detailsController = [[DetailsViewController alloc] initWithSong:song];
-
+        
         [self.navigationController pushViewController: detailsController animated: YES];
         [detailsController release];
-
         
     }
+
 }
 #pragma mark UITabBar delegate
 
@@ -261,8 +296,10 @@
         
         UINavigationController * nav = self.navigationController;
         
-        [nav popToRootViewControllerAnimated:NO];
-        FavouritesViewController * controller = [[FavouritesViewController alloc] initWithNibName: @"FavouritesViewController" bundle: nil];
+        [nav popToRootViewControllerAnimated:YES];
+        
+        NSArray * favedSongs = [Song filterOnlyFavorites:_songs];
+        FavouritesViewController * controller = [[FavouritesViewController alloc] initWithArray:favedSongs];
         [nav pushViewController: controller animated: YES];
         [controller release];
     }
@@ -282,27 +319,24 @@
 	/*
 	 Search the main list for products whose type matches the scope (if selected) and whose name matches searchText; add items that match to the filtered array.
 	 */
-	for (id fullSong in _songs)
+	for (Song * fullSong in _songs)
 	{
-        NSString * song =  [fullSong objectForKey:@"Name"];
-        NSString * text =  [fullSong objectForKey:@"Text"];
-        NSString * artist = [fullSong objectForKey:@"Artist"];
         
         NSRange result, result2, result3;
         if([scope isEqualToString:@"All"]){
-            result = [song rangeOfString:searchText options:(NSCaseInsensitiveSearch|NSDiacriticInsensitiveSearch)];
-            result2 = [text rangeOfString:searchText options:(NSCaseInsensitiveSearch|NSDiacriticInsensitiveSearch)];
-            result3 = [artist rangeOfString:searchText options:(NSCaseInsensitiveSearch|NSDiacriticInsensitiveSearch)];
+            result = [fullSong.name rangeOfString:searchText options:(NSCaseInsensitiveSearch|NSDiacriticInsensitiveSearch)];
+            result2 = [fullSong.text rangeOfString:searchText options:(NSCaseInsensitiveSearch|NSDiacriticInsensitiveSearch)];
+            result3 = [fullSong.artist rangeOfString:searchText options:(NSCaseInsensitiveSearch|NSDiacriticInsensitiveSearch)];
             
             if(result.location != NSNotFound || result2.location != NSNotFound || result3.location != NSNotFound){
                 result.location  = 1;
             }
         }else if ([scope isEqualToString:@"Name"]) {
-            result = [song rangeOfString:searchText options:(NSCaseInsensitiveSearch|NSDiacriticInsensitiveSearch)];
+            result = [fullSong.name rangeOfString:searchText options:(NSCaseInsensitiveSearch|NSDiacriticInsensitiveSearch)];
         }else if ([scope isEqualToString:@"Text"]) {
-            result = [text rangeOfString:searchText options:(NSCaseInsensitiveSearch|NSDiacriticInsensitiveSearch)];
+            result = [fullSong.text rangeOfString:searchText options:(NSCaseInsensitiveSearch|NSDiacriticInsensitiveSearch)];
         }else if ([scope isEqualToString:@"Artist"]) {
-            result = [artist rangeOfString:searchText options:(NSCaseInsensitiveSearch|NSDiacriticInsensitiveSearch)];
+            result = [fullSong.artist rangeOfString:searchText options:(NSCaseInsensitiveSearch|NSDiacriticInsensitiveSearch)];
         }
         
 
@@ -320,7 +354,6 @@
     [self filterContentForSearchText:searchString scope:
      [[self.searchDisplayController.searchBar scopeButtonTitles] objectAtIndex:[self.searchDisplayController.searchBar selectedScopeButtonIndex]]];
     
-    // Return YES to cause the search result table view to be reloaded.
     return YES;
 }
 
@@ -330,7 +363,6 @@
     [self filterContentForSearchText:[self.searchDisplayController.searchBar text] scope:
      [[self.searchDisplayController.searchBar scopeButtonTitles] objectAtIndex:searchOption]];
     
-    // Return YES to cause the search result table view to be reloaded.
     return YES;
 }
 
@@ -338,7 +370,13 @@
 
 -(void)songsDidLoad:(NSArray *)songs{
     [_songs removeAllObjects];
-    [_songs addObjectsFromArray:songs];
+    
+    // parse songs from JSON to model objects
+    
+    for (id jsonSong in songs) {
+        Song * song = [Song songWithDictionary:jsonSong];
+        [_songs addObject:song];
+    }
     [_tableSongs reloadData];
     [SVProgressHUD showSuccessWithStatus:@"Success!"];
 }

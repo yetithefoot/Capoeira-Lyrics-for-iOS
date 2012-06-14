@@ -15,8 +15,12 @@
 @property (nonatomic, retain) NSString *text;
 @property (nonatomic, retain) NSString *artist;
 @property (nonatomic, retain) NSString *translation;
+@property (nonatomic, assign, getter = isFavorite) BOOL favorite;
 
 -(id) initWithDictionary: (NSDictionary *) dict;
 +(id) songWithDictionary: (NSDictionary *) dict;
++(NSArray *)filterOnlyFavorites:(NSArray *)aSongs;
+
+
 
 @end

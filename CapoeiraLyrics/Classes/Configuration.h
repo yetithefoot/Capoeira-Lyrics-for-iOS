@@ -11,7 +11,11 @@
 
 @property (nonatomic,readonly) NSString * serverUrl;
 @property (nonatomic,readonly) NSString * securityToken;
+@property (nonatomic,retain) NSMutableArray * favoriteSongsIds; // store favorite songs id
+
 
 + (Configuration *) sharedInstance;
+
++(void) saveSettings;
 
 @end
