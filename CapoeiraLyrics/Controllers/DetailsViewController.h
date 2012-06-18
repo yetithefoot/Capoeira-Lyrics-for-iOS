@@ -8,14 +8,16 @@
 
 #import "BaseViewController.h"
 
+#import "TTTAttributedLabel.h"
+
 #import "TagsView.h"
 
-
+#define FONT_TEXT_SIZE 16.0
 @interface DetailsViewController : BaseViewController< TagsViewProtocol> {
     IBOutlet UIScrollView* _scrollView;
     IBOutlet TagsView *_tagsView;
     IBOutlet UILabel *_labelTitle;
-    IBOutlet UILabel *_labelText;
+    IBOutlet TTTAttributedLabel *_labelText;
     Song * _song;
     
     

@@ -42,6 +42,8 @@
      */
     
     
+    
+    
     _scrollView.contentSize = CGSizeMake(_scrollView.contentSize.width, y);
 }
 
@@ -55,14 +57,55 @@
     return self;
 }
 
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    // tune label
+    [_labelText setFont:[UIFont systemFontOfSize:FONT_TEXT_SIZE]];
+    //[_labelText setLineHeightMultiple: 0.7];
+    
+    // prepare text
+    [_labelText setText:_song.text afterInheritingLabelAttributesAndConfiguringWithBlock:^NSMutableAttributedString *(NSMutableAttributedString *mutableAttributedString) {
+        
+        // find all bold strings
+        NSRegularExpression *regex = [[NSRegularExpression alloc] initWithPattern:@"\\[coro\\](.+)\\[\\/coro\\]" options:0 error:nil];
+        NSArray *matches = [regex matchesInString:_song.text options:0 range:NSMakeRange(0, _song.text.length)];
+        
+        // init font
+        UIFont *boldSystemFont = [UIFont boldSystemFontOfSize:FONT_TEXT_SIZE];
+        CTFontRef boldSystemFont_ct = CTFontCreateWithName((CFStringRef)boldSystemFont.fontName, boldSystemFont.pointSize, NULL);
+        
+        // replace all bold/coro strings
+        if(matches.count > 0 && boldSystemFont_ct){
+            NSLog(@"%d matches found.", matches.count);
+            for (NSTextCheckingResult *match in matches) {
+                
+                NSLog(@"match fount: %@", [_song.text substringWithRange:[match rangeAtIndex:1]]);
+                
+                [mutableAttributedString removeAttribute:(NSString *)kCTFontAttributeName range:[match rangeAtIndex:1]];
+                [mutableAttributedString addAttribute:(NSString *)kCTFontAttributeName value:(id)boldSystemFont_ct range:[match rangeAtIndex:1]];
+            }
+        }
+        // release ct font
+        if(boldSystemFont_ct) CFRelease(boldSystemFont_ct);
+        
+        // remove coro blocks
+        [[mutableAttributedString mutableString] replaceOccurrencesOfString:@"[coro]" withString:@"" options:NSCaseInsensitiveSearch range:NSMakeRange(0, [mutableAttributedString length])];
+        [[mutableAttributedString mutableString] replaceOccurrencesOfString:@"[/coro]" withString:@"" options:NSCaseInsensitiveSearch range:NSMakeRange(0, [mutableAttributedString length])];
+
+        
+        return mutableAttributedString;
+    }];
+    
+    
     _labelTitle.text = _song.name;
-    _labelText.text = _song.text;
+
     self.navigationItem.title = _song.name;
-#warning get code from todotogo for details scroll view for text
-#warning add tags section and set favorite button
+
+    
     [self relayout];
 }
 
