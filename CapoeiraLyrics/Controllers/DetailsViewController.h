@@ -13,17 +13,21 @@
 #import "TagsView.h"
 
 #define FONT_TEXT_SIZE 16.0
-@interface DetailsViewController : BaseViewController< TagsViewProtocol> {
+@interface DetailsViewController : BaseViewController< TagsViewProtocol,UIActionSheetDelegate> {
     IBOutlet UIScrollView* _scrollView;
     IBOutlet TagsView *_tagsView;
     IBOutlet UILabel *_labelTitle;
     IBOutlet TTTAttributedLabel *_labelText;
+    IBOutlet UILabel *_labelToolbarTitle;
+    IBOutlet UILabel *_labelToolbarArtist;
     Song * _song;
     
     
 }
 
 -(id) initWithSong: (Song *)song;
+- (IBAction)btnBackClicked:(id)sender;
+- (IBAction)btnActionClicked:(id)sender;
 
 
 @end

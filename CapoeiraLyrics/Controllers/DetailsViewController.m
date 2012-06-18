@@ -27,11 +27,12 @@
     [_labelTitle sizeToFit];
     CGRect rect = _labelTitle.bounds;
     _labelTitle.frame = CGRectMake(0, y, 320, rect.size.height);
-    y += _labelTitle.frame.size.height + VERTICAL_MARGIN_2;
+    y += (_labelTitle.frame.size.height + VERTICAL_MARGIN_2);
     
+    //[_labelText sizeToFit];
     CGSize size = [_labelText sizeThatFits: CGSizeMake(320, 0)];
     _labelText.frame = CGRectMake(0, y, 320, size.height);
-    y += _labelText.frame.size.height+VERTICAL_MARGIN_6;
+    y += (_labelText.frame.size.height+VERTICAL_MARGIN_6);
     
 #warning uncomment for tags view reposition   
     /*
@@ -57,15 +58,50 @@
     return self;
 }
 
+- (IBAction)btnBackClicked:(id)sender {
+    [self goBack:sender];
+}
+
+- (IBAction)btnActionClicked:(id)sender {
+    UIActionSheet *popupQuery = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Share to Facebook", @"Share to Twiter", @"Make favorite", nil];
+    
+    popupQuery.actionSheetStyle = UIActionSheetStyleBlackOpaque;
+    
+    [popupQuery showInView:self.view];
+    
+    [popupQuery release];
+
+    
+}
+
+-(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
+     switch (buttonIndex) {
+         case 0:
+         //self.label.text = @"Destructive Button Clicked";
+         break;
+     case 1:
+         //self.label.text = @"Other Button 1 Clicked";
+         break;
+     case 2:
+         //self.label.text = @"Other Button 2 Clicked";
+         break;
+     case 3:
+         //self.label.text = @"Cancel Button Clicked";
+         break;
+     }
+     
+}
+
 
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
+
     // tune label
     [_labelText setFont:[UIFont systemFontOfSize:FONT_TEXT_SIZE]];
-    //[_labelText setLineHeightMultiple: 0.7];
+    //[_labelText setLineHeightMultiple:0.7];
     
     // prepare text
     [_labelText setText:_song.text afterInheritingLabelAttributesAndConfiguringWithBlock:^NSMutableAttributedString *(NSMutableAttributedString *mutableAttributedString) {
@@ -102,6 +138,8 @@
     
     
     _labelTitle.text = _song.name;
+    _labelToolbarTitle.text = _song.name;
+    _labelToolbarArtist.text = _song.artist;
 
     self.navigationItem.title = _song.name;
 
@@ -115,6 +153,10 @@
     _labelTitle = nil;
     [_labelText release];
     _labelText = nil;
+    [_labelToolbarTitle release];
+    _labelToolbarTitle = nil;
+    [_labelToolbarArtist release];
+    _labelToolbarArtist = nil;
     [super viewDidUnload];
 
 }
@@ -130,6 +172,8 @@
     [_scrollView release];
     [_tagsView release];
     [_song release];
+    [_labelToolbarTitle release];
+    [_labelToolbarArtist release];
     [super dealloc];
 }
 

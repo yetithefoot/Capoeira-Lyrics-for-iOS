@@ -14,5 +14,6 @@
 }
 
 -(void) showAlertWithTitle: (NSString *) title andMessage: (NSString *) message;
+- (void) goBack: (id) sender;
 
 @end

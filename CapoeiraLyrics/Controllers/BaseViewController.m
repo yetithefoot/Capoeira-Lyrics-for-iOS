@@ -43,9 +43,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+	// hide navigation toolbar
+    self.navigationController.navigationBarHidden = YES;
     
     
+}
+
+- (void) goBack: (id) sender {
+	UINavigationController * navigationRoot = self.navigationController;
+	[navigationRoot popViewControllerAnimated: true];
 }
 
 
