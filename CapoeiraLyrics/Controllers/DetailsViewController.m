@@ -14,6 +14,8 @@
 
 @implementation DetailsViewController
 
+@synthesize song = _song;
+
 #define VERTICAL_MARGIN_1 10
 #define VERTICAL_MARGIN_2 10
 #define VERTICAL_MARGIN_3 15
@@ -48,11 +50,11 @@
     _scrollView.contentSize = CGSizeMake(_scrollView.contentSize.width, y);
 }
 
-- (id)initWithSong:(Song *)song
+- (id)initWithSong:(Song *)aSong
 {
     self = [super initWithNibName:@"DetailsViewController" bundle:nil];
     if (self) {
-        _song = [song retain];
+        _song = [aSong retain];
     }
     
     return self;
@@ -63,7 +65,8 @@
 }
 
 - (IBAction)btnActionClicked:(id)sender {
-    UIActionSheet *popupQuery = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Share to Facebook", @"Share to Twiter", @"Make favorite", nil];
+    NSString * favoriteTitle = self.song.isFavorite?@"Remove from favorites":@"Make favorite";
+    UIActionSheet *popupQuery = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Share to Facebook", @"Share to Twiter", favoriteTitle, nil];
     
     popupQuery.actionSheetStyle = UIActionSheetStyleBlackOpaque;
     
@@ -76,33 +79,26 @@
 
 -(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
      switch (buttonIndex) {
-         case 0:
-         //self.label.text = @"Destructive Button Clicked";
-         break;
-     case 1:
-         //self.label.text = @"Other Button 1 Clicked";
-         break;
-     case 2:
-         //self.label.text = @"Other Button 2 Clicked";
-         break;
-     case 3:
-         //self.label.text = @"Cancel Button Clicked";
-         break;
+            case 0:
+             //self.label.text = @"Destructive Button Clicked";
+             break;
+         case 1:
+             //self.label.text = @"Other Button 1 Clicked";
+             break;
+         case 2:{
+             // make song favorite
+             self.song.favorite = !self.song.favorite;
+             break;
+         }
+         case 3:
+             //self.label.text = @"Cancel Button Clicked";
+             break;
      }
      
 }
 
 
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    
-
-    // tune label
-    [_labelText setFont:[UIFont systemFontOfSize:FONT_TEXT_SIZE]];
-    //[_labelText setLineHeightMultiple:0.7];
-    
+-(void) reloadData{
     // prepare text
     [_labelText setText:_song.text afterInheritingLabelAttributesAndConfiguringWithBlock:^NSMutableAttributedString *(NSMutableAttributedString *mutableAttributedString) {
         
@@ -131,17 +127,32 @@
         // remove coro blocks
         [[mutableAttributedString mutableString] replaceOccurrencesOfString:@"[coro]" withString:@"" options:NSCaseInsensitiveSearch range:NSMakeRange(0, [mutableAttributedString length])];
         [[mutableAttributedString mutableString] replaceOccurrencesOfString:@"[/coro]" withString:@"" options:NSCaseInsensitiveSearch range:NSMakeRange(0, [mutableAttributedString length])];
-
+        
         
         return mutableAttributedString;
     }];
+
+    [self relayout];
+}
+
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
     
+    // show waiting hud
+    [SVProgressHUD showWithStatus:@"Loading song..." maskType:SVProgressHUDMaskTypeBlack];
+    // start load songs async
+    [_api getSong:_song.identifier];
+    
+
+    // tune label
+    [_labelText setFont:[UIFont systemFontOfSize:FONT_TEXT_SIZE]];
+    //[_labelText setLineHeightMultiple:0.7];
     
     _labelTitle.text = _song.name;
     _labelToolbarTitle.text = _song.name;
     _labelToolbarArtist.text = _song.artist;
-
-    self.navigationItem.title = _song.name;
 
     
     [self relayout];
@@ -188,5 +199,19 @@
     TagEventsViewController * controller = [[TagEventsViewController alloc] initWithTag: tag]; 
     [_navConroller pushViewController: controller animated: YES];
     [controller release];*/
+}
+
+#pragma mark api delegate
+
+
+-(void)songDidLoad:(Song *)aSong{
+    self.song = aSong;
+    [self reloadData];
+    [SVProgressHUD showSuccessWithStatus:@"Success!"];
+}
+
+
+-(void)didFail{
+    [SVProgressHUD showErrorWithStatus:@"Update failed! Try again later!"];
 }
 @end

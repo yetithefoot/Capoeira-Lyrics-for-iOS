@@ -83,6 +83,7 @@
     // select tabbar item "songs"
     // actually we need select item with name "songs"
     [_tabBar setSelectedItem:[_tabBar.items objectAtIndex:0]];
+    [_tableSongs reloadData];
     
 }
 
@@ -373,12 +374,7 @@
 -(void)songsDidLoad:(NSArray *)songs{
     [_songs removeAllObjects];
     
-    // parse songs from JSON to model objects
-    
-    for (id jsonSong in songs) {
-        Song * song = [Song songWithDictionary:jsonSong];
-        [_songs addObject:song];
-    }
+    [_songs addObjectsFromArray:songs];
     [_tableSongs reloadData];
     [SVProgressHUD showSuccessWithStatus:@"Success!"];
 }

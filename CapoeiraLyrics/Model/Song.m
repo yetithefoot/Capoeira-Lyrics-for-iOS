@@ -18,6 +18,7 @@
     self = [super init];
     if (self) {
 #warning check for keys available
+#warning if nil set empty strings
         self.identifier = [[dict objectForKey:@"ID"] longValue];
         self.name = [dict objectForKey:@"Name"];
         self.text = [dict objectForKey:@"Text"];

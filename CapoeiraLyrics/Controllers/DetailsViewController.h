@@ -13,7 +13,7 @@
 #import "TagsView.h"
 
 #define FONT_TEXT_SIZE 16.0
-@interface DetailsViewController : BaseViewController< TagsViewProtocol,UIActionSheetDelegate> {
+@interface DetailsViewController : BaseViewController< TagsViewProtocol,UIActionSheetDelegate, CapoeiraLyricsAPIDelegate> {
     IBOutlet UIScrollView* _scrollView;
     IBOutlet TagsView *_tagsView;
     IBOutlet UILabel *_labelTitle;
@@ -25,7 +25,9 @@
     
 }
 
--(id) initWithSong: (Song *)song;
+@property (nonatomic, retain) Song *song;
+
+-(id) initWithSong: (Song *)aSong;
 - (IBAction)btnBackClicked:(id)sender;
 - (IBAction)btnActionClicked:(id)sender;
 
