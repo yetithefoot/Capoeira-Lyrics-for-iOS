@@ -169,25 +169,26 @@
     UITapGestureRecognizer *gesture = (UITapGestureRecognizer *) sender;
     NSLog(@"cell wants to be favorite, index = %d", gesture.view.tag);
     
-    // get song
-    Song * song = nil; 
+    // find index of song clicked by id stored into tag
+    NSUInteger found = [_songs indexOfObjectPassingTest:^(id element, NSUInteger idx, BOOL * stop){
+        
+        Song * song = (Song*)element;
+        
+        *stop = (song.identifier == gesture.view.tag);
+        return *stop;
+    }];
     
-    if (_tableSongs == self.searchDisplayController.searchResultsTableView){
-        song = [_filteredSongs objectAtIndex:gesture.view.tag];
+    
+    
+    // Get stack if found or set square back to its original center
+    if (found != NSNotFound){
+        Song * song = [_songs objectAtIndex:found];
+        BOOL isFavorite = song.favorite;
+        song.favorite = !isFavorite;
+        
+        [_tableSongs reloadData]; //reload main table
+        [self.searchDisplayController.searchResultsTableView reloadData]; //reload table under search context (All, Text, Name, Artist etc.)
     }
-	else{
-        song = [_songs objectAtIndex:gesture.view.tag];
-    }
-    
-    BOOL isFavorite = song.favorite;
-    
-    song.favorite = !isFavorite;
-    
-    [_tableSongs reloadData];
-    
-    //[self tableView:_tableSongs cellForRowAtIndexPath:gesture.view.tag].imageView;
-    
-    
 }
 
 #pragma tableview datasource + delegate
@@ -254,7 +255,7 @@
     }
     
     cell.imageView.userInteractionEnabled = YES;
-    cell.imageView.tag = indexPath.row;
+    cell.imageView.tag = song.identifier;
     
     UITapGestureRecognizer *tapped = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(imageViewClicked:)];
     tapped.numberOfTapsRequired = 1;
