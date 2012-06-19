@@ -14,6 +14,10 @@
 		D0114E8A158528DC00D27777 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = D0114E89158528DC00D27777 /* star.png */; };
 		D0114E911585297800D27777 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0114E8F1585297800D27777 /* DetailsViewController.m */; };
 		D0114E94158529A400D27777 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0114E93158529A400D27777 /* DetailsViewController.xib */; };
+		D030C41E159089F600C85548 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D030C41D159089F600C85548 /* Security.framework */; };
+		D030C421159089FC00C85548 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D030C420159089FC00C85548 /* SystemConfiguration.framework */; };
+		D030C42315908A0400C85548 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D030C42215908A0400C85548 /* MessageUI.framework */; };
+		D030C42615908C9700C85548 /* CapoeiraLyricsSHKConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = D030C42515908C9700C85548 /* CapoeiraLyricsSHKConfigurator.m */; };
 		D07E1831157F8BFD00AA5987 /* SongsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D07E1824157F8BFD00AA5987 /* SongsViewController.m */; };
 		D07E1832157F8BFD00AA5987 /* FavouritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D07E1826157F8BFD00AA5987 /* FavouritesViewController.m */; };
 		D07E1837157F8BFD00AA5987 /* SongsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D07E182F157F8BFD00AA5987 /* SongsViewController.xib */; };
@@ -56,6 +60,11 @@
 		D0114E8E1585297800D27777 /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
 		D0114E8F1585297800D27777 /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
 		D0114E93158529A400D27777 /* DetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
+		D030C41D159089F600C85548 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D030C420159089FC00C85548 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D030C42215908A0400C85548 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		D030C42415908C9700C85548 /* CapoeiraLyricsSHKConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CapoeiraLyricsSHKConfigurator.h; sourceTree = "<group>"; };
+		D030C42515908C9700C85548 /* CapoeiraLyricsSHKConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CapoeiraLyricsSHKConfigurator.m; sourceTree = "<group>"; };
 		D07E1823157F8BFD00AA5987 /* SongsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SongsViewController.h; sourceTree = "<group>"; };
 		D07E1824157F8BFD00AA5987 /* SongsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongsViewController.m; sourceTree = "<group>"; };
 		D07E1825157F8BFD00AA5987 /* FavouritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavouritesViewController.h; sourceTree = "<group>"; };
@@ -95,6 +104,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D030C42315908A0400C85548 /* MessageUI.framework in Frameworks */,
+				D030C421159089FC00C85548 /* SystemConfiguration.framework in Frameworks */,
+				D030C41E159089F600C85548 /* Security.framework in Frameworks */,
 				D0B83F2F1588BA8A0075C2F0 /* CoreText.framework in Frameworks */,
 				D08DB9B9157F4EBE00994BDC /* UIKit.framework in Frameworks */,
 				D08DB9BB157F4EBE00994BDC /* Foundation.framework in Frameworks */,
@@ -201,6 +213,9 @@
 		D08DB9B7157F4EBE00994BDC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D030C42215908A0400C85548 /* MessageUI.framework */,
+				D030C420159089FC00C85548 /* SystemConfiguration.framework */,
+				D030C41D159089F600C85548 /* Security.framework */,
 				D0B83F2E1588BA890075C2F0 /* CoreText.framework */,
 				D08DB9B8157F4EBE00994BDC /* UIKit.framework */,
 				D08DB9BA157F4EBE00994BDC /* Foundation.framework */,
@@ -233,6 +248,8 @@
 				D08DB9C1157F4EBE00994BDC /* InfoPlist.strings */,
 				D08DB9C4157F4EBE00994BDC /* main.m */,
 				D08DB9C6157F4EBE00994BDC /* CapoeiraLyrics-Prefix.pch */,
+				D030C42415908C9700C85548 /* CapoeiraLyricsSHKConfigurator.h */,
+				D030C42515908C9700C85548 /* CapoeiraLyricsSHKConfigurator.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -351,6 +368,7 @@
 				D0114E911585297800D27777 /* DetailsViewController.m in Sources */,
 				D0B83F261588B3B70075C2F0 /* TagsView.m in Sources */,
 				D0B83F291588B4320075C2F0 /* Tag.m in Sources */,
+				D030C42615908C9700C85548 /* CapoeiraLyricsSHKConfigurator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

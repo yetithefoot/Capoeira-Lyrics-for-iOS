@@ -21,4 +21,7 @@ install_resource 'EGOTableViewPullRefresh/EGOTableViewPullRefresh/Resources/gray
 install_resource 'EGOTableViewPullRefresh/EGOTableViewPullRefresh/Resources/grayArrow@2x.png'
 install_resource 'EGOTableViewPullRefresh/EGOTableViewPullRefresh/Resources/whiteArrow.png'
 install_resource 'EGOTableViewPullRefresh/EGOTableViewPullRefresh/Resources/whiteArrow@2x.png'
+install_resource 'Facebook-iOS-SDK/src/FBDialog.bundle'
 install_resource 'SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle'
+install_resource 'ShareKit/Classes/ShareKit/ShareKit.bundle'
+install_resource 'ShareKit/Classes/ShareKit/Core/SHKSharers.plist'

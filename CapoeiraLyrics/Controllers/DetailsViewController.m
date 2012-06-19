@@ -7,6 +7,10 @@
 //
 
 #import "DetailsViewController.h"
+#import "SHK.h"
+#import "SHKTwitter.h"
+#import "SHKFacebook.h"
+#import <Foundation/Foundation.h>
 
 @interface DetailsViewController ()
 
@@ -74,6 +78,15 @@
     
     [popupQuery release];
 
+    /*// Create the item to share (in this example, a url)
+	NSURL *url = [NSURL URLWithString:@"http://getsharekit.com"];
+	SHKItem *item = [SHKItem URL:url title:@"ShareKit is Awesome!"];
+    
+	// Get the ShareKit action sheet
+	SHKActionSheet *actionSheet = [SHKActionSheet actionSheetForItem:item];
+    
+	// Display the action sheet
+	[actionSheet showInView:self.view];*/
     
 }
 
@@ -82,16 +95,25 @@
             case 0:
              //self.label.text = @"Destructive Button Clicked";
              break;
-         case 1:
-             //self.label.text = @"Other Button 1 Clicked";
+         case 1:{
+             // share to twitter
+             // Create the item to share (in this example, a url)
+             NSString * urlString = [NSString stringWithFormat:@"http://capoeiralyrics.info/Songs/Details/%d", _song.identifier];
+             NSString * message = [NSString stringWithFormat:@"Just learn %@ capoeira song by %@!", _song.name, _song.artist];
+             NSURL *url = [NSURL URLWithString:urlString];
+             SHKItem *item = [SHKItem URL:url title:message];
+             
+             // Share the item
+             [SHKTwitter shareItem:item];
              break;
+         }
          case 2:{
              // make song favorite
              self.song.favorite = !self.song.favorite;
              break;
          }
          case 3:
-             //self.label.text = @"Cancel Button Clicked";
+             // cancel and hide sheet
              break;
      }
      

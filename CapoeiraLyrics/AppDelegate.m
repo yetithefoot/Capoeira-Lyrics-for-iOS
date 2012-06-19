@@ -12,6 +12,10 @@
 
 #import "FavouritesViewController.h"
 
+#import "SHK.h"
+#import "SHKConfiguration.h"
+#import "CapoeiraLyricsSHKConfigurator.h"
+
 
 @implementation AppDelegate
 
@@ -43,6 +47,10 @@
     //[[UITableView appearance] setSeparatorColor:[UIColor colorWithRed:0.9935 green:0.7753 blue:0.1646 alpha:1.0000]];
     //[[UILabel appearanceWhenContainedIn:[UITableViewCell class], nil] setColor:[UIColor colorWithRed:0.1842 green:0.1728 blue:0.5107 alpha:1.0000]];
     
+    
+    // initialize share kit
+    DefaultSHKConfigurator *configurator = [[CapoeiraLyricsSHKConfigurator alloc] init];
+    [SHKConfiguration sharedInstanceWithConfigurator:configurator];
     
     return YES;
 }

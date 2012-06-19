@@ -1,13 +1,35 @@
 PODS:
   - AFNetworking (1.0RC1)
   - EGOTableViewPullRefresh (0.1.0)
+  - Facebook-iOS-SDK (1.2):
+    - SBJson (= 2.2.3)
   - JSONKit (1.4)
+  - Reachability (3.0.0)
+  - SBJson (2.2.3)
+  - SSKeychain (0.1.4)
   - SVProgressHUD (0.7)
+  - ShareKit/Core (2.0):
+    - Reachability
+    - SSKeychain
+    - ShareKit (= 2.0)
+  - ShareKit/Facebook (2.0):
+    - Facebook-iOS-SDK
+    - ShareKit (= 2.0)
+    - ShareKit/Core
+  - ShareKit/Twitter (2.0):
+    - JSONKit
+    - ShareKit (= 2.0)
+    - ShareKit/Core
   - TTTAttributedLabel (1.2.1)
+
+DOWNLOAD_ONLY:
+  - ShareKit (2.0)
 
 DEPENDENCIES:
   - AFNetworking
   - EGOTableViewPullRefresh
   - JSONKit
   - SVProgressHUD
+  - ShareKit/Facebook
+  - ShareKit/Twitter
   - TTTAttributedLabel
