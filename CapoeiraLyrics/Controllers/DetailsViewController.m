@@ -125,7 +125,9 @@
     [_labelText setText:_song.text afterInheritingLabelAttributesAndConfiguringWithBlock:^NSMutableAttributedString *(NSMutableAttributedString *mutableAttributedString) {
         
         // find all bold strings
-        NSRegularExpression *regex = [[NSRegularExpression alloc] initWithPattern:@"\\[coro\\](.+)\\[\\/coro\\]" options:0 error:nil];
+        NSRegularExpression *regex = [[NSRegularExpression alloc] initWithPattern:@"\\[coro\\]([^\\[]+?)\\[\\/coro\\]" 
+                                                                          options:NSRegularExpressionCaseInsensitive 
+                                                                            error:nil];
         NSArray *matches = [regex matchesInString:_song.text options:0 range:NSMakeRange(0, _song.text.length)];
         
         // init font
