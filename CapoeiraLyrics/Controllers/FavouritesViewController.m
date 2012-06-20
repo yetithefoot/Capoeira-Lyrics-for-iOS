@@ -34,7 +34,8 @@
     
     [self.searchDisplayController setActive:NO];
     [self.searchDisplayController.searchBar setSelectedScopeButtonIndex:0];
-    [_tableSongs setContentOffset:CGPointMake(0, 44)];
+    // hide searchbar
+    //[_tableSongs setContentOffset:CGPointMake(0, 44)];
 	
     self.navigationItem.hidesBackButton = YES;
      

@@ -14,6 +14,7 @@
 @optional
 -(void) songsDidLoad:(NSArray *)songs;
 -(void) songDidLoad:(Song *) song;
+-(void) songsCountDidLoad:(NSNumber *) count;
 -(void) didFail;
 @end
 
@@ -26,6 +27,8 @@
 + (CapoeiraLyricsAPI *) sharedInstance;
 
 -(void) getAllSongsFull;
+-(void) getAllSongsFullFromLocalStorage;
 -(void) getSong: (int) songId;
+-(void) getSongsCount;
 
 @end

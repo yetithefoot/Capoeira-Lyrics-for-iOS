@@ -10,7 +10,7 @@
 #import "CapoeiraLyricsAPI.h"
 #import "BaseViewController.h"
 
-@interface SongsViewController : BaseViewController<UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate, UISearchDisplayDelegate, CapoeiraLyricsAPIDelegate, UITabBarDelegate, EGORefreshTableHeaderDelegate, UIGestureRecognizerDelegate>{
+@interface SongsViewController : BaseViewController<UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate, UISearchDisplayDelegate, CapoeiraLyricsAPIDelegate, UITabBarDelegate, EGORefreshTableHeaderDelegate, UIGestureRecognizerDelegate, UIAlertViewDelegate>{
     
     EGORefreshTableHeaderView *_refreshHeaderView;
     

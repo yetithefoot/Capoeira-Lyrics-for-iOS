@@ -92,12 +92,19 @@
 
 -(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
      switch (buttonIndex) {
-            case 0:
-             //self.label.text = @"Destructive Button Clicked";
+         case 0:{
+             // share to fb
+             NSString * urlString = [NSString stringWithFormat:@"http://capoeiralyrics.info/Songs/Details/%d", _song.identifier];
+             NSString * message = [NSString stringWithFormat:@"Just learn %@ capoeira song by %@!", _song.name, _song.artist];
+             NSURL *url = [NSURL URLWithString:urlString];
+             SHKItem *item = [SHKItem URL:url title:message];
+             
+             // Share the item
+             [SHKFacebook shareItem:item];
              break;
+         }
          case 1:{
              // share to twitter
-             // Create the item to share (in this example, a url)
              NSString * urlString = [NSString stringWithFormat:@"http://capoeiralyrics.info/Songs/Details/%d", _song.identifier];
              NSString * message = [NSString stringWithFormat:@"Just learn %@ capoeira song by %@!", _song.name, _song.artist];
              NSURL *url = [NSURL URLWithString:urlString];
@@ -165,9 +172,10 @@
     [super viewDidLoad];
     
     // show waiting hud
-    [SVProgressHUD showWithStatus:@"Loading song..." maskType:SVProgressHUDMaskTypeBlack];
+    //[SVProgressHUD showWithStatus:@"Loading song..." maskType:SVProgressHUDMaskTypeBlack];
     // start load songs async
-    [_api getSong:_song.identifier];
+    //[_api getSong:_song.identifier];
+    
     
 
     // tune label
@@ -177,9 +185,8 @@
     _labelTitle.text = _song.name;
     _labelToolbarTitle.text = _song.name;
     _labelToolbarArtist.text = _song.artist;
-
     
-    [self relayout];
+    [self reloadData];
 }
 
 - (void)viewDidUnload

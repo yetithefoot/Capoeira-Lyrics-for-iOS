@@ -18,6 +18,20 @@
 @implementation SongsViewController
 
 
+#pragma mark api
+
+-(void) startLoadSongs{
+    // show waiting hud
+    [SVProgressHUD showWithStatus:@"Loading songs update..." maskType:SVProgressHUDMaskTypeBlack];
+    // start load songs async
+    [_api getAllSongsFull];
+}
+
+
+
+
+#pragma mark lifecycle
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -69,12 +83,14 @@
     
     [self.searchDisplayController setActive:NO];
     [self.searchDisplayController.searchBar setSelectedScopeButtonIndex:0];
-    [_tableSongs setContentOffset:CGPointMake(0, 44)];
+    // hide searchbar
+    //[_tableSongs setContentOffset:CGPointMake(0, 44)];
     
-    // show waiting hud
-    [SVProgressHUD showWithStatus:@"Loading songs update..." maskType:SVProgressHUDMaskTypeBlack];
-    // start load songs async
-    [_api getAllSongsFull];
+    [_api getAllSongsFullFromLocalStorage];
+    
+    
+
+    [_api getSongsCount];
     
 }
 
@@ -84,6 +100,7 @@
     // actually we need select item with name "songs"
     [_tabBar setSelectedItem:[_tabBar.items objectAtIndex:0]];
     [_tableSongs reloadData];
+    [self.searchDisplayController.searchResultsTableView reloadData];
     
 }
 
@@ -107,10 +124,7 @@
 	//  should be calling your tableviews data source model to reload
 	//  put here just for demo
     
-    // show waiting hud
-    [SVProgressHUD showWithStatus:@"Loading songs update..." maskType:SVProgressHUDMaskTypeBlack];
-    // start load songs async
-    [_api getAllSongsFull];
+    [self startLoadSongs];
 }
 
 - (void)doneLoadingTableViewData{
@@ -324,7 +338,9 @@
 	for (Song * fullSong in _songs)
 	{
         
-        NSRange result, result2, result3;
+        NSRange result = NSMakeRange(NSNotFound, 0);
+        NSRange result2 = result;
+        NSRange result3 = result;
         if([scope isEqualToString:@"All"]){
             result = [fullSong.name rangeOfString:searchText options:(NSCaseInsensitiveSearch|NSDiacriticInsensitiveSearch)];
             result2 = [fullSong.text rangeOfString:searchText options:(NSCaseInsensitiveSearch|NSDiacriticInsensitiveSearch)];
@@ -368,6 +384,14 @@
     return YES;
 }
 
+#pragma mark alert view delegate
+
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    if(buttonIndex == 1){
+        [self startLoadSongs];
+    }
+}
+
 #pragma mark api delegate
 
 
@@ -378,6 +402,14 @@
     [_songs addObjectsFromArray:songs];
     [_tableSongs reloadData];
     [SVProgressHUD showSuccessWithStatus:@"Success!"];
+}
+
+-(void)songsCountDidLoad:(NSNumber *)count{
+    if([count intValue] > 1500){
+        UIAlertView * alert = [[UIAlertView alloc]initWithTitle:@"Updates" message:@"New songs updates available! Do you want load them?" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Download", nil];
+        [alert show];
+        [alert release];
+    }
 }
 
 -(void)didFail{

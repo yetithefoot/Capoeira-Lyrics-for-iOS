@@ -18,4 +18,6 @@
 
 +(void) saveSettings;
 
+-(NSString *) FILEPATH_OFFLINE_SONGS_RESPONSE;
+
 @end

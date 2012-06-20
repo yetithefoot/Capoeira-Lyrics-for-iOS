@@ -13,6 +13,7 @@
 #import "FavouritesViewController.h"
 
 #import "SHK.h"
+#import "SHKFacebook.h"
 #import "SHKConfiguration.h"
 #import "CapoeiraLyricsSHKConfigurator.h"
 
@@ -26,6 +27,15 @@
     [_window release];
     [_navigationRoot release];
     [super dealloc];
+}
+
+-(BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url{
+    return [SHKFacebook handleOpenURL:url];
+}
+
+-(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication 
+        annotation:(id)annotation{
+    return [SHKFacebook handleOpenURL:url];
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
