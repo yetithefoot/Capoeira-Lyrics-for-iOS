@@ -11,19 +11,42 @@
 @implementation Song
 
 
-@synthesize identifier, name, text, artist, translation;
+@synthesize identifier, name, text, artist, translation, audioUrl, videoUrl;
 
 - (id)initWithDictionary:(NSDictionary *)dict
 {
     self = [super init];
     if (self) {
-#warning check for keys available
-#warning if nil set empty strings
-        self.identifier = [[dict objectForKey:@"ID"] longValue];
-        self.name = [dict objectForKey:@"Name"];
-        self.text = [dict objectForKey:@"Text"];
-        self.artist = [dict objectForKey:@"Artist"];
-        self.translation = [dict objectForKey:@"Translation"];
+        
+        if(dict){
+            id identifierObj = [dict objectForKey:@"ID"];
+            if(identifierObj && ((CFNullRef)identifierObj != kCFNull))
+                self.identifier = [identifierObj longValue];
+            
+            id nameObj = [dict objectForKey:@"Name"];
+            if(nameObj && ((CFNullRef)nameObj != kCFNull) && (![nameObj isEqualToString:@""]))
+                self.name = nameObj;
+            
+            id textObj = [dict objectForKey:@"Text"];
+            if(textObj && ((CFNullRef)textObj != kCFNull) && (![textObj isEqualToString:@""]))
+                self.text = textObj;
+            
+            id artistObj = [dict objectForKey:@"Artist"];
+            if(artistObj && ((CFNullRef)artistObj != kCFNull) && (![artistObj isEqualToString:@""]))
+                self.artist = artistObj;
+            
+            id translationObj = [dict objectForKey:@"Translate"];
+            if(translationObj && ((CFNullRef)translationObj != kCFNull) && (![translationObj isEqualToString:@""]))
+                self.translation = translationObj;
+            
+            id audioUrlObj = [dict objectForKey:@"AudioUrl"];
+            if(audioUrlObj && ((CFNullRef)audioUrlObj != kCFNull) && (![audioUrlObj isEqualToString:@""]))
+                self.audioUrl = audioUrlObj;
+            
+            id videoUrlObj = [dict objectForKey:@"VideoUrl"];
+            if(videoUrlObj && ((CFNullRef)videoUrlObj != kCFNull) && (![videoUrlObj isEqualToString:@""]))
+                self.videoUrl = videoUrlObj;
+        }
 
     }
     return self;
@@ -74,6 +97,8 @@
     [self.text release];
     [self.artist release];
     [self.translation release];
+    [self.audioUrl release];
+    [self.videoUrl release];
     [super dealloc];
 }
 

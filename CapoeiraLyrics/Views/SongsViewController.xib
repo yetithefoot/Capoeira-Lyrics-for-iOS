@@ -2,10 +2,10 @@
 <archive type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="8.00">
 	<data>
 		<int key="IBDocument.SystemTarget">1296</int>
-		<string key="IBDocument.SystemVersion">11D50d</string>
+		<string key="IBDocument.SystemVersion">11E53</string>
 		<string key="IBDocument.InterfaceBuilderVersion">2182</string>
-		<string key="IBDocument.AppKitVersion">1138.32</string>
-		<string key="IBDocument.HIToolboxVersion">568.00</string>
+		<string key="IBDocument.AppKitVersion">1138.47</string>
+		<string key="IBDocument.HIToolboxVersion">569.00</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 			<string key="NS.object.0">1181</string>
@@ -48,8 +48,7 @@
 						<int key="NSvFlags">292</int>
 						<string key="NSFrameSize">{320, 455}</string>
 						<reference key="NSSuperview" ref="83895417"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="921506193"/>
+						<reference key="NSNextKeyView" ref="283092466"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<float key="IBUIAlpha">0.15000000596046448</float>
@@ -65,7 +64,6 @@
 								<int key="NSvFlags">290</int>
 								<string key="NSFrameSize">{320, 44}</string>
 								<reference key="NSSuperview" ref="921506193"/>
-								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="43958699"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<int key="IBUIContentMode">3</int>
@@ -85,7 +83,6 @@
 						<string key="NSFrame">{{0, 44}, {320, 367}}</string>
 						<string key="NSBounds">{{0, 18}, {320, 367}}</string>
 						<reference key="NSSuperview" ref="83895417"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="100839708"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<object class="NSColor" key="IBUIBackgroundColor" id="384785228">
@@ -98,7 +95,7 @@
 						<int key="IBUISeparatorStyle">1</int>
 						<int key="IBUISectionIndexMinimumDisplayRowCount">0</int>
 						<bool key="IBUIShowsSelectionImmediatelyOnTouchBegin">YES</bool>
-						<float key="IBUIRowHeight">44</float>
+						<float key="IBUIRowHeight">60</float>
 						<float key="IBUISectionHeaderHeight">22</float>
 						<float key="IBUISectionFooterHeight">22</float>
 						<reference key="IBUITableHeaderView" ref="100839708"/>
@@ -108,8 +105,6 @@
 						<int key="NSvFlags">266</int>
 						<string key="NSFrame">{{0, 411}, {320, 49}}</string>
 						<reference key="NSSuperview" ref="83895417"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<reference key="IBUIBackgroundColor" ref="384785228"/>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -126,9 +121,13 @@
 							</object>
 							<object class="IBUITabBarItem" id="1020805500">
 								<int key="IBUITag">2</int>
+								<string key="IBUITitle">Favorites</string>
+								<object class="NSCustomResource" key="IBUIImage">
+									<string key="NSClassName">NSImage</string>
+									<string key="NSResourceName">black_heart.png</string>
+								</object>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								<reference key="IBUITabBar" ref="43958699"/>
-								<int key="IBUISystemItemIdentifier">1</int>
 							</object>
 						</array>
 					</object>
@@ -145,8 +144,7 @@
 										<int key="NSvFlags">290</int>
 										<string key="NSFrameSize">{304, 33}</string>
 										<reference key="NSSuperview" ref="528496992"/>
-										<reference key="NSWindow"/>
-										<reference key="NSNextKeyView"/>
+										<reference key="NSNextKeyView" ref="921506193"/>
 										<string key="NSReuseIdentifierKey">_NS:9</string>
 										<bool key="IBUIOpaque">NO</bool>
 										<bool key="IBUIClipsSubviews">YES</bool>
@@ -176,7 +174,6 @@
 								</array>
 								<string key="NSFrame">{{12, 6}, {304, 33}}</string>
 								<reference key="NSSuperview" ref="283092466"/>
-								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="228286397"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<reference key="IBUIBackgroundColor" ref="384785228"/>
@@ -185,7 +182,6 @@
 						</array>
 						<string key="NSFrameSize">{320, 44}</string>
 						<reference key="NSSuperview" ref="83895417"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="528496992"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
@@ -204,8 +200,7 @@
 				</array>
 				<string key="NSFrame">{{0, 20}, {320, 460}}</string>
 				<reference key="NSSuperview"/>
-				<reference key="NSWindow"/>
-				<reference key="NSNextKeyView" ref="283092466"/>
+				<reference key="NSNextKeyView" ref="387104593"/>
 				<string key="NSReuseIdentifierKey">_NS:9</string>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">3</int>
@@ -499,10 +494,10 @@
 		</object>
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
-		<object class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
-			<string key="NS.key.0">note2.png</string>
-			<string key="NS.object.0">{23, 23}</string>
-		</object>
+		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
+			<string key="black_heart.png">{32, 32}</string>
+			<string key="note2.png">{23, 23}</string>
+		</dictionary>
 		<string key="IBCocoaTouchPluginVersion">1181</string>
 	</data>
 </archive>

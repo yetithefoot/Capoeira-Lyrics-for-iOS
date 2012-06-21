@@ -8,6 +8,7 @@
 
 #import "FavouritesViewController.h"
 #import "DetailsViewController.h"
+#import "SongTableViewCell.h"
 
 @interface FavouritesViewController ()
 
@@ -20,7 +21,7 @@
     self = [self initWithNibName:@"FavouritesViewController" bundle:nil];
     if (self) {
         self.title = NSLocalizedString(@"Favorites", @"Favorites");
-        self.tabBarItem.image = [UIImage imageNamed:@"star"];
+        self.tabBarItem.image = [UIImage imageNamed:@"black_heart"];
         
         _songs = [[NSMutableArray alloc]initWithArray:aSongs];
         _filteredSongs = [[NSMutableArray alloc] init];
@@ -47,6 +48,8 @@
     // select tabbar item "Favourites"
     // actually we need select item with name "Favourites"
     [_tabBar setSelectedItem:[_tabBar.items objectAtIndex:1]];
+    [_tableSongs reloadData];
+    [self.searchDisplayController.searchResultsTableView reloadData];
 }
 
 - (void)viewDidUnload
@@ -93,20 +96,18 @@
     }
 }
 
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 60;
+}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath  {
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TextAndImage_fav"];
+    SongTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SongTableViewCell"];
     
     if (cell == nil) {
         
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle 
-                 
-                                       reuseIdentifier:@"TextAndImage_fav"] autorelease];
-        
-        cell.accessoryType = UITableViewCellAccessoryNone;
-        cell.textLabel.font = [UIFont boldSystemFontOfSize:14];
-        cell.backgroundView = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"cell_pattern.png"]]autorelease];
+        NSArray *nibObjects = [[NSBundle mainBundle] loadNibNamed:@"SongTableViewCell" owner:nil options:nil];
+        cell = [nibObjects objectAtIndex:0];
     }
     
     // fill favorite song image
@@ -119,14 +120,24 @@
         song = [_songs objectAtIndex:indexPath.row];
     }
     
-    // set favorite icon
-
-    cell.imageView.image = [UIImage imageNamed:@"star_enabled.png"];
     
-        
-    // fill ui
-    cell.textLabel.text = song.name;
-    cell.detailTextLabel.text = song.artist;
+    [cell setSong:song];
+    
+    // set favorite icon
+    /*if(song.favorite){
+     cell.imageView.image = [UIImage imageNamed:@"star_enabled.png"];
+     }else{
+     cell.imageView.image = [UIImage imageNamed:@"star_disabled.png"];
+     }
+     
+     cell.imageView.userInteractionEnabled = YES;
+     cell.imageView.tag = song.identifier;
+     
+     UITapGestureRecognizer *tapped = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(imageViewClicked:)];
+     tapped.numberOfTapsRequired = 1;
+     [cell.imageView addGestureRecognizer:tapped];   
+     [tapped release];
+     */
     
     return cell;
     

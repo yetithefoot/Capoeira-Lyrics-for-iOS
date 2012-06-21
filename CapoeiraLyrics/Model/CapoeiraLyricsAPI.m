@@ -40,6 +40,7 @@ static CapoeiraLyricsAPI * _instance;
     AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request 
         success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
 
+            
             if(JSON){
 
 #warning check for errors
@@ -51,9 +52,8 @@ static CapoeiraLyricsAPI * _instance;
                 
                 NSData * raw = AFJSONEncode(JSON, NULL);
                 [raw writeToFile:path atomically:NO];
-
                 
-                NSLog(@"http://capoeiralyrics.info/JSONAPI/AllSongs request JSON: %@", JSON );
+                //NSLog(@"http://capoeiralyrics.info/JSONAPI/AllSongs request JSON: %@", JSON );
                 
                 // parse songs from JSON to model objects
                 NSMutableArray * retVal = [NSMutableArray array];
@@ -92,7 +92,7 @@ static CapoeiraLyricsAPI * _instance;
         JSON = AFJSONDecode(data, &error);
     }
     
-    NSLog(@"!!!LOCAL STORAGE AllSongs request JSON: %@", JSON );
+    //NSLog(@"!!!LOCAL STORAGE AllSongs request JSON: %@", JSON );
     
     // parse songs from JSON to model objects
     NSMutableArray * retVal = [NSMutableArray array];
@@ -117,7 +117,7 @@ static CapoeiraLyricsAPI * _instance;
     AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request 
         success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
             
-            NSLog(@"http://capoeiralyrics.info/JSONAPI/Song request JSON: %@", JSON );
+            //NSLog(@"http://capoeiralyrics.info/JSONAPI/Song request JSON: %@", JSON );
             
             Song * song = [Song songWithDictionary:JSON];
             
@@ -144,7 +144,7 @@ static CapoeiraLyricsAPI * _instance;
     AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request 
                                                                                         success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
                                                                                             
-                                                                                            NSLog(@"http://capoeiralyrics.info/JSONAPI/Songount request JSON: %@", JSON );
+                                                                                            //NSLog(@"http://capoeiralyrics.info/JSONAPI/Songount request JSON: %@", JSON );
                                                                                             
                                                                                             if(JSON && [JSON count] > 0){
                                                                                                 int count = [[[JSON allObjects]objectAtIndex:0] intValue];

@@ -13,6 +13,9 @@
 #import "FavouritesViewController.h"
 
 
+#import "SongTableViewCell.h"
+
+
 
 
 @implementation SongsViewController
@@ -38,7 +41,7 @@
     if (self) {
         self.title = NSLocalizedString(@"Songs", @"Songs");
 #warning make retina icons
-        self.tabBarItem.image = [UIImage imageNamed:@"note"];
+        self.tabBarItem.image = [UIImage imageNamed:@"black_heart"];
         _songs = [[NSMutableArray alloc]init];
         _filteredSongs = [[NSMutableArray alloc] init];
         
@@ -222,6 +225,12 @@
 //{
 //    return [[UILocalizedIndexedCollation currentCollation] sectionForSectionIndexTitleAtIndex:index];
 //}
+
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 60;
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
 
@@ -238,17 +247,12 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath  {
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TextAndImage"];
+    SongTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SongTableViewCell"];
     
     if (cell == nil) {
         
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle 
-                 
-                                       reuseIdentifier:@"TextAndImage"] autorelease];
-        
-        cell.accessoryType = UITableViewCellAccessoryNone;
-        cell.textLabel.font = [UIFont boldSystemFontOfSize:14];
-        cell.backgroundView = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"cell_pattern.png"]]autorelease];
+        NSArray *nibObjects = [[NSBundle mainBundle] loadNibNamed:@"SongTableViewCell" owner:nil options:nil];
+        cell = [nibObjects objectAtIndex:0];
     }
     
     // fill favorite song image
@@ -261,8 +265,11 @@
         song = [_songs objectAtIndex:indexPath.row];
     }
     
+    
+    [cell setSong:song];
+    
     // set favorite icon
-    if(song.favorite){
+    /*if(song.favorite){
         cell.imageView.image = [UIImage imageNamed:@"star_enabled.png"];
     }else{
         cell.imageView.image = [UIImage imageNamed:@"star_disabled.png"];
@@ -275,10 +282,7 @@
     tapped.numberOfTapsRequired = 1;
     [cell.imageView addGestureRecognizer:tapped];   
     [tapped release];
-    
-    // fill ui
-    cell.textLabel.text = song.name;
-    cell.detailTextLabel.text = song.artist;
+    */
     
     return cell;
     
