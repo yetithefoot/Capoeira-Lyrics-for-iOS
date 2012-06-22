@@ -315,14 +315,19 @@
 -(void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item{
     if(item == [tabBar.items objectAtIndex:1]){
         
-        UINavigationController * nav = self.navigationController;
-        
-        [nav popToRootViewControllerAnimated:YES];
-        
         NSArray * favedSongs = [Song filterOnlyFavorites:_songs];
-        FavouritesViewController * controller = [[FavouritesViewController alloc] initWithArray:favedSongs];
-        [nav pushViewController: controller animated: YES];
-        [controller release];
+        
+        if([favedSongs count] > 0){
+            UINavigationController * nav = self.navigationController;
+            [nav popToRootViewControllerAnimated:NO];
+        
+            FavouritesViewController * controller = [[FavouritesViewController alloc] initWithArray:favedSongs];
+            [nav pushViewController: controller animated: YES];
+            [controller release];
+        }else{
+            [_tabBar setSelectedItem:[_tabBar.items objectAtIndex:0]];
+            [SVProgressHUD showSuccessWithStatus:NSLocalizedString( @"You have no favorite songs. Check any and try again!", @"") duration:1.5];
+        }
     }
 }
 

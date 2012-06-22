@@ -13,6 +13,8 @@
 #import "TagsView.h"
 
 #define FONT_TEXT_SIZE 16.0
+
+
 @interface DetailsViewController : BaseViewController< TagsViewProtocol,UIActionSheetDelegate, CapoeiraLyricsAPIDelegate> {
     IBOutlet UIScrollView* _scrollView;
     IBOutlet TagsView *_tagsView;
@@ -22,6 +24,13 @@
     IBOutlet UILabel *_labelToolbarArtist;
     Song * _song;
     
+    NSString *TEXT_SHARE_TO_FB;
+    NSString *TEXT_SHARE_TO_TWITTER;
+    NSString *TEXT_MAKE_FAVORITE;
+    NSString *TEXT_UNMAKE_FAVORITE;
+    NSString *TEXT_PLAY_VIDEO;
+    NSString *TEXT_PLAY_AUDIO;
+    NSString *TEXT_CANCEL;
     
 }
 

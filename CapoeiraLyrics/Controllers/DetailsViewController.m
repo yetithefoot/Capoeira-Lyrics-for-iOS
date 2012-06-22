@@ -12,6 +12,8 @@
 #import "SHKFacebook.h"
 #import <Foundation/Foundation.h>
 
+
+
 @interface DetailsViewController ()
 
 @end
@@ -59,6 +61,14 @@
     self = [super initWithNibName:@"DetailsViewController" bundle:nil];
     if (self) {
         _song = [aSong retain];
+        
+        TEXT_SHARE_TO_FB = NSLocalizedString(@"Share to Facebook", @"");
+        TEXT_SHARE_TO_TWITTER = NSLocalizedString(@"Share to Twitter", @"");
+        TEXT_MAKE_FAVORITE = NSLocalizedString(@"Make favorite", @"");
+        TEXT_UNMAKE_FAVORITE = NSLocalizedString(@"Unmake favorite", @"");
+        TEXT_PLAY_VIDEO = NSLocalizedString(@"Open video", @"");
+        //TEXT_PLAY_AUDIO = NSLocalizedString(@"Open audio", @"");
+        TEXT_CANCEL = NSLocalizedString(@"Cancel", @"");
     }
     
     return self;
@@ -68,61 +78,86 @@
     [self goBack:sender];
 }
 
+
+
 - (IBAction)btnActionClicked:(id)sender {
-    NSString * favoriteTitle = self.song.isFavorite?@"Remove from favorites":@"Make favorite";
-    UIActionSheet *popupQuery = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Share to Facebook", @"Share to Twiter", favoriteTitle, nil];
+    UIActionSheet *popupQuery = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:nil destructiveButtonTitle:nil otherButtonTitles: nil];
+    
+    [popupQuery addButtonWithTitle:TEXT_SHARE_TO_FB];
+    [popupQuery addButtonWithTitle:TEXT_SHARE_TO_TWITTER];
+    [popupQuery addButtonWithTitle:(self.song.isFavorite?TEXT_UNMAKE_FAVORITE:TEXT_MAKE_FAVORITE)];
+    if(_song.videoUrl)
+        [popupQuery addButtonWithTitle:TEXT_PLAY_VIDEO];
+    //if(_song.audioUrl)
+    //    [popupQuery addButtonWithTitle:TEXT_PLAY_AUDIO];
+    
+    [popupQuery addButtonWithTitle:TEXT_CANCEL];
+    [popupQuery setCancelButtonIndex:(popupQuery.numberOfButtons-1)];
+    
     
     popupQuery.actionSheetStyle = UIActionSheetStyleBlackOpaque;
     
     [popupQuery showInView:self.view];
     
     [popupQuery release];
-
-    /*// Create the item to share (in this example, a url)
-	NSURL *url = [NSURL URLWithString:@"http://getsharekit.com"];
-	SHKItem *item = [SHKItem URL:url title:@"ShareKit is Awesome!"];
-    
-	// Get the ShareKit action sheet
-	SHKActionSheet *actionSheet = [SHKActionSheet actionSheetForItem:item];
-    
-	// Display the action sheet
-	[actionSheet showInView:self.view];*/
     
 }
 
+- (void)embedYouTube:(NSString *)urlString frame:(CGRect)frame {
+    NSString *embedHTML = @"\
+    <html><head>\
+    <style type=\"text/css\">\
+    body {\
+    background-color: transparent;\
+    color: white;\
+    }\
+    </style>\
+    </head><body style=\"margin:0\">\
+    <embed id=\"yt\" src=\"%@\" type=\"application/x-shockwave-flash\" \
+    width=\"%0.0f\" height=\"%0.0f\"></embed>\
+    </body></html>";
+    NSString *html = [NSString stringWithFormat:embedHTML, urlString, frame.size.width, frame.size.height];
+    UIWebView *videoView = [[UIWebView alloc] initWithFrame:frame];
+    [videoView loadHTMLString:html baseURL:nil];
+    videoView.center = CGPointMake(160, 120);
+    [_scrollView addSubview:videoView];
+    [videoView release];
+}
+
 -(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
-     switch (buttonIndex) {
-         case 0:{
-             // share to fb
-             NSString * urlString = [NSString stringWithFormat:@"http://capoeiralyrics.info/Songs/Details/%d", _song.identifier];
-             NSString * message = [NSString stringWithFormat:@"Just learn %@ capoeira song by %@!", _song.name, _song.artist];
-             NSURL *url = [NSURL URLWithString:urlString];
-             SHKItem *item = [SHKItem URL:url title:message];
-             
-             // Share the item
-             [SHKFacebook shareItem:item];
-             break;
-         }
-         case 1:{
-             // share to twitter
-             NSString * urlString = [NSString stringWithFormat:@"http://capoeiralyrics.info/Songs/Details/%d", _song.identifier];
-             NSString * message = [NSString stringWithFormat:@"Just learn %@ capoeira song by %@!", _song.name, _song.artist];
-             NSURL *url = [NSURL URLWithString:urlString];
-             SHKItem *item = [SHKItem URL:url title:message];
-             
-             // Share the item
-             [SHKTwitter shareItem:item];
-             break;
-         }
-         case 2:{
-             // make song favorite
-             self.song.favorite = !self.song.favorite;
-             break;
-         }
-         case 3:
-             // cancel and hide sheet
-             break;
-     }
+    
+    NSString * btnTitle = [actionSheet buttonTitleAtIndex:buttonIndex];
+    
+    
+    
+    if([btnTitle isEqualToString:TEXT_SHARE_TO_FB]){
+        // share to fb
+        NSString * urlString = [NSString stringWithFormat:@"http://capoeiralyrics.info/Songs/Details/%d", _song.identifier];
+        NSString * message = [NSString stringWithFormat:@"Just learn %@ capoeira song by %@!", _song.name, _song.artist];
+        NSURL *url = [NSURL URLWithString:urlString];
+        SHKItem *item = [SHKItem URL:url title:message];
+
+        // Share the item
+        [SHKFacebook shareItem:item];
+
+    }else if ([btnTitle isEqualToString:TEXT_SHARE_TO_TWITTER]) {
+        // share to twitter
+        NSString * urlString = [NSString stringWithFormat:@"http://capoeiralyrics.info/Songs/Details/%d", _song.identifier];
+        NSString * message = [NSString stringWithFormat:@"Just learn %@ capoeira song by %@!", _song.name, _song.artist];
+        NSURL *url = [NSURL URLWithString:urlString];
+        SHKItem *item = [SHKItem URL:url title:message];
+
+        // Share the item
+        [SHKTwitter shareItem:item];
+    }else if ([btnTitle isEqualToString:TEXT_PLAY_VIDEO]) {
+        // play video
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:_song.videoUrl]];
+    }else if ([btnTitle isEqualToString:TEXT_PLAY_AUDIO]) {
+        // play audio
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:_song.audioUrl]];
+    }else if ([btnTitle isEqualToString:TEXT_MAKE_FAVORITE] || [btnTitle isEqualToString:TEXT_UNMAKE_FAVORITE]) {
+        self.song.favorite = !self.song.favorite;
+    }
      
 }
 
@@ -171,13 +206,6 @@
 {
     [super viewDidLoad];
     
-    // show waiting hud
-    //[SVProgressHUD showWithStatus:@"Loading song..." maskType:SVProgressHUDMaskTypeBlack];
-    // start load songs async
-    //[_api getSong:_song.identifier];
-    
-    
-
     // tune label
     [_labelText setFont:[UIFont systemFontOfSize:FONT_TEXT_SIZE]];
     //[_labelText setLineHeightMultiple:0.7];
@@ -185,6 +213,9 @@
     _labelTitle.text = _song.name;
     _labelToolbarTitle.text = _song.name;
     _labelToolbarArtist.text = _song.artist;
+    
+    //if(_song.videoUrl)
+    //    [self embedYouTube:_song.videoUrl frame:CGRectMake(0, 0, 320, 240)];
     
     [self reloadData];
 }

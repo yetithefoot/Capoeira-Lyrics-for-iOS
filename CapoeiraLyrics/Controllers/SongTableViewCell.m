@@ -81,7 +81,8 @@
     _labelArtist.text = aSong.artist;
     // Custom initialization
     _flag1 = (aSong.isFavorite);
-    _flag2 = ((aSong.audioUrl != nil) && ((CFNullRef)aSong.audioUrl != kCFNull));
+#warning until music links is not absolute - hide audio icon to not frustrate user
+    _flag2 = false;//((aSong.audioUrl != nil) && ((CFNullRef)aSong.audioUrl != kCFNull));
     _flag3 = ((aSong.videoUrl != nil) && ((CFNullRef)aSong.videoUrl  != kCFNull));
     _flag4 = ((aSong.translation != nil) && ((CFNullRef)aSong.translation != kCFNull));
     
