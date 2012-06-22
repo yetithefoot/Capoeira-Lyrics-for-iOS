@@ -32,6 +32,10 @@
 - (void) relayout {
     float y = VERTICAL_MARGIN_1;
     
+    if(!_labelSwipeMessage.hidden){
+        y += _labelSwipeMessage.frame.size.height;
+    }
+    
     [_labelTitle sizeToFit];
     CGRect rect = _labelTitle.bounds;
     _labelTitle.frame = CGRectMake(0, y, 320, rect.size.height);
@@ -163,14 +167,22 @@
 
 
 -(void) reloadData{
+    [self reloadData:YES];
+}
+
+-(void) reloadData: (BOOL) textOrTranslate{
+    
+    // use text or its translation
+    NSString * text = (textOrTranslate?_song.text:_song.translation);
+    
     // prepare text
-    [_labelText setText:_song.text afterInheritingLabelAttributesAndConfiguringWithBlock:^NSMutableAttributedString *(NSMutableAttributedString *mutableAttributedString) {
+    [_labelText setText:text afterInheritingLabelAttributesAndConfiguringWithBlock:^NSMutableAttributedString *(NSMutableAttributedString *mutableAttributedString) {
         
         // find all bold strings
         NSRegularExpression *regex = [[NSRegularExpression alloc] initWithPattern:@"\\[coro\\]([^\\[]+?)\\[\\/coro\\]" 
                                                                           options:NSRegularExpressionCaseInsensitive 
                                                                             error:nil];
-        NSArray *matches = [regex matchesInString:_song.text options:0 range:NSMakeRange(0, _song.text.length)];
+        NSArray *matches = [regex matchesInString:text options:0 range:NSMakeRange(0, text.length)];
         
         // init font
         UIFont *boldSystemFont = [UIFont boldSystemFontOfSize:FONT_TEXT_SIZE];
@@ -181,7 +193,7 @@
             NSLog(@"%d matches found.", matches.count);
             for (NSTextCheckingResult *match in matches) {
                 
-                NSLog(@"match fount: %@", [_song.text substringWithRange:[match rangeAtIndex:1]]);
+                NSLog(@"match fount: %@", [text substringWithRange:[match rangeAtIndex:1]]);
                 
                 [mutableAttributedString removeAttribute:(NSString *)kCTFontAttributeName range:[match rangeAtIndex:1]];
                 [mutableAttributedString addAttribute:(NSString *)kCTFontAttributeName value:(id)boldSystemFont_ct range:[match rangeAtIndex:1]];
@@ -202,9 +214,24 @@
 }
 
 
+-(void) didSwipe:(UISwipeGestureRecognizer *) sender{
+    if(sender.state == UIGestureRecognizerStateEnded){
+        if(sender.direction == UISwipeGestureRecognizerDirectionLeft){
+            _labelText.text = _song.translation;
+            // change label
+            [self reloadData:NO];
+        }else{
+            _labelText.text = _song.text;
+            [self reloadData:YES];
+        }
+    }
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
+    
     
     // tune label
     [_labelText setFont:[UIFont systemFontOfSize:FONT_TEXT_SIZE]];
@@ -216,6 +243,23 @@
     
     //if(_song.videoUrl)
     //    [self embedYouTube:_song.videoUrl frame:CGRectMake(0, 0, 320, 240)];
+    
+    // tune swipes
+    if(_song.translation){
+        _labelSwipeMessage.hidden = NO;
+        UISwipeGestureRecognizer *recognizerSwipeLeft = 
+        [[[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(didSwipe:)] autorelease];
+        recognizerSwipeLeft.direction = UISwipeGestureRecognizerDirectionLeft;
+        [_scrollView addGestureRecognizer:recognizerSwipeLeft];
+        
+        UISwipeGestureRecognizer *recognizerSwipeRight = 
+        [[[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(didSwipe:)] autorelease];
+        recognizerSwipeRight.direction = UISwipeGestureRecognizerDirectionRight;
+        [_scrollView addGestureRecognizer:recognizerSwipeRight];
+    }else {
+        _labelSwipeMessage.hidden = YES;
+    }
+        
     
     [self reloadData];
 }
@@ -230,6 +274,8 @@
     _labelToolbarTitle = nil;
     [_labelToolbarArtist release];
     _labelToolbarArtist = nil;
+    [_labelSwipeMessage release];
+    _labelSwipeMessage = nil;
     [super viewDidUnload];
 
 }
@@ -247,6 +293,7 @@
     [_song release];
     [_labelToolbarTitle release];
     [_labelToolbarArtist release];
+    [_labelSwipeMessage release];
     [super dealloc];
 }
 

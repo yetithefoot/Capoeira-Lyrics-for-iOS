@@ -20,6 +20,7 @@
     IBOutlet TagsView *_tagsView;
     IBOutlet UILabel *_labelTitle;
     IBOutlet TTTAttributedLabel *_labelText;
+    IBOutlet UILabel *_labelSwipeMessage;
     IBOutlet UILabel *_labelToolbarTitle;
     IBOutlet UILabel *_labelToolbarArtist;
     Song * _song;
