@@ -18,11 +18,13 @@
     IBOutlet UIImageView *_imageView2;
     IBOutlet UIImageView *_imageView3;
     IBOutlet UIImageView *_imageView4;
+    IBOutlet UIImageView *_imageView5;
     
     BOOL _flag1;
     BOOL _flag2;
     BOOL _flag3;
-    BOOL _flag4;
+    BOOL _engTextAvailableFlag;
+    BOOL _rusTextAvailableFlag;
 }
 
 

@@ -11,7 +11,7 @@
 @implementation Song
 
 
-@synthesize identifier, name, text, artist, translation, audioUrl, videoUrl;
+@synthesize identifier, name, text, artist, engtext, rustext, audioUrl, videoUrl;
 
 - (id)initWithDictionary:(NSDictionary *)dict
 {
@@ -35,9 +35,13 @@
             if(artistObj && ((CFNullRef)artistObj != kCFNull) && (![artistObj isEqualToString:@""]))
                 self.artist = artistObj;
             
-            id translationObj = [dict objectForKey:@"Translate"];
-            if(translationObj && ((CFNullRef)translationObj != kCFNull) && (![translationObj isEqualToString:@""]))
-                self.translation = translationObj;
+            id engtextObj = [dict objectForKey:@"EngText"];
+            if(engtextObj && ((CFNullRef)engtextObj != kCFNull) && (![engtextObj isEqualToString:@""]))
+                self.engtext = engtextObj;
+            
+            id rustextObj = [dict objectForKey:@"RusText"];
+            if(rustextObj && ((CFNullRef)rustextObj != kCFNull) && (![rustextObj isEqualToString:@""]))
+                self.rustext = rustextObj;
             
             id audioUrlObj = [dict objectForKey:@"AudioUrl"];
             if(audioUrlObj && ((CFNullRef)audioUrlObj != kCFNull) && (![audioUrlObj isEqualToString:@""]))
@@ -96,7 +100,8 @@
     [self.name release];
     [self.text release];
     [self.artist release];
-    [self.translation release];
+    [self.engtext release];
+    [self.rustext release];
     [self.audioUrl release];
     [self.videoUrl release];
     [super dealloc];

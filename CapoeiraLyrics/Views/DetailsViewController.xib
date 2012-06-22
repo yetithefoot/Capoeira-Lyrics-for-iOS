@@ -96,11 +96,11 @@
 										<int key="IBUIBaselineAdjustment">0</int>
 										<float key="IBUIMinimumFontSize">10</float>
 										<int key="IBUITextAlignment">1</int>
-										<object class="IBUIFontDescription" key="IBUIFontDescription" id="560608130">
+										<object class="IBUIFontDescription" key="IBUIFontDescription" id="158658749">
 											<int key="type">1</int>
 											<double key="pointSize">13</double>
 										</object>
-										<object class="NSFont" key="IBUIFont" id="105980002">
+										<object class="NSFont" key="IBUIFont" id="453851899">
 											<string key="NSName">Helvetica</string>
 											<double key="NSSize">13</double>
 											<int key="NSfFlags">16</int>
@@ -157,7 +157,7 @@
 								<int key="NSvFlags">306</int>
 								<string key="NSFrameSize">{320, 69}</string>
 								<reference key="NSSuperview" ref="700824131"/>
-								<reference key="NSNextKeyView" ref="552030390"/>
+								<reference key="NSNextKeyView" ref="463689356"/>
 								<string key="NSReuseIdentifierKey">_NS:328</string>
 								<reference key="IBUIBackgroundColor" ref="1039018949"/>
 								<bool key="IBUIOpaque">NO</bool>
@@ -225,7 +225,6 @@
 								<int key="NSvFlags">-2147483380</int>
 								<string key="NSFrame">{{0, 365}, {320, 50}}</string>
 								<reference key="NSSuperview" ref="700824131"/>
-								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:196</string>
 								<object class="NSColor" key="IBUIBackgroundColor">
 									<int key="NSColorSpace">2</int>
@@ -235,7 +234,7 @@
 								<int key="IBUIContentMode">3</int>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 							</object>
-							<object class="IBUILabel" id="552030390">
+							<object class="IBUILabel" id="463689356">
 								<reference key="NSNextResponder" ref="700824131"/>
 								<int key="NSvFlags">292</int>
 								<string key="NSFrameSize">{320, 21}</string>
@@ -261,8 +260,8 @@
 								<int key="IBUIBaselineAdjustment">0</int>
 								<float key="IBUIMinimumFontSize">10</float>
 								<int key="IBUITextAlignment">1</int>
-								<reference key="IBUIFontDescription" ref="560608130"/>
-								<reference key="IBUIFont" ref="105980002"/>
+								<reference key="IBUIFontDescription" ref="158658749"/>
+								<reference key="IBUIFont" ref="453851899"/>
 								<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
 							</object>
 						</array>
@@ -349,7 +348,7 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">_labelSwipeMessage</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="552030390"/>
+						<reference key="destination" ref="463689356"/>
 					</object>
 					<int key="connectionID">44</int>
 				</object>
@@ -405,7 +404,7 @@
 							<reference ref="1040790619"/>
 							<reference ref="616811481"/>
 							<reference ref="322685729"/>
-							<reference ref="552030390"/>
+							<reference ref="463689356"/>
 						</array>
 						<reference key="parent" ref="6081513"/>
 					</object>
@@ -474,7 +473,7 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">43</int>
-						<reference key="object" ref="552030390"/>
+						<reference key="object" ref="463689356"/>
 						<reference key="parent" ref="700824131"/>
 					</object>
 				</array>

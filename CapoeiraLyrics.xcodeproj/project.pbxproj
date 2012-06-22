@@ -60,6 +60,8 @@
 		D084A6EE15935671001EB071 /* logo_uca.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6ED15935671001EB071 /* logo_uca.png */; };
 		D084A6F01593589E001EB071 /* logo_mundo.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6EF1593589E001EB071 /* logo_mundo.png */; };
 		D084A6F61593704D001EB071 /* PlaceholderTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D084A6F51593704D001EB071 /* PlaceholderTableView.m */; };
+		D084A6F91594CB96001EB071 /* ru.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6F71594CB95001EB071 /* ru.png */; };
+		D084A6FA1594CB96001EB071 /* us.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6F81594CB96001EB071 /* us.png */; };
 		D08DB9B9157F4EBE00994BDC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08DB9B8157F4EBE00994BDC /* UIKit.framework */; };
 		D08DB9BB157F4EBE00994BDC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08DB9BA157F4EBE00994BDC /* Foundation.framework */; };
 		D08DB9BD157F4EBE00994BDC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08DB9BC157F4EBE00994BDC /* CoreGraphics.framework */; };
@@ -140,6 +142,8 @@
 		D084A6EF1593589E001EB071 /* logo_mundo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_mundo.png; sourceTree = "<group>"; };
 		D084A6F41593704D001EB071 /* PlaceholderTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceholderTableView.h; sourceTree = "<group>"; };
 		D084A6F51593704D001EB071 /* PlaceholderTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceholderTableView.m; sourceTree = "<group>"; };
+		D084A6F71594CB95001EB071 /* ru.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ru.png; sourceTree = "<group>"; };
+		D084A6F81594CB96001EB071 /* us.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = us.png; sourceTree = "<group>"; };
 		D08DB9B4157F4EBE00994BDC /* CapoeiraLyrics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CapoeiraLyrics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D08DB9B8157F4EBE00994BDC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D08DB9BA157F4EBE00994BDC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -237,6 +241,8 @@
 		D07E1829157F8BFD00AA5987 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				D084A6F71594CB95001EB071 /* ru.png */,
+				D084A6F81594CB96001EB071 /* us.png */,
 				D084A6DA1593429A001EB071 /* Logos */,
 				D084A6DC1593429A001EB071 /* star-1.png */,
 				D084A6D81593297F001EB071 /* black_heart.png */,
@@ -464,6 +470,8 @@
 				D084A6EC15935050001EB071 /* logo_sementedojogodeangola.png in Resources */,
 				D084A6EE15935671001EB071 /* logo_uca.png in Resources */,
 				D084A6F01593589E001EB071 /* logo_mundo.png in Resources */,
+				D084A6F91594CB96001EB071 /* ru.png in Resources */,
+				D084A6FA1594CB96001EB071 /* us.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -574,6 +582,7 @@
 				GCC_PREFIX_HEADER = "CapoeiraLyrics/CapoeiraLyrics-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "CapoeiraLyrics/CapoeiraLyrics-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = app;
@@ -589,6 +598,7 @@
 				GCC_PREFIX_HEADER = "CapoeiraLyrics/CapoeiraLyrics-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "CapoeiraLyrics/CapoeiraLyrics-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = app;

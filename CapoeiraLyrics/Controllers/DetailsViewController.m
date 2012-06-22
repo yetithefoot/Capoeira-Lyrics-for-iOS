@@ -173,7 +173,7 @@
 -(void) reloadData: (BOOL) textOrTranslate{
     
     // use text or its translation
-    NSString * text = (textOrTranslate?_song.text:_song.translation);
+    NSString * text = (textOrTranslate?_song.text:_song.engtext);
     
     // prepare text
     [_labelText setText:text afterInheritingLabelAttributesAndConfiguringWithBlock:^NSMutableAttributedString *(NSMutableAttributedString *mutableAttributedString) {
@@ -217,11 +217,11 @@
 -(void) didSwipe:(UISwipeGestureRecognizer *) sender{
     if(sender.state == UIGestureRecognizerStateEnded){
         if(sender.direction == UISwipeGestureRecognizerDirectionLeft){
-            _labelText.text = _song.translation;
-            // change label
+            _labelText.text = _song.engtext;
             [self reloadData:NO];
         }else{
             _labelText.text = _song.text;
+
             [self reloadData:YES];
         }
     }
@@ -245,7 +245,7 @@
     //    [self embedYouTube:_song.videoUrl frame:CGRectMake(0, 0, 320, 240)];
     
     // tune swipes
-    if(_song.translation){
+    if(_song.engtext){
         _labelSwipeMessage.hidden = NO;
         UISwipeGestureRecognizer *recognizerSwipeLeft = 
         [[[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(didSwipe:)] autorelease];

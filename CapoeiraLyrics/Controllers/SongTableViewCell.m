@@ -55,7 +55,8 @@
     _imageView1.hidden = !_flag1;
     _imageView2.hidden = !_flag2;
     _imageView3.hidden = !_flag3;
-    _imageView4.hidden = !_flag4;
+    _imageView4.hidden = !_engTextAvailableFlag;
+    _imageView5.hidden = !_rusTextAvailableFlag;
     
     
     // relayout this icons
@@ -63,13 +64,19 @@
         _imageView2.frame = CGRectMake(_imageView2.frame.origin.x-26, 40, 16, 16);
         _imageView3.frame = CGRectMake(_imageView3.frame.origin.x-26, 40, 16, 16);
         _imageView4.frame = CGRectMake(_imageView4.frame.origin.x-26, 40, 16, 16);
+        _imageView5.frame = CGRectMake(_imageView5.frame.origin.x-26, 40, 16, 16);
     }
     if (_imageView2.hidden) {
         _imageView3.frame = CGRectMake(_imageView3.frame.origin.x-26, 40, 16, 16);
         _imageView4.frame = CGRectMake(_imageView4.frame.origin.x-26, 40, 16, 16);
+        _imageView5.frame = CGRectMake(_imageView5.frame.origin.x-26, 40, 16, 16);
     }
     if (_imageView3.hidden) {
         _imageView4.frame = CGRectMake(_imageView4.frame.origin.x-26, 40, 16, 16);
+        _imageView5.frame = CGRectMake(_imageView5.frame.origin.x-26, 40, 16, 16);
+    }
+    if (_imageView4.hidden) {
+        _imageView5.frame = CGRectMake(_imageView5.frame.origin.x-26, 40, 16, 16);
     }
 
     
@@ -84,7 +91,8 @@
 #warning until music links is not absolute - hide audio icon to not frustrate user
     _flag2 = false;//((aSong.audioUrl != nil) && ((CFNullRef)aSong.audioUrl != kCFNull));
     _flag3 = ((aSong.videoUrl != nil) && ((CFNullRef)aSong.videoUrl  != kCFNull));
-    _flag4 = ((aSong.translation != nil) && ((CFNullRef)aSong.translation != kCFNull));
+    _engTextAvailableFlag = ((aSong.engtext != nil) && ((CFNullRef)aSong.engtext != kCFNull));
+    _rusTextAvailableFlag = ((aSong.rustext != nil) && ((CFNullRef)aSong.rustext != kCFNull));
     
     _imageViewLogo.image = [self cellImageForSong:aSong];
     
@@ -133,7 +141,6 @@
         return [UIImage imageNamed:@"logo_mundo"];
     }
     
-    
     return [UIImage imageNamed:@"logo_default"];
 }
 
@@ -145,6 +152,7 @@
     [_imageView2 release];
     [_imageView3 release];
     [_imageView4 release];
+    [_imageView5 release];
     [super dealloc];
 }
 @end

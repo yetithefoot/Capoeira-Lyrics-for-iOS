@@ -48,11 +48,13 @@
     [self.window makeKeyAndVisible];
     
     // colorize elements
-    UIColor * mainTintColor = [UIColor colorWithRed:0.0915 green:0.4354 blue:0.2077 alpha:1.0000];
-    [[UINavigationBar appearance] setTintColor:mainTintColor];   
-    [[UITabBar appearance] setTintColor:mainTintColor];
-    [[UIToolbar appearance] setTintColor:mainTintColor];
-    [[UISearchBar appearance] setTintColor:mainTintColor];
+    if ([[UIView class] respondsToSelector:@selector(appearance)]) {
+        UIColor * mainTintColor = [UIColor colorWithRed:0.0915 green:0.4354 blue:0.2077 alpha:1.0000];
+        [[UINavigationBar appearance] setTintColor:mainTintColor];   
+        [[UITabBar appearance] setTintColor:mainTintColor];
+        [[UIToolbar appearance] setTintColor:mainTintColor];
+        [[UISearchBar appearance] setTintColor:mainTintColor];
+    }
     
     //[[UITableView appearance] setSeparatorColor:[UIColor colorWithRed:0.9935 green:0.7753 blue:0.1646 alpha:1.0000]];
     //[[UILabel appearanceWhenContainedIn:[UITableViewCell class], nil] setColor:[UIColor colorWithRed:0.1842 green:0.1728 blue:0.5107 alpha:1.0000]];
