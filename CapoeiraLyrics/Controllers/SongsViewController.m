@@ -74,6 +74,7 @@
 		
 		EGORefreshTableHeaderView *view = [[EGORefreshTableHeaderView alloc] initWithFrame:CGRectMake(0.0f, 0.0f - _tableSongs.bounds.size.height, self.view.frame.size.width, _tableSongs.bounds.size.height)];
 		view.delegate = self;
+        view.backgroundColor = [UIColor clearColor];
 		[_tableSongs addSubview:view];
 		_refreshHeaderView = view;
 		[view release];
@@ -409,7 +410,7 @@
 }
 
 -(void)songsCountDidLoad:(NSNumber *)count{
-    if([count intValue] > 1500){
+    if([count intValue] > [_songs count]){
         UIAlertView * alert = [[UIAlertView alloc]initWithTitle:@"Updates" message:@"New songs updates available! Do you want load them?" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Download", nil];
         [alert show];
         [alert release];

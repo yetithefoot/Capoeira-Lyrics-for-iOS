@@ -1,4 +1,4 @@
-PODS_ROOT = $(SRCROOT)/Pods
-ALWAYS_SEARCH_USER_PATHS = YES
-HEADER_SEARCH_PATHS = "$(PODS_ROOT)/Headers" "$(PODS_ROOT)/Headers/AFNetworking" "$(PODS_ROOT)/Headers/EGOTableViewPullRefresh" "$(PODS_ROOT)/Headers/Facebook-iOS-SDK" "$(PODS_ROOT)/Headers/JSONKit" "$(PODS_ROOT)/Headers/Reachability" "$(PODS_ROOT)/Headers/SBJson" "$(PODS_ROOT)/Headers/SSKeychain" "$(PODS_ROOT)/Headers/SVProgressHUD" "$(PODS_ROOT)/Headers/ShareKit" "$(PODS_ROOT)/Headers/TTTAttributedLabel"
 OTHER_LDFLAGS = -ObjC -all_load -framework SystemConfiguration -framework QuartzCore -framework SystemConfiguration -framework Security -framework QuartzCore -framework SystemConfiguration -framework Security -framework MessageUI -framework Twitter
+HEADER_SEARCH_PATHS = "$(PODS_ROOT)/Headers" "$(PODS_ROOT)/Headers/AFNetworking" "$(PODS_ROOT)/Headers/EGOTableViewPullRefresh" "$(PODS_ROOT)/Headers/Facebook-iOS-SDK" "$(PODS_ROOT)/Headers/JSONKit" "$(PODS_ROOT)/Headers/Reachability" "$(PODS_ROOT)/Headers/SBJson" "$(PODS_ROOT)/Headers/SSKeychain" "$(PODS_ROOT)/Headers/SVProgressHUD" "$(PODS_ROOT)/Headers/ShareKit" "$(PODS_ROOT)/Headers/TTTAttributedLabel"
+ALWAYS_SEARCH_USER_PATHS = YES
+PODS_ROOT = $(SRCROOT)/Pods

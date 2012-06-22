@@ -48,9 +48,23 @@
     // select tabbar item "Favourites"
     // actually we need select item with name "Favourites"
     [_tabBar setSelectedItem:[_tabBar.items objectAtIndex:1]];
+    
+    // remove all non favorite items from songs arrays
+    for (Song * song in _songs) {
+        if(!song.isFavorite)
+            [_songs removeObject:song];
+    }
+    
+    for (Song * song in _filteredSongs) {
+        if(!song.isFavorite)
+            [_filteredSongs removeObject:song];
+    }
+    
+    
     [_tableSongs reloadData];
     [self.searchDisplayController.searchResultsTableView reloadData];
 }
+
 
 - (void)viewDidUnload
 {

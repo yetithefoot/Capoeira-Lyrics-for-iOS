@@ -59,6 +59,7 @@
 		D084A6EC15935050001EB071 /* logo_sementedojogodeangola.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6EA15935050001EB071 /* logo_sementedojogodeangola.png */; };
 		D084A6EE15935671001EB071 /* logo_uca.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6ED15935671001EB071 /* logo_uca.png */; };
 		D084A6F01593589E001EB071 /* logo_mundo.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6EF1593589E001EB071 /* logo_mundo.png */; };
+		D084A6F61593704D001EB071 /* PlaceholderTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D084A6F51593704D001EB071 /* PlaceholderTableView.m */; };
 		D08DB9B9157F4EBE00994BDC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08DB9B8157F4EBE00994BDC /* UIKit.framework */; };
 		D08DB9BB157F4EBE00994BDC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08DB9BA157F4EBE00994BDC /* Foundation.framework */; };
 		D08DB9BD157F4EBE00994BDC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08DB9BC157F4EBE00994BDC /* CoreGraphics.framework */; };
@@ -137,6 +138,8 @@
 		D084A6EA15935050001EB071 /* logo_sementedojogodeangola.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_sementedojogodeangola.png; sourceTree = "<group>"; };
 		D084A6ED15935671001EB071 /* logo_uca.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_uca.png; sourceTree = "<group>"; };
 		D084A6EF1593589E001EB071 /* logo_mundo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_mundo.png; sourceTree = "<group>"; };
+		D084A6F41593704D001EB071 /* PlaceholderTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceholderTableView.h; sourceTree = "<group>"; };
+		D084A6F51593704D001EB071 /* PlaceholderTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceholderTableView.m; sourceTree = "<group>"; };
 		D08DB9B4157F4EBE00994BDC /* CapoeiraLyrics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CapoeiraLyrics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D08DB9B8157F4EBE00994BDC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D08DB9BA157F4EBE00994BDC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -274,6 +277,8 @@
 				D07E182F157F8BFD00AA5987 /* SongsViewController.xib */,
 				D07E1830157F8BFD00AA5987 /* FavouritesViewController.xib */,
 				D084A6D6159314BD001EB071 /* SongTableViewCell.xib */,
+				D084A6F41593704D001EB071 /* PlaceholderTableView.h */,
+				D084A6F51593704D001EB071 /* PlaceholderTableView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -499,6 +504,7 @@
 				D0B83F291588B4320075C2F0 /* Tag.m in Sources */,
 				D030C42615908C9700C85548 /* CapoeiraLyricsSHKConfigurator.m in Sources */,
 				D084A6D515931486001EB071 /* SongTableViewCell.m in Sources */,
+				D084A6F61593704D001EB071 /* PlaceholderTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
