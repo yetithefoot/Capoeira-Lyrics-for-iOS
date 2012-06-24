@@ -82,6 +82,10 @@
     
 }
 
+-(BOOL)canBecomeFirstResponder{
+    return YES;
+}
+
 
 -(void) setSong:(Song *)aSong{
     _labelName.text = aSong.name;

@@ -183,30 +183,72 @@
     return YES;
 }
 
--(void)imageViewClicked :(id) sender
-{
-    UITapGestureRecognizer *gesture = (UITapGestureRecognizer *) sender;
-    NSLog(@"cell wants to be favorite, index = %d", gesture.view.tag);
-    
+-(Song *)getSongByIdentifier:(int) identifier{
     // find index of song clicked by id stored into tag
     NSUInteger found = [_songs indexOfObjectPassingTest:^(id element, NSUInteger idx, BOOL * stop){
         
         Song * song = (Song*)element;
         
-        *stop = (song.identifier == gesture.view.tag);
+        *stop = (song.identifier == identifier);
         return *stop;
     }];
     
-    
-    
-    // Get stack if found or set square back to its original center
     if (found != NSNotFound){
-        Song * song = [_songs objectAtIndex:found];
+        return [_songs objectAtIndex:found];
+    }
+    
+    return nil;
+}
+
+
+
+int __lastClickedCell = -1;
+
+-(void) makeFavorite:(id) sender{
+    Song * song = [self getSongByIdentifier:__lastClickedCell];
+    
+    if(song){
         BOOL isFavorite = song.favorite;
         song.favorite = !isFavorite;
         
         [_tableSongs reloadData]; //reload main table
         [self.searchDisplayController.searchResultsTableView reloadData]; //reload table under search context (All, Text, Name, Artist etc.)
+    }    
+    
+}
+
+-(void) openVideo:(id) sender{
+    
+    Song * song = [self getSongByIdentifier:__lastClickedCell];
+    
+    if(song && song.videoUrl){
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:song.videoUrl]];
+    }
+}
+
+
+-(void)cellLongPressed :(UILongPressGestureRecognizer *) sender
+{
+    if(sender.state == UIGestureRecognizerStateBegan){
+        
+        Song * song = [self getSongByIdentifier:sender.view.tag];
+        
+        if(song){
+            __lastClickedCell = sender.view.tag;
+            [sender.view.superview becomeFirstResponder];
+            
+            UIMenuController * menu = [UIMenuController sharedMenuController];
+            
+            UIMenuItem * itemFavorite = [[[UIMenuItem alloc]initWithTitle:((song.favorite)?@"Unmake favorite":@"Make favorite") action:@selector(makeFavorite:)] autorelease];
+            UIMenuItem * itemPlayVideo = nil;
+            if(song.videoUrl)
+                itemPlayVideo = [[[UIMenuItem alloc]initWithTitle:@"Play video" action:@selector(openVideo:)] autorelease];
+            
+            [menu setMenuItems:[NSArray arrayWithObjects:itemFavorite, itemPlayVideo, nil]];
+            [menu setTargetRect:sender.view.frame inView:sender.view.superview];
+            [menu setMenuVisible:YES animated:YES];
+        }
+        
     }
 }
 
@@ -271,20 +313,13 @@
     [cell setSong:song];
     
     // set favorite icon
-    /*if(song.favorite){
-        cell.imageView.image = [UIImage imageNamed:@"star_enabled.png"];
-    }else{
-        cell.imageView.image = [UIImage imageNamed:@"star_disabled.png"];
-    }
+
+    cell.contentView.tag = song.identifier;
     
-    cell.imageView.userInteractionEnabled = YES;
-    cell.imageView.tag = song.identifier;
+    UILongPressGestureRecognizer *longpressed = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(cellLongPressed:)];
+    [cell.contentView addGestureRecognizer:longpressed];   
+    [longpressed release];
     
-    UITapGestureRecognizer *tapped = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(imageViewClicked:)];
-    tapped.numberOfTapsRequired = 1;
-    [cell.imageView addGestureRecognizer:tapped];   
-    [tapped release];
-    */
     
     return cell;
     
