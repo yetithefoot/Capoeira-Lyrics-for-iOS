@@ -224,6 +224,7 @@
 
 -(void) didSwipe:(UISwipeGestureRecognizer *) sender{
     if(sender.state == UIGestureRecognizerStateEnded){
+        
         if(sender.direction == UISwipeGestureRecognizerDirectionLeft){
             if((_labelText.tag == ORIG_TEXT) && (_song.engtext)){
                 _labelText.text = _song.engtext;
@@ -260,7 +261,27 @@
             
             [self reloadData:_labelText.tag];
         }
+        
+        [self refreshSwipeMessageByTag:_labelText.tag];
     }
+}
+
+-(void) refreshSwipeMessageByTag:(int) tag{
+    
+    NSString *leftAvailable = @"← Swipe to select language";
+    NSString *bothAvailable = @"← Swipe to select language →";
+    NSString *rightAvailable = @"Swipe to select language →";
+    
+    if(tag == ORIG_TEXT && (_song.engtext || _song.rustext))
+        _labelSwipeMessage.text = rightAvailable;
+    else if(tag == ENG_TEXT && _song.text && _song.rustext)
+        _labelSwipeMessage.text = bothAvailable;
+    else if(tag == ENG_TEXT && _song.text && !_song.rustext)
+        _labelSwipeMessage.text = leftAvailable;
+    else if(tag == ENG_TEXT && !_song.text && _song.rustext)
+        _labelSwipeMessage.text = rightAvailable;
+    else if(tag == RUS_TEXT && (_song.text || _song.engtext))
+        _labelSwipeMessage.text = leftAvailable;
 }
 
 - (void)viewDidLoad
@@ -271,6 +292,7 @@
     
     // tune label
     _labelText.tag = ORIG_TEXT; // original text flag
+    [self refreshSwipeMessageByTag:_labelText.tag];
     [_labelText setFont:[UIFont systemFontOfSize:FONT_TEXT_SIZE]];
     //[_labelText setLineHeightMultiple:0.7];
     

@@ -63,6 +63,7 @@
     
     [_tableSongs reloadData];
     [self.searchDisplayController.searchResultsTableView reloadData];
+
 }
 
 

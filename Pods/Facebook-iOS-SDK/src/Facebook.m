@@ -236,7 +236,7 @@ static void *finishedContext = @"finishedContext";
   // If the Facebook app isn't installed or it doesn't support
   // the fbauth:// URL scheme, fall back on Safari for obtaining the access token.
   // This minimizes the chance that the user will have to enter his or
-  // her credentials in order to authorize the application.
+  // her credentials in order to authorize the application.x
   BOOL didOpenOtherApp = NO;
   UIDevice *device = [UIDevice currentDevice];
   if ([device respondsToSelector:@selector(isMultitaskingSupported)] && [device isMultitaskingSupported]) {

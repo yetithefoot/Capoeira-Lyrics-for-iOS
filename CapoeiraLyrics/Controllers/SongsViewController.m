@@ -93,9 +93,9 @@
     
     [_api getAllSongsFullFromLocalStorage];
     
-    
-
-    [_api getSongsCount];
+    // check for new items if check
+    if([Configuration checkForUpdatesAtStart])
+        [_api getSongsCount];
     
 }
 
@@ -248,7 +248,6 @@ int __lastClickedCell = -1;
             [menu setTargetRect:sender.view.frame inView:sender.view.superview];
             [menu setMenuVisible:YES animated:YES];
         }
-        
     }
 }
 

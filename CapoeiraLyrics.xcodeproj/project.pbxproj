@@ -62,6 +62,75 @@
 		D084A6F61593704D001EB071 /* PlaceholderTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D084A6F51593704D001EB071 /* PlaceholderTableView.m */; };
 		D084A6F91594CB96001EB071 /* ru.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6F71594CB95001EB071 /* ru.png */; };
 		D084A6FA1594CB96001EB071 /* us.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6F81594CB96001EB071 /* us.png */; };
+		D084A70015976097001EB071 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D08DB9C4157F4EBE00994BDC /* main.m */; };
+		D084A70115976097001EB071 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D08DB9C8157F4EBE00994BDC /* AppDelegate.m */; };
+		D084A70215976097001EB071 /* SongsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D07E1824157F8BFD00AA5987 /* SongsViewController.m */; };
+		D084A70315976097001EB071 /* FavouritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D07E1826157F8BFD00AA5987 /* FavouritesViewController.m */; };
+		D084A70415976097001EB071 /* Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = D0114E7D15851BEB00D27777 /* Configuration.m */; };
+		D084A70515976097001EB071 /* CapoeiraLyricsAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = D0114E8115851E5100D27777 /* CapoeiraLyricsAPI.m */; };
+		D084A70615976097001EB071 /* Song.m in Sources */ = {isa = PBXBuildFile; fileRef = D0114E8415851FAC00D27777 /* Song.m */; };
+		D084A70715976097001EB071 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0114E871585241500D27777 /* BaseViewController.m */; };
+		D084A70815976097001EB071 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0114E8F1585297800D27777 /* DetailsViewController.m */; };
+		D084A70915976097001EB071 /* TagsView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B83F251588B3B70075C2F0 /* TagsView.m */; };
+		D084A70A15976097001EB071 /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B83F281588B4320075C2F0 /* Tag.m */; };
+		D084A70B15976097001EB071 /* CapoeiraLyricsSHKConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = D030C42515908C9700C85548 /* CapoeiraLyricsSHKConfigurator.m */; };
+		D084A70C15976097001EB071 /* SongTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D084A6D415931486001EB071 /* SongTableViewCell.m */; };
+		D084A70D15976097001EB071 /* PlaceholderTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D084A6F51593704D001EB071 /* PlaceholderTableView.m */; };
+		D084A70F15976097001EB071 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D030C42215908A0400C85548 /* MessageUI.framework */; };
+		D084A71015976097001EB071 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D030C420159089FC00C85548 /* SystemConfiguration.framework */; };
+		D084A71115976097001EB071 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D030C41D159089F600C85548 /* Security.framework */; };
+		D084A71215976097001EB071 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B83F2E1588BA890075C2F0 /* CoreText.framework */; };
+		D084A71315976097001EB071 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08DB9B8157F4EBE00994BDC /* UIKit.framework */; };
+		D084A71415976097001EB071 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08DB9BA157F4EBE00994BDC /* Foundation.framework */; };
+		D084A71515976097001EB071 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08DB9BC157F4EBE00994BDC /* CoreGraphics.framework */; };
+		D084A71615976097001EB071 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35E8594728BF4B41AECDDE16 /* libPods.a */; };
+		D084A71815976097001EB071 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D08DB9C1157F4EBE00994BDC /* InfoPlist.strings */; };
+		D084A71915976097001EB071 /* SongsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D07E182F157F8BFD00AA5987 /* SongsViewController.xib */; };
+		D084A71A15976097001EB071 /* FavouritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D07E1830157F8BFD00AA5987 /* FavouritesViewController.xib */; };
+		D084A71B15976097001EB071 /* group.png in Resources */ = {isa = PBXBuildFile; fileRef = D07E1839157F8D4F00AA5987 /* group.png */; };
+		D084A71C15976097001EB071 /* microphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D07E183A157F8D4F00AA5987 /* microphone.png */; };
+		D084A71D15976097001EB071 /* note.png in Resources */ = {isa = PBXBuildFile; fileRef = D07E183B157F8D4F00AA5987 /* note.png */; };
+		D084A71E15976097001EB071 /* note2.png in Resources */ = {isa = PBXBuildFile; fileRef = D07E183C157F8D4F00AA5987 /* note2.png */; };
+		D084A71F15976097001EB071 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = D07E183D157F8D4F00AA5987 /* user.png */; };
+		D084A72015976097001EB071 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = D07E1843157F8F3F00AA5987 /* background.png */; };
+		D084A72115976097001EB071 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D07E1847157F916F00AA5987 /* Default.png */; };
+		D084A72215976097001EB071 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D07E1848157F916F00AA5987 /* Default@2x.png */; };
+		D084A72315976097001EB071 /* cell_pattern.png in Resources */ = {isa = PBXBuildFile; fileRef = D07E184F157F9FDB00AA5987 /* cell_pattern.png */; };
+		D084A72415976097001EB071 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = D0114E89158528DC00D27777 /* star.png */; };
+		D084A72515976097001EB071 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0114E93158529A400D27777 /* DetailsViewController.xib */; };
+		D084A72615976097001EB071 /* star_disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = D0CD6030158A4FFE00EB7502 /* star_disabled.png */; };
+		D084A72715976097001EB071 /* star_enabled.png in Resources */ = {isa = PBXBuildFile; fileRef = D0CD6031158A4FFE00EB7502 /* star_enabled.png */; };
+		D084A72815976097001EB071 /* GetAllSongsFull.json in Resources */ = {isa = PBXBuildFile; fileRef = D030C4281590E62500C85548 /* GetAllSongsFull.json */; };
+		D084A72915976097001EB071 /* black_globe.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6A815924718001EB071 /* black_globe.png */; };
+		D084A72A15976097001EB071 /* black_note.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6A915924718001EB071 /* black_note.png */; };
+		D084A72B15976097001EB071 /* black_star.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6AA15924718001EB071 /* black_star.png */; };
+		D084A72C15976097001EB071 /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6AB15924718001EB071 /* heart.png */; };
+		D084A72D15976097001EB071 /* noun_speaker.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6AE15924718001EB071 /* noun_speaker.png */; };
+		D084A72E15976097001EB071 /* noun_speaker@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6AF15924718001EB071 /* noun_speaker@2x.png */; };
+		D084A72F15976097001EB071 /* noun_video.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6B015924718001EB071 /* noun_video.png */; };
+		D084A73015976097001EB071 /* noun_video@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6B115924718001EB071 /* noun_video@2x.png */; };
+		D084A73115976097001EB071 /* translate.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6BD159248C6001EB071 /* translate.png */; };
+		D084A73215976097001EB071 /* translate@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6BE159248C6001EB071 /* translate@2x.png */; };
+		D084A73315976097001EB071 /* film.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6C41593133D001EB071 /* film.png */; };
+		D084A73415976097001EB071 /* locale-alternate.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6C51593133D001EB071 /* locale-alternate.png */; };
+		D084A73515976097001EB071 /* music-beam.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6C61593133D001EB071 /* music-beam.png */; };
+		D084A73615976097001EB071 /* userhead.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6C71593133D001EB071 /* userhead.png */; };
+		D084A73715976097001EB071 /* SongTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D084A6D6159314BD001EB071 /* SongTableViewCell.xib */; };
+		D084A73815976097001EB071 /* black_heart.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6D81593297F001EB071 /* black_heart.png */; };
+		D084A73915976097001EB071 /* star-1.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6DC1593429A001EB071 /* star-1.png */; };
+		D084A73A15976097001EB071 /* logo_cdo.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6DF15934621001EB071 /* logo_cdo.png */; };
+		D084A73B15976097001EB071 /* logo_default.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6E015934621001EB071 /* logo_default.png */; };
+		D084A73C15976097001EB071 /* logo_axe.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6E3159347BA001EB071 /* logo_axe.png */; };
+		D084A73D15976097001EB071 /* logo_abada.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6E515934993001EB071 /* logo_abada.png */; };
+		D084A73E15976097001EB071 /* logo_muzenza.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6E715934B3A001EB071 /* logo_muzenza.png */; };
+		D084A73F15976097001EB071 /* logo_gerais.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6E915935050001EB071 /* logo_gerais.png */; };
+		D084A74015976097001EB071 /* logo_sementedojogodeangola.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6EA15935050001EB071 /* logo_sementedojogodeangola.png */; };
+		D084A74115976097001EB071 /* logo_uca.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6ED15935671001EB071 /* logo_uca.png */; };
+		D084A74215976097001EB071 /* logo_mundo.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6EF1593589E001EB071 /* logo_mundo.png */; };
+		D084A74315976097001EB071 /* ru.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6F71594CB95001EB071 /* ru.png */; };
+		D084A74415976097001EB071 /* us.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6F81594CB96001EB071 /* us.png */; };
+		D084A74D15977052001EB071 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D084A74C15977052001EB071 /* Settings.bundle */; };
+		D084A74E15977052001EB071 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D084A74C15977052001EB071 /* Settings.bundle */; };
 		D08DB9B9157F4EBE00994BDC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08DB9B8157F4EBE00994BDC /* UIKit.framework */; };
 		D08DB9BB157F4EBE00994BDC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08DB9BA157F4EBE00994BDC /* Foundation.framework */; };
 		D08DB9BD157F4EBE00994BDC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08DB9BC157F4EBE00994BDC /* CoreGraphics.framework */; };
@@ -144,7 +213,10 @@
 		D084A6F51593704D001EB071 /* PlaceholderTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceholderTableView.m; sourceTree = "<group>"; };
 		D084A6F71594CB95001EB071 /* ru.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ru.png; sourceTree = "<group>"; };
 		D084A6F81594CB96001EB071 /* us.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = us.png; sourceTree = "<group>"; };
-		D08DB9B4157F4EBE00994BDC /* CapoeiraLyrics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CapoeiraLyrics.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D084A74915976097001EB071 /* CapoLyrics Lite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CapoLyrics Lite.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D084A74B15976098001EB071 /* CapoeiraLyrics Lite-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "CapoeiraLyrics Lite-Info.plist"; path = "/Users/yeti/Developer/Projects/Capoeira-Lyrics-for-iOS/CapoeiraLyrics Lite-Info.plist"; sourceTree = "<absolute>"; };
+		D084A74C15977052001EB071 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		D08DB9B4157F4EBE00994BDC /* CapoLyrics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CapoLyrics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D08DB9B8157F4EBE00994BDC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D08DB9BA157F4EBE00994BDC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D08DB9BC157F4EBE00994BDC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -164,6 +236,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D084A70E15976097001EB071 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D084A70F15976097001EB071 /* MessageUI.framework in Frameworks */,
+				D084A71015976097001EB071 /* SystemConfiguration.framework in Frameworks */,
+				D084A71115976097001EB071 /* Security.framework in Frameworks */,
+				D084A71215976097001EB071 /* CoreText.framework in Frameworks */,
+				D084A71315976097001EB071 /* UIKit.framework in Frameworks */,
+				D084A71415976097001EB071 /* Foundation.framework in Frameworks */,
+				D084A71515976097001EB071 /* CoreGraphics.framework in Frameworks */,
+				D084A71615976097001EB071 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D08DB9B1157F4EBE00994BDC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -318,7 +405,8 @@
 		D08DB9B5157F4EBE00994BDC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D08DB9B4157F4EBE00994BDC /* CapoeiraLyrics.app */,
+				D08DB9B4157F4EBE00994BDC /* CapoLyrics.app */,
+				D084A74915976097001EB071 /* CapoLyrics Lite.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -357,12 +445,14 @@
 		D08DB9BF157F4EBE00994BDC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D084A74B15976098001EB071 /* CapoeiraLyrics Lite-Info.plist */,
 				D08DB9C0157F4EBE00994BDC /* CapoeiraLyrics-Info.plist */,
 				D08DB9C1157F4EBE00994BDC /* InfoPlist.strings */,
 				D08DB9C4157F4EBE00994BDC /* main.m */,
 				D08DB9C6157F4EBE00994BDC /* CapoeiraLyrics-Prefix.pch */,
 				D030C42415908C9700C85548 /* CapoeiraLyricsSHKConfigurator.h */,
 				D030C42515908C9700C85548 /* CapoeiraLyricsSHKConfigurator.m */,
+				D084A74C15977052001EB071 /* Settings.bundle */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -379,9 +469,27 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D08DB9B3157F4EBE00994BDC /* CapoeiraLyrics */ = {
+		D084A6FE15976097001EB071 /* CapoLyrics Lite */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D08DB9E0157F4EBE00994BDC /* Build configuration list for PBXNativeTarget "CapoeiraLyrics" */;
+			buildConfigurationList = D084A74615976097001EB071 /* Build configuration list for PBXNativeTarget "CapoLyrics Lite" */;
+			buildPhases = (
+				D084A6FF15976097001EB071 /* Sources */,
+				D084A70E15976097001EB071 /* Frameworks */,
+				D084A71715976097001EB071 /* Resources */,
+				D084A74515976097001EB071 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CapoLyrics Lite";
+			productName = CapoeiraLyrics;
+			productReference = D084A74915976097001EB071 /* CapoLyrics Lite.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D08DB9B3157F4EBE00994BDC /* CapoLyrics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D08DB9E0157F4EBE00994BDC /* Build configuration list for PBXNativeTarget "CapoLyrics" */;
 			buildPhases = (
 				D08DB9B0157F4EBE00994BDC /* Sources */,
 				D08DB9B1157F4EBE00994BDC /* Frameworks */,
@@ -392,9 +500,9 @@
 			);
 			dependencies = (
 			);
-			name = CapoeiraLyrics;
+			name = CapoLyrics;
 			productName = CapoeiraLyrics;
-			productReference = D08DB9B4157F4EBE00994BDC /* CapoeiraLyrics.app */;
+			productReference = D08DB9B4157F4EBE00994BDC /* CapoLyrics.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -417,12 +525,66 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D08DB9B3157F4EBE00994BDC /* CapoeiraLyrics */,
+				D08DB9B3157F4EBE00994BDC /* CapoLyrics */,
+				D084A6FE15976097001EB071 /* CapoLyrics Lite */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D084A71715976097001EB071 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D084A71815976097001EB071 /* InfoPlist.strings in Resources */,
+				D084A71915976097001EB071 /* SongsViewController.xib in Resources */,
+				D084A71A15976097001EB071 /* FavouritesViewController.xib in Resources */,
+				D084A71B15976097001EB071 /* group.png in Resources */,
+				D084A71C15976097001EB071 /* microphone.png in Resources */,
+				D084A71D15976097001EB071 /* note.png in Resources */,
+				D084A71E15976097001EB071 /* note2.png in Resources */,
+				D084A71F15976097001EB071 /* user.png in Resources */,
+				D084A72015976097001EB071 /* background.png in Resources */,
+				D084A72115976097001EB071 /* Default.png in Resources */,
+				D084A72215976097001EB071 /* Default@2x.png in Resources */,
+				D084A72315976097001EB071 /* cell_pattern.png in Resources */,
+				D084A72415976097001EB071 /* star.png in Resources */,
+				D084A72515976097001EB071 /* DetailsViewController.xib in Resources */,
+				D084A72615976097001EB071 /* star_disabled.png in Resources */,
+				D084A72715976097001EB071 /* star_enabled.png in Resources */,
+				D084A72815976097001EB071 /* GetAllSongsFull.json in Resources */,
+				D084A72915976097001EB071 /* black_globe.png in Resources */,
+				D084A72A15976097001EB071 /* black_note.png in Resources */,
+				D084A72B15976097001EB071 /* black_star.png in Resources */,
+				D084A72C15976097001EB071 /* heart.png in Resources */,
+				D084A72D15976097001EB071 /* noun_speaker.png in Resources */,
+				D084A72E15976097001EB071 /* noun_speaker@2x.png in Resources */,
+				D084A72F15976097001EB071 /* noun_video.png in Resources */,
+				D084A73015976097001EB071 /* noun_video@2x.png in Resources */,
+				D084A73115976097001EB071 /* translate.png in Resources */,
+				D084A73215976097001EB071 /* translate@2x.png in Resources */,
+				D084A73315976097001EB071 /* film.png in Resources */,
+				D084A73415976097001EB071 /* locale-alternate.png in Resources */,
+				D084A73515976097001EB071 /* music-beam.png in Resources */,
+				D084A73615976097001EB071 /* userhead.png in Resources */,
+				D084A73715976097001EB071 /* SongTableViewCell.xib in Resources */,
+				D084A73815976097001EB071 /* black_heart.png in Resources */,
+				D084A73915976097001EB071 /* star-1.png in Resources */,
+				D084A73A15976097001EB071 /* logo_cdo.png in Resources */,
+				D084A73B15976097001EB071 /* logo_default.png in Resources */,
+				D084A73C15976097001EB071 /* logo_axe.png in Resources */,
+				D084A73D15976097001EB071 /* logo_abada.png in Resources */,
+				D084A73E15976097001EB071 /* logo_muzenza.png in Resources */,
+				D084A73F15976097001EB071 /* logo_gerais.png in Resources */,
+				D084A74015976097001EB071 /* logo_sementedojogodeangola.png in Resources */,
+				D084A74115976097001EB071 /* logo_uca.png in Resources */,
+				D084A74215976097001EB071 /* logo_mundo.png in Resources */,
+				D084A74315976097001EB071 /* ru.png in Resources */,
+				D084A74415976097001EB071 /* us.png in Resources */,
+				D084A74E15977052001EB071 /* Settings.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D08DB9B2157F4EBE00994BDC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -472,6 +634,7 @@
 				D084A6F01593589E001EB071 /* logo_mundo.png in Resources */,
 				D084A6F91594CB96001EB071 /* ru.png in Resources */,
 				D084A6FA1594CB96001EB071 /* us.png in Resources */,
+				D084A74D15977052001EB071 /* Settings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,9 +655,44 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
 		};
+		D084A74515976097001EB071 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D084A6FF15976097001EB071 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D084A70015976097001EB071 /* main.m in Sources */,
+				D084A70115976097001EB071 /* AppDelegate.m in Sources */,
+				D084A70215976097001EB071 /* SongsViewController.m in Sources */,
+				D084A70315976097001EB071 /* FavouritesViewController.m in Sources */,
+				D084A70415976097001EB071 /* Configuration.m in Sources */,
+				D084A70515976097001EB071 /* CapoeiraLyricsAPI.m in Sources */,
+				D084A70615976097001EB071 /* Song.m in Sources */,
+				D084A70715976097001EB071 /* BaseViewController.m in Sources */,
+				D084A70815976097001EB071 /* DetailsViewController.m in Sources */,
+				D084A70915976097001EB071 /* TagsView.m in Sources */,
+				D084A70A15976097001EB071 /* Tag.m in Sources */,
+				D084A70B15976097001EB071 /* CapoeiraLyricsSHKConfigurator.m in Sources */,
+				D084A70C15976097001EB071 /* SongTableViewCell.m in Sources */,
+				D084A70D15976097001EB071 /* PlaceholderTableView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D08DB9B0157F4EBE00994BDC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -530,6 +728,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		D084A74715976097001EB071 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E487E0840E14CE6BAD9DB39 /* Pods.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CapoeiraLyrics/CapoeiraLyrics-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"LITE_VERSION=1",
+					"$(inherited)",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "CapoeiraLyrics Lite-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D084A74815976097001EB071 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E487E0840E14CE6BAD9DB39 /* Pods.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CapoeiraLyrics/CapoeiraLyrics-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "LITE_VERSION=1";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "CapoeiraLyrics Lite-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		D08DB9DE157F4EBE00994BDC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -549,7 +785,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -566,7 +802,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -580,6 +816,11 @@
 				DSTROOT = /tmp/xcodeproj.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CapoeiraLyrics/CapoeiraLyrics-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"FULL_VERSION=1",
+					"$(inherited)",
+				);
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "CapoeiraLyrics/CapoeiraLyrics-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
@@ -596,6 +837,7 @@
 				DSTROOT = /tmp/xcodeproj.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CapoeiraLyrics/CapoeiraLyrics-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "FULL_VERSION=1";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "CapoeiraLyrics/CapoeiraLyrics-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
@@ -608,6 +850,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D084A74615976097001EB071 /* Build configuration list for PBXNativeTarget "CapoLyrics Lite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D084A74715976097001EB071 /* Debug */,
+				D084A74815976097001EB071 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D08DB9AE157F4EBE00994BDC /* Build configuration list for PBXProject "CapoeiraLyrics" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -617,7 +868,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D08DB9E0157F4EBE00994BDC /* Build configuration list for PBXNativeTarget "CapoeiraLyrics" */ = {
+		D08DB9E0157F4EBE00994BDC /* Build configuration list for PBXNativeTarget "CapoLyrics" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D08DB9E1157F4EBE00994BDC /* Debug */,

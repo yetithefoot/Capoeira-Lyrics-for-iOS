@@ -27,6 +27,22 @@ static Configuration* _instance;
 	return _instance;
 }
 
++(BOOL) isFullVersion{
+#ifdef FULL_VERSION
+    return YES;
+#else
+    return NO;
+#endif  
+}
+
++(BOOL) isLiteVersion{
+#ifdef LITE_VERSION
+    return YES;
+#else
+    return NO;
+#endif      
+}
+
 
 -(NSString *) FILEPATH_FAVORITE_SONGS_IDS{
     NSString* documentsPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
@@ -102,6 +118,9 @@ static Configuration* _instance;
 	return [[NSUserDefaults standardUserDefaults] boolForKey:key];  
 }
 
++(BOOL) checkForUpdatesAtStart{
+    return [Configuration getBoolValueFromSetting:@"check_for_updates_at_start"];
+}
 
 
 + (void)registerDefaultsFromSettingsBundle 

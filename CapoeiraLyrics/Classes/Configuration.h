@@ -18,6 +18,10 @@
 
 +(void) saveSettings;
 
++(BOOL) isFullVersion;
++(BOOL) isLiteVersion;
++(BOOL) checkForUpdatesAtStart;
+
 -(NSString *) FILEPATH_OFFLINE_SONGS_RESPONSE;
 
 @end
