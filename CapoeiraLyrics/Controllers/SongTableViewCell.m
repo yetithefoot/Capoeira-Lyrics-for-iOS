@@ -49,7 +49,7 @@
     _imageView2.frame = CGRectMake(36, 40, 16, 16);
     _imageView3.frame = CGRectMake(62, 40, 16, 16);
     _imageView4.frame = CGRectMake(88, 40, 16, 16);
-    
+    _imageView5.frame = CGRectMake(114, 40, 16, 16);
     
     // hide all icons
     _imageView1.hidden = !_flag1;

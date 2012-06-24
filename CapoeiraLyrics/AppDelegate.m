@@ -49,7 +49,8 @@
     
     // colorize elements
     if ([[UIView class] respondsToSelector:@selector(appearance)]) {
-        UIColor * mainTintColor = [UIColor colorWithRed:0.0915 green:0.4354 blue:0.2077 alpha:1.0000];
+        //UIColor * mainTintColor = [UIColor colorWithRed:0.0915 green:0.4354 blue:0.2077 alpha:1.0000];
+        UIColor * mainTintColor = [UIColor darkGrayColor];
         [[UINavigationBar appearance] setTintColor:mainTintColor];   
         [[UITabBar appearance] setTintColor:mainTintColor];
         [[UIToolbar appearance] setTintColor:mainTintColor];
@@ -62,6 +63,7 @@
     
     // initialize share kit
     DefaultSHKConfigurator *configurator = [[CapoeiraLyricsSHKConfigurator alloc] init];
+
     [SHKConfiguration sharedInstanceWithConfigurator:configurator];
     
     return YES;

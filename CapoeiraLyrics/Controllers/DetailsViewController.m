@@ -73,6 +73,7 @@
         TEXT_PLAY_VIDEO = NSLocalizedString(@"Open video", @"");
         //TEXT_PLAY_AUDIO = NSLocalizedString(@"Open audio", @"");
         TEXT_CANCEL = NSLocalizedString(@"Cancel", @"");
+        
     }
     
     return self;
@@ -140,6 +141,7 @@
         NSString * message = [NSString stringWithFormat:@"Just learn %@ capoeira song by %@!", _song.name, _song.artist];
         NSURL *url = [NSURL URLWithString:urlString];
         SHKItem *item = [SHKItem URL:url title:message];
+        item.shareType = SHKShareTypeURL;
 
         // Share the item
         [SHKFacebook shareItem:item];
@@ -167,13 +169,18 @@
 
 
 -(void) reloadData{
-    [self reloadData:YES];
+    [self reloadData:ORIG_TEXT];
 }
 
--(void) reloadData: (BOOL) textOrTranslate{
+-(void) reloadData: (int) textType{
     
     // use text or its translation
-    NSString * text = (textOrTranslate?_song.text:_song.engtext);
+    NSString * text = nil;
+    
+    if(textType == ENG_TEXT) text = _song.engtext;
+    else if(textType == RUS_TEXT) text = _song.rustext;
+    else text = _song.text;
+    
     
     // prepare text
     [_labelText setText:text afterInheritingLabelAttributesAndConfiguringWithBlock:^NSMutableAttributedString *(NSMutableAttributedString *mutableAttributedString) {
@@ -214,15 +221,44 @@
 }
 
 
+
 -(void) didSwipe:(UISwipeGestureRecognizer *) sender{
     if(sender.state == UIGestureRecognizerStateEnded){
         if(sender.direction == UISwipeGestureRecognizerDirectionLeft){
-            _labelText.text = _song.engtext;
-            [self reloadData:NO];
-        }else{
-            _labelText.text = _song.text;
-
-            [self reloadData:YES];
+            if((_labelText.tag == ORIG_TEXT) && (_song.engtext)){
+                _labelText.text = _song.engtext;
+                _labelText.tag = ENG_TEXT;
+            }
+            
+            else if((_labelText.tag == ORIG_TEXT) && (!_song.engtext) && (_song.rustext)){
+                _labelText.text = _song.rustext;
+                _labelText.tag = RUS_TEXT;
+            }
+            
+            else if((_labelText.tag == ENG_TEXT) &&  (_song.rustext)){
+                _labelText.text = _song.rustext;
+                _labelText.tag = RUS_TEXT;
+            }
+            
+            [self reloadData:_labelText.tag];
+            
+        }else if(sender.direction == UISwipeGestureRecognizerDirectionRight){
+            if((_labelText.tag == RUS_TEXT) && (_song.engtext)){
+                _labelText.text = _song.engtext;
+                _labelText.tag = ENG_TEXT;
+            }
+            
+            else if((_labelText.tag == RUS_TEXT) && (!_song.engtext) && (_song.text)){
+                _labelText.text = _song.text;
+                _labelText.tag = ORIG_TEXT;
+            }
+            
+            else if((_labelText.tag == ENG_TEXT) &&  (_song.text)){
+                _labelText.text = _song.text;
+                _labelText.tag = ORIG_TEXT;
+            }
+            
+            [self reloadData:_labelText.tag];
         }
     }
 }
@@ -234,6 +270,7 @@
     
     
     // tune label
+    _labelText.tag = ORIG_TEXT; // original text flag
     [_labelText setFont:[UIFont systemFontOfSize:FONT_TEXT_SIZE]];
     //[_labelText setLineHeightMultiple:0.7];
     
@@ -245,7 +282,7 @@
     //    [self embedYouTube:_song.videoUrl frame:CGRectMake(0, 0, 320, 240)];
     
     // tune swipes
-    if(_song.engtext){
+    if(_song.engtext  || _song.rustext){
         _labelSwipeMessage.hidden = NO;
         UISwipeGestureRecognizer *recognizerSwipeLeft = 
         [[[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(didSwipe:)] autorelease];

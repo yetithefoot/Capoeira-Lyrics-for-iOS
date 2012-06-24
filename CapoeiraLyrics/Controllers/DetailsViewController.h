@@ -14,6 +14,10 @@
 
 #define FONT_TEXT_SIZE 16.0
 
+#define ORIG_TEXT 0
+#define ENG_TEXT 1
+#define RUS_TEXT 2
+
 
 @interface DetailsViewController : BaseViewController< TagsViewProtocol,UIActionSheetDelegate, CapoeiraLyricsAPIDelegate> {
     IBOutlet UIScrollView* _scrollView;

@@ -72,9 +72,10 @@
     
     if (_refreshHeaderView == nil) {
 		
-		EGORefreshTableHeaderView *view = [[EGORefreshTableHeaderView alloc] initWithFrame:CGRectMake(0.0f, 0.0f - _tableSongs.bounds.size.height, self.view.frame.size.width, _tableSongs.bounds.size.height)];
+		EGORefreshTableHeaderView *view = [[EGORefreshTableHeaderView alloc] initWithFrame:CGRectMake(0.0f, 0.0f - _tableSongs.bounds.size.height, self.view.frame.size.width, _tableSongs.bounds.size.height)arrowImageName:@"grayArrow.png" textColor:[UIColor lightGrayColor]];
 		view.delegate = self;
         view.backgroundColor = [UIColor clearColor];
+
 		[_tableSongs addSubview:view];
 		_refreshHeaderView = view;
 		[view release];
