@@ -112,6 +112,11 @@
     ([aSong.artist rangeOfString:@"cordao de ouro" options:NSCaseInsensitiveSearch | NSDiacriticInsensitiveSearch].location != NSNotFound)){
         return [UIImage imageNamed:@"logo_cdo"];
     }
+    // ficag
+    if(([aSong.artist rangeOfString:@"mestre museu" options:NSCaseInsensitiveSearch | NSDiacriticInsensitiveSearch].location != NSNotFound) ||
+       ([aSong.artist rangeOfString:@"ficag" options:NSCaseInsensitiveSearch | NSDiacriticInsensitiveSearch].location != NSNotFound)){
+        return [UIImage imageNamed:@"logo_ficag"];
+    }
     // axe
     if(([aSong.artist rangeOfString:@"mestre barrao" options:NSCaseInsensitiveSearch | NSDiacriticInsensitiveSearch].location != NSNotFound) ||
        ([aSong.artist rangeOfString:@"axe capoeria" options:NSCaseInsensitiveSearch | NSDiacriticInsensitiveSearch].location != NSNotFound)){
@@ -140,7 +145,7 @@
     if(([aSong.artist rangeOfString:@"mestre acordeon" options:NSCaseInsensitiveSearch | NSDiacriticInsensitiveSearch].location != NSNotFound)){
         return [UIImage imageNamed:@"logo_uca"];
     }
-    // ьгтвщ
+    // mundo
     if(([aSong.artist rangeOfString:@"mundo capoeira" options:NSCaseInsensitiveSearch | NSDiacriticInsensitiveSearch].location != NSNotFound)){
         return [UIImage imageNamed:@"logo_mundo"];
     }

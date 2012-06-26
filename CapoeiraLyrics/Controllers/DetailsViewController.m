@@ -12,7 +12,7 @@
 #import "SHKFacebook.h"
 #import <Foundation/Foundation.h>
 
-
+#import "PrivateConstants.h"
 
 @interface DetailsViewController ()
 
@@ -31,6 +31,7 @@
 
 - (void) relayout {
     float y = VERTICAL_MARGIN_1;
+
     
     if(!_labelSwipeMessage.hidden){
         y += _labelSwipeMessage.frame.size.height;
@@ -55,9 +56,12 @@
      */
     
     
-    
-    
     _scrollView.contentSize = CGSizeMake(_scrollView.contentSize.width, y);
+    
+    // if lite version add banner to bottom
+    if([Configuration isLiteVersion]){
+        _scrollView.frame = CGRectMake(_scrollView.frame.origin.x, _scrollView.frame.origin.y, _scrollView.frame.size.width, 360);
+    }
 }
 
 - (id)initWithSong:(Song *)aSong
@@ -141,7 +145,6 @@
         NSString * message = [NSString stringWithFormat:@"Just learn %@ capoeira song by %@!", _song.name, _song.artist];
         NSURL *url = [NSURL URLWithString:urlString];
         SHKItem *item = [SHKItem URL:url title:message];
-        item.shareType = SHKShareTypeURL;
 
         // Share the item
         [SHKFacebook shareItem:item];
@@ -165,6 +168,15 @@
         self.song.favorite = !self.song.favorite;
     }
      
+}
+
+-(void) setSong:(Song *)song{
+    if (song != _song)
+    {
+        [_song release];
+        _song = [song retain];
+        _imageViewBackground.image = [self backgroundImageForSong:_song];
+    }
 }
 
 
@@ -191,6 +203,7 @@
                                                                             error:nil];
         NSArray *matches = [regex matchesInString:text options:0 range:NSMakeRange(0, text.length)];
         
+        [regex release];
         // init font
         UIFont *boldSystemFont = [UIFont boldSystemFontOfSize:FONT_TEXT_SIZE];
         CTFontRef boldSystemFont_ct = CTFontCreateWithName((CFStringRef)boldSystemFont.fontName, boldSystemFont.pointSize, NULL);
@@ -287,8 +300,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
     
+#ifdef LITE_VERSION
+    {
+        mBannerView = [[SOMABannerView alloc] initWithDimension:kSOMAAdDimensionDefault]; 
+        mBannerView.frame = CGRectMake(0, 410, 320, 50);
+        [mBannerView adSettings].adspaceId = [PrivateConstants smaatoAdSpace1];
+        [mBannerView adSettings].publisherId = [PrivateConstants smaatoPublisherId]; 
+        [self.view addSubview:mBannerView];
+        [mBannerView release];
+    }
+#endif
+    
+    // set bg
+    _imageViewBackground.image = [self backgroundImageForSong:_song];
     
     // tune label
     _labelText.tag = ORIG_TEXT; // original text flag
@@ -323,6 +348,72 @@
     [self reloadData];
 }
 
+-(UIImage *) backgroundImageForSong:(Song *)aSong{
+    
+    // cdo
+    if(([aSong.artist rangeOfString:@"mestre suassuna" options:NSCaseInsensitiveSearch | NSDiacriticInsensitiveSearch].location != NSNotFound) ||
+       ([aSong.artist rangeOfString:@"cordao de ouro" options:NSCaseInsensitiveSearch | NSDiacriticInsensitiveSearch].location != NSNotFound)){
+        return [UIImage imageNamed:@"background_cdo"];
+    }
+    // ficag
+    if(([aSong.artist rangeOfString:@"mestre museu" options:NSCaseInsensitiveSearch | NSDiacriticInsensitiveSearch].location != NSNotFound) ||
+       ([aSong.artist rangeOfString:@"ficag" options:NSCaseInsensitiveSearch | NSDiacriticInsensitiveSearch].location != NSNotFound)){
+        return [UIImage imageNamed:@"background_ficag"];
+    }
+    // axe
+    if(([aSong.artist rangeOfString:@"mestre barrao" options:NSCaseInsensitiveSearch | NSDiacriticInsensitiveSearch].location != NSNotFound) ||
+       ([aSong.artist rangeOfString:@"axe capoeria" options:NSCaseInsensitiveSearch | NSDiacriticInsensitiveSearch].location != NSNotFound)){
+        return [UIImage imageNamed:@"background_axe"];
+    }
+    // abada
+    if(([aSong.artist rangeOfString:@"mestre camisa" options:NSCaseInsensitiveSearch | NSDiacriticInsensitiveSearch].location != NSNotFound) ||
+       ([aSong.artist rangeOfString:@"abada capoeira" options:NSCaseInsensitiveSearch | NSDiacriticInsensitiveSearch].location != NSNotFound)){
+        return [UIImage imageNamed:@"background_abada"];
+    }
+    // muzenza
+    if(([aSong.artist rangeOfString:@"mestre burgues" options:NSCaseInsensitiveSearch | NSDiacriticInsensitiveSearch].location != NSNotFound) ||
+       ([aSong.artist rangeOfString:@"grupo muzenza" options:NSCaseInsensitiveSearch | NSDiacriticInsensitiveSearch].location != NSNotFound)){
+        return [UIImage imageNamed:@"background_muzenza"];
+    }
+    // gerais
+    if(([aSong.artist rangeOfString:@"mestre mao branca" options:NSCaseInsensitiveSearch | NSDiacriticInsensitiveSearch].location != NSNotFound) ||
+       ([aSong.artist rangeOfString:@"capoeira gerais" options:NSCaseInsensitiveSearch | NSDiacriticInsensitiveSearch].location != NSNotFound)){
+        return [UIImage imageNamed:@"background_gerais"];
+    }
+    // jogo de dentro
+    if(([aSong.artist rangeOfString:@"jogo de dentro" options:NSCaseInsensitiveSearch | NSDiacriticInsensitiveSearch].location != NSNotFound)){
+        return [UIImage imageNamed:@"background_sementedojogodeangola"];
+    }
+    // uca
+    if(([aSong.artist rangeOfString:@"mestre acordeon" options:NSCaseInsensitiveSearch | NSDiacriticInsensitiveSearch].location != NSNotFound)){
+        return [UIImage imageNamed:@"background_uca"];
+    }
+    // mundo
+    if(([aSong.artist rangeOfString:@"mundo capoeira" options:NSCaseInsensitiveSearch | NSDiacriticInsensitiveSearch].location != NSNotFound)){
+        return [UIImage imageNamed:@"background_mundo"];
+    }
+    
+    return [UIImage imageNamed:@"background_default"];
+}
+
+-(void)viewWillAppear:(BOOL)animated { 
+    [super viewWillAppear:animated];
+#ifdef LITE_VERSION
+    {
+        [mBannerView setAutoReloadEnabled:YES]; 
+        [mBannerView asyncLoadNewBanner];
+    }
+#endif
+}
+-(void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+#ifdef LITE_VERSION
+    {
+        [mBannerView setAutoReloadEnabled:NO]; 
+    }
+#endif
+}
+
 - (void)viewDidUnload
 {
     [_labelTitle release];
@@ -335,6 +426,8 @@
     _labelToolbarArtist = nil;
     [_labelSwipeMessage release];
     _labelSwipeMessage = nil;
+    [_imageViewBackground release];
+    _imageViewBackground = nil;
     [super viewDidUnload];
 
 }
@@ -353,6 +446,7 @@
     [_labelToolbarTitle release];
     [_labelToolbarArtist release];
     [_labelSwipeMessage release];
+    [_imageViewBackground release];
     [super dealloc];
 }
 

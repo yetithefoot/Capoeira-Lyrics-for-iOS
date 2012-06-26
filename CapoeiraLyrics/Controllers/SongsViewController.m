@@ -450,6 +450,9 @@ int __lastClickedCell = -1;
 }
 
 -(void)songsCountDidLoad:(NSNumber *)count{
+    
+    if(self != self.navigationController.topViewController) return;
+    
     if([count intValue] > [_songs count]){
         UIAlertView * alert = [[UIAlertView alloc]initWithTitle:@"Updates" message:@"New songs updates available! Do you want load them?" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Download", nil];
         [alert show];

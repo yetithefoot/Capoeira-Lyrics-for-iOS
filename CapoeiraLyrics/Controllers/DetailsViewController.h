@@ -18,6 +18,9 @@
 #define ENG_TEXT 1
 #define RUS_TEXT 2
 
+#ifdef LITE_VERSION
+#import <iSoma/SOMABannerView.h>
+#endif
 
 @interface DetailsViewController : BaseViewController< TagsViewProtocol,UIActionSheetDelegate, CapoeiraLyricsAPIDelegate> {
     IBOutlet UIScrollView* _scrollView;
@@ -27,6 +30,7 @@
     IBOutlet UILabel *_labelSwipeMessage;
     IBOutlet UILabel *_labelToolbarTitle;
     IBOutlet UILabel *_labelToolbarArtist;
+    IBOutlet UIImageView *_imageViewBackground;
     Song * _song;
     
     NSString *TEXT_SHARE_TO_FB;
@@ -36,6 +40,10 @@
     NSString *TEXT_PLAY_VIDEO;
     NSString *TEXT_PLAY_AUDIO;
     NSString *TEXT_CANCEL;
+    
+#ifdef LITE_VERSION
+    SOMABannerView *mBannerView;
+#endif
     
 }
 
