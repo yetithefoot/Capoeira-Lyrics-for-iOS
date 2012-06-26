@@ -23,7 +23,8 @@
 -(id) initWithDictionary: (NSDictionary *) dict;
 +(id) songWithDictionary: (NSDictionary *) dict;
 +(NSArray *)filterOnlyFavorites:(NSArray *)aSongs;
++(Song *)getSongByIdentifier:(int) songIdentifier inArray:(NSArray *) songsArray;
 
-
+-(void) openVideo;
 
 @end

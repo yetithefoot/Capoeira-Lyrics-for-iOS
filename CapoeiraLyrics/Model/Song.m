@@ -94,6 +94,31 @@
     return retArr;
 }
 
++(Song *)getSongByIdentifier:(int) songIdentifier inArray:(NSArray *) songsArray{
+    // find index of song clicked by id stored into tag
+    NSUInteger found = [songsArray indexOfObjectPassingTest:^(id element, NSUInteger idx, BOOL * stop){
+        
+        Song * song = (Song*)element;
+        
+        *stop = (song.identifier == songIdentifier);
+        return *stop;
+    }];
+    
+    if (found != NSNotFound){
+        return [songsArray objectAtIndex:found];
+    }
+    
+    return nil;
+}
+
+
+-(void) openVideo{
+    if(self.videoUrl){
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:self.videoUrl]];
+    }
+}
+
+
 
 - (void)dealloc
 {

@@ -183,29 +183,10 @@
     return YES;
 }
 
--(Song *)getSongByIdentifier:(int) identifier{
-    // find index of song clicked by id stored into tag
-    NSUInteger found = [_songs indexOfObjectPassingTest:^(id element, NSUInteger idx, BOOL * stop){
-        
-        Song * song = (Song*)element;
-        
-        *stop = (song.identifier == identifier);
-        return *stop;
-    }];
-    
-    if (found != NSNotFound){
-        return [_songs objectAtIndex:found];
-    }
-    
-    return nil;
-}
-
-
-
 int __lastClickedCell = -1;
 
 -(void) makeFavorite:(id) sender{
-    Song * song = [self getSongByIdentifier:__lastClickedCell];
+    Song * song = [Song  getSongByIdentifier:__lastClickedCell inArray:_songs];
     
     if(song){
         BOOL isFavorite = song.favorite;
@@ -219,11 +200,9 @@ int __lastClickedCell = -1;
 
 -(void) openVideo:(id) sender{
     
-    Song * song = [self getSongByIdentifier:__lastClickedCell];
+    Song * song = [Song  getSongByIdentifier:__lastClickedCell inArray:_songs];
     
-    if(song && song.videoUrl){
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:song.videoUrl]];
-    }
+    [song openVideo];
 }
 
 
@@ -231,7 +210,7 @@ int __lastClickedCell = -1;
 {
     if(sender.state == UIGestureRecognizerStateBegan){
         
-        Song * song = [self getSongByIdentifier:sender.view.tag];
+        Song * song = [Song  getSongByIdentifier:sender.view.tag inArray:_songs];
         
         if(song){
             __lastClickedCell = sender.view.tag;
