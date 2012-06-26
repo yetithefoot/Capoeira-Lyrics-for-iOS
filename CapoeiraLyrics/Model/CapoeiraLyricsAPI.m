@@ -98,8 +98,9 @@ static CapoeiraLyricsAPI * _instance;
     NSMutableArray * retVal = [NSMutableArray array];
     
     for (id jsonSong in JSON) {
-        Song * song = [Song songWithDictionary:jsonSong];
+        Song * song = [[Song alloc]initWithDictionary:jsonSong];
         [retVal addObject:song];
+        [song release];
     }
     
     if([self.delegate respondsToSelector:@selector(songsDidLoad:)]){

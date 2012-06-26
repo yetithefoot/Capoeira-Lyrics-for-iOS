@@ -15,6 +15,8 @@ profile
 *.moved-aside
 .DS_Store
 
-CapoeiraLyrics/CapoeiraLyricsSHKConfigurator.h
 
-CapoeiraLyrics/CapoeiraLyricsSHKConfigurator.m
+CapoeiraLyrics/Model/PrivateConstants.m
+
+CapoeiraLyrics/Model/PrivateConstants.h
+
