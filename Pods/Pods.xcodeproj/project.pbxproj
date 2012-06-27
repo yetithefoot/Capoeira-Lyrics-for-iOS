@@ -1,3672 +1,858 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>0009DFED5F834284B28636FE</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKOAuthSharer.h</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Core/Base Sharer Classes/SHKOAuthSharer.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>00C793D69A15440DA0FF8950</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CD067D997D004AFDA8529DFE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>024380E1C0EC4440A70CAC5C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKCustomFormController.h</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Customize UI/SHKCustomFormController.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>031E0CFB99914F22A2F5020C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>AFURLConnectionOperation.m</string>
-			<key>path</key>
-			<string>AFNetworking/AFNetworking/AFURLConnectionOperation.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>032578A0A8434051BEB4CD03</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3007B410AFA54AD6B02F5886</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>04B8AFE77C4A4628B2124973</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>83567500717E408F9A20A1C1</string>
-				<string>F084655CFF4647FDB32600B5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Reachability</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>04D32EFB3F7B43999F993FC9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E7FFB265ECDE4E5FBBC89118</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>06B058759CD04BFCA2C5EEF9</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>OARequestParameter.m</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Core/Helpers/OAuth/OARequestParameter.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>07DE4CA563364F1A89DC5BB6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKTextMessage.m</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Sharers/Actions/Text Message/SHKTextMessage.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>08C4CDC78C4841DDA877F136</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FF6D1AB391814C35AE83F99E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>0A4A26F62E3F443DA5355D46</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>AFNetworkActivityIndicatorManager.h</string>
-			<key>path</key>
-			<string>AFNetworking/AFNetworking/AFNetworkActivityIndicatorManager.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>0A9B99709E424350A455EF35</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKTwitter.h</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Sharers/Services/Twitter/SHKTwitter.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>0DDA01BC4E674F7A8E18CE8B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKShareMenu.h</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/UI/SHKShareMenu.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>1012498B58F54DB9B19A6E81</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>hmac.c</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Core/Helpers/OAuth/Crytpo/hmac.c</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>111F6F681B6243C0BF9BF775</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3657147466AB4DDCB2965EAB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>11BC3CFFF780446FAD46F7C7</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKPhotoAlbum.m</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Sharers/Actions/Save to Album/SHKPhotoAlbum.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>12B5779AB2B2484882D9F3C5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SVProgressHUD.h</string>
-			<key>path</key>
-			<string>SVProgressHUD/SVProgressHUD/SVProgressHUD.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>12D8DA4B947B4A5B854F8C1E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>UIWebView+SHK.m</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Core/Categories/UIWebView+SHK.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>1487FC0ED2A94907857B2D97</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7934A0322B8F4162B2FE8237</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>14C2C81291C44E38893A95B7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>165F0DBF68864255A9E36A5F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>15A1BDCE7EAC45CAB3E87492</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D738514B175A463EA88C40D6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>15DF6872D3A34D978145BF4A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5DD78801C53449AFAA74D5CF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>165F0DBF68864255A9E36A5F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKXMLResponseParser.m</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Core/Helpers/SHKXMLResponseParser.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>1683539E785F406684F2D6F6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>16FC978FCAA84654A1A26D17</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SBJsonParser.h</string>
-			<key>path</key>
-			<string>SBJson/Source/SBJsonParser.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>172F2AE98E3D4935835C0F5E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>FBDialog.h</string>
-			<key>path</key>
-			<string>Facebook-iOS-SDK/src/FBDialog.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>191F3AD9B31346CDAA212CD0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKLogout.h</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Sharers/Actions/Logout of All Services/SHKLogout.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>19E8046668484A5CBE4DE9B1</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DF0BBB75B4DB49658A527DD7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>1B174FB371664E42B4771265</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>hmac.h</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Core/Helpers/OAuth/Crytpo/hmac.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>1C2D7F27649E413BB677BD82</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>OAToken.h</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Core/Helpers/OAuth/OAToken.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>1D1889E82EFE469FB6759D36</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKShareItemDelegate.h</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/UI/SHKShareItemDelegate.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>1DD5EDEC96EC463F9AA6502C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>NSMutableDictionary+NSNullsToEmptyStrings.h</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Core/Categories/NSMutableDictionary+NSNullsToEmptyStrings.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>1E83903747B347548675898A</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>AFJSONUtilities.m</string>
-			<key>path</key>
-			<string>AFNetworking/AFNetworking/AFJSONUtilities.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>1FCD74A9559943FDBB2D3814</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>AFHTTPRequestOperation.h</string>
-			<key>path</key>
-			<string>AFNetworking/AFNetworking/AFHTTPRequestOperation.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>20A94FF016E64460A8280EF6</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>dstPath</key>
-			<string>$(PRODUCT_NAME)</string>
-			<key>dstSubfolderSpec</key>
-			<string>16</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXCopyFilesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>20E461A9C65D4BBC8C403250</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>OAPlaintextSignatureProvider.h</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Core/Helpers/OAuth/OAPlaintextSignatureProvider.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>21152795A813468D9ACD0A0C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>FBLoginDialog.h</string>
-			<key>path</key>
-			<string>Facebook-iOS-SDK/src/FBLoginDialog.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>23C000AF96FB4D9F95ACB0C3</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKShareMenu.m</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/UI/SHKShareMenu.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>23C1CCBEE9BB428AB558EAD3</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKFacebook.h</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Sharers/Services/Facebook/SHKFacebook.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>24B177C596FD4A8EBD72CD77</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7CF3628BD9FA499D8B15B0E1</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>24F5D2A4589F40F48025CE72</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7DAD254E79854AC6989FB688</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>25ED13AB48344CA294709E76</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CE2A5D8F067643B8ACEF64F7</string>
-				<string>CE0D8A4376304E86B5360E12</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>TTTAttributedLabel</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>296E891E12FD4D25A84432BA</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKActivityIndicator.h</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/UI/SHKActivityIndicator.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>2A00D9DC1C944C27A20EBF2F</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libPods.a</string>
-			<key>path</key>
-			<string>libPods.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>2A0C8865A18C4D7C89094DED</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SSKeychain.h</string>
-			<key>path</key>
-			<string>SSKeychain/SSKeychain.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>2A3F038822454314804E20C5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SBJsonBase.h</string>
-			<key>path</key>
-			<string>SBJson/Source/SBJsonBase.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>2AB17FB42995411782F1EC04</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKRequest.m</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Core/Helpers/SHKRequest.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>2AE1FD56EC6D40BA98E947EC</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>EGORefreshTableHeaderView.h</string>
-			<key>path</key>
-			<string>EGOTableViewPullRefresh/EGOTableViewPullRefresh/Classes/View/EGORefreshTableHeaderView.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>2BA58349577D4988A3B6C0FB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKActionSheet.h</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/UI/SHKActionSheet.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>2BBFE71B842D4D82B6691F70</key>
-		<dict>
-			<key>fileRef</key>
-			<string>031E0CFB99914F22A2F5020C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>2CE9CF946C944AF19C0EA95C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>7148CFE6FCEC48E29DBC4B03</string>
-				<string>0A9B99709E424350A455EF35</string>
-				<string>2F46CB96464A49F0AFA0E686</string>
-				<string>72369D8F330B4F839074F161</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>ShareKit/Twitter</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2DFAA61353884D249C2BA429</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKSharerDelegate.m</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Core/Base Sharer Classes/SHKSharerDelegate.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>2E85A9F104BC45C4891CAC61</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKCopy.h</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Sharers/Actions/Copy/SHKCopy.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>2E9CB03F95C94E03BD1FC74C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>NSMutableDictionary+NSNullsToEmptyStrings.m</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Core/Categories/NSMutableDictionary+NSNullsToEmptyStrings.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>2F46CB96464A49F0AFA0E686</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKiOS5Twitter.m</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Sharers/Services/Twitter/SHKiOS5Twitter.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>2FFDA5EF10A34C00953E841B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9B457334DA704DD0929E7671</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>3007B410AFA54AD6B02F5886</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SBJsonParser.m</string>
-			<key>path</key>
-			<string>SBJson/Source/SBJsonParser.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>302515C803534A16997CECE2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKViewControllerWrapper.h</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/UI/SHKViewControllerWrapper.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>317E33B508B94193A7C27C51</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>AFJSONRequestOperation.m</string>
-			<key>path</key>
-			<string>AFNetworking/AFNetworking/AFJSONRequestOperation.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>356B921F58084B9B92EC46A8</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKFormController.m</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/UI/SHKFormController.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>35E4A819F58449DBBD9DB376</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKFormControllerLargeTextField.h</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/UI/SHKFormControllerLargeTextField.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>360B20F832BA41979F12D509</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2E9CB03F95C94E03BD1FC74C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>3657147466AB4DDCB2965EAB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>FBLoginDialog.m</string>
-			<key>path</key>
-			<string>Facebook-iOS-SDK/src/FBLoginDialog.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>36C39C9D0FE14D1EBA3DE16B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B72803E291A34B39868C8639</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>37A5ED9173044AF79C83F310</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1683539E785F406684F2D6F6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>37C2D754A3834DE18C89A1CA</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SSKeychain.m</string>
-			<key>path</key>
-			<string>SSKeychain/SSKeychain.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>38360E74D09E42F68D72111E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>UIImageView+AFNetworking.h</string>
-			<key>path</key>
-			<string>AFNetworking/AFNetworking/UIImageView+AFNetworking.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>394778509FA3425D823B609A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BBC19B1D935D46DDA2847AB6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>3989006738824137AC8BA4CB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>OAuthConsumer.h</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Core/Helpers/OAuth/OAuthConsumer.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>3D1341FFF0154E3981367035</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>NSURL+Base.h</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Core/Helpers/OAuth/Categories/NSURL+Base.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>3DBC42B47910440588589E87</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B913E09821954D7A9714300D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>3E5472FDC98547F78E436DD3</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_32_BIT)</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_VERSION</key>
-				<string>com.apple.compilers.llvmgcc42</string>
-				<key>GCC_WARN_ABOUT_MISSING_PROTOTYPES</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>4.3</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>40D16A7872E149CBA7E32921</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>37A5ED9173044AF79C83F310</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>414A70DC109744D3A9506BB3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5EABBE1B16194F0285EDBA36</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>41A16C7766E442CF9483DC20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7E559DC765604F0A838E8908</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>41B3E94DDD1E4B2B81FC04D9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>12D8DA4B947B4A5B854F8C1E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>443895E300884A1798245913</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AF9D41D452E0430A9DC32C82</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>445BDF5477764AA9A5B9A9E4</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKOAuthSharer.m</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Core/Base Sharer Classes/SHKOAuthSharer.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>455F30B94EE648FAB1EDF243</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKFormFieldCell.m</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/UI/SHKFormFieldCell.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>4613134FE742417EB8075590</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6A53E23F79D847BAB39AC95E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>46825F4BB7964980AB3411B5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>37C2D754A3834DE18C89A1CA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>46BC5F9A86814233BA97055A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>445BDF5477764AA9A5B9A9E4</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>483A680249DE4DE28C6FF4A1</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKPhotoAlbum.h</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Sharers/Actions/Save to Album/SHKPhotoAlbum.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>486F21262F8E48B28284B444</key>
-		<dict>
-			<key>fileRef</key>
-			<string>23C000AF96FB4D9F95ACB0C3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>48944DFC5743415BB074975E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>AFHTTPClient.m</string>
-			<key>path</key>
-			<string>AFNetworking/AFNetworking/AFHTTPClient.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>48BF22B540FB4D1081261B66</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>FBConnect.h</string>
-			<key>path</key>
-			<string>Facebook-iOS-SDK/src/FBConnect.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>490BA360BD704926A70A8324</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>OAAsynchronousDataFetcher.h</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Core/Helpers/OAuth/OAAsynchronousDataFetcher.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>4B968F62A30D45FBB62FE5C1</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKSharerDelegate.h</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Core/Base Sharer Classes/SHKSharerDelegate.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>4C77FB2A8BEE4FE98EE6F76A</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKSharer.m</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Core/Base Sharer Classes/SHKSharer.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>4E19F529C46C4ED98C7B12DF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKSharer.h</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Core/Base Sharer Classes/SHKSharer.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>4EF85DC1EEC341FEAA7C08D6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2F46CB96464A49F0AFA0E686</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>4F2DCCFAC8C64D859AADBDAA</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>NSMutableURLRequest+Parameters.m</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Core/Helpers/OAuth/Categories/NSMutableURLRequest+Parameters.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>4F3DB147690046E18C355C12</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKOfflineSharer.h</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Core/SHKOfflineSharer.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>4F4CB3D5A9A84BBCA586F1FF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>12B5779AB2B2484882D9F3C5</string>
-				<string>A0DD70B638B9488FAAEFB46F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>SVProgressHUD</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>51935BEF33AE45AC8DFA6F24</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKMail.h</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Sharers/Actions/Email/SHKMail.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>527ECB5246C5465B992BC3F2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>851C8D5B7967411D92B24059</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>55722C32DA164D3C90728F8E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKActionSheet.m</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/UI/SHKActionSheet.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>56312C957E924FA080DCE25C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5E19EBA9BAC94F34A0613456</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>563CAFF7F19F42A18161BB98</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKCustomFormFieldCell.h</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Customize UI/SHKCustomFormFieldCell.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>56F7856828224B398ED1012A</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>B12EA75CCE1B4567A99FA72F</string>
-				<string>3E5472FDC98547F78E436DD3</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>58DB80976C464A46B57CB9A5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BF475AEA040245A8B64E0709</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>596B75ADE7B64CF18C95B699</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>NSObject+SBJSON.h</string>
-			<key>path</key>
-			<string>SBJson/Source/NSObject+SBJSON.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>5A0A4EA36B694BA98F46DE89</key>
-		<dict>
-			<key>fileRef</key>
-			<string>72369D8F330B4F839074F161</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>5B94B8C91B674D92A6E821BA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1E83903747B347548675898A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>5BA917940CF942489117932E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Facebook.h</string>
-			<key>path</key>
-			<string>Facebook-iOS-SDK/src/Facebook.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>5DB94BD43AA14914861AB0C4</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A0DD70B638B9488FAAEFB46F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>5DD78801C53449AFAA74D5CF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>NSObject+SBJSON.m</string>
-			<key>path</key>
-			<string>SBJson/Source/NSObject+SBJSON.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>5E19EBA9BAC94F34A0613456</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SBJsonWriter.m</string>
-			<key>path</key>
-			<string>SBJson/Source/SBJsonWriter.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>5EABBE1B16194F0285EDBA36</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>FBDialog.m</string>
-			<key>path</key>
-			<string>Facebook-iOS-SDK/src/FBDialog.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>61786F5236BE4447B54AB43F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B0EECC93F8FD495D806404F3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>61F82AB51CC848D5A705F4F6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SBJsonWriter.h</string>
-			<key>path</key>
-			<string>SBJson/Source/SBJsonWriter.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>6319D8FBB72941C4B73D4785</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>NSData+md5.h</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Core/Categories/NSData+md5.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>63FA0B028BFF4F909FBE3471</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D7D2D76E80DD4945ABB2C79B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>65B9B0B7E1F546C3AA434976</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>FBRequest.h</string>
-			<key>path</key>
-			<string>Facebook-iOS-SDK/src/FBRequest.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>65F6178008B941068BB6D9A2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>FBRequest.m</string>
-			<key>path</key>
-			<string>Facebook-iOS-SDK/src/FBRequest.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>67991845C020405FBDEE3AF7</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>AFJSONRequestOperation.h</string>
-			<key>path</key>
-			<string>AFNetworking/AFNetworking/AFJSONRequestOperation.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>68A9BB620DE9400B8842D25C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6CB590829E784930BAF842F2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>69700971CA80401180DDEE1F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKCustomFormFieldCell.m</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Customize UI/SHKCustomFormFieldCell.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>69E1CC1ED28441379CDD8189</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>OARequestParameter.h</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Core/Helpers/OAuth/OARequestParameter.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>6A53E23F79D847BAB39AC95E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>OAAsynchronousDataFetcher.m</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Core/Helpers/OAuth/OAAsynchronousDataFetcher.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>6C5575E72ECF4DF3B169DFF4</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>AFJSONUtilities.h</string>
-			<key>path</key>
-			<string>AFNetworking/AFNetworking/AFJSONUtilities.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>6CB590829E784930BAF842F2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKFormFieldSettings.m</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/UI/SHKFormFieldSettings.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>6D20CD60FB684F87A60E10AB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C92D21D81AB4454681F66F06</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>6F507C52B84841F5B13D2290</key>
-		<dict>
-			<key>fileRef</key>
-			<string>455F30B94EE648FAB1EDF243</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>6FDA4B1F8B6C437981F7C749</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>OAHMAC_SHA1SignatureProvider.m</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Core/Helpers/OAuth/OAHMAC_SHA1SignatureProvider.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>7148CFE6FCEC48E29DBC4B03</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKiOS5Twitter.h</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Sharers/Services/Twitter/SHKiOS5Twitter.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>72369D8F330B4F839074F161</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKTwitter.m</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Sharers/Services/Twitter/SHKTwitter.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>724C14C0D38048409B7025E4</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKCustomFormControllerLargeTextField.m</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Customize UI/SHKCustomFormControllerLargeTextField.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>729C7C282C3C44C9A029B925</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods.xcconfig</string>
-			<key>path</key>
-			<string>Pods.xcconfig</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>73C9E288F2E04CF3975C0868</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>729C7C282C3C44C9A029B925</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Pods-prefix.pch</string>
-				<key>GCC_VERSION</key>
-				<string>com.apple.compilers.llvm.clang.1_0</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>7591BA590EA145C592FF68F3</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKTextMessage.h</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Sharers/Actions/Text Message/SHKTextMessage.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>76C6CC2D9977482D9C9638E8</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>1683539E785F406684F2D6F6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>77C72129C6884668BBE4F39C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>DefaultSHKConfigurator.h</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Configuration/DefaultSHKConfigurator.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>77D22C8433134841A966B58C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKCustomShareMenu.h</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Customize UI/SHKCustomShareMenu.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>7913046C309546F6933AC620</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKConfiguration.h</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Configuration/SHKConfiguration.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>79148E0B95074739B49BB81E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>5BA917940CF942489117932E</string>
-				<string>48BF22B540FB4D1081261B66</string>
-				<string>172F2AE98E3D4935835C0F5E</string>
-				<string>21152795A813468D9ACD0A0C</string>
-				<string>65B9B0B7E1F546C3AA434976</string>
-				<string>7934A0322B8F4162B2FE8237</string>
-				<string>5EABBE1B16194F0285EDBA36</string>
-				<string>3657147466AB4DDCB2965EAB</string>
-				<string>65F6178008B941068BB6D9A2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Facebook-iOS-SDK</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7934A0322B8F4162B2FE8237</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Facebook.m</string>
-			<key>path</key>
-			<string>Facebook-iOS-SDK/src/Facebook.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>79841CD36722448FBEA55E8C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C1A46814ADB84C61BFA51BBB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>7B0B2ABEDBB44ABB9C459630</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9ADCC64384FF480CA0B17CDF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>7C3D3137A1D340428CABA7CF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKFormOptionController.h</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/UI/SHKFormOptionController.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>7CA23D9DEEFD4FE3A4C04DDA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>4C77FB2A8BEE4FE98EE6F76A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>7CF3628BD9FA499D8B15B0E1</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>EGORefreshTableHeaderView.m</string>
-			<key>path</key>
-			<string>EGOTableViewPullRefresh/EGOTableViewPullRefresh/Classes/View/EGORefreshTableHeaderView.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>7CFE153470334C65BB26348E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>2AE1FD56EC6D40BA98E947EC</string>
-				<string>7CF3628BD9FA499D8B15B0E1</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>EGOTableViewPullRefresh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7DAD254E79854AC6989FB688</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>OAPlaintextSignatureProvider.m</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Core/Helpers/OAuth/OAPlaintextSignatureProvider.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>7DDEBC12F6EE4F9392B88113</key>
-		<dict>
-			<key>fileRef</key>
-			<string>96D07AA1918B4F5888AFFAB8</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>7E559DC765604F0A838E8908</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>DefaultSHKConfigurator.m</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Configuration/DefaultSHKConfigurator.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>7F06946115834624BEB194EA</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKLogout.m</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Sharers/Actions/Logout of All Services/SHKLogout.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>818CA08630474D4BBB557572</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1012498B58F54DB9B19A6E81</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>818E8BEA7BE14085A1AFE1E5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>97BA536A3BB444EEB046824D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>83567500717E408F9A20A1C1</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Reachability.h</string>
-			<key>path</key>
-			<string>Reachability/Reachability.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>838D81A7E2FC4EEA88D75734</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>EA5836BE8BE7479C8879799B</string>
-				<string>596B75ADE7B64CF18C95B699</string>
-				<string>84F3FAA551C84978BC37C331</string>
-				<string>A06F7C125E9247F99D04593B</string>
-				<string>2A3F038822454314804E20C5</string>
-				<string>16FC978FCAA84654A1A26D17</string>
-				<string>61F82AB51CC848D5A705F4F6</string>
-				<string>5DD78801C53449AFAA74D5CF</string>
-				<string>FA2A8723619F47A8A6D0F6E4</string>
-				<string>DC489AE5A51C4DB988F4CC01</string>
-				<string>DF0BBB75B4DB49658A527DD7</string>
-				<string>3007B410AFA54AD6B02F5886</string>
-				<string>5E19EBA9BAC94F34A0613456</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>SBJson</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>84F3FAA551C84978BC37C331</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>NSString+SBJSON.h</string>
-			<key>path</key>
-			<string>SBJson/Source/NSString+SBJSON.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>851C8D5B7967411D92B24059</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>NSString+URLEncoding.m</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Core/Helpers/OAuth/Categories/NSString+URLEncoding.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>857D48ADC5B64CABACD246F1</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FF604C934B4F4C57A5949BE9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>898433A86F17475899BABC59</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>AFNetworking.h</string>
-			<key>path</key>
-			<string>AFNetworking/AFNetworking/AFNetworking.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>89BF3EF0F8B44DCCB9FB014E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKCustomShareMenuCell.m</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Customize UI/SHKCustomShareMenuCell.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>8A2B3F3B754142278D7DA754</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>NSURL+Base.m</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Core/Helpers/OAuth/Categories/NSURL+Base.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>8A6E912DE5C74EEF977CE015</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>D729595D2D684228AA9BD496</string>
-				<string>73C9E288F2E04CF3975C0868</string>
-			</array>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>8BE3E8C34D4847BCA176E18A</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>AFImageRequestOperation.h</string>
-			<key>path</key>
-			<string>AFNetworking/AFNetworking/AFImageRequestOperation.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>8C61418AED28400FA3063AFA</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKCustomActionSheet.m</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Customize UI/SHKCustomActionSheet.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>8C819C5C12084E98B548A38D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DC8E04BB546E4A48AFC74FA7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>8CB342EB9CBD4F7BB015CCD5</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0420</string>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>56F7856828224B398ED1012A</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>C7238C6BA5AB4DC997676308</string>
-			<key>productRefGroup</key>
-			<string>B5313D09AEA34EFAAC2CA65A</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>E5B21B676557411882385656</string>
-			</array>
-		</dict>
-		<key>8D2FFA26D1EF4AEBA8159ACB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C520CDD2CF604EF09AFE8F39</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>8E10B954D7B74D8B9FFEE2F3</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKOAuthView.h</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/UI/SHKOAuthView.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>8E87142F83DE4AEDB1111E25</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7F06946115834624BEB194EA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>8F4A7459850240E798EF94EE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DC489AE5A51C4DB988F4CC01</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>8F62FA72526B4D4D83918617</key>
-		<dict>
-			<key>fileRef</key>
-			<string>724C14C0D38048409B7025E4</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>922A7B8B966048B89B9532AA</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>AD356A990A2C43B78C945ED2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Targets Support Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9388D2F245B94A63BB89C97B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>JSONKit.h</string>
-			<key>path</key>
-			<string>JSONKit/JSONKit.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>93F599198AB2488688177826</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>77C72129C6884668BBE4F39C</string>
-				<string>7913046C309546F6933AC620</string>
-				<string>7E559DC765604F0A838E8908</string>
-				<string>D0A51C44F486485C91AE70ED</string>
-				<string>0009DFED5F834284B28636FE</string>
-				<string>4E19F529C46C4ED98C7B12DF</string>
-				<string>4B968F62A30D45FBB62FE5C1</string>
-				<string>6319D8FBB72941C4B73D4785</string>
-				<string>F69E73F3336A4B5B84ABC80D</string>
-				<string>1DD5EDEC96EC463F9AA6502C</string>
-				<string>FDF23BB9666D439385B13F93</string>
-				<string>E01E8236338343AE846C881D</string>
-				<string>C9542187532E44C0988D0E56</string>
-				<string>3D1341FFF0154E3981367035</string>
-				<string>D8242429E8CC49659203AEBF</string>
-				<string>1B174FB371664E42B4771265</string>
-				<string>D1490A5FC6DA46B5A0255F4C</string>
-				<string>490BA360BD704926A70A8324</string>
-				<string>CD6AA7CA4E264A90990CFD55</string>
-				<string>C92B173F97E24AC2A5E91F3C</string>
-				<string>EC5402EA8EAA4F8E9417222C</string>
-				<string>F6B4367632F841EA806B84EB</string>
-				<string>20E461A9C65D4BBC8C403250</string>
-				<string>69E1CC1ED28441379CDD8189</string>
-				<string>F1CBD910B4104824A44EA483</string>
-				<string>BA42F5D883B0410FB373CEF5</string>
-				<string>1C2D7F27649E413BB677BD82</string>
-				<string>3989006738824137AC8BA4CB</string>
-				<string>EDB5DBF35A4440FE9E4BC44E</string>
-				<string>AFA5DFED3B564A3FA303596C</string>
-				<string>D648856783DD47EE95F7B77F</string>
-				<string>B35ACC2053D6446FB07CA8A7</string>
-				<string>4F3DB147690046E18C355C12</string>
-				<string>445BDF5477764AA9A5B9A9E4</string>
-				<string>4C77FB2A8BEE4FE98EE6F76A</string>
-				<string>2DFAA61353884D249C2BA429</string>
-				<string>BBC19B1D935D46DDA2847AB6</string>
-				<string>9B457334DA704DD0929E7671</string>
-				<string>2E9CB03F95C94E03BD1FC74C</string>
-				<string>12D8DA4B947B4A5B854F8C1E</string>
-				<string>4F2DCCFAC8C64D859AADBDAA</string>
-				<string>851C8D5B7967411D92B24059</string>
-				<string>8A2B3F3B754142278D7DA754</string>
-				<string>6A53E23F79D847BAB39AC95E</string>
-				<string>96D07AA1918B4F5888AFFAB8</string>
-				<string>9DCDBA28D3E141C2925A88FC</string>
-				<string>6FDA4B1F8B6C437981F7C749</string>
-				<string>B913E09821954D7A9714300D</string>
-				<string>7DAD254E79854AC6989FB688</string>
-				<string>06B058759CD04BFCA2C5EEF9</string>
-				<string>F243D29CE6814DEAB4B47D0D</string>
-				<string>AB4DFA5C2DFA45A5BA402F89</string>
-				<string>2AB17FB42995411782F1EC04</string>
-				<string>165F0DBF68864255A9E36A5F</string>
-				<string>9ADCC64384FF480CA0B17CDF</string>
-				<string>BF475AEA040245A8B64E0709</string>
-				<string>DC8E04BB546E4A48AFC74FA7</string>
-				<string>97BA536A3BB444EEB046824D</string>
-				<string>1012498B58F54DB9B19A6E81</string>
-				<string>C22DF94CBECC42D389D326BA</string>
-				<string>D61CCCE308424D33A957E8BA</string>
-				<string>024380E1C0EC4440A70CAC5C</string>
-				<string>F3DA6B7293B545BFA91DDFE2</string>
-				<string>563CAFF7F19F42A18161BB98</string>
-				<string>77D22C8433134841A966B58C</string>
-				<string>D2515956A04B4F4CB641A9CD</string>
-				<string>8C61418AED28400FA3063AFA</string>
-				<string>C8216D14677F4ECAB951FCE3</string>
-				<string>724C14C0D38048409B7025E4</string>
-				<string>69700971CA80401180DDEE1F</string>
-				<string>A7700B2E1D4248DDA4045D14</string>
-				<string>89BF3EF0F8B44DCCB9FB014E</string>
-				<string>2BA58349577D4988A3B6C0FB</string>
-				<string>296E891E12FD4D25A84432BA</string>
-				<string>B761B3C502F04240B3BDFF66</string>
-				<string>35E4A819F58449DBBD9DB376</string>
-				<string>D885CA0EF2184951939E6AE6</string>
-				<string>B66867EF6D1244E2A37BA3B2</string>
-				<string>7C3D3137A1D340428CABA7CF</string>
-				<string>8E10B954D7B74D8B9FFEE2F3</string>
-				<string>1D1889E82EFE469FB6759D36</string>
-				<string>0DDA01BC4E674F7A8E18CE8B</string>
-				<string>302515C803534A16997CECE2</string>
-				<string>55722C32DA164D3C90728F8E</string>
-				<string>FF604C934B4F4C57A5949BE9</string>
-				<string>356B921F58084B9B92EC46A8</string>
-				<string>949D78F2CE4A4D1A8D1CE8FB</string>
-				<string>455F30B94EE648FAB1EDF243</string>
-				<string>6CB590829E784930BAF842F2</string>
-				<string>95DAA58AAD5D479FBBB59967</string>
-				<string>D738514B175A463EA88C40D6</string>
-				<string>23C000AF96FB4D9F95ACB0C3</string>
-				<string>C92D21D81AB4454681F66F06</string>
-				<string>2E85A9F104BC45C4891CAC61</string>
-				<string>51935BEF33AE45AC8DFA6F24</string>
-				<string>191F3AD9B31346CDAA212CD0</string>
-				<string>B4D6F09D9BE043109ADE954E</string>
-				<string>FA3AEDE340004A6DB2C622FD</string>
-				<string>483A680249DE4DE28C6FF4A1</string>
-				<string>7591BA590EA145C592FF68F3</string>
-				<string>9477184C3D69462EAD1A0C77</string>
-				<string>CD067D997D004AFDA8529DFE</string>
-				<string>7F06946115834624BEB194EA</string>
-				<string>E4B439FB284A4122AB594BFC</string>
-				<string>E7FFB265ECDE4E5FBBC89118</string>
-				<string>11BC3CFFF780446FAD46F7C7</string>
-				<string>07DE4CA563364F1A89DC5BB6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>ShareKit/Core</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9477184C3D69462EAD1A0C77</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKCopy.m</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Sharers/Actions/Copy/SHKCopy.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>949D78F2CE4A4D1A8D1CE8FB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKFormControllerLargeTextField.m</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/UI/SHKFormControllerLargeTextField.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>959AC37DF2C34CCD9DF1D180</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F243D29CE6814DEAB4B47D0D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>95DAA58AAD5D479FBBB59967</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKFormOptionController.m</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/UI/SHKFormOptionController.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>96D07AA1918B4F5888AFFAB8</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>OAConsumer.m</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Core/Helpers/OAuth/OAConsumer.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>9731DC423E154BA9A360CB7B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9477184C3D69462EAD1A0C77</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>97BA536A3BB444EEB046824D</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Base64Transcoder.c</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Core/Helpers/OAuth/Crytpo/Base64Transcoder.c</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>980D6228AFDF4142956C221D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8A2B3F3B754142278D7DA754</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>9940A494E378493BA3344E1A</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>AFPropertyListRequestOperation.h</string>
-			<key>path</key>
-			<string>AFNetworking/AFNetworking/AFPropertyListRequestOperation.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>9ADCC64384FF480CA0B17CDF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHK.m</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Core/SHK.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>9B457334DA704DD0929E7671</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>NSHTTPCookieStorage+DeleteForURL.m</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Core/Categories/NSHTTPCookieStorage+DeleteForURL.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>9CCEE154C5EF4D66A4D542A6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BDE1B594A19D4382864DB3A1</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>9DCDBA28D3E141C2925A88FC</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>OADataFetcher.m</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Core/Helpers/OAuth/OADataFetcher.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>9E77E63154D54AECB28EDBAF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>69700971CA80401180DDEE1F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>9EE1A3B99FE843ECB4B9AF4C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>4F2DCCFAC8C64D859AADBDAA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>A06F7C125E9247F99D04593B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SBJSON.h</string>
-			<key>path</key>
-			<string>SBJson/Source/SBJSON.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>A0DD70B638B9488FAAEFB46F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SVProgressHUD.m</string>
-			<key>path</key>
-			<string>SVProgressHUD/SVProgressHUD/SVProgressHUD.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>A5E86EEBDBF04EDBB899552B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F084655CFF4647FDB32600B5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> -fobjc-arc</string>
-			</dict>
-		</dict>
-		<key>A657D1EE4879407A99EDB470</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C22DF94CBECC42D389D326BA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>A6DE7E43FFFC463CAD6F7917</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>AFURLConnectionOperation.h</string>
-			<key>path</key>
-			<string>AFNetworking/AFNetworking/AFURLConnectionOperation.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>A7700B2E1D4248DDA4045D14</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKCustomShareMenu.m</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Customize UI/SHKCustomShareMenu.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>AB4DFA5C2DFA45A5BA402F89</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>OAToken.m</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Core/Helpers/OAuth/OAToken.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>AD356A990A2C43B78C945ED2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CB8F6BF5E04046FFA35EA6C7</string>
-				<string>E5093AD5FFAD4563A93DBE67</string>
-				<string>729C7C282C3C44C9A029B925</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AF9D41D452E0430A9DC32C82</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>AFXMLRequestOperation.m</string>
-			<key>path</key>
-			<string>AFNetworking/AFNetworking/AFXMLRequestOperation.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>AFA5DFED3B564A3FA303596C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKXMLResponseParser.h</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Core/Helpers/SHKXMLResponseParser.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>B0EECC93F8FD495D806404F3</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>JSONKit.m</string>
-			<key>path</key>
-			<string>JSONKit/JSONKit.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>B12EA75CCE1B4567A99FA72F</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_32_BIT)</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_VERSION</key>
-				<string>com.apple.compilers.llvmgcc42</string>
-				<key>GCC_WARN_ABOUT_MISSING_PROTOTYPES</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>4.3</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>B1F75FFDB5864FCDA7CDE408</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CE0D8A4376304E86B5360E12</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>B35ACC2053D6446FB07CA8A7</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKItem.h</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Core/SHKItem.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>B4194322886E4729B0C9DA4C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>48944DFC5743415BB074975E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>B4D6F09D9BE043109ADE954E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKSafari.h</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Sharers/Actions/Open in Safari/SHKSafari.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>B5313D09AEA34EFAAC2CA65A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>2A00D9DC1C944C27A20EBF2F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B66867EF6D1244E2A37BA3B2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKFormFieldSettings.h</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/UI/SHKFormFieldSettings.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>B72803E291A34B39868C8639</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>AFPropertyListRequestOperation.m</string>
-			<key>path</key>
-			<string>AFNetworking/AFNetworking/AFPropertyListRequestOperation.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>B761B3C502F04240B3BDFF66</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKFormController.h</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/UI/SHKFormController.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>B913E09821954D7A9714300D</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>OAMutableURLRequest.m</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Core/Helpers/OAuth/OAMutableURLRequest.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>B94D605C661447E89282A1C4</key>
-		<dict>
-			<key>fileRef</key>
-			<string>06B058759CD04BFCA2C5EEF9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>BA42F5D883B0410FB373CEF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>OASignatureProviding.h</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Core/Helpers/OAuth/OASignatureProviding.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>BAF7340261AC4789B7388AF1</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E4B439FB284A4122AB594BFC</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>BB65877512564E188F323D2C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>356B921F58084B9B92EC46A8</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>BB68FD02C9DE4DF99D682EBA</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>23C1CCBEE9BB428AB558EAD3</string>
-				<string>D7D2D76E80DD4945ABB2C79B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>ShareKit/Facebook</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BBC19B1D935D46DDA2847AB6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>NSData+md5.m</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Core/Categories/NSData+md5.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>BDE1B594A19D4382864DB3A1</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>UIImageView+AFNetworking.m</string>
-			<key>path</key>
-			<string>AFNetworking/AFNetworking/UIImageView+AFNetworking.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>BF475AEA040245A8B64E0709</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKItem.m</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Core/SHKItem.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>C1A46814ADB84C61BFA51BBB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>AFNetworkActivityIndicatorManager.m</string>
-			<key>path</key>
-			<string>AFNetworking/AFNetworking/AFNetworkActivityIndicatorManager.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>C22DF94CBECC42D389D326BA</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>sha1.c</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Core/Helpers/OAuth/Crytpo/sha1.c</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>C520CDD2CF604EF09AFE8F39</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>AFHTTPRequestOperation.m</string>
-			<key>path</key>
-			<string>AFNetworking/AFNetworking/AFHTTPRequestOperation.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>C7238C6BA5AB4DC997676308</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E693797F832E479DAFA4ED3A</string>
-				<string>76C6CC2D9977482D9C9638E8</string>
-				<string>B5313D09AEA34EFAAC2CA65A</string>
-				<string>922A7B8B966048B89B9532AA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C8216D14677F4ECAB951FCE3</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKCustomFormController.m</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Customize UI/SHKCustomFormController.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>C92B173F97E24AC2A5E91F3C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>OADataFetcher.h</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Core/Helpers/OAuth/OADataFetcher.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>C92D21D81AB4454681F66F06</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKViewControllerWrapper.m</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/UI/SHKViewControllerWrapper.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>C9542187532E44C0988D0E56</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>NSString+URLEncoding.h</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Core/Helpers/OAuth/Categories/NSString+URLEncoding.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>C97CC42DA21B4A7786BC2CB3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9DCDBA28D3E141C2925A88FC</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>C9A432C744AE459EB53F62D4</key>
-		<dict>
-			<key>fileRef</key>
-			<string>317E33B508B94193A7C27C51</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>CB8F6BF5E04046FFA35EA6C7</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Pods-resources.sh</string>
-			<key>path</key>
-			<string>Pods-resources.sh</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>CD067D997D004AFDA8529DFE</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKMail.m</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Sharers/Actions/Email/SHKMail.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>CD6AA7CA4E264A90990CFD55</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>OAConsumer.h</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Core/Helpers/OAuth/OAConsumer.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>CE0D8A4376304E86B5360E12</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>TTTAttributedLabel.m</string>
-			<key>path</key>
-			<string>TTTAttributedLabel/TTTAttributedLabel.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>CE2A5D8F067643B8ACEF64F7</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>TTTAttributedLabel.h</string>
-			<key>path</key>
-			<string>TTTAttributedLabel/TTTAttributedLabel.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>CE42CAC5E6524957BAD2B637</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>9388D2F245B94A63BB89C97B</string>
-				<string>B0EECC93F8FD495D806404F3</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>JSONKit</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D0A51C44F486485C91AE70ED</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKConfiguration.m</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Configuration/SHKConfiguration.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>D1490A5FC6DA46B5A0255F4C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>sha1.h</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Core/Helpers/OAuth/Crytpo/sha1.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>D19F01F795894C8087F2FC8A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>55722C32DA164D3C90728F8E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>D20A59C5583640C4A0E4D0AF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AB4DFA5C2DFA45A5BA402F89</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>D2515956A04B4F4CB641A9CD</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKCustomShareMenuCell.h</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Customize UI/SHKCustomShareMenuCell.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>D61CCCE308424D33A957E8BA</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKCustomActionSheet.h</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Customize UI/SHKCustomActionSheet.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>D648856783DD47EE95F7B77F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHK.h</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Core/SHK.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>D705F37C262647A68DE8F81A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2AB17FB42995411782F1EC04</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>D71C9E0B21F64DDABD31F90F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C8216D14677F4ECAB951FCE3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>D729595D2D684228AA9BD496</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>729C7C282C3C44C9A029B925</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Pods-prefix.pch</string>
-				<key>GCC_VERSION</key>
-				<string>com.apple.compilers.llvm.clang.1_0</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>D738514B175A463EA88C40D6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKOAuthView.m</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/UI/SHKOAuthView.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>D7D2D76E80DD4945ABB2C79B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKFacebook.m</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Sharers/Services/Facebook/SHKFacebook.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>D8242429E8CC49659203AEBF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Base64Transcoder.h</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Core/Helpers/OAuth/Crytpo/Base64Transcoder.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>D84A183F7A3442BB90CF59BC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>949D78F2CE4A4D1A8D1CE8FB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>D885CA0EF2184951939E6AE6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKFormFieldCell.h</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/UI/SHKFormFieldCell.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>D8CA081D218C48889DF19C1C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2DFAA61353884D249C2BA429</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>DC489AE5A51C4DB988F4CC01</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SBJSON.m</string>
-			<key>path</key>
-			<string>SBJson/Source/SBJSON.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>DC8E04BB546E4A48AFC74FA7</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKOfflineSharer.m</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Core/SHKOfflineSharer.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>DCEEDA39230C49DD8AFD438F</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>B4194322886E4729B0C9DA4C</string>
-				<string>8D2FFA26D1EF4AEBA8159ACB</string>
-				<string>08C4CDC78C4841DDA877F136</string>
-				<string>C9A432C744AE459EB53F62D4</string>
-				<string>5B94B8C91B674D92A6E821BA</string>
-				<string>79841CD36722448FBEA55E8C</string>
-				<string>36C39C9D0FE14D1EBA3DE16B</string>
-				<string>2BBFE71B842D4D82B6691F70</string>
-				<string>443895E300884A1798245913</string>
-				<string>9CCEE154C5EF4D66A4D542A6</string>
-				<string>24B177C596FD4A8EBD72CD77</string>
-				<string>1487FC0ED2A94907857B2D97</string>
-				<string>414A70DC109744D3A9506BB3</string>
-				<string>111F6F681B6243C0BF9BF775</string>
-				<string>DD589E23B66043C6A5999073</string>
-				<string>61786F5236BE4447B54AB43F</string>
-				<string>A5E86EEBDBF04EDBB899552B</string>
-				<string>15DF6872D3A34D978145BF4A</string>
-				<string>FC3124972E57479B9C2B5721</string>
-				<string>8F4A7459850240E798EF94EE</string>
-				<string>19E8046668484A5CBE4DE9B1</string>
-				<string>032578A0A8434051BEB4CD03</string>
-				<string>56312C957E924FA080DCE25C</string>
-				<string>46825F4BB7964980AB3411B5</string>
-				<string>5DB94BD43AA14914861AB0C4</string>
-				<string>41A16C7766E442CF9483DC20</string>
-				<string>EA2E9767F78A491890FFA238</string>
-				<string>46BC5F9A86814233BA97055A</string>
-				<string>7CA23D9DEEFD4FE3A4C04DDA</string>
-				<string>D8CA081D218C48889DF19C1C</string>
-				<string>394778509FA3425D823B609A</string>
-				<string>2FFDA5EF10A34C00953E841B</string>
-				<string>360B20F832BA41979F12D509</string>
-				<string>41B3E94DDD1E4B2B81FC04D9</string>
-				<string>9EE1A3B99FE843ECB4B9AF4C</string>
-				<string>527ECB5246C5465B992BC3F2</string>
-				<string>980D6228AFDF4142956C221D</string>
-				<string>4613134FE742417EB8075590</string>
-				<string>7DDEBC12F6EE4F9392B88113</string>
-				<string>C97CC42DA21B4A7786BC2CB3</string>
-				<string>FCAA1C96D57B4B6685D248A9</string>
-				<string>3DBC42B47910440588589E87</string>
-				<string>24F5D2A4589F40F48025CE72</string>
-				<string>B94D605C661447E89282A1C4</string>
-				<string>959AC37DF2C34CCD9DF1D180</string>
-				<string>D20A59C5583640C4A0E4D0AF</string>
-				<string>D705F37C262647A68DE8F81A</string>
-				<string>14C2C81291C44E38893A95B7</string>
-				<string>7B0B2ABEDBB44ABB9C459630</string>
-				<string>58DB80976C464A46B57CB9A5</string>
-				<string>8C819C5C12084E98B548A38D</string>
-				<string>818E8BEA7BE14085A1AFE1E5</string>
-				<string>818CA08630474D4BBB557572</string>
-				<string>A657D1EE4879407A99EDB470</string>
-				<string>E327A85AC74E4154B586B938</string>
-				<string>D71C9E0B21F64DDABD31F90F</string>
-				<string>8F62FA72526B4D4D83918617</string>
-				<string>9E77E63154D54AECB28EDBAF</string>
-				<string>E2F1A05893D542929B81600A</string>
-				<string>ECA9DD171710459A971BCB7B</string>
-				<string>D19F01F795894C8087F2FC8A</string>
-				<string>857D48ADC5B64CABACD246F1</string>
-				<string>BB65877512564E188F323D2C</string>
-				<string>D84A183F7A3442BB90CF59BC</string>
-				<string>6F507C52B84841F5B13D2290</string>
-				<string>68A9BB620DE9400B8842D25C</string>
-				<string>E33F515300D549A2AF9CDB4A</string>
-				<string>15A1BDCE7EAC45CAB3E87492</string>
-				<string>486F21262F8E48B28284B444</string>
-				<string>6D20CD60FB684F87A60E10AB</string>
-				<string>9731DC423E154BA9A360CB7B</string>
-				<string>00C793D69A15440DA0FF8950</string>
-				<string>8E87142F83DE4AEDB1111E25</string>
-				<string>BAF7340261AC4789B7388AF1</string>
-				<string>04D32EFB3F7B43999F993FC9</string>
-				<string>DD1CE8EB13F3466E9D163F4F</string>
-				<string>DF02481A693B4835BB9A26BF</string>
-				<string>63FA0B028BFF4F909FBE3471</string>
-				<string>4EF85DC1EEC341FEAA7C08D6</string>
-				<string>5A0A4EA36B694BA98F46DE89</string>
-				<string>B1F75FFDB5864FCDA7CDE408</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>DD1CE8EB13F3466E9D163F4F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>11BC3CFFF780446FAD46F7C7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>DD589E23B66043C6A5999073</key>
-		<dict>
-			<key>fileRef</key>
-			<string>65F6178008B941068BB6D9A2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>DF02481A693B4835BB9A26BF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>07DE4CA563364F1A89DC5BB6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>DF0BBB75B4DB49658A527DD7</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SBJsonBase.m</string>
-			<key>path</key>
-			<string>SBJson/Source/SBJsonBase.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>E01E8236338343AE846C881D</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>NSMutableURLRequest+Parameters.h</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Core/Helpers/OAuth/Categories/NSMutableURLRequest+Parameters.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>E2F1A05893D542929B81600A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A7700B2E1D4248DDA4045D14</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>E327A85AC74E4154B586B938</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8C61418AED28400FA3063AFA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>E33F515300D549A2AF9CDB4A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>95DAA58AAD5D479FBBB59967</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>E44690D0B2D34DB0AC69CF7F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>2A0C8865A18C4D7C89094DED</string>
-				<string>37C2D754A3834DE18C89A1CA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>SSKeychain</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E4B439FB284A4122AB594BFC</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKSafari.m</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Sharers/Actions/Open in Safari/SHKSafari.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>E5093AD5FFAD4563A93DBE67</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Pods-prefix.pch</string>
-			<key>path</key>
-			<string>Pods-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>E5B21B676557411882385656</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>8A6E912DE5C74EEF977CE015</string>
-			<key>buildPhases</key>
-			<array>
-				<string>DCEEDA39230C49DD8AFD438F</string>
-				<string>40D16A7872E149CBA7E32921</string>
-				<string>20A94FF016E64460A8280EF6</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>productName</key>
-			<string>Pods</string>
-			<key>productReference</key>
-			<string>2A00D9DC1C944C27A20EBF2F</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>E693797F832E479DAFA4ED3A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FBB9DD401D7547E09322281B</string>
-				<string>7CFE153470334C65BB26348E</string>
-				<string>79148E0B95074739B49BB81E</string>
-				<string>CE42CAC5E6524957BAD2B637</string>
-				<string>04B8AFE77C4A4628B2124973</string>
-				<string>838D81A7E2FC4EEA88D75734</string>
-				<string>E44690D0B2D34DB0AC69CF7F</string>
-				<string>4F4CB3D5A9A84BBCA586F1FF</string>
-				<string>93F599198AB2488688177826</string>
-				<string>BB68FD02C9DE4DF99D682EBA</string>
-				<string>2CE9CF946C944AF19C0EA95C</string>
-				<string>25ED13AB48344CA294709E76</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E7FFB265ECDE4E5FBBC89118</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKPrint.m</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Sharers/Actions/Print/SHKPrint.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>EA2E9767F78A491890FFA238</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D0A51C44F486485C91AE70ED</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>EA5836BE8BE7479C8879799B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>JSON.h</string>
-			<key>path</key>
-			<string>SBJson/Source/JSON.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>EC5402EA8EAA4F8E9417222C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>OAHMAC_SHA1SignatureProvider.h</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Core/Helpers/OAuth/OAHMAC_SHA1SignatureProvider.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>ECA9DD171710459A971BCB7B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>89BF3EF0F8B44DCCB9FB014E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>EDB5DBF35A4440FE9E4BC44E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKRequest.h</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Core/Helpers/SHKRequest.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>F084655CFF4647FDB32600B5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Reachability.m</string>
-			<key>path</key>
-			<string>Reachability/Reachability.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>F1CBD910B4104824A44EA483</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>OAServiceTicket.h</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Core/Helpers/OAuth/OAServiceTicket.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>F243D29CE6814DEAB4B47D0D</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>OAServiceTicket.m</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Core/Helpers/OAuth/OAServiceTicket.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>F37A7E1FB84B4651B8FC6649</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>AFXMLRequestOperation.h</string>
-			<key>path</key>
-			<string>AFNetworking/AFNetworking/AFXMLRequestOperation.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>F3DA6B7293B545BFA91DDFE2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKCustomFormControllerLargeTextField.h</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Customize UI/SHKCustomFormControllerLargeTextField.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>F69E73F3336A4B5B84ABC80D</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>NSHTTPCookieStorage+DeleteForURL.h</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Core/Categories/NSHTTPCookieStorage+DeleteForURL.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>F6B4367632F841EA806B84EB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>OAMutableURLRequest.h</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Core/Helpers/OAuth/OAMutableURLRequest.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>F81E90771A1C4C69AEEEE8E4</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>AFHTTPClient.h</string>
-			<key>path</key>
-			<string>AFNetworking/AFNetworking/AFHTTPClient.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>FA2A8723619F47A8A6D0F6E4</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>NSString+SBJSON.m</string>
-			<key>path</key>
-			<string>SBJson/Source/NSString+SBJSON.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>FA3AEDE340004A6DB2C622FD</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKPrint.h</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Sharers/Actions/Print/SHKPrint.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>FBB9DD401D7547E09322281B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>F81E90771A1C4C69AEEEE8E4</string>
-				<string>1FCD74A9559943FDBB2D3814</string>
-				<string>8BE3E8C34D4847BCA176E18A</string>
-				<string>67991845C020405FBDEE3AF7</string>
-				<string>6C5575E72ECF4DF3B169DFF4</string>
-				<string>0A4A26F62E3F443DA5355D46</string>
-				<string>898433A86F17475899BABC59</string>
-				<string>9940A494E378493BA3344E1A</string>
-				<string>A6DE7E43FFFC463CAD6F7917</string>
-				<string>F37A7E1FB84B4651B8FC6649</string>
-				<string>38360E74D09E42F68D72111E</string>
-				<string>48944DFC5743415BB074975E</string>
-				<string>C520CDD2CF604EF09AFE8F39</string>
-				<string>FF6D1AB391814C35AE83F99E</string>
-				<string>317E33B508B94193A7C27C51</string>
-				<string>1E83903747B347548675898A</string>
-				<string>C1A46814ADB84C61BFA51BBB</string>
-				<string>B72803E291A34B39868C8639</string>
-				<string>031E0CFB99914F22A2F5020C</string>
-				<string>AF9D41D452E0430A9DC32C82</string>
-				<string>BDE1B594A19D4382864DB3A1</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>AFNetworking</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FC3124972E57479B9C2B5721</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FA2A8723619F47A8A6D0F6E4</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>FCAA1C96D57B4B6685D248A9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6FDA4B1F8B6C437981F7C749</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string> </string>
-			</dict>
-		</dict>
-		<key>FDF23BB9666D439385B13F93</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>UIWebView+SHK.h</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/Core/Categories/UIWebView+SHK.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>FF604C934B4F4C57A5949BE9</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHKActivityIndicator.m</string>
-			<key>path</key>
-			<string>ShareKit/Classes/ShareKit/UI/SHKActivityIndicator.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>FF6D1AB391814C35AE83F99E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>AFImageRequestOperation.m</string>
-			<key>path</key>
-			<string>AFNetworking/AFNetworking/AFImageRequestOperation.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>8CB342EB9CBD4F7BB015CCD5</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00C793D69A15440DA0FF8950 /* SHKMail.m in Sources */ = {isa = PBXBuildFile; fileRef = CD067D997D004AFDA8529DFE /* SHKMail.m */; settings = {COMPILER_FLAGS = " "; }; };
+		032578A0A8434051BEB4CD03 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3007B410AFA54AD6B02F5886 /* SBJsonParser.m */; settings = {COMPILER_FLAGS = " "; }; };
+		04D32EFB3F7B43999F993FC9 /* SHKPrint.m in Sources */ = {isa = PBXBuildFile; fileRef = E7FFB265ECDE4E5FBBC89118 /* SHKPrint.m */; settings = {COMPILER_FLAGS = " "; }; };
+		08C4CDC78C4841DDA877F136 /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FF6D1AB391814C35AE83F99E /* AFImageRequestOperation.m */; settings = {COMPILER_FLAGS = " "; }; };
+		111F6F681B6243C0BF9BF775 /* FBLoginDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 3657147466AB4DDCB2965EAB /* FBLoginDialog.m */; settings = {COMPILER_FLAGS = " "; }; };
+		1487FC0ED2A94907857B2D97 /* Facebook.m in Sources */ = {isa = PBXBuildFile; fileRef = 7934A0322B8F4162B2FE8237 /* Facebook.m */; settings = {COMPILER_FLAGS = " "; }; };
+		14C2C81291C44E38893A95B7 /* SHKXMLResponseParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 165F0DBF68864255A9E36A5F /* SHKXMLResponseParser.m */; settings = {COMPILER_FLAGS = " "; }; };
+		15A1BDCE7EAC45CAB3E87492 /* SHKOAuthView.m in Sources */ = {isa = PBXBuildFile; fileRef = D738514B175A463EA88C40D6 /* SHKOAuthView.m */; settings = {COMPILER_FLAGS = " "; }; };
+		15DF6872D3A34D978145BF4A /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DD78801C53449AFAA74D5CF /* NSObject+SBJSON.m */; settings = {COMPILER_FLAGS = " "; }; };
+		19E8046668484A5CBE4DE9B1 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0BBB75B4DB49658A527DD7 /* SBJsonBase.m */; settings = {COMPILER_FLAGS = " "; }; };
+		24B177C596FD4A8EBD72CD77 /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF3628BD9FA499D8B15B0E1 /* EGORefreshTableHeaderView.m */; settings = {COMPILER_FLAGS = " "; }; };
+		24F5D2A4589F40F48025CE72 /* OAPlaintextSignatureProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAD254E79854AC6989FB688 /* OAPlaintextSignatureProvider.m */; settings = {COMPILER_FLAGS = " "; }; };
+		2BBFE71B842D4D82B6691F70 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 031E0CFB99914F22A2F5020C /* AFURLConnectionOperation.m */; settings = {COMPILER_FLAGS = " "; }; };
+		2FFDA5EF10A34C00953E841B /* NSHTTPCookieStorage+DeleteForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B457334DA704DD0929E7671 /* NSHTTPCookieStorage+DeleteForURL.m */; settings = {COMPILER_FLAGS = " "; }; };
+		360B20F832BA41979F12D509 /* NSMutableDictionary+NSNullsToEmptyStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9CB03F95C94E03BD1FC74C /* NSMutableDictionary+NSNullsToEmptyStrings.m */; settings = {COMPILER_FLAGS = " "; }; };
+		36C39C9D0FE14D1EBA3DE16B /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B72803E291A34B39868C8639 /* AFPropertyListRequestOperation.m */; settings = {COMPILER_FLAGS = " "; }; };
+		37A5ED9173044AF79C83F310 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1683539E785F406684F2D6F6 /* Foundation.framework */; };
+		394778509FA3425D823B609A /* NSData+md5.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC19B1D935D46DDA2847AB6 /* NSData+md5.m */; settings = {COMPILER_FLAGS = " "; }; };
+		3DBC42B47910440588589E87 /* OAMutableURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B913E09821954D7A9714300D /* OAMutableURLRequest.m */; settings = {COMPILER_FLAGS = " "; }; };
+		414A70DC109744D3A9506BB3 /* FBDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EABBE1B16194F0285EDBA36 /* FBDialog.m */; settings = {COMPILER_FLAGS = " "; }; };
+		41A16C7766E442CF9483DC20 /* DefaultSHKConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E559DC765604F0A838E8908 /* DefaultSHKConfigurator.m */; settings = {COMPILER_FLAGS = " "; }; };
+		41B3E94DDD1E4B2B81FC04D9 /* UIWebView+SHK.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D8DA4B947B4A5B854F8C1E /* UIWebView+SHK.m */; settings = {COMPILER_FLAGS = " "; }; };
+		443895E300884A1798245913 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9D41D452E0430A9DC32C82 /* AFXMLRequestOperation.m */; settings = {COMPILER_FLAGS = " "; }; };
+		4613134FE742417EB8075590 /* OAAsynchronousDataFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A53E23F79D847BAB39AC95E /* OAAsynchronousDataFetcher.m */; settings = {COMPILER_FLAGS = " "; }; };
+		46825F4BB7964980AB3411B5 /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 37C2D754A3834DE18C89A1CA /* SSKeychain.m */; settings = {COMPILER_FLAGS = " "; }; };
+		46BC5F9A86814233BA97055A /* SHKOAuthSharer.m in Sources */ = {isa = PBXBuildFile; fileRef = 445BDF5477764AA9A5B9A9E4 /* SHKOAuthSharer.m */; settings = {COMPILER_FLAGS = " "; }; };
+		486F21262F8E48B28284B444 /* SHKShareMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 23C000AF96FB4D9F95ACB0C3 /* SHKShareMenu.m */; settings = {COMPILER_FLAGS = " "; }; };
+		4EF85DC1EEC341FEAA7C08D6 /* SHKiOS5Twitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F46CB96464A49F0AFA0E686 /* SHKiOS5Twitter.m */; settings = {COMPILER_FLAGS = " "; }; };
+		527ECB5246C5465B992BC3F2 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 851C8D5B7967411D92B24059 /* NSString+URLEncoding.m */; settings = {COMPILER_FLAGS = " "; }; };
+		56312C957E924FA080DCE25C /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E19EBA9BAC94F34A0613456 /* SBJsonWriter.m */; settings = {COMPILER_FLAGS = " "; }; };
+		58DB80976C464A46B57CB9A5 /* SHKItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BF475AEA040245A8B64E0709 /* SHKItem.m */; settings = {COMPILER_FLAGS = " "; }; };
+		5A0A4EA36B694BA98F46DE89 /* SHKTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 72369D8F330B4F839074F161 /* SHKTwitter.m */; settings = {COMPILER_FLAGS = " "; }; };
+		5B94B8C91B674D92A6E821BA /* AFJSONUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E83903747B347548675898A /* AFJSONUtilities.m */; settings = {COMPILER_FLAGS = " "; }; };
+		5DB94BD43AA14914861AB0C4 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DD70B638B9488FAAEFB46F /* SVProgressHUD.m */; settings = {COMPILER_FLAGS = " "; }; };
+		61786F5236BE4447B54AB43F /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EECC93F8FD495D806404F3 /* JSONKit.m */; settings = {COMPILER_FLAGS = " "; }; };
+		63FA0B028BFF4F909FBE3471 /* SHKFacebook.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D2D76E80DD4945ABB2C79B /* SHKFacebook.m */; settings = {COMPILER_FLAGS = " "; }; };
+		68A9BB620DE9400B8842D25C /* SHKFormFieldSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB590829E784930BAF842F2 /* SHKFormFieldSettings.m */; settings = {COMPILER_FLAGS = " "; }; };
+		6D20CD60FB684F87A60E10AB /* SHKViewControllerWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C92D21D81AB4454681F66F06 /* SHKViewControllerWrapper.m */; settings = {COMPILER_FLAGS = " "; }; };
+		6F507C52B84841F5B13D2290 /* SHKFormFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 455F30B94EE648FAB1EDF243 /* SHKFormFieldCell.m */; settings = {COMPILER_FLAGS = " "; }; };
+		79841CD36722448FBEA55E8C /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A46814ADB84C61BFA51BBB /* AFNetworkActivityIndicatorManager.m */; settings = {COMPILER_FLAGS = " "; }; };
+		7B0B2ABEDBB44ABB9C459630 /* SHK.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADCC64384FF480CA0B17CDF /* SHK.m */; settings = {COMPILER_FLAGS = " "; }; };
+		7CA23D9DEEFD4FE3A4C04DDA /* SHKSharer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C77FB2A8BEE4FE98EE6F76A /* SHKSharer.m */; settings = {COMPILER_FLAGS = " "; }; };
+		7DDEBC12F6EE4F9392B88113 /* OAConsumer.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D07AA1918B4F5888AFFAB8 /* OAConsumer.m */; settings = {COMPILER_FLAGS = " "; }; };
+		818CA08630474D4BBB557572 /* hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = 1012498B58F54DB9B19A6E81 /* hmac.c */; settings = {COMPILER_FLAGS = " "; }; };
+		818E8BEA7BE14085A1AFE1E5 /* Base64Transcoder.c in Sources */ = {isa = PBXBuildFile; fileRef = 97BA536A3BB444EEB046824D /* Base64Transcoder.c */; settings = {COMPILER_FLAGS = " "; }; };
+		857D48ADC5B64CABACD246F1 /* SHKActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = FF604C934B4F4C57A5949BE9 /* SHKActivityIndicator.m */; settings = {COMPILER_FLAGS = " "; }; };
+		8C819C5C12084E98B548A38D /* SHKOfflineSharer.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8E04BB546E4A48AFC74FA7 /* SHKOfflineSharer.m */; settings = {COMPILER_FLAGS = " "; }; };
+		8D2FFA26D1EF4AEBA8159ACB /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C520CDD2CF604EF09AFE8F39 /* AFHTTPRequestOperation.m */; settings = {COMPILER_FLAGS = " "; }; };
+		8E87142F83DE4AEDB1111E25 /* SHKLogout.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F06946115834624BEB194EA /* SHKLogout.m */; settings = {COMPILER_FLAGS = " "; }; };
+		8F4A7459850240E798EF94EE /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = DC489AE5A51C4DB988F4CC01 /* SBJSON.m */; settings = {COMPILER_FLAGS = " "; }; };
+		8F62FA72526B4D4D83918617 /* SHKCustomFormControllerLargeTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 724C14C0D38048409B7025E4 /* SHKCustomFormControllerLargeTextField.m */; settings = {COMPILER_FLAGS = " "; }; };
+		959AC37DF2C34CCD9DF1D180 /* OAServiceTicket.m in Sources */ = {isa = PBXBuildFile; fileRef = F243D29CE6814DEAB4B47D0D /* OAServiceTicket.m */; settings = {COMPILER_FLAGS = " "; }; };
+		9731DC423E154BA9A360CB7B /* SHKCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9477184C3D69462EAD1A0C77 /* SHKCopy.m */; settings = {COMPILER_FLAGS = " "; }; };
+		980D6228AFDF4142956C221D /* NSURL+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A2B3F3B754142278D7DA754 /* NSURL+Base.m */; settings = {COMPILER_FLAGS = " "; }; };
+		9CCEE154C5EF4D66A4D542A6 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = BDE1B594A19D4382864DB3A1 /* UIImageView+AFNetworking.m */; settings = {COMPILER_FLAGS = " "; }; };
+		9E77E63154D54AECB28EDBAF /* SHKCustomFormFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69700971CA80401180DDEE1F /* SHKCustomFormFieldCell.m */; settings = {COMPILER_FLAGS = " "; }; };
+		9EE1A3B99FE843ECB4B9AF4C /* NSMutableURLRequest+Parameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F2DCCFAC8C64D859AADBDAA /* NSMutableURLRequest+Parameters.m */; settings = {COMPILER_FLAGS = " "; }; };
+		A5E86EEBDBF04EDBB899552B /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = F084655CFF4647FDB32600B5 /* Reachability.m */; settings = {COMPILER_FLAGS = " -fobjc-arc"; }; };
+		A657D1EE4879407A99EDB470 /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = C22DF94CBECC42D389D326BA /* sha1.c */; settings = {COMPILER_FLAGS = " "; }; };
+		B1F75FFDB5864FCDA7CDE408 /* TTTAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0D8A4376304E86B5360E12 /* TTTAttributedLabel.m */; settings = {COMPILER_FLAGS = " "; }; };
+		B4194322886E4729B0C9DA4C /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 48944DFC5743415BB074975E /* AFHTTPClient.m */; settings = {COMPILER_FLAGS = " "; }; };
+		B94D605C661447E89282A1C4 /* OARequestParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B058759CD04BFCA2C5EEF9 /* OARequestParameter.m */; settings = {COMPILER_FLAGS = " "; }; };
+		BAF7340261AC4789B7388AF1 /* SHKSafari.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B439FB284A4122AB594BFC /* SHKSafari.m */; settings = {COMPILER_FLAGS = " "; }; };
+		BB65877512564E188F323D2C /* SHKFormController.m in Sources */ = {isa = PBXBuildFile; fileRef = 356B921F58084B9B92EC46A8 /* SHKFormController.m */; settings = {COMPILER_FLAGS = " "; }; };
+		C97CC42DA21B4A7786BC2CB3 /* OADataFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DCDBA28D3E141C2925A88FC /* OADataFetcher.m */; settings = {COMPILER_FLAGS = " "; }; };
+		C9A432C744AE459EB53F62D4 /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 317E33B508B94193A7C27C51 /* AFJSONRequestOperation.m */; settings = {COMPILER_FLAGS = " "; }; };
+		D19F01F795894C8087F2FC8A /* SHKActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 55722C32DA164D3C90728F8E /* SHKActionSheet.m */; settings = {COMPILER_FLAGS = " "; }; };
+		D20A59C5583640C4A0E4D0AF /* OAToken.m in Sources */ = {isa = PBXBuildFile; fileRef = AB4DFA5C2DFA45A5BA402F89 /* OAToken.m */; settings = {COMPILER_FLAGS = " "; }; };
+		D705F37C262647A68DE8F81A /* SHKRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB17FB42995411782F1EC04 /* SHKRequest.m */; settings = {COMPILER_FLAGS = " "; }; };
+		D71C9E0B21F64DDABD31F90F /* SHKCustomFormController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8216D14677F4ECAB951FCE3 /* SHKCustomFormController.m */; settings = {COMPILER_FLAGS = " "; }; };
+		D84A183F7A3442BB90CF59BC /* SHKFormControllerLargeTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 949D78F2CE4A4D1A8D1CE8FB /* SHKFormControllerLargeTextField.m */; settings = {COMPILER_FLAGS = " "; }; };
+		D8CA081D218C48889DF19C1C /* SHKSharerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFAA61353884D249C2BA429 /* SHKSharerDelegate.m */; settings = {COMPILER_FLAGS = " "; }; };
+		DD1CE8EB13F3466E9D163F4F /* SHKPhotoAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 11BC3CFFF780446FAD46F7C7 /* SHKPhotoAlbum.m */; settings = {COMPILER_FLAGS = " "; }; };
+		DD589E23B66043C6A5999073 /* FBRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F6178008B941068BB6D9A2 /* FBRequest.m */; settings = {COMPILER_FLAGS = " "; }; };
+		DF02481A693B4835BB9A26BF /* SHKTextMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DE4CA563364F1A89DC5BB6 /* SHKTextMessage.m */; settings = {COMPILER_FLAGS = " "; }; };
+		E2F1A05893D542929B81600A /* SHKCustomShareMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = A7700B2E1D4248DDA4045D14 /* SHKCustomShareMenu.m */; settings = {COMPILER_FLAGS = " "; }; };
+		E327A85AC74E4154B586B938 /* SHKCustomActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C61418AED28400FA3063AFA /* SHKCustomActionSheet.m */; settings = {COMPILER_FLAGS = " "; }; };
+		E33F515300D549A2AF9CDB4A /* SHKFormOptionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DAA58AAD5D479FBBB59967 /* SHKFormOptionController.m */; settings = {COMPILER_FLAGS = " "; }; };
+		EA2E9767F78A491890FFA238 /* SHKConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A51C44F486485C91AE70ED /* SHKConfiguration.m */; settings = {COMPILER_FLAGS = " "; }; };
+		ECA9DD171710459A971BCB7B /* SHKCustomShareMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BF3EF0F8B44DCCB9FB014E /* SHKCustomShareMenuCell.m */; settings = {COMPILER_FLAGS = " "; }; };
+		FC3124972E57479B9C2B5721 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2A8723619F47A8A6D0F6E4 /* NSString+SBJSON.m */; settings = {COMPILER_FLAGS = " "; }; };
+		FCAA1C96D57B4B6685D248A9 /* OAHMAC_SHA1SignatureProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FDA4B1F8B6C437981F7C749 /* OAHMAC_SHA1SignatureProvider.m */; settings = {COMPILER_FLAGS = " "; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		20A94FF016E64460A8280EF6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0009DFED5F834284B28636FE /* SHKOAuthSharer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SHKOAuthSharer.h; path = "ShareKit/Classes/ShareKit/Core/Base Sharer Classes/SHKOAuthSharer.h"; sourceTree = SOURCE_ROOT; };
+		024380E1C0EC4440A70CAC5C /* SHKCustomFormController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SHKCustomFormController.h; path = "ShareKit/Classes/ShareKit/Customize UI/SHKCustomFormController.h"; sourceTree = SOURCE_ROOT; };
+		031E0CFB99914F22A2F5020C /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AFURLConnectionOperation.m; path = AFNetworking/AFNetworking/AFURLConnectionOperation.m; sourceTree = SOURCE_ROOT; };
+		06B058759CD04BFCA2C5EEF9 /* OARequestParameter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = OARequestParameter.m; path = ShareKit/Classes/ShareKit/Core/Helpers/OAuth/OARequestParameter.m; sourceTree = SOURCE_ROOT; };
+		07DE4CA563364F1A89DC5BB6 /* SHKTextMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SHKTextMessage.m; path = "ShareKit/Classes/ShareKit/Sharers/Actions/Text Message/SHKTextMessage.m"; sourceTree = SOURCE_ROOT; };
+		0A4A26F62E3F443DA5355D46 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = AFNetworking/AFNetworking/AFNetworkActivityIndicatorManager.h; sourceTree = SOURCE_ROOT; };
+		0A9B99709E424350A455EF35 /* SHKTwitter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SHKTwitter.h; path = ShareKit/Classes/ShareKit/Sharers/Services/Twitter/SHKTwitter.h; sourceTree = SOURCE_ROOT; };
+		0DDA01BC4E674F7A8E18CE8B /* SHKShareMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SHKShareMenu.h; path = ShareKit/Classes/ShareKit/UI/SHKShareMenu.h; sourceTree = SOURCE_ROOT; };
+		1012498B58F54DB9B19A6E81 /* hmac.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = hmac.c; path = ShareKit/Classes/ShareKit/Core/Helpers/OAuth/Crytpo/hmac.c; sourceTree = SOURCE_ROOT; };
+		11BC3CFFF780446FAD46F7C7 /* SHKPhotoAlbum.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SHKPhotoAlbum.m; path = "ShareKit/Classes/ShareKit/Sharers/Actions/Save to Album/SHKPhotoAlbum.m"; sourceTree = SOURCE_ROOT; };
+		12B5779AB2B2484882D9F3C5 /* SVProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD/SVProgressHUD.h; sourceTree = SOURCE_ROOT; };
+		12D8DA4B947B4A5B854F8C1E /* UIWebView+SHK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+SHK.m"; path = "ShareKit/Classes/ShareKit/Core/Categories/UIWebView+SHK.m"; sourceTree = SOURCE_ROOT; };
+		165F0DBF68864255A9E36A5F /* SHKXMLResponseParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SHKXMLResponseParser.m; path = ShareKit/Classes/ShareKit/Core/Helpers/SHKXMLResponseParser.m; sourceTree = SOURCE_ROOT; };
+		1683539E785F406684F2D6F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		16FC978FCAA84654A1A26D17 /* SBJsonParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SBJsonParser.h; path = SBJson/Source/SBJsonParser.h; sourceTree = SOURCE_ROOT; };
+		172F2AE98E3D4935835C0F5E /* FBDialog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FBDialog.h; path = "Facebook-iOS-SDK/src/FBDialog.h"; sourceTree = SOURCE_ROOT; };
+		191F3AD9B31346CDAA212CD0 /* SHKLogout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SHKLogout.h; path = "ShareKit/Classes/ShareKit/Sharers/Actions/Logout of All Services/SHKLogout.h"; sourceTree = SOURCE_ROOT; };
+		1B174FB371664E42B4771265 /* hmac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = hmac.h; path = ShareKit/Classes/ShareKit/Core/Helpers/OAuth/Crytpo/hmac.h; sourceTree = SOURCE_ROOT; };
+		1C2D7F27649E413BB677BD82 /* OAToken.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OAToken.h; path = ShareKit/Classes/ShareKit/Core/Helpers/OAuth/OAToken.h; sourceTree = SOURCE_ROOT; };
+		1D1889E82EFE469FB6759D36 /* SHKShareItemDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SHKShareItemDelegate.h; path = ShareKit/Classes/ShareKit/UI/SHKShareItemDelegate.h; sourceTree = SOURCE_ROOT; };
+		1DD5EDEC96EC463F9AA6502C /* NSMutableDictionary+NSNullsToEmptyStrings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSMutableDictionary+NSNullsToEmptyStrings.h"; path = "ShareKit/Classes/ShareKit/Core/Categories/NSMutableDictionary+NSNullsToEmptyStrings.h"; sourceTree = SOURCE_ROOT; };
+		1E83903747B347548675898A /* AFJSONUtilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AFJSONUtilities.m; path = AFNetworking/AFNetworking/AFJSONUtilities.m; sourceTree = SOURCE_ROOT; };
+		1FCD74A9559943FDBB2D3814 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperation.h; path = AFNetworking/AFNetworking/AFHTTPRequestOperation.h; sourceTree = SOURCE_ROOT; };
+		20E461A9C65D4BBC8C403250 /* OAPlaintextSignatureProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OAPlaintextSignatureProvider.h; path = ShareKit/Classes/ShareKit/Core/Helpers/OAuth/OAPlaintextSignatureProvider.h; sourceTree = SOURCE_ROOT; };
+		21152795A813468D9ACD0A0C /* FBLoginDialog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FBLoginDialog.h; path = "Facebook-iOS-SDK/src/FBLoginDialog.h"; sourceTree = SOURCE_ROOT; };
+		23C000AF96FB4D9F95ACB0C3 /* SHKShareMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SHKShareMenu.m; path = ShareKit/Classes/ShareKit/UI/SHKShareMenu.m; sourceTree = SOURCE_ROOT; };
+		23C1CCBEE9BB428AB558EAD3 /* SHKFacebook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SHKFacebook.h; path = ShareKit/Classes/ShareKit/Sharers/Services/Facebook/SHKFacebook.h; sourceTree = SOURCE_ROOT; };
+		296E891E12FD4D25A84432BA /* SHKActivityIndicator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SHKActivityIndicator.h; path = ShareKit/Classes/ShareKit/UI/SHKActivityIndicator.h; sourceTree = SOURCE_ROOT; };
+		2A00D9DC1C944C27A20EBF2F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A0C8865A18C4D7C89094DED /* SSKeychain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SSKeychain.h; path = SSKeychain/SSKeychain.h; sourceTree = SOURCE_ROOT; };
+		2A3F038822454314804E20C5 /* SBJsonBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SBJsonBase.h; path = SBJson/Source/SBJsonBase.h; sourceTree = SOURCE_ROOT; };
+		2AB17FB42995411782F1EC04 /* SHKRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SHKRequest.m; path = ShareKit/Classes/ShareKit/Core/Helpers/SHKRequest.m; sourceTree = SOURCE_ROOT; };
+		2AE1FD56EC6D40BA98E947EC /* EGORefreshTableHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = EGORefreshTableHeaderView.h; path = EGOTableViewPullRefresh/EGOTableViewPullRefresh/Classes/View/EGORefreshTableHeaderView.h; sourceTree = SOURCE_ROOT; };
+		2BA58349577D4988A3B6C0FB /* SHKActionSheet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SHKActionSheet.h; path = ShareKit/Classes/ShareKit/UI/SHKActionSheet.h; sourceTree = SOURCE_ROOT; };
+		2DFAA61353884D249C2BA429 /* SHKSharerDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SHKSharerDelegate.m; path = "ShareKit/Classes/ShareKit/Core/Base Sharer Classes/SHKSharerDelegate.m"; sourceTree = SOURCE_ROOT; };
+		2E85A9F104BC45C4891CAC61 /* SHKCopy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SHKCopy.h; path = ShareKit/Classes/ShareKit/Sharers/Actions/Copy/SHKCopy.h; sourceTree = SOURCE_ROOT; };
+		2E9CB03F95C94E03BD1FC74C /* NSMutableDictionary+NSNullsToEmptyStrings.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSMutableDictionary+NSNullsToEmptyStrings.m"; path = "ShareKit/Classes/ShareKit/Core/Categories/NSMutableDictionary+NSNullsToEmptyStrings.m"; sourceTree = SOURCE_ROOT; };
+		2F46CB96464A49F0AFA0E686 /* SHKiOS5Twitter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SHKiOS5Twitter.m; path = ShareKit/Classes/ShareKit/Sharers/Services/Twitter/SHKiOS5Twitter.m; sourceTree = SOURCE_ROOT; };
+		3007B410AFA54AD6B02F5886 /* SBJsonParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SBJsonParser.m; path = SBJson/Source/SBJsonParser.m; sourceTree = SOURCE_ROOT; };
+		302515C803534A16997CECE2 /* SHKViewControllerWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SHKViewControllerWrapper.h; path = ShareKit/Classes/ShareKit/UI/SHKViewControllerWrapper.h; sourceTree = SOURCE_ROOT; };
+		317E33B508B94193A7C27C51 /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AFJSONRequestOperation.m; path = AFNetworking/AFNetworking/AFJSONRequestOperation.m; sourceTree = SOURCE_ROOT; };
+		356B921F58084B9B92EC46A8 /* SHKFormController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SHKFormController.m; path = ShareKit/Classes/ShareKit/UI/SHKFormController.m; sourceTree = SOURCE_ROOT; };
+		35E4A819F58449DBBD9DB376 /* SHKFormControllerLargeTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SHKFormControllerLargeTextField.h; path = ShareKit/Classes/ShareKit/UI/SHKFormControllerLargeTextField.h; sourceTree = SOURCE_ROOT; };
+		3657147466AB4DDCB2965EAB /* FBLoginDialog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FBLoginDialog.m; path = "Facebook-iOS-SDK/src/FBLoginDialog.m"; sourceTree = SOURCE_ROOT; };
+		37C2D754A3834DE18C89A1CA /* SSKeychain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SSKeychain.m; path = SSKeychain/SSKeychain.m; sourceTree = SOURCE_ROOT; };
+		38360E74D09E42F68D72111E /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "AFNetworking/AFNetworking/UIImageView+AFNetworking.h"; sourceTree = SOURCE_ROOT; };
+		3989006738824137AC8BA4CB /* OAuthConsumer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OAuthConsumer.h; path = ShareKit/Classes/ShareKit/Core/Helpers/OAuth/OAuthConsumer.h; sourceTree = SOURCE_ROOT; };
+		3D1341FFF0154E3981367035 /* NSURL+Base.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSURL+Base.h"; path = "ShareKit/Classes/ShareKit/Core/Helpers/OAuth/Categories/NSURL+Base.h"; sourceTree = SOURCE_ROOT; };
+		445BDF5477764AA9A5B9A9E4 /* SHKOAuthSharer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SHKOAuthSharer.m; path = "ShareKit/Classes/ShareKit/Core/Base Sharer Classes/SHKOAuthSharer.m"; sourceTree = SOURCE_ROOT; };
+		455F30B94EE648FAB1EDF243 /* SHKFormFieldCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SHKFormFieldCell.m; path = ShareKit/Classes/ShareKit/UI/SHKFormFieldCell.m; sourceTree = SOURCE_ROOT; };
+		483A680249DE4DE28C6FF4A1 /* SHKPhotoAlbum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SHKPhotoAlbum.h; path = "ShareKit/Classes/ShareKit/Sharers/Actions/Save to Album/SHKPhotoAlbum.h"; sourceTree = SOURCE_ROOT; };
+		48944DFC5743415BB074975E /* AFHTTPClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AFHTTPClient.m; path = AFNetworking/AFNetworking/AFHTTPClient.m; sourceTree = SOURCE_ROOT; };
+		48BF22B540FB4D1081261B66 /* FBConnect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FBConnect.h; path = "Facebook-iOS-SDK/src/FBConnect.h"; sourceTree = SOURCE_ROOT; };
+		490BA360BD704926A70A8324 /* OAAsynchronousDataFetcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OAAsynchronousDataFetcher.h; path = ShareKit/Classes/ShareKit/Core/Helpers/OAuth/OAAsynchronousDataFetcher.h; sourceTree = SOURCE_ROOT; };
+		4B968F62A30D45FBB62FE5C1 /* SHKSharerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SHKSharerDelegate.h; path = "ShareKit/Classes/ShareKit/Core/Base Sharer Classes/SHKSharerDelegate.h"; sourceTree = SOURCE_ROOT; };
+		4C77FB2A8BEE4FE98EE6F76A /* SHKSharer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SHKSharer.m; path = "ShareKit/Classes/ShareKit/Core/Base Sharer Classes/SHKSharer.m"; sourceTree = SOURCE_ROOT; };
+		4E19F529C46C4ED98C7B12DF /* SHKSharer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SHKSharer.h; path = "ShareKit/Classes/ShareKit/Core/Base Sharer Classes/SHKSharer.h"; sourceTree = SOURCE_ROOT; };
+		4F2DCCFAC8C64D859AADBDAA /* NSMutableURLRequest+Parameters.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSMutableURLRequest+Parameters.m"; path = "ShareKit/Classes/ShareKit/Core/Helpers/OAuth/Categories/NSMutableURLRequest+Parameters.m"; sourceTree = SOURCE_ROOT; };
+		4F3DB147690046E18C355C12 /* SHKOfflineSharer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SHKOfflineSharer.h; path = ShareKit/Classes/ShareKit/Core/SHKOfflineSharer.h; sourceTree = SOURCE_ROOT; };
+		51935BEF33AE45AC8DFA6F24 /* SHKMail.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SHKMail.h; path = ShareKit/Classes/ShareKit/Sharers/Actions/Email/SHKMail.h; sourceTree = SOURCE_ROOT; };
+		55722C32DA164D3C90728F8E /* SHKActionSheet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SHKActionSheet.m; path = ShareKit/Classes/ShareKit/UI/SHKActionSheet.m; sourceTree = SOURCE_ROOT; };
+		563CAFF7F19F42A18161BB98 /* SHKCustomFormFieldCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SHKCustomFormFieldCell.h; path = "ShareKit/Classes/ShareKit/Customize UI/SHKCustomFormFieldCell.h"; sourceTree = SOURCE_ROOT; };
+		596B75ADE7B64CF18C95B699 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSObject+SBJSON.h"; path = "SBJson/Source/NSObject+SBJSON.h"; sourceTree = SOURCE_ROOT; };
+		5BA917940CF942489117932E /* Facebook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Facebook.h; path = "Facebook-iOS-SDK/src/Facebook.h"; sourceTree = SOURCE_ROOT; };
+		5DD78801C53449AFAA74D5CF /* NSObject+SBJSON.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSObject+SBJSON.m"; path = "SBJson/Source/NSObject+SBJSON.m"; sourceTree = SOURCE_ROOT; };
+		5E19EBA9BAC94F34A0613456 /* SBJsonWriter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SBJsonWriter.m; path = SBJson/Source/SBJsonWriter.m; sourceTree = SOURCE_ROOT; };
+		5EABBE1B16194F0285EDBA36 /* FBDialog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FBDialog.m; path = "Facebook-iOS-SDK/src/FBDialog.m"; sourceTree = SOURCE_ROOT; };
+		61F82AB51CC848D5A705F4F6 /* SBJsonWriter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SBJsonWriter.h; path = SBJson/Source/SBJsonWriter.h; sourceTree = SOURCE_ROOT; };
+		6319D8FBB72941C4B73D4785 /* NSData+md5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSData+md5.h"; path = "ShareKit/Classes/ShareKit/Core/Categories/NSData+md5.h"; sourceTree = SOURCE_ROOT; };
+		65B9B0B7E1F546C3AA434976 /* FBRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FBRequest.h; path = "Facebook-iOS-SDK/src/FBRequest.h"; sourceTree = SOURCE_ROOT; };
+		65F6178008B941068BB6D9A2 /* FBRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FBRequest.m; path = "Facebook-iOS-SDK/src/FBRequest.m"; sourceTree = SOURCE_ROOT; };
+		67991845C020405FBDEE3AF7 /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AFJSONRequestOperation.h; path = AFNetworking/AFNetworking/AFJSONRequestOperation.h; sourceTree = SOURCE_ROOT; };
+		69700971CA80401180DDEE1F /* SHKCustomFormFieldCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SHKCustomFormFieldCell.m; path = "ShareKit/Classes/ShareKit/Customize UI/SHKCustomFormFieldCell.m"; sourceTree = SOURCE_ROOT; };
+		69E1CC1ED28441379CDD8189 /* OARequestParameter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OARequestParameter.h; path = ShareKit/Classes/ShareKit/Core/Helpers/OAuth/OARequestParameter.h; sourceTree = SOURCE_ROOT; };
+		6A53E23F79D847BAB39AC95E /* OAAsynchronousDataFetcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = OAAsynchronousDataFetcher.m; path = ShareKit/Classes/ShareKit/Core/Helpers/OAuth/OAAsynchronousDataFetcher.m; sourceTree = SOURCE_ROOT; };
+		6C5575E72ECF4DF3B169DFF4 /* AFJSONUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AFJSONUtilities.h; path = AFNetworking/AFNetworking/AFJSONUtilities.h; sourceTree = SOURCE_ROOT; };
+		6CB590829E784930BAF842F2 /* SHKFormFieldSettings.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SHKFormFieldSettings.m; path = ShareKit/Classes/ShareKit/UI/SHKFormFieldSettings.m; sourceTree = SOURCE_ROOT; };
+		6FDA4B1F8B6C437981F7C749 /* OAHMAC_SHA1SignatureProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = OAHMAC_SHA1SignatureProvider.m; path = ShareKit/Classes/ShareKit/Core/Helpers/OAuth/OAHMAC_SHA1SignatureProvider.m; sourceTree = SOURCE_ROOT; };
+		7148CFE6FCEC48E29DBC4B03 /* SHKiOS5Twitter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SHKiOS5Twitter.h; path = ShareKit/Classes/ShareKit/Sharers/Services/Twitter/SHKiOS5Twitter.h; sourceTree = SOURCE_ROOT; };
+		72369D8F330B4F839074F161 /* SHKTwitter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SHKTwitter.m; path = ShareKit/Classes/ShareKit/Sharers/Services/Twitter/SHKTwitter.m; sourceTree = SOURCE_ROOT; };
+		724C14C0D38048409B7025E4 /* SHKCustomFormControllerLargeTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SHKCustomFormControllerLargeTextField.m; path = "ShareKit/Classes/ShareKit/Customize UI/SHKCustomFormControllerLargeTextField.m"; sourceTree = SOURCE_ROOT; };
+		729C7C282C3C44C9A029B925 /* Pods.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		7591BA590EA145C592FF68F3 /* SHKTextMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SHKTextMessage.h; path = "ShareKit/Classes/ShareKit/Sharers/Actions/Text Message/SHKTextMessage.h"; sourceTree = SOURCE_ROOT; };
+		77C72129C6884668BBE4F39C /* DefaultSHKConfigurator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DefaultSHKConfigurator.h; path = ShareKit/Classes/ShareKit/Configuration/DefaultSHKConfigurator.h; sourceTree = SOURCE_ROOT; };
+		77D22C8433134841A966B58C /* SHKCustomShareMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SHKCustomShareMenu.h; path = "ShareKit/Classes/ShareKit/Customize UI/SHKCustomShareMenu.h"; sourceTree = SOURCE_ROOT; };
+		7913046C309546F6933AC620 /* SHKConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SHKConfiguration.h; path = ShareKit/Classes/ShareKit/Configuration/SHKConfiguration.h; sourceTree = SOURCE_ROOT; };
+		7934A0322B8F4162B2FE8237 /* Facebook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Facebook.m; path = "Facebook-iOS-SDK/src/Facebook.m"; sourceTree = SOURCE_ROOT; };
+		7C3D3137A1D340428CABA7CF /* SHKFormOptionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SHKFormOptionController.h; path = ShareKit/Classes/ShareKit/UI/SHKFormOptionController.h; sourceTree = SOURCE_ROOT; };
+		7CF3628BD9FA499D8B15B0E1 /* EGORefreshTableHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = EGORefreshTableHeaderView.m; path = EGOTableViewPullRefresh/EGOTableViewPullRefresh/Classes/View/EGORefreshTableHeaderView.m; sourceTree = SOURCE_ROOT; };
+		7DAD254E79854AC6989FB688 /* OAPlaintextSignatureProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = OAPlaintextSignatureProvider.m; path = ShareKit/Classes/ShareKit/Core/Helpers/OAuth/OAPlaintextSignatureProvider.m; sourceTree = SOURCE_ROOT; };
+		7E559DC765604F0A838E8908 /* DefaultSHKConfigurator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DefaultSHKConfigurator.m; path = ShareKit/Classes/ShareKit/Configuration/DefaultSHKConfigurator.m; sourceTree = SOURCE_ROOT; };
+		7F06946115834624BEB194EA /* SHKLogout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SHKLogout.m; path = "ShareKit/Classes/ShareKit/Sharers/Actions/Logout of All Services/SHKLogout.m"; sourceTree = SOURCE_ROOT; };
+		83567500717E408F9A20A1C1 /* Reachability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = Reachability/Reachability.h; sourceTree = SOURCE_ROOT; };
+		84F3FAA551C84978BC37C331 /* NSString+SBJSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSString+SBJSON.h"; path = "SBJson/Source/NSString+SBJSON.h"; sourceTree = SOURCE_ROOT; };
+		851C8D5B7967411D92B24059 /* NSString+URLEncoding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSString+URLEncoding.m"; path = "ShareKit/Classes/ShareKit/Core/Helpers/OAuth/Categories/NSString+URLEncoding.m"; sourceTree = SOURCE_ROOT; };
+		898433A86F17475899BABC59 /* AFNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking/AFNetworking.h; sourceTree = SOURCE_ROOT; };
+		89BF3EF0F8B44DCCB9FB014E /* SHKCustomShareMenuCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SHKCustomShareMenuCell.m; path = "ShareKit/Classes/ShareKit/Customize UI/SHKCustomShareMenuCell.m"; sourceTree = SOURCE_ROOT; };
+		8A2B3F3B754142278D7DA754 /* NSURL+Base.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSURL+Base.m"; path = "ShareKit/Classes/ShareKit/Core/Helpers/OAuth/Categories/NSURL+Base.m"; sourceTree = SOURCE_ROOT; };
+		8BE3E8C34D4847BCA176E18A /* AFImageRequestOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AFImageRequestOperation.h; path = AFNetworking/AFNetworking/AFImageRequestOperation.h; sourceTree = SOURCE_ROOT; };
+		8C61418AED28400FA3063AFA /* SHKCustomActionSheet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SHKCustomActionSheet.m; path = "ShareKit/Classes/ShareKit/Customize UI/SHKCustomActionSheet.m"; sourceTree = SOURCE_ROOT; };
+		8E10B954D7B74D8B9FFEE2F3 /* SHKOAuthView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SHKOAuthView.h; path = ShareKit/Classes/ShareKit/UI/SHKOAuthView.h; sourceTree = SOURCE_ROOT; };
+		9388D2F245B94A63BB89C97B /* JSONKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JSONKit.h; path = JSONKit/JSONKit.h; sourceTree = SOURCE_ROOT; };
+		9477184C3D69462EAD1A0C77 /* SHKCopy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SHKCopy.m; path = ShareKit/Classes/ShareKit/Sharers/Actions/Copy/SHKCopy.m; sourceTree = SOURCE_ROOT; };
+		949D78F2CE4A4D1A8D1CE8FB /* SHKFormControllerLargeTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SHKFormControllerLargeTextField.m; path = ShareKit/Classes/ShareKit/UI/SHKFormControllerLargeTextField.m; sourceTree = SOURCE_ROOT; };
+		95DAA58AAD5D479FBBB59967 /* SHKFormOptionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SHKFormOptionController.m; path = ShareKit/Classes/ShareKit/UI/SHKFormOptionController.m; sourceTree = SOURCE_ROOT; };
+		96D07AA1918B4F5888AFFAB8 /* OAConsumer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = OAConsumer.m; path = ShareKit/Classes/ShareKit/Core/Helpers/OAuth/OAConsumer.m; sourceTree = SOURCE_ROOT; };
+		97BA536A3BB444EEB046824D /* Base64Transcoder.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = Base64Transcoder.c; path = ShareKit/Classes/ShareKit/Core/Helpers/OAuth/Crytpo/Base64Transcoder.c; sourceTree = SOURCE_ROOT; };
+		9940A494E378493BA3344E1A /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AFPropertyListRequestOperation.h; path = AFNetworking/AFNetworking/AFPropertyListRequestOperation.h; sourceTree = SOURCE_ROOT; };
+		9ADCC64384FF480CA0B17CDF /* SHK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SHK.m; path = ShareKit/Classes/ShareKit/Core/SHK.m; sourceTree = SOURCE_ROOT; };
+		9B457334DA704DD0929E7671 /* NSHTTPCookieStorage+DeleteForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSHTTPCookieStorage+DeleteForURL.m"; path = "ShareKit/Classes/ShareKit/Core/Categories/NSHTTPCookieStorage+DeleteForURL.m"; sourceTree = SOURCE_ROOT; };
+		9DCDBA28D3E141C2925A88FC /* OADataFetcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = OADataFetcher.m; path = ShareKit/Classes/ShareKit/Core/Helpers/OAuth/OADataFetcher.m; sourceTree = SOURCE_ROOT; };
+		A06F7C125E9247F99D04593B /* SBJSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SBJSON.h; path = SBJson/Source/SBJSON.h; sourceTree = SOURCE_ROOT; };
+		A0DD70B638B9488FAAEFB46F /* SVProgressHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD/SVProgressHUD.m; sourceTree = SOURCE_ROOT; };
+		A6DE7E43FFFC463CAD6F7917 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AFURLConnectionOperation.h; path = AFNetworking/AFNetworking/AFURLConnectionOperation.h; sourceTree = SOURCE_ROOT; };
+		A7700B2E1D4248DDA4045D14 /* SHKCustomShareMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SHKCustomShareMenu.m; path = "ShareKit/Classes/ShareKit/Customize UI/SHKCustomShareMenu.m"; sourceTree = SOURCE_ROOT; };
+		AB4DFA5C2DFA45A5BA402F89 /* OAToken.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = OAToken.m; path = ShareKit/Classes/ShareKit/Core/Helpers/OAuth/OAToken.m; sourceTree = SOURCE_ROOT; };
+		AF9D41D452E0430A9DC32C82 /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AFXMLRequestOperation.m; path = AFNetworking/AFNetworking/AFXMLRequestOperation.m; sourceTree = SOURCE_ROOT; };
+		AFA5DFED3B564A3FA303596C /* SHKXMLResponseParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SHKXMLResponseParser.h; path = ShareKit/Classes/ShareKit/Core/Helpers/SHKXMLResponseParser.h; sourceTree = SOURCE_ROOT; };
+		B0EECC93F8FD495D806404F3 /* JSONKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JSONKit.m; path = JSONKit/JSONKit.m; sourceTree = SOURCE_ROOT; };
+		B35ACC2053D6446FB07CA8A7 /* SHKItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SHKItem.h; path = ShareKit/Classes/ShareKit/Core/SHKItem.h; sourceTree = SOURCE_ROOT; };
+		B4D6F09D9BE043109ADE954E /* SHKSafari.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SHKSafari.h; path = "ShareKit/Classes/ShareKit/Sharers/Actions/Open in Safari/SHKSafari.h"; sourceTree = SOURCE_ROOT; };
+		B66867EF6D1244E2A37BA3B2 /* SHKFormFieldSettings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SHKFormFieldSettings.h; path = ShareKit/Classes/ShareKit/UI/SHKFormFieldSettings.h; sourceTree = SOURCE_ROOT; };
+		B72803E291A34B39868C8639 /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AFPropertyListRequestOperation.m; path = AFNetworking/AFNetworking/AFPropertyListRequestOperation.m; sourceTree = SOURCE_ROOT; };
+		B761B3C502F04240B3BDFF66 /* SHKFormController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SHKFormController.h; path = ShareKit/Classes/ShareKit/UI/SHKFormController.h; sourceTree = SOURCE_ROOT; };
+		B913E09821954D7A9714300D /* OAMutableURLRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = OAMutableURLRequest.m; path = ShareKit/Classes/ShareKit/Core/Helpers/OAuth/OAMutableURLRequest.m; sourceTree = SOURCE_ROOT; };
+		BA42F5D883B0410FB373CEF5 /* OASignatureProviding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OASignatureProviding.h; path = ShareKit/Classes/ShareKit/Core/Helpers/OAuth/OASignatureProviding.h; sourceTree = SOURCE_ROOT; };
+		BBC19B1D935D46DDA2847AB6 /* NSData+md5.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSData+md5.m"; path = "ShareKit/Classes/ShareKit/Core/Categories/NSData+md5.m"; sourceTree = SOURCE_ROOT; };
+		BDE1B594A19D4382864DB3A1 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "AFNetworking/AFNetworking/UIImageView+AFNetworking.m"; sourceTree = SOURCE_ROOT; };
+		BF475AEA040245A8B64E0709 /* SHKItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SHKItem.m; path = ShareKit/Classes/ShareKit/Core/SHKItem.m; sourceTree = SOURCE_ROOT; };
+		C1A46814ADB84C61BFA51BBB /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = AFNetworking/AFNetworking/AFNetworkActivityIndicatorManager.m; sourceTree = SOURCE_ROOT; };
+		C22DF94CBECC42D389D326BA /* sha1.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = sha1.c; path = ShareKit/Classes/ShareKit/Core/Helpers/OAuth/Crytpo/sha1.c; sourceTree = SOURCE_ROOT; };
+		C520CDD2CF604EF09AFE8F39 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperation.m; path = AFNetworking/AFNetworking/AFHTTPRequestOperation.m; sourceTree = SOURCE_ROOT; };
+		C8216D14677F4ECAB951FCE3 /* SHKCustomFormController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SHKCustomFormController.m; path = "ShareKit/Classes/ShareKit/Customize UI/SHKCustomFormController.m"; sourceTree = SOURCE_ROOT; };
+		C92B173F97E24AC2A5E91F3C /* OADataFetcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OADataFetcher.h; path = ShareKit/Classes/ShareKit/Core/Helpers/OAuth/OADataFetcher.h; sourceTree = SOURCE_ROOT; };
+		C92D21D81AB4454681F66F06 /* SHKViewControllerWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SHKViewControllerWrapper.m; path = ShareKit/Classes/ShareKit/UI/SHKViewControllerWrapper.m; sourceTree = SOURCE_ROOT; };
+		C9542187532E44C0988D0E56 /* NSString+URLEncoding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSString+URLEncoding.h"; path = "ShareKit/Classes/ShareKit/Core/Helpers/OAuth/Categories/NSString+URLEncoding.h"; sourceTree = SOURCE_ROOT; };
+		CB8F6BF5E04046FFA35EA6C7 /* Pods-resources.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = SOURCE_ROOT; };
+		CD067D997D004AFDA8529DFE /* SHKMail.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SHKMail.m; path = ShareKit/Classes/ShareKit/Sharers/Actions/Email/SHKMail.m; sourceTree = SOURCE_ROOT; };
+		CD6AA7CA4E264A90990CFD55 /* OAConsumer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OAConsumer.h; path = ShareKit/Classes/ShareKit/Core/Helpers/OAuth/OAConsumer.h; sourceTree = SOURCE_ROOT; };
+		CE0D8A4376304E86B5360E12 /* TTTAttributedLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = TTTAttributedLabel.m; path = TTTAttributedLabel/TTTAttributedLabel.m; sourceTree = SOURCE_ROOT; };
+		CE2A5D8F067643B8ACEF64F7 /* TTTAttributedLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TTTAttributedLabel.h; path = TTTAttributedLabel/TTTAttributedLabel.h; sourceTree = SOURCE_ROOT; };
+		D0A51C44F486485C91AE70ED /* SHKConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SHKConfiguration.m; path = ShareKit/Classes/ShareKit/Configuration/SHKConfiguration.m; sourceTree = SOURCE_ROOT; };
+		D1490A5FC6DA46B5A0255F4C /* sha1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = sha1.h; path = ShareKit/Classes/ShareKit/Core/Helpers/OAuth/Crytpo/sha1.h; sourceTree = SOURCE_ROOT; };
+		D2515956A04B4F4CB641A9CD /* SHKCustomShareMenuCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SHKCustomShareMenuCell.h; path = "ShareKit/Classes/ShareKit/Customize UI/SHKCustomShareMenuCell.h"; sourceTree = SOURCE_ROOT; };
+		D61CCCE308424D33A957E8BA /* SHKCustomActionSheet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SHKCustomActionSheet.h; path = "ShareKit/Classes/ShareKit/Customize UI/SHKCustomActionSheet.h"; sourceTree = SOURCE_ROOT; };
+		D648856783DD47EE95F7B77F /* SHK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SHK.h; path = ShareKit/Classes/ShareKit/Core/SHK.h; sourceTree = SOURCE_ROOT; };
+		D738514B175A463EA88C40D6 /* SHKOAuthView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SHKOAuthView.m; path = ShareKit/Classes/ShareKit/UI/SHKOAuthView.m; sourceTree = SOURCE_ROOT; };
+		D7D2D76E80DD4945ABB2C79B /* SHKFacebook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SHKFacebook.m; path = ShareKit/Classes/ShareKit/Sharers/Services/Facebook/SHKFacebook.m; sourceTree = SOURCE_ROOT; };
+		D8242429E8CC49659203AEBF /* Base64Transcoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Base64Transcoder.h; path = ShareKit/Classes/ShareKit/Core/Helpers/OAuth/Crytpo/Base64Transcoder.h; sourceTree = SOURCE_ROOT; };
+		D885CA0EF2184951939E6AE6 /* SHKFormFieldCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SHKFormFieldCell.h; path = ShareKit/Classes/ShareKit/UI/SHKFormFieldCell.h; sourceTree = SOURCE_ROOT; };
+		DC489AE5A51C4DB988F4CC01 /* SBJSON.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SBJSON.m; path = SBJson/Source/SBJSON.m; sourceTree = SOURCE_ROOT; };
+		DC8E04BB546E4A48AFC74FA7 /* SHKOfflineSharer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SHKOfflineSharer.m; path = ShareKit/Classes/ShareKit/Core/SHKOfflineSharer.m; sourceTree = SOURCE_ROOT; };
+		DF0BBB75B4DB49658A527DD7 /* SBJsonBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SBJsonBase.m; path = SBJson/Source/SBJsonBase.m; sourceTree = SOURCE_ROOT; };
+		E01E8236338343AE846C881D /* NSMutableURLRequest+Parameters.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSMutableURLRequest+Parameters.h"; path = "ShareKit/Classes/ShareKit/Core/Helpers/OAuth/Categories/NSMutableURLRequest+Parameters.h"; sourceTree = SOURCE_ROOT; };
+		E4B439FB284A4122AB594BFC /* SHKSafari.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SHKSafari.m; path = "ShareKit/Classes/ShareKit/Sharers/Actions/Open in Safari/SHKSafari.m"; sourceTree = SOURCE_ROOT; };
+		E5093AD5FFAD4563A93DBE67 /* Pods-prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pods-prefix.pch"; sourceTree = SOURCE_ROOT; };
+		E7FFB265ECDE4E5FBBC89118 /* SHKPrint.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SHKPrint.m; path = ShareKit/Classes/ShareKit/Sharers/Actions/Print/SHKPrint.m; sourceTree = SOURCE_ROOT; };
+		EA5836BE8BE7479C8879799B /* JSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JSON.h; path = SBJson/Source/JSON.h; sourceTree = SOURCE_ROOT; };
+		EC5402EA8EAA4F8E9417222C /* OAHMAC_SHA1SignatureProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OAHMAC_SHA1SignatureProvider.h; path = ShareKit/Classes/ShareKit/Core/Helpers/OAuth/OAHMAC_SHA1SignatureProvider.h; sourceTree = SOURCE_ROOT; };
+		EDB5DBF35A4440FE9E4BC44E /* SHKRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SHKRequest.h; path = ShareKit/Classes/ShareKit/Core/Helpers/SHKRequest.h; sourceTree = SOURCE_ROOT; };
+		F084655CFF4647FDB32600B5 /* Reachability.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = Reachability/Reachability.m; sourceTree = SOURCE_ROOT; };
+		F1CBD910B4104824A44EA483 /* OAServiceTicket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OAServiceTicket.h; path = ShareKit/Classes/ShareKit/Core/Helpers/OAuth/OAServiceTicket.h; sourceTree = SOURCE_ROOT; };
+		F243D29CE6814DEAB4B47D0D /* OAServiceTicket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = OAServiceTicket.m; path = ShareKit/Classes/ShareKit/Core/Helpers/OAuth/OAServiceTicket.m; sourceTree = SOURCE_ROOT; };
+		F37A7E1FB84B4651B8FC6649 /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AFXMLRequestOperation.h; path = AFNetworking/AFNetworking/AFXMLRequestOperation.h; sourceTree = SOURCE_ROOT; };
+		F3DA6B7293B545BFA91DDFE2 /* SHKCustomFormControllerLargeTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SHKCustomFormControllerLargeTextField.h; path = "ShareKit/Classes/ShareKit/Customize UI/SHKCustomFormControllerLargeTextField.h"; sourceTree = SOURCE_ROOT; };
+		F69E73F3336A4B5B84ABC80D /* NSHTTPCookieStorage+DeleteForURL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSHTTPCookieStorage+DeleteForURL.h"; path = "ShareKit/Classes/ShareKit/Core/Categories/NSHTTPCookieStorage+DeleteForURL.h"; sourceTree = SOURCE_ROOT; };
+		F6B4367632F841EA806B84EB /* OAMutableURLRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OAMutableURLRequest.h; path = ShareKit/Classes/ShareKit/Core/Helpers/OAuth/OAMutableURLRequest.h; sourceTree = SOURCE_ROOT; };
+		F81E90771A1C4C69AEEEE8E4 /* AFHTTPClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AFHTTPClient.h; path = AFNetworking/AFNetworking/AFHTTPClient.h; sourceTree = SOURCE_ROOT; };
+		FA2A8723619F47A8A6D0F6E4 /* NSString+SBJSON.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSString+SBJSON.m"; path = "SBJson/Source/NSString+SBJSON.m"; sourceTree = SOURCE_ROOT; };
+		FA3AEDE340004A6DB2C622FD /* SHKPrint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SHKPrint.h; path = ShareKit/Classes/ShareKit/Sharers/Actions/Print/SHKPrint.h; sourceTree = SOURCE_ROOT; };
+		FDF23BB9666D439385B13F93 /* UIWebView+SHK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIWebView+SHK.h"; path = "ShareKit/Classes/ShareKit/Core/Categories/UIWebView+SHK.h"; sourceTree = SOURCE_ROOT; };
+		FF604C934B4F4C57A5949BE9 /* SHKActivityIndicator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SHKActivityIndicator.m; path = ShareKit/Classes/ShareKit/UI/SHKActivityIndicator.m; sourceTree = SOURCE_ROOT; };
+		FF6D1AB391814C35AE83F99E /* AFImageRequestOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AFImageRequestOperation.m; path = AFNetworking/AFNetworking/AFImageRequestOperation.m; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		40D16A7872E149CBA7E32921 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37A5ED9173044AF79C83F310 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04B8AFE77C4A4628B2124973 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				83567500717E408F9A20A1C1 /* Reachability.h */,
+				F084655CFF4647FDB32600B5 /* Reachability.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		25ED13AB48344CA294709E76 /* TTTAttributedLabel */ = {
+			isa = PBXGroup;
+			children = (
+				CE2A5D8F067643B8ACEF64F7 /* TTTAttributedLabel.h */,
+				CE0D8A4376304E86B5360E12 /* TTTAttributedLabel.m */,
+			);
+			name = TTTAttributedLabel;
+			sourceTree = "<group>";
+		};
+		2CE9CF946C944AF19C0EA95C /* ShareKit/Twitter */ = {
+			isa = PBXGroup;
+			children = (
+				7148CFE6FCEC48E29DBC4B03 /* SHKiOS5Twitter.h */,
+				0A9B99709E424350A455EF35 /* SHKTwitter.h */,
+				2F46CB96464A49F0AFA0E686 /* SHKiOS5Twitter.m */,
+				72369D8F330B4F839074F161 /* SHKTwitter.m */,
+			);
+			name = ShareKit/Twitter;
+			sourceTree = "<group>";
+		};
+		4F4CB3D5A9A84BBCA586F1FF /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				12B5779AB2B2484882D9F3C5 /* SVProgressHUD.h */,
+				A0DD70B638B9488FAAEFB46F /* SVProgressHUD.m */,
+			);
+			name = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		76C6CC2D9977482D9C9638E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1683539E785F406684F2D6F6 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		79148E0B95074739B49BB81E /* Facebook-iOS-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				5BA917940CF942489117932E /* Facebook.h */,
+				48BF22B540FB4D1081261B66 /* FBConnect.h */,
+				172F2AE98E3D4935835C0F5E /* FBDialog.h */,
+				21152795A813468D9ACD0A0C /* FBLoginDialog.h */,
+				65B9B0B7E1F546C3AA434976 /* FBRequest.h */,
+				7934A0322B8F4162B2FE8237 /* Facebook.m */,
+				5EABBE1B16194F0285EDBA36 /* FBDialog.m */,
+				3657147466AB4DDCB2965EAB /* FBLoginDialog.m */,
+				65F6178008B941068BB6D9A2 /* FBRequest.m */,
+			);
+			name = "Facebook-iOS-SDK";
+			sourceTree = "<group>";
+		};
+		7CFE153470334C65BB26348E /* EGOTableViewPullRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				2AE1FD56EC6D40BA98E947EC /* EGORefreshTableHeaderView.h */,
+				7CF3628BD9FA499D8B15B0E1 /* EGORefreshTableHeaderView.m */,
+			);
+			name = EGOTableViewPullRefresh;
+			sourceTree = "<group>";
+		};
+		838D81A7E2FC4EEA88D75734 /* SBJson */ = {
+			isa = PBXGroup;
+			children = (
+				EA5836BE8BE7479C8879799B /* JSON.h */,
+				596B75ADE7B64CF18C95B699 /* NSObject+SBJSON.h */,
+				84F3FAA551C84978BC37C331 /* NSString+SBJSON.h */,
+				A06F7C125E9247F99D04593B /* SBJSON.h */,
+				2A3F038822454314804E20C5 /* SBJsonBase.h */,
+				16FC978FCAA84654A1A26D17 /* SBJsonParser.h */,
+				61F82AB51CC848D5A705F4F6 /* SBJsonWriter.h */,
+				5DD78801C53449AFAA74D5CF /* NSObject+SBJSON.m */,
+				FA2A8723619F47A8A6D0F6E4 /* NSString+SBJSON.m */,
+				DC489AE5A51C4DB988F4CC01 /* SBJSON.m */,
+				DF0BBB75B4DB49658A527DD7 /* SBJsonBase.m */,
+				3007B410AFA54AD6B02F5886 /* SBJsonParser.m */,
+				5E19EBA9BAC94F34A0613456 /* SBJsonWriter.m */,
+			);
+			name = SBJson;
+			sourceTree = "<group>";
+		};
+		922A7B8B966048B89B9532AA /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AD356A990A2C43B78C945ED2 /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		93F599198AB2488688177826 /* ShareKit/Core */ = {
+			isa = PBXGroup;
+			children = (
+				77C72129C6884668BBE4F39C /* DefaultSHKConfigurator.h */,
+				7913046C309546F6933AC620 /* SHKConfiguration.h */,
+				7E559DC765604F0A838E8908 /* DefaultSHKConfigurator.m */,
+				D0A51C44F486485C91AE70ED /* SHKConfiguration.m */,
+				0009DFED5F834284B28636FE /* SHKOAuthSharer.h */,
+				4E19F529C46C4ED98C7B12DF /* SHKSharer.h */,
+				4B968F62A30D45FBB62FE5C1 /* SHKSharerDelegate.h */,
+				6319D8FBB72941C4B73D4785 /* NSData+md5.h */,
+				F69E73F3336A4B5B84ABC80D /* NSHTTPCookieStorage+DeleteForURL.h */,
+				1DD5EDEC96EC463F9AA6502C /* NSMutableDictionary+NSNullsToEmptyStrings.h */,
+				FDF23BB9666D439385B13F93 /* UIWebView+SHK.h */,
+				E01E8236338343AE846C881D /* NSMutableURLRequest+Parameters.h */,
+				C9542187532E44C0988D0E56 /* NSString+URLEncoding.h */,
+				3D1341FFF0154E3981367035 /* NSURL+Base.h */,
+				D8242429E8CC49659203AEBF /* Base64Transcoder.h */,
+				1B174FB371664E42B4771265 /* hmac.h */,
+				D1490A5FC6DA46B5A0255F4C /* sha1.h */,
+				490BA360BD704926A70A8324 /* OAAsynchronousDataFetcher.h */,
+				CD6AA7CA4E264A90990CFD55 /* OAConsumer.h */,
+				C92B173F97E24AC2A5E91F3C /* OADataFetcher.h */,
+				EC5402EA8EAA4F8E9417222C /* OAHMAC_SHA1SignatureProvider.h */,
+				F6B4367632F841EA806B84EB /* OAMutableURLRequest.h */,
+				20E461A9C65D4BBC8C403250 /* OAPlaintextSignatureProvider.h */,
+				69E1CC1ED28441379CDD8189 /* OARequestParameter.h */,
+				F1CBD910B4104824A44EA483 /* OAServiceTicket.h */,
+				BA42F5D883B0410FB373CEF5 /* OASignatureProviding.h */,
+				1C2D7F27649E413BB677BD82 /* OAToken.h */,
+				3989006738824137AC8BA4CB /* OAuthConsumer.h */,
+				EDB5DBF35A4440FE9E4BC44E /* SHKRequest.h */,
+				AFA5DFED3B564A3FA303596C /* SHKXMLResponseParser.h */,
+				D648856783DD47EE95F7B77F /* SHK.h */,
+				B35ACC2053D6446FB07CA8A7 /* SHKItem.h */,
+				4F3DB147690046E18C355C12 /* SHKOfflineSharer.h */,
+				445BDF5477764AA9A5B9A9E4 /* SHKOAuthSharer.m */,
+				4C77FB2A8BEE4FE98EE6F76A /* SHKSharer.m */,
+				2DFAA61353884D249C2BA429 /* SHKSharerDelegate.m */,
+				BBC19B1D935D46DDA2847AB6 /* NSData+md5.m */,
+				9B457334DA704DD0929E7671 /* NSHTTPCookieStorage+DeleteForURL.m */,
+				2E9CB03F95C94E03BD1FC74C /* NSMutableDictionary+NSNullsToEmptyStrings.m */,
+				12D8DA4B947B4A5B854F8C1E /* UIWebView+SHK.m */,
+				4F2DCCFAC8C64D859AADBDAA /* NSMutableURLRequest+Parameters.m */,
+				851C8D5B7967411D92B24059 /* NSString+URLEncoding.m */,
+				8A2B3F3B754142278D7DA754 /* NSURL+Base.m */,
+				6A53E23F79D847BAB39AC95E /* OAAsynchronousDataFetcher.m */,
+				96D07AA1918B4F5888AFFAB8 /* OAConsumer.m */,
+				9DCDBA28D3E141C2925A88FC /* OADataFetcher.m */,
+				6FDA4B1F8B6C437981F7C749 /* OAHMAC_SHA1SignatureProvider.m */,
+				B913E09821954D7A9714300D /* OAMutableURLRequest.m */,
+				7DAD254E79854AC6989FB688 /* OAPlaintextSignatureProvider.m */,
+				06B058759CD04BFCA2C5EEF9 /* OARequestParameter.m */,
+				F243D29CE6814DEAB4B47D0D /* OAServiceTicket.m */,
+				AB4DFA5C2DFA45A5BA402F89 /* OAToken.m */,
+				2AB17FB42995411782F1EC04 /* SHKRequest.m */,
+				165F0DBF68864255A9E36A5F /* SHKXMLResponseParser.m */,
+				9ADCC64384FF480CA0B17CDF /* SHK.m */,
+				BF475AEA040245A8B64E0709 /* SHKItem.m */,
+				DC8E04BB546E4A48AFC74FA7 /* SHKOfflineSharer.m */,
+				97BA536A3BB444EEB046824D /* Base64Transcoder.c */,
+				1012498B58F54DB9B19A6E81 /* hmac.c */,
+				C22DF94CBECC42D389D326BA /* sha1.c */,
+				D61CCCE308424D33A957E8BA /* SHKCustomActionSheet.h */,
+				024380E1C0EC4440A70CAC5C /* SHKCustomFormController.h */,
+				F3DA6B7293B545BFA91DDFE2 /* SHKCustomFormControllerLargeTextField.h */,
+				563CAFF7F19F42A18161BB98 /* SHKCustomFormFieldCell.h */,
+				77D22C8433134841A966B58C /* SHKCustomShareMenu.h */,
+				D2515956A04B4F4CB641A9CD /* SHKCustomShareMenuCell.h */,
+				8C61418AED28400FA3063AFA /* SHKCustomActionSheet.m */,
+				C8216D14677F4ECAB951FCE3 /* SHKCustomFormController.m */,
+				724C14C0D38048409B7025E4 /* SHKCustomFormControllerLargeTextField.m */,
+				69700971CA80401180DDEE1F /* SHKCustomFormFieldCell.m */,
+				A7700B2E1D4248DDA4045D14 /* SHKCustomShareMenu.m */,
+				89BF3EF0F8B44DCCB9FB014E /* SHKCustomShareMenuCell.m */,
+				2BA58349577D4988A3B6C0FB /* SHKActionSheet.h */,
+				296E891E12FD4D25A84432BA /* SHKActivityIndicator.h */,
+				B761B3C502F04240B3BDFF66 /* SHKFormController.h */,
+				35E4A819F58449DBBD9DB376 /* SHKFormControllerLargeTextField.h */,
+				D885CA0EF2184951939E6AE6 /* SHKFormFieldCell.h */,
+				B66867EF6D1244E2A37BA3B2 /* SHKFormFieldSettings.h */,
+				7C3D3137A1D340428CABA7CF /* SHKFormOptionController.h */,
+				8E10B954D7B74D8B9FFEE2F3 /* SHKOAuthView.h */,
+				1D1889E82EFE469FB6759D36 /* SHKShareItemDelegate.h */,
+				0DDA01BC4E674F7A8E18CE8B /* SHKShareMenu.h */,
+				302515C803534A16997CECE2 /* SHKViewControllerWrapper.h */,
+				55722C32DA164D3C90728F8E /* SHKActionSheet.m */,
+				FF604C934B4F4C57A5949BE9 /* SHKActivityIndicator.m */,
+				356B921F58084B9B92EC46A8 /* SHKFormController.m */,
+				949D78F2CE4A4D1A8D1CE8FB /* SHKFormControllerLargeTextField.m */,
+				455F30B94EE648FAB1EDF243 /* SHKFormFieldCell.m */,
+				6CB590829E784930BAF842F2 /* SHKFormFieldSettings.m */,
+				95DAA58AAD5D479FBBB59967 /* SHKFormOptionController.m */,
+				D738514B175A463EA88C40D6 /* SHKOAuthView.m */,
+				23C000AF96FB4D9F95ACB0C3 /* SHKShareMenu.m */,
+				C92D21D81AB4454681F66F06 /* SHKViewControllerWrapper.m */,
+				2E85A9F104BC45C4891CAC61 /* SHKCopy.h */,
+				51935BEF33AE45AC8DFA6F24 /* SHKMail.h */,
+				191F3AD9B31346CDAA212CD0 /* SHKLogout.h */,
+				B4D6F09D9BE043109ADE954E /* SHKSafari.h */,
+				FA3AEDE340004A6DB2C622FD /* SHKPrint.h */,
+				483A680249DE4DE28C6FF4A1 /* SHKPhotoAlbum.h */,
+				7591BA590EA145C592FF68F3 /* SHKTextMessage.h */,
+				9477184C3D69462EAD1A0C77 /* SHKCopy.m */,
+				CD067D997D004AFDA8529DFE /* SHKMail.m */,
+				7F06946115834624BEB194EA /* SHKLogout.m */,
+				E4B439FB284A4122AB594BFC /* SHKSafari.m */,
+				E7FFB265ECDE4E5FBBC89118 /* SHKPrint.m */,
+				11BC3CFFF780446FAD46F7C7 /* SHKPhotoAlbum.m */,
+				07DE4CA563364F1A89DC5BB6 /* SHKTextMessage.m */,
+			);
+			name = ShareKit/Core;
+			sourceTree = "<group>";
+		};
+		AD356A990A2C43B78C945ED2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB8F6BF5E04046FFA35EA6C7 /* Pods-resources.sh */,
+				E5093AD5FFAD4563A93DBE67 /* Pods-prefix.pch */,
+				729C7C282C3C44C9A029B925 /* Pods.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B5313D09AEA34EFAAC2CA65A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A00D9DC1C944C27A20EBF2F /* libPods.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB68FD02C9DE4DF99D682EBA /* ShareKit/Facebook */ = {
+			isa = PBXGroup;
+			children = (
+				23C1CCBEE9BB428AB558EAD3 /* SHKFacebook.h */,
+				D7D2D76E80DD4945ABB2C79B /* SHKFacebook.m */,
+			);
+			name = ShareKit/Facebook;
+			sourceTree = "<group>";
+		};
+		C7238C6BA5AB4DC997676308 = {
+			isa = PBXGroup;
+			children = (
+				E693797F832E479DAFA4ED3A /* Pods */,
+				76C6CC2D9977482D9C9638E8 /* Frameworks */,
+				B5313D09AEA34EFAAC2CA65A /* Products */,
+				922A7B8B966048B89B9532AA /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		CE42CAC5E6524957BAD2B637 /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				9388D2F245B94A63BB89C97B /* JSONKit.h */,
+				B0EECC93F8FD495D806404F3 /* JSONKit.m */,
+			);
+			name = JSONKit;
+			sourceTree = "<group>";
+		};
+		E44690D0B2D34DB0AC69CF7F /* SSKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				2A0C8865A18C4D7C89094DED /* SSKeychain.h */,
+				37C2D754A3834DE18C89A1CA /* SSKeychain.m */,
+			);
+			name = SSKeychain;
+			sourceTree = "<group>";
+		};
+		E693797F832E479DAFA4ED3A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FBB9DD401D7547E09322281B /* AFNetworking */,
+				7CFE153470334C65BB26348E /* EGOTableViewPullRefresh */,
+				79148E0B95074739B49BB81E /* Facebook-iOS-SDK */,
+				CE42CAC5E6524957BAD2B637 /* JSONKit */,
+				04B8AFE77C4A4628B2124973 /* Reachability */,
+				838D81A7E2FC4EEA88D75734 /* SBJson */,
+				E44690D0B2D34DB0AC69CF7F /* SSKeychain */,
+				4F4CB3D5A9A84BBCA586F1FF /* SVProgressHUD */,
+				93F599198AB2488688177826 /* ShareKit/Core */,
+				BB68FD02C9DE4DF99D682EBA /* ShareKit/Facebook */,
+				2CE9CF946C944AF19C0EA95C /* ShareKit/Twitter */,
+				25ED13AB48344CA294709E76 /* TTTAttributedLabel */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FBB9DD401D7547E09322281B /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				F81E90771A1C4C69AEEEE8E4 /* AFHTTPClient.h */,
+				1FCD74A9559943FDBB2D3814 /* AFHTTPRequestOperation.h */,
+				8BE3E8C34D4847BCA176E18A /* AFImageRequestOperation.h */,
+				67991845C020405FBDEE3AF7 /* AFJSONRequestOperation.h */,
+				6C5575E72ECF4DF3B169DFF4 /* AFJSONUtilities.h */,
+				0A4A26F62E3F443DA5355D46 /* AFNetworkActivityIndicatorManager.h */,
+				898433A86F17475899BABC59 /* AFNetworking.h */,
+				9940A494E378493BA3344E1A /* AFPropertyListRequestOperation.h */,
+				A6DE7E43FFFC463CAD6F7917 /* AFURLConnectionOperation.h */,
+				F37A7E1FB84B4651B8FC6649 /* AFXMLRequestOperation.h */,
+				38360E74D09E42F68D72111E /* UIImageView+AFNetworking.h */,
+				48944DFC5743415BB074975E /* AFHTTPClient.m */,
+				C520CDD2CF604EF09AFE8F39 /* AFHTTPRequestOperation.m */,
+				FF6D1AB391814C35AE83F99E /* AFImageRequestOperation.m */,
+				317E33B508B94193A7C27C51 /* AFJSONRequestOperation.m */,
+				1E83903747B347548675898A /* AFJSONUtilities.m */,
+				C1A46814ADB84C61BFA51BBB /* AFNetworkActivityIndicatorManager.m */,
+				B72803E291A34B39868C8639 /* AFPropertyListRequestOperation.m */,
+				031E0CFB99914F22A2F5020C /* AFURLConnectionOperation.m */,
+				AF9D41D452E0430A9DC32C82 /* AFXMLRequestOperation.m */,
+				BDE1B594A19D4382864DB3A1 /* UIImageView+AFNetworking.m */,
+			);
+			name = AFNetworking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E5B21B676557411882385656 /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A6E912DE5C74EEF977CE015 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				DCEEDA39230C49DD8AFD438F /* Sources */,
+				40D16A7872E149CBA7E32921 /* Frameworks */,
+				20A94FF016E64460A8280EF6 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 2A00D9DC1C944C27A20EBF2F /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8CB342EB9CBD4F7BB015CCD5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 56F7856828224B398ED1012A /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C7238C6BA5AB4DC997676308;
+			productRefGroup = B5313D09AEA34EFAAC2CA65A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E5B21B676557411882385656 /* Pods */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DCEEDA39230C49DD8AFD438F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4194322886E4729B0C9DA4C /* AFHTTPClient.m in Sources */,
+				8D2FFA26D1EF4AEBA8159ACB /* AFHTTPRequestOperation.m in Sources */,
+				08C4CDC78C4841DDA877F136 /* AFImageRequestOperation.m in Sources */,
+				C9A432C744AE459EB53F62D4 /* AFJSONRequestOperation.m in Sources */,
+				5B94B8C91B674D92A6E821BA /* AFJSONUtilities.m in Sources */,
+				79841CD36722448FBEA55E8C /* AFNetworkActivityIndicatorManager.m in Sources */,
+				36C39C9D0FE14D1EBA3DE16B /* AFPropertyListRequestOperation.m in Sources */,
+				2BBFE71B842D4D82B6691F70 /* AFURLConnectionOperation.m in Sources */,
+				443895E300884A1798245913 /* AFXMLRequestOperation.m in Sources */,
+				9CCEE154C5EF4D66A4D542A6 /* UIImageView+AFNetworking.m in Sources */,
+				24B177C596FD4A8EBD72CD77 /* EGORefreshTableHeaderView.m in Sources */,
+				1487FC0ED2A94907857B2D97 /* Facebook.m in Sources */,
+				414A70DC109744D3A9506BB3 /* FBDialog.m in Sources */,
+				111F6F681B6243C0BF9BF775 /* FBLoginDialog.m in Sources */,
+				DD589E23B66043C6A5999073 /* FBRequest.m in Sources */,
+				61786F5236BE4447B54AB43F /* JSONKit.m in Sources */,
+				A5E86EEBDBF04EDBB899552B /* Reachability.m in Sources */,
+				15DF6872D3A34D978145BF4A /* NSObject+SBJSON.m in Sources */,
+				FC3124972E57479B9C2B5721 /* NSString+SBJSON.m in Sources */,
+				8F4A7459850240E798EF94EE /* SBJSON.m in Sources */,
+				19E8046668484A5CBE4DE9B1 /* SBJsonBase.m in Sources */,
+				032578A0A8434051BEB4CD03 /* SBJsonParser.m in Sources */,
+				56312C957E924FA080DCE25C /* SBJsonWriter.m in Sources */,
+				46825F4BB7964980AB3411B5 /* SSKeychain.m in Sources */,
+				5DB94BD43AA14914861AB0C4 /* SVProgressHUD.m in Sources */,
+				41A16C7766E442CF9483DC20 /* DefaultSHKConfigurator.m in Sources */,
+				EA2E9767F78A491890FFA238 /* SHKConfiguration.m in Sources */,
+				46BC5F9A86814233BA97055A /* SHKOAuthSharer.m in Sources */,
+				7CA23D9DEEFD4FE3A4C04DDA /* SHKSharer.m in Sources */,
+				D8CA081D218C48889DF19C1C /* SHKSharerDelegate.m in Sources */,
+				394778509FA3425D823B609A /* NSData+md5.m in Sources */,
+				2FFDA5EF10A34C00953E841B /* NSHTTPCookieStorage+DeleteForURL.m in Sources */,
+				360B20F832BA41979F12D509 /* NSMutableDictionary+NSNullsToEmptyStrings.m in Sources */,
+				41B3E94DDD1E4B2B81FC04D9 /* UIWebView+SHK.m in Sources */,
+				9EE1A3B99FE843ECB4B9AF4C /* NSMutableURLRequest+Parameters.m in Sources */,
+				527ECB5246C5465B992BC3F2 /* NSString+URLEncoding.m in Sources */,
+				980D6228AFDF4142956C221D /* NSURL+Base.m in Sources */,
+				4613134FE742417EB8075590 /* OAAsynchronousDataFetcher.m in Sources */,
+				7DDEBC12F6EE4F9392B88113 /* OAConsumer.m in Sources */,
+				C97CC42DA21B4A7786BC2CB3 /* OADataFetcher.m in Sources */,
+				FCAA1C96D57B4B6685D248A9 /* OAHMAC_SHA1SignatureProvider.m in Sources */,
+				3DBC42B47910440588589E87 /* OAMutableURLRequest.m in Sources */,
+				24F5D2A4589F40F48025CE72 /* OAPlaintextSignatureProvider.m in Sources */,
+				B94D605C661447E89282A1C4 /* OARequestParameter.m in Sources */,
+				959AC37DF2C34CCD9DF1D180 /* OAServiceTicket.m in Sources */,
+				D20A59C5583640C4A0E4D0AF /* OAToken.m in Sources */,
+				D705F37C262647A68DE8F81A /* SHKRequest.m in Sources */,
+				14C2C81291C44E38893A95B7 /* SHKXMLResponseParser.m in Sources */,
+				7B0B2ABEDBB44ABB9C459630 /* SHK.m in Sources */,
+				58DB80976C464A46B57CB9A5 /* SHKItem.m in Sources */,
+				8C819C5C12084E98B548A38D /* SHKOfflineSharer.m in Sources */,
+				818E8BEA7BE14085A1AFE1E5 /* Base64Transcoder.c in Sources */,
+				818CA08630474D4BBB557572 /* hmac.c in Sources */,
+				A657D1EE4879407A99EDB470 /* sha1.c in Sources */,
+				E327A85AC74E4154B586B938 /* SHKCustomActionSheet.m in Sources */,
+				D71C9E0B21F64DDABD31F90F /* SHKCustomFormController.m in Sources */,
+				8F62FA72526B4D4D83918617 /* SHKCustomFormControllerLargeTextField.m in Sources */,
+				9E77E63154D54AECB28EDBAF /* SHKCustomFormFieldCell.m in Sources */,
+				E2F1A05893D542929B81600A /* SHKCustomShareMenu.m in Sources */,
+				ECA9DD171710459A971BCB7B /* SHKCustomShareMenuCell.m in Sources */,
+				D19F01F795894C8087F2FC8A /* SHKActionSheet.m in Sources */,
+				857D48ADC5B64CABACD246F1 /* SHKActivityIndicator.m in Sources */,
+				BB65877512564E188F323D2C /* SHKFormController.m in Sources */,
+				D84A183F7A3442BB90CF59BC /* SHKFormControllerLargeTextField.m in Sources */,
+				6F507C52B84841F5B13D2290 /* SHKFormFieldCell.m in Sources */,
+				68A9BB620DE9400B8842D25C /* SHKFormFieldSettings.m in Sources */,
+				E33F515300D549A2AF9CDB4A /* SHKFormOptionController.m in Sources */,
+				15A1BDCE7EAC45CAB3E87492 /* SHKOAuthView.m in Sources */,
+				486F21262F8E48B28284B444 /* SHKShareMenu.m in Sources */,
+				6D20CD60FB684F87A60E10AB /* SHKViewControllerWrapper.m in Sources */,
+				9731DC423E154BA9A360CB7B /* SHKCopy.m in Sources */,
+				00C793D69A15440DA0FF8950 /* SHKMail.m in Sources */,
+				8E87142F83DE4AEDB1111E25 /* SHKLogout.m in Sources */,
+				BAF7340261AC4789B7388AF1 /* SHKSafari.m in Sources */,
+				04D32EFB3F7B43999F993FC9 /* SHKPrint.m in Sources */,
+				DD1CE8EB13F3466E9D163F4F /* SHKPhotoAlbum.m in Sources */,
+				DF02481A693B4835BB9A26BF /* SHKTextMessage.m in Sources */,
+				63FA0B028BFF4F909FBE3471 /* SHKFacebook.m in Sources */,
+				4EF85DC1EEC341FEAA7C08D6 /* SHKiOS5Twitter.m in Sources */,
+				5A0A4EA36B694BA98F46DE89 /* SHKTwitter.m in Sources */,
+				B1F75FFDB5864FCDA7CDE408 /* TTTAttributedLabel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3E5472FDC98547F78E436DD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		73C9E288F2E04CF3975C0868 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 729C7C282C3C44C9A029B925 /* Pods.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yeti The Foot (MJ5Z4Z7FBU)";
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pods-prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				OTHER_LDFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "71E40D6B-7A08-4106-A568-1C9F07FE316F";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		B12EA75CCE1B4567A99FA72F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D729595D2D684228AA9BD496 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 729C7C282C3C44C9A029B925 /* Pods.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yeti The Foot (MJ5Z4Z7FBU)";
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pods-prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				OTHER_LDFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "71E40D6B-7A08-4106-A568-1C9F07FE316F";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		56F7856828224B398ED1012A /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B12EA75CCE1B4567A99FA72F /* Debug */,
+				3E5472FDC98547F78E436DD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A6E912DE5C74EEF977CE015 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D729595D2D684228AA9BD496 /* Debug */,
+				73C9E288F2E04CF3975C0868 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8CB342EB9CBD4F7BB015CCD5 /* Project object */;
+}

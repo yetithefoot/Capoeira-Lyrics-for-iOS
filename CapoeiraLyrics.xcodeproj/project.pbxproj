@@ -137,14 +137,6 @@
 		D084A75E1598AD0C001EB071 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A7521598AD0C001EB071 /* Icon-Small.png */; };
 		D084A75F1598AD0C001EB071 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A7531598AD0C001EB071 /* Icon-Small@2x.png */; };
 		D084A7601598AD0C001EB071 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A7531598AD0C001EB071 /* Icon-Small@2x.png */; };
-		D084A7611598AD0C001EB071 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A7541598AD0C001EB071 /* Icon.png */; };
-		D084A7621598AD0C001EB071 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A7541598AD0C001EB071 /* Icon.png */; };
-		D084A7631598AD0C001EB071 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A7551598AD0C001EB071 /* Icon@2x.png */; };
-		D084A7641598AD0C001EB071 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A7551598AD0C001EB071 /* Icon@2x.png */; };
-		D084A7651598AD0C001EB071 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A7561598AD0C001EB071 /* iTunesArtwork.png */; };
-		D084A7661598AD0C001EB071 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A7561598AD0C001EB071 /* iTunesArtwork.png */; };
-		D084A7671598AD0C001EB071 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A7571598AD0C001EB071 /* iTunesArtwork@2x.png */; };
-		D084A7681598AD0C001EB071 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A7571598AD0C001EB071 /* iTunesArtwork@2x.png */; };
 		D084A7691598AD0C001EB071 /* Main.psd in Resources */ = {isa = PBXBuildFile; fileRef = D084A7581598AD0C001EB071 /* Main.psd */; };
 		D084A76A1598AD0C001EB071 /* Main.psd in Resources */ = {isa = PBXBuildFile; fileRef = D084A7581598AD0C001EB071 /* Main.psd */; };
 		D084A76C1598AF15001EB071 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A76B1598AF14001EB071 /* Icon.png */; };
@@ -193,6 +185,11 @@
 		D0B83F2F1588BA8A0075C2F0 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B83F2E1588BA890075C2F0 /* CoreText.framework */; };
 		D0CD6032158A4FFE00EB7502 /* star_disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = D0CD6030158A4FFE00EB7502 /* star_disabled.png */; };
 		D0CD6033158A4FFE00EB7502 /* star_enabled.png in Resources */ = {isa = PBXBuildFile; fileRef = D0CD6031158A4FFE00EB7502 /* star_enabled.png */; };
+		D0D08D06159AFD56005F6737 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = D0D08D04159AFD56005F6737 /* iTunesArtwork */; };
+		D0D08D07159AFD56005F6737 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = D0D08D04159AFD56005F6737 /* iTunesArtwork */; };
+		D0D08D08159AFD56005F6737 /* iTunesArtwork@2x in Resources */ = {isa = PBXBuildFile; fileRef = D0D08D05159AFD56005F6737 /* iTunesArtwork@2x */; };
+		D0D08D09159AFD56005F6737 /* iTunesArtwork@2x in Resources */ = {isa = PBXBuildFile; fileRef = D0D08D05159AFD56005F6737 /* iTunesArtwork@2x */; };
+		D0D08D0A159AFE7B005F6737 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A76D1598AF21001EB071 /* Icon@2x.png */; };
 		DF4D5B959AFC4275888C1745 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35E8594728BF4B41AECDDE16 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -262,17 +259,13 @@
 		D084A6F51593704D001EB071 /* PlaceholderTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceholderTableView.m; sourceTree = "<group>"; };
 		D084A6F71594CB95001EB071 /* ru.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ru.png; sourceTree = "<group>"; };
 		D084A6F81594CB96001EB071 /* us.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = us.png; sourceTree = "<group>"; };
-		D084A74915976097001EB071 /* CapoLyrics Lite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CapoLyrics Lite.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D084A74915976097001EB071 /* Lyrics Lite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lyrics Lite.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D084A74B15976098001EB071 /* CapoeiraLyrics Lite-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "CapoeiraLyrics Lite-Info.plist"; path = "/Users/yeti/Developer/Projects/Capoeira-Lyrics-for-iOS/CapoeiraLyrics Lite-Info.plist"; sourceTree = "<absolute>"; };
 		D084A74C15977052001EB071 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		D084A7501598AD0C001EB071 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
 		D084A7511598AD0C001EB071 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
 		D084A7521598AD0C001EB071 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
 		D084A7531598AD0C001EB071 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
-		D084A7541598AD0C001EB071 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
-		D084A7551598AD0C001EB071 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
-		D084A7561598AD0C001EB071 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
-		D084A7571598AD0C001EB071 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
 		D084A7581598AD0C001EB071 /* Main.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = Main.psd; sourceTree = "<group>"; };
 		D084A76B1598AF14001EB071 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		D084A76D1598AF21001EB071 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
@@ -295,7 +288,7 @@
 		D084A7CB159A0ECE001EB071 /* Configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Configuration.m; sourceTree = "<group>"; };
 		D084A7CF159A0F15001EB071 /* PrivateConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrivateConstants.h; sourceTree = "<group>"; };
 		D084A7D1159A0F60001EB071 /* PrivateConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrivateConstants.m; sourceTree = "<group>"; };
-		D08DB9B4157F4EBE00994BDC /* CapoLyrics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CapoLyrics.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D08DB9B4157F4EBE00994BDC /* Lyrics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lyrics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D08DB9B8157F4EBE00994BDC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D08DB9BA157F4EBE00994BDC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D08DB9BC157F4EBE00994BDC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -312,6 +305,8 @@
 		D0B83F2E1588BA890075C2F0 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		D0CD6030158A4FFE00EB7502 /* star_disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star_disabled.png; sourceTree = "<group>"; };
 		D0CD6031158A4FFE00EB7502 /* star_enabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star_enabled.png; sourceTree = "<group>"; };
+		D0D08D04159AFD56005F6737 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
+		D0D08D05159AFD56005F6737 /* iTunesArtwork@2x */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iTunesArtwork@2x"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -485,14 +480,12 @@
 		D084A74F1598AD0B001EB071 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				D0D08D04159AFD56005F6737 /* iTunesArtwork */,
+				D0D08D05159AFD56005F6737 /* iTunesArtwork@2x */,
 				D084A7501598AD0C001EB071 /* Icon-72.png */,
 				D084A7511598AD0C001EB071 /* Icon-Small-50.png */,
 				D084A7521598AD0C001EB071 /* Icon-Small.png */,
 				D084A7531598AD0C001EB071 /* Icon-Small@2x.png */,
-				D084A7541598AD0C001EB071 /* Icon.png */,
-				D084A7551598AD0C001EB071 /* Icon@2x.png */,
-				D084A7561598AD0C001EB071 /* iTunesArtwork.png */,
-				D084A7571598AD0C001EB071 /* iTunesArtwork@2x.png */,
 				D084A7581598AD0C001EB071 /* Main.psd */,
 			);
 			path = Icons;
@@ -513,8 +506,8 @@
 		D08DB9B5157F4EBE00994BDC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D08DB9B4157F4EBE00994BDC /* CapoLyrics.app */,
-				D084A74915976097001EB071 /* CapoLyrics Lite.app */,
+				D08DB9B4157F4EBE00994BDC /* Lyrics.app */,
+				D084A74915976097001EB071 /* Lyrics Lite.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -592,9 +585,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		D084A6FE15976097001EB071 /* CapoLyrics Lite */ = {
+		D084A6FE15976097001EB071 /* Lyrics Lite */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D084A74615976097001EB071 /* Build configuration list for PBXNativeTarget "CapoLyrics Lite" */;
+			buildConfigurationList = D084A74615976097001EB071 /* Build configuration list for PBXNativeTarget "Lyrics Lite" */;
 			buildPhases = (
 				D084A6FF15976097001EB071 /* Sources */,
 				D084A70E15976097001EB071 /* Frameworks */,
@@ -606,14 +599,14 @@
 			);
 			dependencies = (
 			);
-			name = "CapoLyrics Lite";
+			name = "Lyrics Lite";
 			productName = CapoeiraLyrics;
-			productReference = D084A74915976097001EB071 /* CapoLyrics Lite.app */;
+			productReference = D084A74915976097001EB071 /* Lyrics Lite.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D08DB9B3157F4EBE00994BDC /* CapoLyrics */ = {
+		D08DB9B3157F4EBE00994BDC /* Lyrics */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D08DB9E0157F4EBE00994BDC /* Build configuration list for PBXNativeTarget "CapoLyrics" */;
+			buildConfigurationList = D08DB9E0157F4EBE00994BDC /* Build configuration list for PBXNativeTarget "Lyrics" */;
 			buildPhases = (
 				D08DB9B0157F4EBE00994BDC /* Sources */,
 				D08DB9B1157F4EBE00994BDC /* Frameworks */,
@@ -624,9 +617,9 @@
 			);
 			dependencies = (
 			);
-			name = CapoLyrics;
+			name = Lyrics;
 			productName = CapoeiraLyrics;
-			productReference = D08DB9B4157F4EBE00994BDC /* CapoLyrics.app */;
+			productReference = D08DB9B4157F4EBE00994BDC /* Lyrics.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -649,8 +642,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D08DB9B3157F4EBE00994BDC /* CapoLyrics */,
-				D084A6FE15976097001EB071 /* CapoLyrics Lite */,
+				D08DB9B3157F4EBE00994BDC /* Lyrics */,
+				D084A6FE15976097001EB071 /* Lyrics Lite */,
 			);
 		};
 /* End PBXProject section */
@@ -710,10 +703,6 @@
 				D084A75C1598AD0C001EB071 /* Icon-Small-50.png in Resources */,
 				D084A75E1598AD0C001EB071 /* Icon-Small.png in Resources */,
 				D084A7601598AD0C001EB071 /* Icon-Small@2x.png in Resources */,
-				D084A7621598AD0C001EB071 /* Icon.png in Resources */,
-				D084A7641598AD0C001EB071 /* Icon@2x.png in Resources */,
-				D084A7661598AD0C001EB071 /* iTunesArtwork.png in Resources */,
-				D084A7681598AD0C001EB071 /* iTunesArtwork@2x.png in Resources */,
 				D084A76A1598AD0C001EB071 /* Main.psd in Resources */,
 				D084A76F1598AF32001EB071 /* Icon.png in Resources */,
 				D084A7AA1599F3E6001EB071 /* background_axe.png in Resources */,
@@ -727,6 +716,9 @@
 				D084A7C3159A02EF001EB071 /* background_uca.png in Resources */,
 				D084A7C7159A0612001EB071 /* background_ficag.png in Resources */,
 				D084A7C9159A0612001EB071 /* logo_ficag.png in Resources */,
+				D0D08D07159AFD56005F6737 /* iTunesArtwork in Resources */,
+				D0D08D09159AFD56005F6737 /* iTunesArtwork@2x in Resources */,
+				D0D08D0A159AFE7B005F6737 /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -784,10 +776,6 @@
 				D084A75B1598AD0C001EB071 /* Icon-Small-50.png in Resources */,
 				D084A75D1598AD0C001EB071 /* Icon-Small.png in Resources */,
 				D084A75F1598AD0C001EB071 /* Icon-Small@2x.png in Resources */,
-				D084A7611598AD0C001EB071 /* Icon.png in Resources */,
-				D084A7631598AD0C001EB071 /* Icon@2x.png in Resources */,
-				D084A7651598AD0C001EB071 /* iTunesArtwork.png in Resources */,
-				D084A7671598AD0C001EB071 /* iTunesArtwork@2x.png in Resources */,
 				D084A7691598AD0C001EB071 /* Main.psd in Resources */,
 				D084A76C1598AF15001EB071 /* Icon.png in Resources */,
 				D084A76E1598AF22001EB071 /* Icon@2x.png in Resources */,
@@ -802,6 +790,8 @@
 				D084A7C2159A02EF001EB071 /* background_uca.png in Resources */,
 				D084A7C6159A0612001EB071 /* background_ficag.png in Resources */,
 				D084A7C8159A0612001EB071 /* logo_ficag.png in Resources */,
+				D0D08D06159AFD56005F6737 /* iTunesArtwork in Resources */,
+				D0D08D08159AFD56005F6737 /* iTunesArtwork@2x in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -901,6 +891,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5E487E0840E14CE6BAD9DB39 /* Pods.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yeti The Foot (MJ5Z4Z7FBU)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yeti The Foot (MJ5Z4Z7FBU)";
 				DSTROOT = /tmp/xcodeproj.dst;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -915,7 +907,7 @@
 				);
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "CapoeiraLyrics Lite-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../Distr/Devel/iSOMA_5.2.1/iSoma.framework/Versions/A\"",
@@ -943,8 +935,10 @@
 					Twitter,
 					"-fobjc-arc",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				PRODUCT_NAME = "Lyrics Lite";
+				PROVISIONING_PROFILE = "71E40D6B-7A08-4106-A568-1C9F07FE316F";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "71E40D6B-7A08-4106-A568-1C9F07FE316F";
+				SKIP_INSTALL = NO;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -953,6 +947,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5E487E0840E14CE6BAD9DB39 /* Pods.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yeti The Foot (MJ5Z4Z7FBU)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yeti The Foot (MJ5Z4Z7FBU)";
 				DSTROOT = /tmp/xcodeproj.dst;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -963,7 +959,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "LITE_VERSION=1";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "CapoeiraLyrics Lite-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../Distr/Devel/iSOMA_5.2.1/iSoma.framework/Versions/A\"",
@@ -991,8 +987,10 @@
 					Twitter,
 					"-fobjc-arc",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				PRODUCT_NAME = "Lyrics Lite";
+				PROVISIONING_PROFILE = "71E40D6B-7A08-4106-A568-1C9F07FE316F";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "71E40D6B-7A08-4106-A568-1C9F07FE316F";
+				SKIP_INSTALL = NO;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -1044,6 +1042,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5E487E0840E14CE6BAD9DB39 /* Pods.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yeti The Foot (MJ5Z4Z7FBU)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yeti The Foot (MJ5Z4Z7FBU)";
 				DSTROOT = /tmp/xcodeproj.dst;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1082,8 +1082,10 @@
 					Twitter,
 					"-fobjc-arc",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				PRODUCT_NAME = Lyrics;
+				PROVISIONING_PROFILE = "71E40D6B-7A08-4106-A568-1C9F07FE316F";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "71E40D6B-7A08-4106-A568-1C9F07FE316F";
+				SKIP_INSTALL = NO;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1092,6 +1094,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5E487E0840E14CE6BAD9DB39 /* Pods.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yeti The Foot (MJ5Z4Z7FBU)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yeti The Foot (MJ5Z4Z7FBU)";
 				DSTROOT = /tmp/xcodeproj.dst;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1126,8 +1130,10 @@
 					Twitter,
 					"-fobjc-arc",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				PRODUCT_NAME = Lyrics;
+				PROVISIONING_PROFILE = "71E40D6B-7A08-4106-A568-1C9F07FE316F";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "71E40D6B-7A08-4106-A568-1C9F07FE316F";
+				SKIP_INSTALL = NO;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -1135,7 +1141,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D084A74615976097001EB071 /* Build configuration list for PBXNativeTarget "CapoLyrics Lite" */ = {
+		D084A74615976097001EB071 /* Build configuration list for PBXNativeTarget "Lyrics Lite" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D084A74715976097001EB071 /* Debug */,
@@ -1153,7 +1159,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D08DB9E0157F4EBE00994BDC /* Build configuration list for PBXNativeTarget "CapoLyrics" */ = {
+		D08DB9E0157F4EBE00994BDC /* Build configuration list for PBXNativeTarget "Lyrics" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D08DB9E1157F4EBE00994BDC /* Debug */,

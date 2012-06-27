@@ -307,6 +307,7 @@
         mBannerView.frame = CGRectMake(0, 410, 320, 50);
         [mBannerView adSettings].adspaceId = [PrivateConstants smaatoAdSpace1];
         [mBannerView adSettings].publisherId = [PrivateConstants smaatoPublisherId]; 
+        [mBannerView addAdListener:self];
         [self.view addSubview:mBannerView];
         [mBannerView release];
     }
@@ -476,4 +477,16 @@
 -(void)didFail{
     [SVProgressHUD showErrorWithStatus:@"Update failed! Try again later!"];
 }
+
+#pragma mark AdListenerProtocol 
+#ifdef LITE_VERSION
+-(void)onReceiveAd:(id<SOMAAdDownloaderProtocol>)sender withReceivedBanner:(id<SOMAReceivedBannerProtocol>)receivedBanner
+{
+    // disable scrolltotop and bouncing for banner view
+    if(sender && [sender isKindOfClass:[SOMABannerView class]]){
+        [self disableScrollsToTopPropertyOnAllSubviewsOf:(SOMABannerView *)sender];
+    }
+}
+#endif
+
 @end

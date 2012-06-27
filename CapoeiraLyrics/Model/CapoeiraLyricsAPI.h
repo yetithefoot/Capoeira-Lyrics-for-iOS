@@ -12,10 +12,10 @@
 
 @protocol CapoeiraLyricsAPIDelegate <NSObject>
 @optional
--(void) songsDidLoad:(NSArray *)songs;
--(void) songDidLoad:(Song *) song;
--(void) songsCountDidLoad:(NSNumber *) count;
--(void) didFail;
+-(void) getAllSongsFullDidLoad:(NSArray *)songs;
+-(void) getSongsCountDidLoad:(NSNumber *) count;
+-(void) getAllSongsFullDidFail;
+-(void) getSongsCountDidFail;
 @end
 
 @interface CapoeiraLyricsAPI : NSObject{
@@ -28,7 +28,6 @@
 
 -(void) getAllSongsFull;
 -(void) getAllSongsFullFromLocalStorage;
--(void) getSong: (int) songId;
 -(void) getSongsCount;
 
 @end

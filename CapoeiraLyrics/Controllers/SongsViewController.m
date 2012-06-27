@@ -15,6 +15,8 @@
 
 #import "SongTableViewCell.h"
 
+#import "PrivateConstants.h"
+
 
 
 
@@ -64,11 +66,26 @@
     [_tabBar release];
     [super dealloc];
 }
-							
+
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	
+#ifdef LITE_VERSION
+    {
+        mBannerView = [[SOMABannerView alloc] initWithDimension:kSOMAAdDimensionDefault]; 
+        mBannerView.frame = CGRectMake(0, 361, 320, 50);
+        [mBannerView adSettings].adspaceId = [PrivateConstants smaatoAdSpace1];
+        [mBannerView adSettings].publisherId = [PrivateConstants smaatoPublisherId]; 
+        [mBannerView addAdListener:self];
+                
+        [self.view addSubview:mBannerView];
+        [mBannerView release];
+    }
+#endif
+    
     
     if (_refreshHeaderView == nil) {
 		
@@ -108,6 +125,22 @@
     [_tableSongs reloadData];
     [self.searchDisplayController.searchResultsTableView reloadData];
     
+#ifdef LITE_VERSION
+    {
+        [mBannerView setAutoReloadEnabled:YES]; 
+        [mBannerView asyncLoadNewBanner];
+    }
+#endif
+}
+
+
+-(void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+#ifdef LITE_VERSION
+    {
+        [mBannerView setAutoReloadEnabled:NO]; 
+    }
+#endif
 }
 
 - (void)viewDidUnload
@@ -421,15 +454,15 @@ int __lastClickedCell = -1;
 
 
 
--(void)songsDidLoad:(NSArray *)songs{
+-(void)getAllSongsFullDidLoad:(NSArray *)songs{
     [_songs removeAllObjects];
     
     [_songs addObjectsFromArray:songs];
     [_tableSongs reloadData];
-    [SVProgressHUD showSuccessWithStatus:@"Success!"];
+    [SVProgressHUD showSuccessWithStatus:@"Songs loaded!"];
 }
 
--(void)songsCountDidLoad:(NSNumber *)count{
+-(void)getSongsCountDidLoad:(NSNumber *)count{
     
     if(self != self.navigationController.topViewController) return;
     
@@ -440,9 +473,22 @@ int __lastClickedCell = -1;
     }
 }
 
--(void)didFail{
-    [SVProgressHUD showErrorWithStatus:@"Update failed! Try again later!"];
+
+-(void)getAllSongsFullDidFail{
+    [SVProgressHUD showErrorWithStatus:@"Server unavailable! Check your network connection and try again!" duration:1.8];
 }
+
+#pragma mark AdListenerProtocol 
+#ifdef LITE_VERSION
+-(void)onReceiveAd:(id<SOMAAdDownloaderProtocol>)sender withReceivedBanner:(id<SOMAReceivedBannerProtocol>)receivedBanner
+{
+    // disable scrolltotop and bouncing for banner view
+    if(sender && [sender isKindOfClass:[SOMABannerView class]]){
+        [self disableScrollsToTopPropertyOnAllSubviewsOf:(SOMABannerView *)sender];
+    }
+}
+#endif
+
 
 
 

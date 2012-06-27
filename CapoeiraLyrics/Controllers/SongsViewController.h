@@ -11,7 +11,17 @@
 #import "BaseViewController.h"
 #import "PlaceholderTableView.h"
 
-@interface SongsViewController : BaseViewController<UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate, UISearchDisplayDelegate, CapoeiraLyricsAPIDelegate, UITabBarDelegate, EGORefreshTableHeaderDelegate, UIGestureRecognizerDelegate, UIAlertViewDelegate>{
+#ifdef LITE_VERSION
+#import <iSoma/SOMABannerView.h>
+#endif
+
+@interface SongsViewController : BaseViewController<UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate, UISearchDisplayDelegate, CapoeiraLyricsAPIDelegate, UITabBarDelegate, EGORefreshTableHeaderDelegate, UIGestureRecognizerDelegate, UIAlertViewDelegate
+
+#ifdef LITE_VERSION
+,SOMAAdListenerProtocol
+#endif
+
+>{
     
     EGORefreshTableHeaderView *_refreshHeaderView;
     
@@ -21,6 +31,10 @@
 
     IBOutlet PlaceholderTableView *_tableSongs;
     IBOutlet UITabBar *_tabBar;
+    
+#ifdef LITE_VERSION
+    SOMABannerView *mBannerView;
+#endif
     
 }
 

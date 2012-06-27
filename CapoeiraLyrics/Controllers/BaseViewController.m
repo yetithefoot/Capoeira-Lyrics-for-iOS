@@ -38,6 +38,16 @@
 	[alert release];
 }
 
+- (void) disableScrollsToTopPropertyOnAllSubviewsOf:(UIView *)view {
+    for (UIView *subview in view.subviews) {
+        if ([subview isKindOfClass:[UIScrollView class]]) {
+            ((UIScrollView *)subview).scrollsToTop = NO;
+            ((UIScrollView *)subview).bounces = NO;
+        }
+        [self disableScrollsToTopPropertyOnAllSubviewsOf:subview];
+    }
+}
+
 
 
 - (void)viewDidLoad

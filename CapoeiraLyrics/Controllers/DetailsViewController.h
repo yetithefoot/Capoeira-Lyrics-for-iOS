@@ -22,7 +22,12 @@
 #import <iSoma/SOMABannerView.h>
 #endif
 
-@interface DetailsViewController : BaseViewController< TagsViewProtocol,UIActionSheetDelegate, CapoeiraLyricsAPIDelegate> {
+@interface DetailsViewController : BaseViewController< TagsViewProtocol,UIActionSheetDelegate, CapoeiraLyricsAPIDelegate 
+
+#ifdef LITE_VERSION
+,SOMAAdListenerProtocol
+#endif
+> {
     IBOutlet UIScrollView* _scrollView;
     IBOutlet TagsView *_tagsView;
     IBOutlet UILabel *_labelTitle;

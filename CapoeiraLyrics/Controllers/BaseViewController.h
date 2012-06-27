@@ -16,4 +16,6 @@
 -(void) showAlertWithTitle: (NSString *) title andMessage: (NSString *) message;
 - (void) goBack: (id) sender;
 
+- (void) disableScrollsToTopPropertyOnAllSubviewsOf:(UIView *)view;
+
 @end

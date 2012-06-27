@@ -42,8 +42,6 @@ static CapoeiraLyricsAPI * _instance;
 
             
             if(JSON){
-
-#warning check for errors
                 // replace temp offline response file
                 NSString* path = [[Configuration sharedInstance] FILEPATH_OFFLINE_SONGS_RESPONSE];
                 
@@ -63,15 +61,19 @@ static CapoeiraLyricsAPI * _instance;
                     [retVal addObject:song];
                 }
                 
-                if([self.delegate respondsToSelector:@selector(songsDidLoad:)]){
-                    [self.delegate performSelector:@selector(songsDidLoad:) withObject:retVal];
+                if([self.delegate respondsToSelector:@selector(getAllSongsFullDidLoad:)]){
+                    [self.delegate performSelector:@selector(getAllSongsFullDidLoad:) withObject:retVal];
+                }
+            }else {
+                if([self.delegate respondsToSelector:@selector(getSongsCountDidFail)]){
+                    [self.delegate performSelector:@selector(getSongsCountDidFail)];
                 }
             }
             
         }
         failure: ^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON){
-            if([self.delegate respondsToSelector:@selector(didFail)]){
-                [self.delegate performSelector:@selector(didFail)];
+            if([self.delegate respondsToSelector:@selector(getAllSongsFullDidFail)]){
+                [self.delegate performSelector:@selector(getAllSongsFullDidFail)];
             }
         }];
     
@@ -103,12 +105,13 @@ static CapoeiraLyricsAPI * _instance;
         [song release];
     }
     
-    if([self.delegate respondsToSelector:@selector(songsDidLoad:)]){
-        [self.delegate performSelector:@selector(songsDidLoad:) withObject:retVal];
+    if([self.delegate respondsToSelector:@selector(getAllSongsFullDidLoad:)]){
+        [self.delegate performSelector:@selector(getAllSongsFullDidLoad:) withObject:retVal];
     }
     
 }
 
+/*
 -(void) getSong: (int) songId{
     Configuration * cfg = [Configuration sharedInstance];
     NSString * urlString = [NSString stringWithFormat:@"%@/JSONAPI/Song/%d?token=%@", cfg.serverUrl, songId, cfg.securityToken];
@@ -135,6 +138,7 @@ static CapoeiraLyricsAPI * _instance;
     
     [operation start];
 }
+ */
 
 -(void) getSongsCount{
     Configuration * cfg = [Configuration sharedInstance];
@@ -143,28 +147,28 @@ static CapoeiraLyricsAPI * _instance;
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     
     AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request 
-                                                                                        success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
-                                                                                            
-                                                                                            //NSLog(@"http://capoeiralyrics.info/JSONAPI/Songount request JSON: %@", JSON );
-                                                                                            
-                                                                                            if(JSON && [JSON count] > 0){
-                                                                                                int count = [[[JSON allObjects]objectAtIndex:0] intValue];
-                                                                                            
-                                                                                                if([self.delegate respondsToSelector:@selector(songsCountDidLoad:)]){
-                                                                                                    [self.delegate performSelector:@selector(songsCountDidLoad:) withObject:[NSNumber numberWithInt:count]];
-                                                                                                }
-                                                                                            }else {
-                                                                                                if([self.delegate respondsToSelector:@selector(didFail)]){
-                                                                                                    [self.delegate performSelector:@selector(didFail)];
-                                                                                                }
-                                                                                            }
-                                                                                            
-                                                                                        }
-                                                                                        failure: ^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON){
-                                                                                            if([self.delegate respondsToSelector:@selector(didFail)]){
-                                                                                                [self.delegate performSelector:@selector(didFail)];
-                                                                                            }
-                                                                                        }];
+        success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
+            
+            //NSLog(@"http://capoeiralyrics.info/JSONAPI/Songount request JSON: %@", JSON );
+            
+            if(JSON && [JSON count] > 0){
+                int count = [[[JSON allObjects]objectAtIndex:0] intValue];
+            
+                if([self.delegate respondsToSelector:@selector(getSongsCountDidLoad:)]){
+                    [self.delegate performSelector:@selector(getSongsCountDidLoad:) withObject:[NSNumber numberWithInt:count]];
+                }
+            }else {
+                if([self.delegate respondsToSelector:@selector(getSongsCountDidFail)]){
+                    [self.delegate performSelector:@selector(getSongsCountDidFail)];
+                }
+            }
+            
+        }
+        failure: ^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON){
+            if([self.delegate respondsToSelector:@selector(getSongsCountDidFail)]){
+                [self.delegate performSelector:@selector(getSongsCountDidFail)];
+            }
+        }];
     
     [operation start];
 }
