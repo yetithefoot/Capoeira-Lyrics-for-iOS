@@ -771,7 +771,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 729C7C282C3C44C9A029B925 /* Pods.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Yeti The Foot (MJ5Z4Z7FBU)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Igor Tomych";
 				DSTROOT = /tmp/xcodeproj.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pods-prefix.pch";
@@ -779,7 +779,7 @@
 				OTHER_LDFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "71E40D6B-7A08-4106-A568-1C9F07FE316F";
+				PROVISIONING_PROFILE = "5A47F5BD-55F9-42EA-84AA-02E70935A827";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -818,7 +818,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 729C7C282C3C44C9A029B925 /* Pods.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Yeti The Foot (MJ5Z4Z7FBU)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Igor Tomych";
 				DSTROOT = /tmp/xcodeproj.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pods-prefix.pch";
@@ -826,7 +826,7 @@
 				OTHER_LDFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "71E40D6B-7A08-4106-A568-1C9F07FE316F";
+				PROVISIONING_PROFILE = "5A47F5BD-55F9-42EA-84AA-02E70935A827";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;

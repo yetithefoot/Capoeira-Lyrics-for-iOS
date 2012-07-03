@@ -891,8 +891,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5E487E0840E14CE6BAD9DB39 /* Pods.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Yeti The Foot (MJ5Z4Z7FBU)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yeti The Foot (MJ5Z4Z7FBU)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Igor Tomych";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Igor Tomych";
 				DSTROOT = /tmp/xcodeproj.dst;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -936,8 +936,8 @@
 					"-fobjc-arc",
 				);
 				PRODUCT_NAME = "Lyrics Lite";
-				PROVISIONING_PROFILE = "71E40D6B-7A08-4106-A568-1C9F07FE316F";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "71E40D6B-7A08-4106-A568-1C9F07FE316F";
+				PROVISIONING_PROFILE = "B48450D2-35D6-47D6-B4B4-AAEF92917BB9";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B48450D2-35D6-47D6-B4B4-AAEF92917BB9";
 				SKIP_INSTALL = NO;
 				WRAPPER_EXTENSION = app;
 			};
@@ -947,8 +947,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5E487E0840E14CE6BAD9DB39 /* Pods.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Yeti The Foot (MJ5Z4Z7FBU)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yeti The Foot (MJ5Z4Z7FBU)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Igor Tomych";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Igor Tomych";
 				DSTROOT = /tmp/xcodeproj.dst;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -988,8 +988,8 @@
 					"-fobjc-arc",
 				);
 				PRODUCT_NAME = "Lyrics Lite";
-				PROVISIONING_PROFILE = "71E40D6B-7A08-4106-A568-1C9F07FE316F";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "71E40D6B-7A08-4106-A568-1C9F07FE316F";
+				PROVISIONING_PROFILE = "B48450D2-35D6-47D6-B4B4-AAEF92917BB9";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B48450D2-35D6-47D6-B4B4-AAEF92917BB9";
 				SKIP_INSTALL = NO;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1042,8 +1042,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5E487E0840E14CE6BAD9DB39 /* Pods.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Yeti The Foot (MJ5Z4Z7FBU)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yeti The Foot (MJ5Z4Z7FBU)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Igor Tomych";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Igor Tomych";
 				DSTROOT = /tmp/xcodeproj.dst;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1083,8 +1083,8 @@
 					"-fobjc-arc",
 				);
 				PRODUCT_NAME = Lyrics;
-				PROVISIONING_PROFILE = "71E40D6B-7A08-4106-A568-1C9F07FE316F";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "71E40D6B-7A08-4106-A568-1C9F07FE316F";
+				PROVISIONING_PROFILE = "5A47F5BD-55F9-42EA-84AA-02E70935A827";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "5A47F5BD-55F9-42EA-84AA-02E70935A827";
 				SKIP_INSTALL = NO;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1094,8 +1094,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5E487E0840E14CE6BAD9DB39 /* Pods.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Yeti The Foot (MJ5Z4Z7FBU)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yeti The Foot (MJ5Z4Z7FBU)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Igor Tomych";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Igor Tomych";
 				DSTROOT = /tmp/xcodeproj.dst;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1131,8 +1131,8 @@
 					"-fobjc-arc",
 				);
 				PRODUCT_NAME = Lyrics;
-				PROVISIONING_PROFILE = "71E40D6B-7A08-4106-A568-1C9F07FE316F";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "71E40D6B-7A08-4106-A568-1C9F07FE316F";
+				PROVISIONING_PROFILE = "5A47F5BD-55F9-42EA-84AA-02E70935A827";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "5A47F5BD-55F9-42EA-84AA-02E70935A827";
 				SKIP_INSTALL = NO;
 				WRAPPER_EXTENSION = app;
 			};

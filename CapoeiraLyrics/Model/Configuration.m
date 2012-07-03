@@ -8,6 +8,7 @@
 #import "Configuration.h"
 #import "PrivateConstants.h"
 
+#import <sys/xattr.h>
 
 static Configuration* _instance;
 
@@ -45,6 +46,31 @@ static Configuration* _instance;
 }
 
 
+
+
+
+
++ (void) addSkipBackupAttributeToPath: (NSString*) path {
+    NSURL* url = [[NSURL alloc] initFileURLWithPath: path];
+
+    if(&NSURLIsExcludedFromBackupKey != nil){
+        NSError *error = nil;
+        
+        BOOL success = [url setResourceValue: [NSNumber numberWithBool: YES]
+                                      forKey: NSURLIsExcludedFromBackupKey error: &error];
+        if(!success){
+            NSLog(@"Error excluding %@ from backup %@", [url lastPathComponent], error);
+        }
+    } else {
+        const char* filePath = [[url path] fileSystemRepresentation];
+        const char* attrName = "com.apple.MobileBackup";
+        u_int8_t attrValue = 1;
+        setxattr(filePath, attrName, &attrValue, sizeof(attrValue), 0, 0);
+    }
+}
+
+
+
 -(NSString *) FILEPATH_FAVORITE_SONGS_IDS{
     NSString* documentsPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
     NSString* foofile = [documentsPath stringByAppendingPathComponent:@"favorite_songs_ids.txt"];
@@ -69,6 +95,7 @@ static Configuration* _instance;
         else{
             self.favoriteSongsIds = [NSMutableArray array];
             [self.favoriteSongsIds writeToFile:filename atomically:YES];
+            [Configuration addSkipBackupAttributeToPath:filename]; // set NO SYNC WITH iCLOUD attribute
         }
         
         // copy offline response stub
