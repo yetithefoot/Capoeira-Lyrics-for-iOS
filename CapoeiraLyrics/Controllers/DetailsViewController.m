@@ -71,7 +71,7 @@
     _scrollView.contentSize = CGSizeMake(_scrollView.contentSize.width, y);
     
 #ifdef HD_VERSION
-    int height = 618;
+    int height = 588;
 #else
     int height = 360;
 #endif
@@ -365,7 +365,7 @@
 
 -(CGRect) makeBannerRect{
 #ifdef HD_VERSION
-    return CGRectMake(-12, 678, 728, 90);
+    return CGRectMake(-12, 648, 728, 90);
 #else
     return CGRectMake(0, 410, 320, 50);
 #endif
@@ -385,11 +385,16 @@
     recognizerSwipeRight.direction = UISwipeGestureRecognizerDirectionRight;
     [_scrollView addGestureRecognizer:recognizerSwipeRight];
     
-
     
-#ifdef LITE_VERSION
+    if([Configuration isLiteVersion])
     {
-        mBannerView = [[SOMABannerView alloc] initWithDimension:kSOMAAdDimensionDefault]; 
+        if(![Configuration isHDVersion]){
+            mBannerView = [[SOMABannerView alloc] initWithDimension:kSOMAAdDimensionDefault]; 
+
+        }else{
+            mBannerView = [[SOMABannerView alloc] initWithDimension:kSOMAAdDimensionLeaderboard];
+            [mBannerView adSettings].adType = kSOMAAdTypeImage;
+        }
         mBannerView.frame = [self makeBannerRect];
         [mBannerView adSettings].adspaceId = [PrivateConstants smaatoAdSpace1];
         [mBannerView adSettings].publisherId = [PrivateConstants smaatoPublisherId]; 
@@ -397,7 +402,7 @@
         [self.view addSubview:mBannerView];
         [mBannerView release];
     }
-#endif
+
     
     // set bg
     _imageViewBackground.image = [self backgroundImageForSong:_song];

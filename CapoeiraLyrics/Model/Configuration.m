@@ -45,6 +45,13 @@ static Configuration* _instance;
 #endif      
 }
 
++(BOOL) isHDVersion{
+#ifdef HD_VERSION
+    return YES;
+#else
+    return NO;
+#endif      
+}
 
 
 
