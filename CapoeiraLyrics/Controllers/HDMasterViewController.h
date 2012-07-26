@@ -26,12 +26,17 @@
     
     EGORefreshTableHeaderView *_refreshHeaderView;
     
+
     NSMutableArray * _songs;
     NSMutableArray  *_filteredSongs;   // The content filtered as a result of a search.
+    
+    NSMutableArray * _favedSongs;
+
     
     
     IBOutlet PlaceholderTableView *_tableSongs;
     IBOutlet UITabBar *_tabBar;
+    IBOutlet UISegmentedControl *_segmentedFavedSwitcher;
     
 
     
@@ -42,6 +47,7 @@
 
 - (void)reloadTableViewDataSource;
 - (void)doneLoadingTableViewData;
+- (IBAction)segmentedFavedValueChanged:(id)sender;
 
 
 @end

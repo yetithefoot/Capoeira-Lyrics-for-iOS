@@ -365,7 +365,7 @@
 
 -(CGRect) makeBannerRect{
 #ifdef HD_VERSION
-    return CGRectMake(0, 678, 728, 90);
+    return CGRectMake(-12, 678, 728, 90);
 #else
     return CGRectMake(0, 410, 320, 50);
 #endif

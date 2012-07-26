@@ -41,6 +41,9 @@
         
         _songs = [[NSMutableArray alloc]init];
         _filteredSongs = [[NSMutableArray alloc] init];
+        
+        _favedSongs = [[NSMutableArray alloc]init];
+
     }
     return self;
 }
@@ -59,9 +62,14 @@
     [_filteredSongs release];
     _filteredSongs = nil;
     
+    [_favedSongs release];
+    _favedSongs = nil;
+
+    
     
     [_tableSongs release];
     [_tabBar release];
+    [_segmentedFavedSwitcher release];
     [super dealloc];
 }
 
@@ -74,6 +82,7 @@
 
     
     self.detailViewController.songDelegate = self;
+    self.detailViewController.title = @"capoeira Lyrics";
 	
     
     
@@ -132,6 +141,8 @@
     _tableSongs = nil;
     [_tabBar release];
     _tabBar = nil;
+    [_segmentedFavedSwitcher release];
+    _segmentedFavedSwitcher = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -139,6 +150,7 @@
 #pragma mark Song details delegate
 
 -(void)madeSongFavourite:(Song *)song{
+    [self refreshFavedSongs];
     [_tableSongs reloadData];
     [self.searchDisplayController.searchResultsTableView reloadData]; 
 }
@@ -160,6 +172,30 @@
     
 	[_refreshHeaderView egoRefreshScrollViewDataSourceDidFinishedLoading:_tableSongs];
 	
+}
+
+
+-(BOOL) favedSelected{
+    return (_segmentedFavedSwitcher.selectedSegmentIndex == 1);
+}
+
+-(void) refreshFavedSongs{
+    [_favedSongs removeAllObjects];
+    [_favedSongs addObjectsFromArray: [Song filterOnlyFavorites:_songs]];
+}
+
+- (IBAction)segmentedFavedValueChanged:(id)sender {
+    if(_segmentedFavedSwitcher.selectedSegmentIndex == 1){
+        // faved selected
+        [self refreshFavedSongs];
+        
+
+        
+        
+    }
+    
+    [_tableSongs reloadData];
+    [self.searchDisplayController.searchResultsTableView reloadData]; 
 }
 
 
@@ -276,7 +312,11 @@
     }
 	else
 	{
-        return [_songs count];
+        if([self favedSelected]){
+            return [_favedSongs count];
+        }else{
+            return [_songs count];
+        }
     }
 }
 
@@ -298,7 +338,11 @@
         song = [_filteredSongs objectAtIndex:indexPath.row];
     }
 	else{
-        song = [_songs objectAtIndex:indexPath.row];
+        if([self favedSelected]){
+            song = [_favedSongs objectAtIndex:indexPath.row];        
+        }else{
+            song = [_songs objectAtIndex:indexPath.row];
+        }
     }
     
     
@@ -323,7 +367,12 @@
     }
 	else
 	{
-        song = [_songs objectAtIndex:indexPath.row];
+        if([self favedSelected]){
+            song = [_favedSongs objectAtIndex:indexPath.row];        
+        }else{
+            song = [_songs objectAtIndex:indexPath.row];
+        }
+        
     }
     
     
@@ -350,7 +399,16 @@
 	/*
 	 Search the main list for products whose type matches the scope (if selected) and whose name matches searchText; add items that match to the filtered array.
 	 */
-	for (Song * fullSong in _songs)
+    
+    NSMutableArray * searchArr = [NSMutableArray array];
+    if([self favedSelected]){
+        [searchArr addObjectsFromArray:_favedSongs];
+    }else{
+        [searchArr addObjectsFromArray:_songs];
+    }
+    
+    
+	for (Song * fullSong in searchArr)
 	{
         
         NSRange result = NSMakeRange(NSNotFound, 0);
