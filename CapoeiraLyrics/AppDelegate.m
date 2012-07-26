@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 
 #import "SongsViewController.h"
-
+#import "DetailsViewController.h"
 #import "FavouritesViewController.h"
 
 #import "SHK.h"
@@ -18,9 +18,19 @@
 #import "CapoeiraLyricsSHKConfigurator.h"
 
 
+
+#ifdef HD_VERSION
+
+#import "HDMasterViewController.h"
+
+
+#endif
+
+
 @implementation AppDelegate
 
 @synthesize window = _window;
+
 
 - (void)dealloc
 {
@@ -41,10 +51,41 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
+    
+    
+#ifdef HD_VERSION
+    
+    HDMasterViewController *masterViewController = [[HDMasterViewController alloc] initWithNibName:@"HDMasterViewController" bundle:nil];
+    UINavigationController *masterNavigationController = [[UINavigationController alloc] initWithRootViewController:masterViewController];
+    
+    DetailsViewController * detailViewController= [[DetailsViewController alloc]initWithSong:[Song fakeSong] andHideBackButton:YES];
+
+    UINavigationController *detailNavigationController = [[UINavigationController alloc] initWithRootViewController:detailViewController];
+    
+    masterViewController.detailViewController = detailViewController;
+    
+    UISplitViewController * splitViewController = [[UISplitViewController alloc] init];
+    //splitViewController.delegate = detailViewController;
+    splitViewController.viewControllers = [NSArray arrayWithObjects:masterNavigationController, detailNavigationController, nil];
+    self.window.rootViewController = splitViewController;
+
+    
+#else
+    
     // Override point for customization after application launch.
     UIViewController *viewController1 = [[[SongsViewController alloc] initWithNibName:@"SongsViewController" bundle:nil] autorelease];
     _navigationRoot = [[UINavigationController alloc]initWithRootViewController:viewController1];
     self.window.rootViewController = _navigationRoot;
+    
+    
+#endif
+    
+    
+    
+    
+    
+    
+    
     [self.window makeKeyAndVisible];
     
     // colorize elements

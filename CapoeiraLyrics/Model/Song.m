@@ -60,6 +60,11 @@
     return [[[Song alloc] initWithDictionary:dict] autorelease];
 }
 
++(Song *)fakeSong{
+    NSDictionary * dict = [NSDictionary dictionaryWithObjectsAndKeys: [NSNumber numberWithLong: 1234567], @"ID",@"",  @"Name",  @"",  @"Text", @"", @"Artist", nil];
+    return [[[Song alloc]initWithDictionary:dict]autorelease];
+}
+
 -(BOOL)isFavorite{
     // load file with favorites to dictionary
     // check song is favorite

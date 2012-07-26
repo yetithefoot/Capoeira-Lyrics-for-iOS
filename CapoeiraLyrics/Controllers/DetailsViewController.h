@@ -22,6 +22,14 @@
 #import <iSoma/SOMABannerView.h>
 #endif
 
+@protocol DetailsViewControllerDelegate <NSObject>
+
+@optional
+
+-(void) madeSongFavourite: (Song *) song;
+
+@end
+
 @interface DetailsViewController : BaseViewController< TagsViewProtocol,UIActionSheetDelegate, CapoeiraLyricsAPIDelegate 
 
 #ifdef LITE_VERSION
@@ -36,7 +44,12 @@
     IBOutlet UILabel *_labelToolbarTitle;
     IBOutlet UILabel *_labelToolbarArtist;
     IBOutlet UIImageView *_imageViewBackground;
+    IBOutlet UIBarButtonItem *_btnBack;
+    IBOutlet UIToolbar *_toolbar;
     Song * _song;
+    BOOL _hideBackButton;
+    
+    
     
     NSString *TEXT_SHARE_TO_FB;
     NSString *TEXT_SHARE_TO_TWITTER;
@@ -52,11 +65,17 @@
     
 }
 
-@property (nonatomic, retain) Song *song;
 
--(id) initWithSong: (Song *)aSong;
+
+@property (nonatomic, retain) Song *song;
+@property (nonatomic, assign) id<DetailsViewControllerDelegate> songDelegate;
+
+-(id) initWithSong: (Song *)aSong andHideBackButton:(BOOL) hideBackButton;
 - (IBAction)btnBackClicked:(id)sender;
 - (IBAction)btnActionClicked:(id)sender;
+
+-(void) reloadData;
+- (void) relayout;
 
 
 @end

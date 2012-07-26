@@ -24,7 +24,7 @@
 +(id) songWithDictionary: (NSDictionary *) dict;
 +(NSArray *)filterOnlyFavorites:(NSArray *)aSongs;
 +(Song *)getSongByIdentifier:(int) songIdentifier inArray:(NSArray *) songsArray;
-
++(Song *)fakeSong;
 -(void) openVideo;
 
 @end

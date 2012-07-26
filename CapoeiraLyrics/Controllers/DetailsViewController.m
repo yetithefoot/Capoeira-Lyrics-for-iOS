@@ -21,6 +21,7 @@
 @implementation DetailsViewController
 
 @synthesize song = _song;
+@synthesize songDelegate;
 
 #define VERTICAL_MARGIN_1 10
 #define VERTICAL_MARGIN_2 10
@@ -29,22 +30,31 @@
 #define VERTICAL_MARGIN_5 15
 #define VERTICAL_MARGIN_6 10
 
+#ifdef HD_VERSION
+#define VIEW_WIDTH 704
+#else
+#define VIEW_WIDTH 320
+#endif
+
+
+
 - (void) relayout {
     float y = VERTICAL_MARGIN_1;
 
     
     if(!_labelSwipeMessage.hidden){
+        _labelSwipeMessage.frame = CGRectMake(0, y, VIEW_WIDTH, _labelSwipeMessage.frame.size.height);
         y += _labelSwipeMessage.frame.size.height;
     }
     
     [_labelTitle sizeToFit];
     CGRect rect = _labelTitle.bounds;
-    _labelTitle.frame = CGRectMake(0, y, 320, rect.size.height);
+    _labelTitle.frame = CGRectMake(0, y, VIEW_WIDTH, rect.size.height);
     y += (_labelTitle.frame.size.height + VERTICAL_MARGIN_2);
     
     //[_labelText sizeToFit];
-    CGSize size = [_labelText sizeThatFits: CGSizeMake(320, 0)];
-    _labelText.frame = CGRectMake(0, y, 320, size.height);
+    CGSize size = [_labelText sizeThatFits: CGSizeMake(VIEW_WIDTH, 0)];
+    _labelText.frame = CGRectMake(0, y, VIEW_WIDTH, size.height);
     y += (_labelText.frame.size.height+VERTICAL_MARGIN_6);
     
 #warning uncomment for tags view reposition   
@@ -64,18 +74,39 @@
     }
 }
 
-- (id)initWithSong:(Song *)aSong
+
+
+-(void) hideBackButton{
+    NSMutableArray * items = [NSMutableArray arrayWithArray: _toolbar.items];
+    for (UIView * view  in items) {
+        if(view == ((UIView *)_btnBack)){
+
+            //[items removeObject:view];
+            UIBarButtonItem *fixedSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
+            fixedSpace.width = _btnBack.width;
+            
+            [items replaceObjectAtIndex:[items indexOfObject:_btnBack] withObject:fixedSpace];
+            break;
+        }
+    }
+    
+    [_toolbar setItems: items animated:YES];
+
+
+}
+-(id) initWithSong: (Song *)aSong andHideBackButton:(BOOL) hideBackButton
 {
     self = [super initWithNibName:@"DetailsViewController" bundle:nil];
     if (self) {
         _song = [aSong retain];
+        
+        _hideBackButton = hideBackButton;
         
         TEXT_SHARE_TO_FB = NSLocalizedString(@"Share to Facebook", @"");
         TEXT_SHARE_TO_TWITTER = NSLocalizedString(@"Share to Twitter", @"");
         TEXT_MAKE_FAVORITE = NSLocalizedString(@"Make favorite", @"");
         TEXT_UNMAKE_FAVORITE = NSLocalizedString(@"Unmake favorite", @"");
         TEXT_PLAY_VIDEO = NSLocalizedString(@"Open video", @"");
-        //TEXT_PLAY_AUDIO = NSLocalizedString(@"Open audio", @"");
         TEXT_CANCEL = NSLocalizedString(@"Cancel", @"");
         
     }
@@ -166,6 +197,9 @@
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:_song.audioUrl]];
     }else if ([btnTitle isEqualToString:TEXT_MAKE_FAVORITE] || [btnTitle isEqualToString:TEXT_UNMAKE_FAVORITE]) {
         self.song.favorite = !self.song.favorite;
+        if([self.songDelegate respondsToSelector:@selector(madeSongFavourite:)]){
+            [self.songDelegate performSelector:@selector(madeSongFavourite:) withObject:_song];
+        }
     }
      
 }
@@ -176,6 +210,8 @@
         [_song release];
         _song = [song retain];
         _imageViewBackground.image = [self backgroundImageForSong:_song];
+        _labelText.tag = ORIG_TEXT;
+        [self reloadData];
     }
 }
 
@@ -189,6 +225,21 @@
     // use text or its translation
     NSString * text = nil;
     
+    _labelTitle.text = _song.name;
+    _labelToolbarTitle.text = _song.name;
+    _labelToolbarArtist.text = _song.artist;
+    
+    // tune swipes
+    if(_song.engtext  || _song.rustext){
+        _labelSwipeMessage.hidden = NO;
+
+    }else {
+        _labelSwipeMessage.hidden = YES;
+    }
+    
+    [self refreshSwipeMessageByTag:textType];
+
+    
     if(textType == ENG_TEXT) text = _song.engtext;
     else if(textType == RUS_TEXT) text = _song.rustext;
     else text = _song.text;
@@ -201,31 +252,33 @@
         NSRegularExpression *regex = [[NSRegularExpression alloc] initWithPattern:@"\\[coro\\]([^\\[]+?)\\[\\/coro\\]" 
                                                                           options:NSRegularExpressionCaseInsensitive 
                                                                             error:nil];
-        NSArray *matches = [regex matchesInString:text options:0 range:NSMakeRange(0, text.length)];
+        if(text) {
         
-        [regex release];
-        // init font
-        UIFont *boldSystemFont = [UIFont boldSystemFontOfSize:FONT_TEXT_SIZE];
-        CTFontRef boldSystemFont_ct = CTFontCreateWithName((CFStringRef)boldSystemFont.fontName, boldSystemFont.pointSize, NULL);
-        
-        // replace all bold/coro strings
-        if(matches.count > 0 && boldSystemFont_ct){
-            NSLog(@"%d matches found.", matches.count);
-            for (NSTextCheckingResult *match in matches) {
-                
-                NSLog(@"match fount: %@", [text substringWithRange:[match rangeAtIndex:1]]);
-                
-                [mutableAttributedString removeAttribute:(NSString *)kCTFontAttributeName range:[match rangeAtIndex:1]];
-                [mutableAttributedString addAttribute:(NSString *)kCTFontAttributeName value:(id)boldSystemFont_ct range:[match rangeAtIndex:1]];
+            NSArray *matches = [regex matchesInString:text options:0 range:NSMakeRange(0, [text length])];
+            
+            [regex release];
+            // init font
+            UIFont *boldSystemFont = [UIFont boldSystemFontOfSize:FONT_TEXT_SIZE];
+            CTFontRef boldSystemFont_ct = CTFontCreateWithName((CFStringRef)boldSystemFont.fontName, boldSystemFont.pointSize, NULL);
+            
+            // replace all bold/coro strings
+            if(matches.count > 0 && boldSystemFont_ct){
+                NSLog(@"%d matches found.", matches.count);
+                for (NSTextCheckingResult *match in matches) {
+                    
+                    NSLog(@"match fount: %@", [text substringWithRange:[match rangeAtIndex:1]]);
+                    
+                    [mutableAttributedString removeAttribute:(NSString *)kCTFontAttributeName range:[match rangeAtIndex:1]];
+                    [mutableAttributedString addAttribute:(NSString *)kCTFontAttributeName value:(id)boldSystemFont_ct range:[match rangeAtIndex:1]];
+                }
             }
+            // release ct font
+            if(boldSystemFont_ct) CFRelease(boldSystemFont_ct);
+            
+            // remove coro blocks
+            [[mutableAttributedString mutableString] replaceOccurrencesOfString:@"[coro]" withString:@"" options:NSCaseInsensitiveSearch range:NSMakeRange(0, [mutableAttributedString length])];
+            [[mutableAttributedString mutableString] replaceOccurrencesOfString:@"[/coro]" withString:@"" options:NSCaseInsensitiveSearch range:NSMakeRange(0, [mutableAttributedString length])];
         }
-        // release ct font
-        if(boldSystemFont_ct) CFRelease(boldSystemFont_ct);
-        
-        // remove coro blocks
-        [[mutableAttributedString mutableString] replaceOccurrencesOfString:@"[coro]" withString:@"" options:NSCaseInsensitiveSearch range:NSMakeRange(0, [mutableAttributedString length])];
-        [[mutableAttributedString mutableString] replaceOccurrencesOfString:@"[/coro]" withString:@"" options:NSCaseInsensitiveSearch range:NSMakeRange(0, [mutableAttributedString length])];
-        
         
         return mutableAttributedString;
     }];
@@ -236,6 +289,11 @@
 
 
 -(void) didSwipe:(UISwipeGestureRecognizer *) sender{
+    
+    
+    if(!_song.engtext && !_song.rustext) return;
+    
+    
     if(sender.state == UIGestureRecognizerStateEnded){
         
         if(sender.direction == UISwipeGestureRecognizerDirectionLeft){
@@ -275,7 +333,7 @@
             [self reloadData:_labelText.tag];
         }
         
-        [self refreshSwipeMessageByTag:_labelText.tag];
+        //[self refreshSwipeMessageByTag:_labelText.tag];
     }
 }
 
@@ -301,6 +359,18 @@
 {
     [super viewDidLoad];
     
+    UISwipeGestureRecognizer *recognizerSwipeLeft = 
+    [[[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(didSwipe:)] autorelease];
+    recognizerSwipeLeft.direction = UISwipeGestureRecognizerDirectionLeft;
+    [_scrollView addGestureRecognizer:recognizerSwipeLeft];
+    
+    UISwipeGestureRecognizer *recognizerSwipeRight = 
+    [[[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(didSwipe:)] autorelease];
+    recognizerSwipeRight.direction = UISwipeGestureRecognizerDirectionRight;
+    [_scrollView addGestureRecognizer:recognizerSwipeRight];
+    
+
+    
 #ifdef LITE_VERSION
     {
         mBannerView = [[SOMABannerView alloc] initWithDimension:kSOMAAdDimensionDefault]; 
@@ -320,31 +390,9 @@
     _labelText.tag = ORIG_TEXT; // original text flag
     [self refreshSwipeMessageByTag:_labelText.tag];
     [_labelText setFont:[UIFont systemFontOfSize:FONT_TEXT_SIZE]];
-    //[_labelText setLineHeightMultiple:0.7];
     
-    _labelTitle.text = _song.name;
-    _labelToolbarTitle.text = _song.name;
-    _labelToolbarArtist.text = _song.artist;
     
-    //if(_song.videoUrl)
-    //    [self embedYouTube:_song.videoUrl frame:CGRectMake(0, 0, 320, 240)];
-    
-    // tune swipes
-    if(_song.engtext  || _song.rustext){
-        _labelSwipeMessage.hidden = NO;
-        UISwipeGestureRecognizer *recognizerSwipeLeft = 
-        [[[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(didSwipe:)] autorelease];
-        recognizerSwipeLeft.direction = UISwipeGestureRecognizerDirectionLeft;
-        [_scrollView addGestureRecognizer:recognizerSwipeLeft];
-        
-        UISwipeGestureRecognizer *recognizerSwipeRight = 
-        [[[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(didSwipe:)] autorelease];
-        recognizerSwipeRight.direction = UISwipeGestureRecognizerDirectionRight;
-        [_scrollView addGestureRecognizer:recognizerSwipeRight];
-    }else {
-        _labelSwipeMessage.hidden = YES;
-    }
-        
+            
     
     [self reloadData];
 }
@@ -399,6 +447,11 @@
 
 -(void)viewWillAppear:(BOOL)animated { 
     [super viewWillAppear:animated];
+    
+    if(_hideBackButton){
+        [self hideBackButton];
+    }
+    
 #ifdef LITE_VERSION
     {
         [mBannerView setAutoReloadEnabled:YES]; 
@@ -429,13 +482,25 @@
     _labelSwipeMessage = nil;
     [_imageViewBackground release];
     _imageViewBackground = nil;
+    [_btnBack release];
+    _btnBack = nil;
+    [_toolbar release];
+    _toolbar = nil;
     [super viewDidUnload];
 
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
+#ifdef HD_VERSION
+    return UIInterfaceOrientationIsLandscape(interfaceOrientation);
+#else
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+#endif
+}
+
+-(void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation{
+    [self relayout];
 }
 
 - (void)dealloc {
@@ -448,6 +513,8 @@
     [_labelToolbarArtist release];
     [_labelSwipeMessage release];
     [_imageViewBackground release];
+    [_btnBack release];
+    [_toolbar release];
     [super dealloc];
 }
 

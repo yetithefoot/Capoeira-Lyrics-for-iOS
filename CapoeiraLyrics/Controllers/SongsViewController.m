@@ -350,7 +350,7 @@ int __lastClickedCell = -1;
     
     
     if (song) {
-        DetailsViewController * detailsController = [[DetailsViewController alloc] initWithSong:song];
+        DetailsViewController * detailsController = [[DetailsViewController alloc] initWithSong:song andHideBackButton:NO];
         
         [self.navigationController pushViewController: detailsController animated: YES];
         [detailsController release];
@@ -454,12 +454,17 @@ int __lastClickedCell = -1;
 
 
 
+
 -(void)getAllSongsFullDidLoad:(NSArray *)songs{
     [_songs removeAllObjects];
     
     [_songs addObjectsFromArray:songs];
     [_tableSongs reloadData];
-    [SVProgressHUD showSuccessWithStatus:@"Songs loaded!"];
+    if(songs && [songs count] > 0){
+        [SVProgressHUD showSuccessWithStatus:[NSString stringWithFormat:@"%d songs loaded!", [songs count]]];
+        
+
+    }  
 }
 
 -(void)getSongsCountDidLoad:(NSNumber *)count{
