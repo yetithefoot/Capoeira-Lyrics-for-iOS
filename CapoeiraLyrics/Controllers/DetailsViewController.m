@@ -38,6 +38,8 @@
 
 
 
+
+
 - (void) relayout {
     float y = VERTICAL_MARGIN_1;
 
@@ -68,9 +70,15 @@
     
     _scrollView.contentSize = CGSizeMake(_scrollView.contentSize.width, y);
     
+#ifdef HD_VERSION
+    int height = 618;
+#else
+    int height = 360;
+#endif
+    
     // if lite version add banner to bottom
     if([Configuration isLiteVersion]){
-        _scrollView.frame = CGRectMake(_scrollView.frame.origin.x, _scrollView.frame.origin.y, _scrollView.frame.size.width, 360);
+        _scrollView.frame = CGRectMake(_scrollView.frame.origin.x, _scrollView.frame.origin.y, _scrollView.frame.size.width, height);
     }
 }
 
@@ -355,6 +363,14 @@
         _labelSwipeMessage.text = leftAvailable;
 }
 
+-(CGRect) makeBannerRect{
+#ifdef HD_VERSION
+    return CGRectMake(0, 678, 728, 90);
+#else
+    return CGRectMake(0, 410, 320, 50);
+#endif
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -374,7 +390,7 @@
 #ifdef LITE_VERSION
     {
         mBannerView = [[SOMABannerView alloc] initWithDimension:kSOMAAdDimensionDefault]; 
-        mBannerView.frame = CGRectMake(0, 410, 320, 50);
+        mBannerView.frame = [self makeBannerRect];
         [mBannerView adSettings].adspaceId = [PrivateConstants smaatoAdSpace1];
         [mBannerView adSettings].publisherId = [PrivateConstants smaatoPublisherId]; 
         [mBannerView addAdListener:self];

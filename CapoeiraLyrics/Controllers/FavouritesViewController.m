@@ -213,7 +213,7 @@ int __lastClickedCell2 = -1;
     
 
     if (song) {
-        DetailsViewController * detailsController = [[DetailsViewController alloc] initWithSong:song];
+        DetailsViewController * detailsController = [[DetailsViewController alloc] initWithSong:song andHideBackButton:NO];
         
         [self.navigationController pushViewController: detailsController animated: YES];
         [detailsController release];

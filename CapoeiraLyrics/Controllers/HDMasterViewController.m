@@ -1,27 +1,27 @@
 //
-//  FirstViewController.m
-//  CapoeiraLyrics
+//  MasterViewController.m
+//  dsgsd
 //
-//  Created by Vlad Tsepelev on 06.06.12.
+//  Created by Vlad Tsepelev on 19.07.12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "SongsViewController.h"
-#import "AFJSONRequestOperation.h"
-
-#import "DetailsViewController.h"
-#import "FavouritesViewController.h"
-
+#import "HDMasterViewController.h"
 
 #import "SongTableViewCell.h"
 
-#import "PrivateConstants.h"
+
+
+@interface HDMasterViewController () {
+ 
+}
+@end
+
+@implementation HDMasterViewController
 
 
 
-
-@implementation SongsViewController
-
+@synthesize detailViewController = _detailViewController;
 
 #pragma mark api
 
@@ -32,25 +32,23 @@
     [_api getAllSongsFull];
 }
 
-
-
-
-#pragma mark lifecycle
-
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.title = NSLocalizedString(@"Songs", @"Songs");
-#warning make retina icons
-        self.tabBarItem.image = [UIImage imageNamed:@"black_heart"];
+        self.contentSizeForViewInPopover = CGSizeMake(320.0, 600.0);
+        
         _songs = [[NSMutableArray alloc]init];
         _filteredSongs = [[NSMutableArray alloc] init];
-        
-        
-            
     }
     return self;
+}
+							
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    return UIInterfaceOrientationIsLandscape(interfaceOrientation);;
 }
 
 -(void)dealloc{
@@ -60,8 +58,8 @@
     _songs = nil;
     [_filteredSongs release];
     _filteredSongs = nil;
-
-
+    
+    
     [_tableSongs release];
     [_tabBar release];
     [super dealloc];
@@ -69,33 +67,23 @@
 
 
 
-
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+
+    
+    self.detailViewController.songDelegate = self;
 	
-#ifdef LITE_VERSION
-    {
-        mBannerView = [[SOMABannerView alloc] initWithDimension:kSOMAAdDimensionDefault]; 
-        mBannerView.frame = CGRectMake(0, 361, 320, 50);
-        [mBannerView adSettings].adspaceId = [PrivateConstants smaatoAdSpace1];
-        [mBannerView adSettings].publisherId = [PrivateConstants smaatoPublisherId]; 
-        [mBannerView addAdListener:self];
-                
-        [self.view addSubview:mBannerView];
-        [mBannerView release];
-    }
-#endif
     
     
     if (_refreshHeaderView == nil) {
 		
 		EGORefreshTableHeaderView *view = [[EGORefreshTableHeaderView alloc] initWithFrame:CGRectMake(0.0f, 0.0f - _tableSongs.bounds.size.height, self.view.frame.size.width, _tableSongs.bounds.size.height)arrowImageName:@"grayArrow.png" textColor:[UIColor lightGrayColor]];
-
+        
 		view.delegate = self;
         view.backgroundColor = [UIColor clearColor];
-
+        
 		[_tableSongs addSubview:view];
 		_refreshHeaderView = view;
 		[view release];
@@ -104,7 +92,7 @@
 	
 	//  update the last update date
 	[_refreshHeaderView refreshLastUpdatedDate];
-
+    
     
     [self.searchDisplayController setActive:NO];
     [self.searchDisplayController.searchBar setSelectedScopeButtonIndex:0];
@@ -126,28 +114,19 @@
     [_tabBar setSelectedItem:[_tabBar.items objectAtIndex:0]];
     [_tableSongs reloadData];
     [self.searchDisplayController.searchResultsTableView reloadData];
-    
-#ifdef LITE_VERSION
-    {
-        [mBannerView setAutoReloadEnabled:YES]; 
-        [mBannerView asyncLoadNewBanner];
-    }
-#endif
+
+
 }
 
 
 -(void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
-#ifdef LITE_VERSION
-    {
-        [mBannerView setAutoReloadEnabled:NO]; 
-    }
-#endif
+
 }
 
 - (void)viewDidUnload
 {
-
+    
     _refreshHeaderView=nil;
     [_tableSongs release];
     _tableSongs = nil;
@@ -157,7 +136,14 @@
     // Release any retained subviews of the main view.
 }
 
-#pragma mark -
+#pragma mark Song details delegate
+
+-(void)madeSongFavourite:(Song *)song{
+    [_tableSongs reloadData];
+    [self.searchDisplayController.searchResultsTableView reloadData]; 
+}
+
+
 #pragma mark Data Source Loading / Reloading Methods
 
 - (void)reloadTableViewDataSource{
@@ -171,7 +157,7 @@
 - (void)doneLoadingTableViewData{
 	
 	//  model should call this when its done loading
-
+    
 	[_refreshHeaderView egoRefreshScrollViewDataSourceDidFinishedLoading:_tableSongs];
 	
 }
@@ -215,14 +201,12 @@
 	
 }
 
--(BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer{
-    return YES;
-}
 
-int __lastClickedCell = -1;
 
--(void) makeFavorite:(id) sender{
-    Song * song = [Song  getSongByIdentifier:__lastClickedCell inArray:_songs];
+//int __lastClickedCell2 = -1;
+
+/*-(void) makeFavorite:(id) sender{
+    Song * song = [Song  getSongByIdentifier:__lastClickedCell2 inArray:_songs];
     
     if(song){
         BOOL isFavorite = song.favorite;
@@ -232,16 +216,10 @@ int __lastClickedCell = -1;
         [self.searchDisplayController.searchResultsTableView reloadData]; //reload table under search context (All, Text, Name, Artist etc.)
     }    
     
-}
-
--(void) openVideo:(id) sender{
-    
-    Song * song = [Song  getSongByIdentifier:__lastClickedCell inArray:_songs];
-    
-    [song openVideo];
-}
+}*/
 
 
+/*
 -(void)cellLongPressed :(UILongPressGestureRecognizer *) sender
 {
     if(sender.state == UIGestureRecognizerStateBegan){
@@ -249,7 +227,7 @@ int __lastClickedCell = -1;
         Song * song = [Song  getSongByIdentifier:sender.view.tag inArray:_songs];
         
         if(song){
-            __lastClickedCell = sender.view.tag;
+            __lastClickedCell2 = sender.view.tag;
             [sender.view.superview becomeFirstResponder];
             
             UIMenuController * menu = [UIMenuController sharedMenuController];
@@ -264,7 +242,7 @@ int __lastClickedCell = -1;
             [menu setMenuVisible:YES animated:YES];
         }
     }
-}
+}*/
 
 #pragma tableview datasource + delegate
 
@@ -291,7 +269,7 @@ int __lastClickedCell = -1;
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-
+    
 	if (tableView == self.searchDisplayController.searchResultsTableView)
 	{
         return [_filteredSongs count];
@@ -327,12 +305,10 @@ int __lastClickedCell = -1;
     [cell setSong:song];
     
     // set favorite icon
-
+    
     cell.contentView.tag = song.identifier;
     
-    UILongPressGestureRecognizer *longpressed = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(cellLongPressed:)];
-    [cell.contentView addGestureRecognizer:longpressed];   
-    [longpressed release];
+
     
     
     return cell;
@@ -352,34 +328,13 @@ int __lastClickedCell = -1;
     
     
     if (song) {
-        DetailsViewController * detailsController = [[DetailsViewController alloc] initWithSong:song andHideBackButton:NO];
-        
-        [self.navigationController pushViewController: detailsController animated: YES];
-        [detailsController release];
+        self.detailViewController.song = song;
         
     }
-
+    
+    
 }
-#pragma mark UITabBar delegate
 
--(void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item{
-    if(item == [tabBar.items objectAtIndex:1]){
-        
-        NSArray * favedSongs = [Song filterOnlyFavorites:_songs];
-        
-        if([favedSongs count] > 0){
-            UINavigationController * nav = self.navigationController;
-            [nav popToRootViewControllerAnimated:NO];
-        
-            FavouritesViewController * controller = [[FavouritesViewController alloc] initWithArray:favedSongs];
-            [nav pushViewController: controller animated: YES];
-            [controller release];
-        }else{
-            [_tabBar setSelectedItem:[_tabBar.items objectAtIndex:0]];
-            [SVProgressHUD showSuccessWithStatus:NSLocalizedString( @"You have no favorite songs. Check any and try again!", @"") duration:1.5];
-        }
-    }
-}
 
 
 #pragma mark Content Filtering
@@ -417,7 +372,7 @@ int __lastClickedCell = -1;
             result = [fullSong.artist rangeOfString:searchText options:(NSCaseInsensitiveSearch|NSDiacriticInsensitiveSearch)];
         }
         
-
+        
         if (result.location != NSNotFound)
         {
             [_filteredSongs addObject:fullSong];
@@ -454,20 +409,26 @@ int __lastClickedCell = -1;
 
 #pragma mark api delegate
 
-
-
+BOOL __firstLoad = YES;
 
 -(void)getAllSongsFullDidLoad:(NSArray *)songs{
     [_songs removeAllObjects];
     
     [_songs addObjectsFromArray:songs];
     [_tableSongs reloadData];
-    if(songs && [songs count] > 0){
-        [SVProgressHUD showSuccessWithStatus:[NSString stringWithFormat:@"%d songs loaded!", [songs count]]];
-        
+    if(songs && songs.count > 0){
+        [SVProgressHUD showSuccessWithStatus:[NSString stringWithFormat:@"%d songs loaded", songs.count]];
 
-    }  
+#ifdef HD_VERSION
+        if(__firstLoad){
+            __firstLoad = NO;
+            self.detailViewController.song = [_songs objectAtIndex:0];
+        }
+#endif
+    }
 }
+
+
 
 -(void)getSongsCountDidLoad:(NSNumber *)count{
     
@@ -485,16 +446,6 @@ int __lastClickedCell = -1;
     [SVProgressHUD showErrorWithStatus:@"Server unavailable! Check your network connection and try again!" duration:1.8];
 }
 
-#pragma mark AdListenerProtocol 
-#ifdef LITE_VERSION
--(void)onReceiveAd:(id<SOMAAdDownloaderProtocol>)sender withReceivedBanner:(id<SOMAReceivedBannerProtocol>)receivedBanner
-{
-    // disable scrolltotop and bouncing for banner view
-    if(sender && [sender isKindOfClass:[SOMABannerView class]]){
-        [self disableScrollsToTopPropertyOnAllSubviewsOf:(SOMABannerView *)sender];
-    }
-}
-#endif
 
 
 

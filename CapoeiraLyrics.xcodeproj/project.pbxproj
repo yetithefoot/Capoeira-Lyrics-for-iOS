@@ -109,6 +109,104 @@
 		D05386E515B75ADD00B5C89E /* iTunesArtwork@2x in Resources */ = {isa = PBXBuildFile; fileRef = D0D08D05159AFD56005F6737 /* iTunesArtwork@2x */; };
 		D053872F15B75EE300B5C89E /* HDMasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D053872D15B75EE300B5C89E /* HDMasterViewController.xib */; };
 		D053873515B75EF600B5C89E /* HDMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D053873315B75EF600B5C89E /* HDMasterViewController.m */; };
+		D0591D6215C19D6200792EDE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D08DB9C4157F4EBE00994BDC /* main.m */; };
+		D0591D6315C19D6200792EDE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D08DB9C8157F4EBE00994BDC /* AppDelegate.m */; };
+		D0591D6415C19D6200792EDE /* SongsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D07E1824157F8BFD00AA5987 /* SongsViewController.m */; };
+		D0591D6515C19D6200792EDE /* FavouritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D07E1826157F8BFD00AA5987 /* FavouritesViewController.m */; };
+		D0591D6615C19D6200792EDE /* CapoeiraLyricsAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = D0114E8115851E5100D27777 /* CapoeiraLyricsAPI.m */; };
+		D0591D6715C19D6200792EDE /* Song.m in Sources */ = {isa = PBXBuildFile; fileRef = D0114E8415851FAC00D27777 /* Song.m */; };
+		D0591D6815C19D6200792EDE /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0114E871585241500D27777 /* BaseViewController.m */; };
+		D0591D6915C19D6200792EDE /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0114E8F1585297800D27777 /* DetailsViewController.m */; };
+		D0591D6A15C19D6200792EDE /* TagsView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B83F251588B3B70075C2F0 /* TagsView.m */; };
+		D0591D6B15C19D6200792EDE /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B83F281588B4320075C2F0 /* Tag.m */; };
+		D0591D6C15C19D6200792EDE /* CapoeiraLyricsSHKConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = D030C42515908C9700C85548 /* CapoeiraLyricsSHKConfigurator.m */; };
+		D0591D6D15C19D6200792EDE /* SongTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D084A6D415931486001EB071 /* SongTableViewCell.m */; };
+		D0591D6E15C19D6200792EDE /* PlaceholderTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D084A6F51593704D001EB071 /* PlaceholderTableView.m */; };
+		D0591D6F15C19D6200792EDE /* Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = D084A7CB159A0ECE001EB071 /* Configuration.m */; };
+		D0591D7015C19D6200792EDE /* PrivateConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = D084A7D1159A0F60001EB071 /* PrivateConstants.m */; };
+		D0591D7115C19D6200792EDE /* HDMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D053873315B75EF600B5C89E /* HDMasterViewController.m */; };
+		D0591D7315C19D6200792EDE /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D030C42215908A0400C85548 /* MessageUI.framework */; };
+		D0591D7415C19D6200792EDE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D030C420159089FC00C85548 /* SystemConfiguration.framework */; };
+		D0591D7515C19D6200792EDE /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D030C41D159089F600C85548 /* Security.framework */; };
+		D0591D7615C19D6200792EDE /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B83F2E1588BA890075C2F0 /* CoreText.framework */; };
+		D0591D7715C19D6200792EDE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08DB9B8157F4EBE00994BDC /* UIKit.framework */; };
+		D0591D7815C19D6200792EDE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08DB9BA157F4EBE00994BDC /* Foundation.framework */; };
+		D0591D7915C19D6200792EDE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08DB9BC157F4EBE00994BDC /* CoreGraphics.framework */; };
+		D0591D7A15C19D6200792EDE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35E8594728BF4B41AECDDE16 /* libPods.a */; };
+		D0591D7C15C19D6200792EDE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D08DB9C1157F4EBE00994BDC /* InfoPlist.strings */; };
+		D0591D7D15C19D6200792EDE /* SongsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D07E182F157F8BFD00AA5987 /* SongsViewController.xib */; };
+		D0591D7E15C19D6200792EDE /* FavouritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D07E1830157F8BFD00AA5987 /* FavouritesViewController.xib */; };
+		D0591D7F15C19D6200792EDE /* group.png in Resources */ = {isa = PBXBuildFile; fileRef = D07E1839157F8D4F00AA5987 /* group.png */; };
+		D0591D8015C19D6200792EDE /* microphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D07E183A157F8D4F00AA5987 /* microphone.png */; };
+		D0591D8115C19D6200792EDE /* note.png in Resources */ = {isa = PBXBuildFile; fileRef = D07E183B157F8D4F00AA5987 /* note.png */; };
+		D0591D8215C19D6200792EDE /* note2.png in Resources */ = {isa = PBXBuildFile; fileRef = D07E183C157F8D4F00AA5987 /* note2.png */; };
+		D0591D8315C19D6200792EDE /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = D07E183D157F8D4F00AA5987 /* user.png */; };
+		D0591D8415C19D6200792EDE /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = D07E1843157F8F3F00AA5987 /* background.png */; };
+		D0591D8515C19D6200792EDE /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D07E1847157F916F00AA5987 /* Default.png */; };
+		D0591D8615C19D6200792EDE /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D07E1848157F916F00AA5987 /* Default@2x.png */; };
+		D0591D8715C19D6200792EDE /* cell_pattern.png in Resources */ = {isa = PBXBuildFile; fileRef = D07E184F157F9FDB00AA5987 /* cell_pattern.png */; };
+		D0591D8815C19D6200792EDE /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = D0114E89158528DC00D27777 /* star.png */; };
+		D0591D8915C19D6200792EDE /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0114E93158529A400D27777 /* DetailsViewController.xib */; };
+		D0591D8A15C19D6200792EDE /* star_disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = D0CD6030158A4FFE00EB7502 /* star_disabled.png */; };
+		D0591D8B15C19D6200792EDE /* star_enabled.png in Resources */ = {isa = PBXBuildFile; fileRef = D0CD6031158A4FFE00EB7502 /* star_enabled.png */; };
+		D0591D8C15C19D6200792EDE /* GetAllSongsFull.json in Resources */ = {isa = PBXBuildFile; fileRef = D030C4281590E62500C85548 /* GetAllSongsFull.json */; };
+		D0591D8D15C19D6200792EDE /* black_globe.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6A815924718001EB071 /* black_globe.png */; };
+		D0591D8E15C19D6200792EDE /* black_note.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6A915924718001EB071 /* black_note.png */; };
+		D0591D8F15C19D6200792EDE /* black_star.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6AA15924718001EB071 /* black_star.png */; };
+		D0591D9015C19D6200792EDE /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6AB15924718001EB071 /* heart.png */; };
+		D0591D9115C19D6200792EDE /* noun_speaker.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6AE15924718001EB071 /* noun_speaker.png */; };
+		D0591D9215C19D6200792EDE /* noun_speaker@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6AF15924718001EB071 /* noun_speaker@2x.png */; };
+		D0591D9315C19D6200792EDE /* noun_video.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6B015924718001EB071 /* noun_video.png */; };
+		D0591D9415C19D6200792EDE /* noun_video@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6B115924718001EB071 /* noun_video@2x.png */; };
+		D0591D9515C19D6200792EDE /* translate.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6BD159248C6001EB071 /* translate.png */; };
+		D0591D9615C19D6200792EDE /* translate@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6BE159248C6001EB071 /* translate@2x.png */; };
+		D0591D9715C19D6200792EDE /* film.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6C41593133D001EB071 /* film.png */; };
+		D0591D9815C19D6200792EDE /* locale-alternate.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6C51593133D001EB071 /* locale-alternate.png */; };
+		D0591D9915C19D6200792EDE /* music-beam.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6C61593133D001EB071 /* music-beam.png */; };
+		D0591D9A15C19D6200792EDE /* userhead.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6C71593133D001EB071 /* userhead.png */; };
+		D0591D9B15C19D6200792EDE /* SongTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D084A6D6159314BD001EB071 /* SongTableViewCell.xib */; };
+		D0591D9C15C19D6200792EDE /* black_heart.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6D81593297F001EB071 /* black_heart.png */; };
+		D0591D9D15C19D6200792EDE /* star-1.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6DC1593429A001EB071 /* star-1.png */; };
+		D0591D9E15C19D6200792EDE /* logo_cdo.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6DF15934621001EB071 /* logo_cdo.png */; };
+		D0591D9F15C19D6200792EDE /* logo_default.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6E015934621001EB071 /* logo_default.png */; };
+		D0591DA015C19D6200792EDE /* logo_axe.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6E3159347BA001EB071 /* logo_axe.png */; };
+		D0591DA115C19D6200792EDE /* logo_abada.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6E515934993001EB071 /* logo_abada.png */; };
+		D0591DA215C19D6200792EDE /* logo_muzenza.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6E715934B3A001EB071 /* logo_muzenza.png */; };
+		D0591DA315C19D6200792EDE /* logo_gerais.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6E915935050001EB071 /* logo_gerais.png */; };
+		D0591DA415C19D6200792EDE /* logo_sementedojogodeangola.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6EA15935050001EB071 /* logo_sementedojogodeangola.png */; };
+		D0591DA515C19D6200792EDE /* logo_uca.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6ED15935671001EB071 /* logo_uca.png */; };
+		D0591DA615C19D6200792EDE /* logo_mundo.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6EF1593589E001EB071 /* logo_mundo.png */; };
+		D0591DA715C19D6200792EDE /* ru.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6F71594CB95001EB071 /* ru.png */; };
+		D0591DA815C19D6200792EDE /* us.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A6F81594CB96001EB071 /* us.png */; };
+		D0591DA915C19D6200792EDE /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D084A74C15977052001EB071 /* Settings.bundle */; };
+		D0591DAA15C19D6200792EDE /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A7501598AD0C001EB071 /* Icon-72.png */; };
+		D0591DAB15C19D6200792EDE /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A7511598AD0C001EB071 /* Icon-Small-50.png */; };
+		D0591DAC15C19D6200792EDE /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A7521598AD0C001EB071 /* Icon-Small.png */; };
+		D0591DAD15C19D6200792EDE /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A7531598AD0C001EB071 /* Icon-Small@2x.png */; };
+		D0591DAE15C19D6200792EDE /* Main.psd in Resources */ = {isa = PBXBuildFile; fileRef = D084A7581598AD0C001EB071 /* Main.psd */; };
+		D0591DAF15C19D6200792EDE /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A76B1598AF14001EB071 /* Icon.png */; };
+		D0591DB015C19D6200792EDE /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A76D1598AF21001EB071 /* Icon@2x.png */; };
+		D0591DB115C19D6200792EDE /* background_axe.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A7A61599F3E5001EB071 /* background_axe.png */; };
+		D0591DB215C19D6200792EDE /* background_cdo.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A7A71599F3E6001EB071 /* background_cdo.png */; };
+		D0591DB315C19D6200792EDE /* background_default.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A7AF1599FFBF001EB071 /* background_default.png */; };
+		D0591DB415C19D6200792EDE /* background_mundo.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A7B01599FFBF001EB071 /* background_mundo.png */; };
+		D0591DB515C19D6200792EDE /* background_abada.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A7B5159A02ED001EB071 /* background_abada.png */; };
+		D0591DB615C19D6200792EDE /* background_gerais.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A7B6159A02ED001EB071 /* background_gerais.png */; };
+		D0591DB715C19D6200792EDE /* background_muzenza.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A7B7159A02EE001EB071 /* background_muzenza.png */; };
+		D0591DB815C19D6200792EDE /* background_sementedojogodeangola.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A7B8159A02EE001EB071 /* background_sementedojogodeangola.png */; };
+		D0591DB915C19D6200792EDE /* background_uca.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A7B9159A02EF001EB071 /* background_uca.png */; };
+		D0591DBA15C19D6200792EDE /* background_ficag.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A7C4159A0611001EB071 /* background_ficag.png */; };
+		D0591DBB15C19D6200792EDE /* logo_ficag.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A7C5159A0611001EB071 /* logo_ficag.png */; };
+		D0591DBC15C19D6200792EDE /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = D0D08D04159AFD56005F6737 /* iTunesArtwork */; };
+		D0591DBD15C19D6200792EDE /* iTunesArtwork@2x in Resources */ = {isa = PBXBuildFile; fileRef = D0D08D05159AFD56005F6737 /* iTunesArtwork@2x */; };
+		D0591DBE15C19D6200792EDE /* HDMasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D053872D15B75EE300B5C89E /* HDMasterViewController.xib */; };
+		D0591DCE15C1D00400792EDE /* PrivateConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = D0591DCD15C1D00400792EDE /* PrivateConstants.h */; settings = {ATTRIBUTES = (); }; };
+		D0591DD015C1D0EF00792EDE /* PrivateConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = D0591DCD15C1D00400792EDE /* PrivateConstants.h */; };
+		D0591DD115C1D0F600792EDE /* Configuration.h in Headers */ = {isa = PBXBuildFile; fileRef = D084A7CA159A0ECE001EB071 /* Configuration.h */; };
+		D0591DD215C1D22A00792EDE /* iSoma.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D084A7761598B60A001EB071 /* iSoma.framework */; };
+		D0591DD315C1D24000792EDE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D084A77B1598B646001EB071 /* QuartzCore.framework */; };
+		D0591DD415C1D25400792EDE /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D084A7A11598B9FC001EB071 /* CoreLocation.framework */; };
+		D0591DD515C1D25A00792EDE /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D084A7791598B636001EB071 /* MediaPlayer.framework */; };
 		D07E1831157F8BFD00AA5987 /* SongsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D07E1824157F8BFD00AA5987 /* SongsViewController.m */; };
 		D07E1832157F8BFD00AA5987 /* FavouritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D07E1826157F8BFD00AA5987 /* FavouritesViewController.m */; };
 		D07E1837157F8BFD00AA5987 /* SongsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D07E182F157F8BFD00AA5987 /* SongsViewController.xib */; };
@@ -262,7 +360,6 @@
 		D084A7CC159A0ECE001EB071 /* Configuration.h in Headers */ = {isa = PBXBuildFile; fileRef = D084A7CA159A0ECE001EB071 /* Configuration.h */; };
 		D084A7CD159A0ECE001EB071 /* Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = D084A7CB159A0ECE001EB071 /* Configuration.m */; };
 		D084A7CE159A0ECE001EB071 /* Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = D084A7CB159A0ECE001EB071 /* Configuration.m */; };
-		D084A7D0159A0F15001EB071 /* PrivateConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = D084A7CF159A0F15001EB071 /* PrivateConstants.h */; };
 		D084A7D2159A0F61001EB071 /* PrivateConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = D084A7D1159A0F60001EB071 /* PrivateConstants.m */; };
 		D084A7D3159A0F61001EB071 /* PrivateConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = D084A7D1159A0F60001EB071 /* PrivateConstants.m */; };
 		D08DB9B9157F4EBE00994BDC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08DB9B8157F4EBE00994BDC /* UIKit.framework */; };
@@ -305,10 +402,12 @@
 		D030C4281590E62500C85548 /* GetAllSongsFull.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GetAllSongsFull.json; sourceTree = "<group>"; };
 		D053863115B7553000B5C89E /* CapoeiraLyrics HD-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "CapoeiraLyrics HD-Info.plist"; path = "/Users/yeti/Developer/Projects/Capoeira-Lyrics-for-iOS/CapoeiraLyrics HD-Info.plist"; sourceTree = "<absolute>"; };
 		D05386EA15B75ADD00B5C89E /* Lyrics copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lyrics copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D05386EC15B75ADD00B5C89E /* Lyrics copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Lyrics copy-Info.plist"; path = "/Users/yeti/Developer/Projects/Capoeira-Lyrics-for-iOS/Lyrics copy-Info.plist"; sourceTree = "<absolute>"; };
 		D053872D15B75EE300B5C89E /* HDMasterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HDMasterViewController.xib; sourceTree = "<group>"; };
 		D053873215B75EF600B5C89E /* HDMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDMasterViewController.h; sourceTree = "<group>"; };
 		D053873315B75EF600B5C89E /* HDMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDMasterViewController.m; sourceTree = "<group>"; };
+		D0591DC315C19D6200792EDE /* Lyrics HD copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lyrics HD copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0591DC515C19D6200792EDE /* CapoeiraLyrics HD Lite-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "CapoeiraLyrics HD Lite-Info.plist"; path = "/Users/yeti/Developer/Projects/Capoeira-Lyrics-for-iOS/CapoeiraLyrics HD Lite-Info.plist"; sourceTree = "<absolute>"; };
+		D0591DCD15C1D00400792EDE /* PrivateConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrivateConstants.h; sourceTree = "<group>"; };
 		D07E1823157F8BFD00AA5987 /* SongsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SongsViewController.h; sourceTree = "<group>"; };
 		D07E1824157F8BFD00AA5987 /* SongsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongsViewController.m; sourceTree = "<group>"; };
 		D07E1825157F8BFD00AA5987 /* FavouritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavouritesViewController.h; sourceTree = "<group>"; };
@@ -383,7 +482,6 @@
 		D084A7C5159A0611001EB071 /* logo_ficag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_ficag.png; sourceTree = "<group>"; };
 		D084A7CA159A0ECE001EB071 /* Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Configuration.h; sourceTree = "<group>"; };
 		D084A7CB159A0ECE001EB071 /* Configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Configuration.m; sourceTree = "<group>"; };
-		D084A7CF159A0F15001EB071 /* PrivateConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrivateConstants.h; sourceTree = "<group>"; };
 		D084A7D1159A0F60001EB071 /* PrivateConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrivateConstants.m; sourceTree = "<group>"; };
 		D08DB9B4157F4EBE00994BDC /* Lyrics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lyrics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D08DB9B8157F4EBE00994BDC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -419,6 +517,25 @@
 				D05386A015B75ADD00B5C89E /* Foundation.framework in Frameworks */,
 				D05386A115B75ADD00B5C89E /* CoreGraphics.framework in Frameworks */,
 				D05386A215B75ADD00B5C89E /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0591D7215C19D6200792EDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0591DD515C1D25A00792EDE /* MediaPlayer.framework in Frameworks */,
+				D0591DD415C1D25400792EDE /* CoreLocation.framework in Frameworks */,
+				D0591DD315C1D24000792EDE /* QuartzCore.framework in Frameworks */,
+				D0591DD215C1D22A00792EDE /* iSoma.framework in Frameworks */,
+				D0591D7315C19D6200792EDE /* MessageUI.framework in Frameworks */,
+				D0591D7415C19D6200792EDE /* SystemConfiguration.framework in Frameworks */,
+				D0591D7515C19D6200792EDE /* Security.framework in Frameworks */,
+				D0591D7615C19D6200792EDE /* CoreText.framework in Frameworks */,
+				D0591D7715C19D6200792EDE /* UIKit.framework in Frameworks */,
+				D0591D7815C19D6200792EDE /* Foundation.framework in Frameworks */,
+				D0591D7915C19D6200792EDE /* CoreGraphics.framework in Frameworks */,
+				D0591D7A15C19D6200792EDE /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,6 +606,7 @@
 		D07E1827157F8BFD00AA5987 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D0591DCD15C1D00400792EDE /* PrivateConstants.h */,
 				D084A7CA159A0ECE001EB071 /* Configuration.h */,
 				D084A7CB159A0ECE001EB071 /* Configuration.m */,
 				D0B83F271588B4320075C2F0 /* Tag.h */,
@@ -497,7 +615,6 @@
 				D0114E8115851E5100D27777 /* CapoeiraLyricsAPI.m */,
 				D0114E8315851FAC00D27777 /* Song.h */,
 				D0114E8415851FAC00D27777 /* Song.m */,
-				D084A7CF159A0F15001EB071 /* PrivateConstants.h */,
 				D084A7D1159A0F60001EB071 /* PrivateConstants.m */,
 			);
 			path = Model;
@@ -615,7 +732,6 @@
 				D08DB9B7157F4EBE00994BDC /* Frameworks */,
 				D08DB9B5157F4EBE00994BDC /* Products */,
 				5E487E0840E14CE6BAD9DB39 /* Pods.xcconfig */,
-				D05386EC15B75ADD00B5C89E /* Lyrics copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -625,6 +741,7 @@
 				D08DB9B4157F4EBE00994BDC /* Lyrics.app */,
 				D084A74915976097001EB071 /* Lyrics Lite.app */,
 				D05386EA15B75ADD00B5C89E /* Lyrics copy.app */,
+				D0591DC315C19D6200792EDE /* Lyrics HD copy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -666,6 +783,7 @@
 		D08DB9BF157F4EBE00994BDC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D0591DC515C19D6200792EDE /* CapoeiraLyrics HD Lite-Info.plist */,
 				D053863115B7553000B5C89E /* CapoeiraLyrics HD-Info.plist */,
 				D084A74B15976098001EB071 /* CapoeiraLyrics Lite-Info.plist */,
 				D08DB9C0157F4EBE00994BDC /* CapoeiraLyrics-Info.plist */,
@@ -691,12 +809,21 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		D0591DCF15C1D0E200792EDE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0591DD115C1D0F600792EDE /* Configuration.h in Headers */,
+				D0591DD015C1D0EF00792EDE /* PrivateConstants.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D084A77E1598B8D6001EB071 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D084A7CC159A0ECE001EB071 /* Configuration.h in Headers */,
-				D084A7D0159A0F15001EB071 /* PrivateConstants.h in Headers */,
+				D0591DCE15C1D00400792EDE /* PrivateConstants.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -719,6 +846,25 @@
 			name = "Lyrics HD";
 			productName = CapoeiraLyrics;
 			productReference = D05386EA15B75ADD00B5C89E /* Lyrics copy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D0591D6015C19D6200792EDE /* Lyrics HD Lite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0591DC015C19D6200792EDE /* Build configuration list for PBXNativeTarget "Lyrics HD Lite" */;
+			buildPhases = (
+				D0591D6115C19D6200792EDE /* Sources */,
+				D0591D7215C19D6200792EDE /* Frameworks */,
+				D0591D7B15C19D6200792EDE /* Resources */,
+				D0591DBF15C19D6200792EDE /* Copy Pods Resources */,
+				D0591DCF15C1D0E200792EDE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Lyrics HD Lite";
+			productName = CapoeiraLyrics;
+			productReference = D0591DC315C19D6200792EDE /* Lyrics HD copy.app */;
 			productType = "com.apple.product-type.application";
 		};
 		D084A6FE15976097001EB071 /* Lyrics Lite */ = {
@@ -781,6 +927,7 @@
 				D08DB9B3157F4EBE00994BDC /* Lyrics */,
 				D084A6FE15976097001EB071 /* Lyrics Lite */,
 				D053868915B75ADD00B5C89E /* Lyrics HD */,
+				D0591D6015C19D6200792EDE /* Lyrics HD Lite */,
 			);
 		};
 /* End PBXProject section */
@@ -857,6 +1004,80 @@
 				D05386E415B75ADD00B5C89E /* iTunesArtwork in Resources */,
 				D05386E515B75ADD00B5C89E /* iTunesArtwork@2x in Resources */,
 				D053872F15B75EE300B5C89E /* HDMasterViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0591D7B15C19D6200792EDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0591D7C15C19D6200792EDE /* InfoPlist.strings in Resources */,
+				D0591D7D15C19D6200792EDE /* SongsViewController.xib in Resources */,
+				D0591D7E15C19D6200792EDE /* FavouritesViewController.xib in Resources */,
+				D0591D7F15C19D6200792EDE /* group.png in Resources */,
+				D0591D8015C19D6200792EDE /* microphone.png in Resources */,
+				D0591D8115C19D6200792EDE /* note.png in Resources */,
+				D0591D8215C19D6200792EDE /* note2.png in Resources */,
+				D0591D8315C19D6200792EDE /* user.png in Resources */,
+				D0591D8415C19D6200792EDE /* background.png in Resources */,
+				D0591D8515C19D6200792EDE /* Default.png in Resources */,
+				D0591D8615C19D6200792EDE /* Default@2x.png in Resources */,
+				D0591D8715C19D6200792EDE /* cell_pattern.png in Resources */,
+				D0591D8815C19D6200792EDE /* star.png in Resources */,
+				D0591D8915C19D6200792EDE /* DetailsViewController.xib in Resources */,
+				D0591D8A15C19D6200792EDE /* star_disabled.png in Resources */,
+				D0591D8B15C19D6200792EDE /* star_enabled.png in Resources */,
+				D0591D8C15C19D6200792EDE /* GetAllSongsFull.json in Resources */,
+				D0591D8D15C19D6200792EDE /* black_globe.png in Resources */,
+				D0591D8E15C19D6200792EDE /* black_note.png in Resources */,
+				D0591D8F15C19D6200792EDE /* black_star.png in Resources */,
+				D0591D9015C19D6200792EDE /* heart.png in Resources */,
+				D0591D9115C19D6200792EDE /* noun_speaker.png in Resources */,
+				D0591D9215C19D6200792EDE /* noun_speaker@2x.png in Resources */,
+				D0591D9315C19D6200792EDE /* noun_video.png in Resources */,
+				D0591D9415C19D6200792EDE /* noun_video@2x.png in Resources */,
+				D0591D9515C19D6200792EDE /* translate.png in Resources */,
+				D0591D9615C19D6200792EDE /* translate@2x.png in Resources */,
+				D0591D9715C19D6200792EDE /* film.png in Resources */,
+				D0591D9815C19D6200792EDE /* locale-alternate.png in Resources */,
+				D0591D9915C19D6200792EDE /* music-beam.png in Resources */,
+				D0591D9A15C19D6200792EDE /* userhead.png in Resources */,
+				D0591D9B15C19D6200792EDE /* SongTableViewCell.xib in Resources */,
+				D0591D9C15C19D6200792EDE /* black_heart.png in Resources */,
+				D0591D9D15C19D6200792EDE /* star-1.png in Resources */,
+				D0591D9E15C19D6200792EDE /* logo_cdo.png in Resources */,
+				D0591D9F15C19D6200792EDE /* logo_default.png in Resources */,
+				D0591DA015C19D6200792EDE /* logo_axe.png in Resources */,
+				D0591DA115C19D6200792EDE /* logo_abada.png in Resources */,
+				D0591DA215C19D6200792EDE /* logo_muzenza.png in Resources */,
+				D0591DA315C19D6200792EDE /* logo_gerais.png in Resources */,
+				D0591DA415C19D6200792EDE /* logo_sementedojogodeangola.png in Resources */,
+				D0591DA515C19D6200792EDE /* logo_uca.png in Resources */,
+				D0591DA615C19D6200792EDE /* logo_mundo.png in Resources */,
+				D0591DA715C19D6200792EDE /* ru.png in Resources */,
+				D0591DA815C19D6200792EDE /* us.png in Resources */,
+				D0591DA915C19D6200792EDE /* Settings.bundle in Resources */,
+				D0591DAA15C19D6200792EDE /* Icon-72.png in Resources */,
+				D0591DAB15C19D6200792EDE /* Icon-Small-50.png in Resources */,
+				D0591DAC15C19D6200792EDE /* Icon-Small.png in Resources */,
+				D0591DAD15C19D6200792EDE /* Icon-Small@2x.png in Resources */,
+				D0591DAE15C19D6200792EDE /* Main.psd in Resources */,
+				D0591DAF15C19D6200792EDE /* Icon.png in Resources */,
+				D0591DB015C19D6200792EDE /* Icon@2x.png in Resources */,
+				D0591DB115C19D6200792EDE /* background_axe.png in Resources */,
+				D0591DB215C19D6200792EDE /* background_cdo.png in Resources */,
+				D0591DB315C19D6200792EDE /* background_default.png in Resources */,
+				D0591DB415C19D6200792EDE /* background_mundo.png in Resources */,
+				D0591DB515C19D6200792EDE /* background_abada.png in Resources */,
+				D0591DB615C19D6200792EDE /* background_gerais.png in Resources */,
+				D0591DB715C19D6200792EDE /* background_muzenza.png in Resources */,
+				D0591DB815C19D6200792EDE /* background_sementedojogodeangola.png in Resources */,
+				D0591DB915C19D6200792EDE /* background_uca.png in Resources */,
+				D0591DBA15C19D6200792EDE /* background_ficag.png in Resources */,
+				D0591DBB15C19D6200792EDE /* logo_ficag.png in Resources */,
+				D0591DBC15C19D6200792EDE /* iTunesArtwork in Resources */,
+				D0591DBD15C19D6200792EDE /* iTunesArtwork@2x in Resources */,
+				D0591DBE15C19D6200792EDE /* HDMasterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1037,6 +1258,20 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
 		};
+		D0591DBF15C19D6200792EDE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
 		D084A74515976097001EB071 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1074,6 +1309,29 @@
 				D053869815B75ADD00B5C89E /* Configuration.m in Sources */,
 				D053869915B75ADD00B5C89E /* PrivateConstants.m in Sources */,
 				D053873515B75EF600B5C89E /* HDMasterViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0591D6115C19D6200792EDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0591D6215C19D6200792EDE /* main.m in Sources */,
+				D0591D6315C19D6200792EDE /* AppDelegate.m in Sources */,
+				D0591D6415C19D6200792EDE /* SongsViewController.m in Sources */,
+				D0591D6515C19D6200792EDE /* FavouritesViewController.m in Sources */,
+				D0591D6615C19D6200792EDE /* CapoeiraLyricsAPI.m in Sources */,
+				D0591D6715C19D6200792EDE /* Song.m in Sources */,
+				D0591D6815C19D6200792EDE /* BaseViewController.m in Sources */,
+				D0591D6915C19D6200792EDE /* DetailsViewController.m in Sources */,
+				D0591D6A15C19D6200792EDE /* TagsView.m in Sources */,
+				D0591D6B15C19D6200792EDE /* Tag.m in Sources */,
+				D0591D6C15C19D6200792EDE /* CapoeiraLyricsSHKConfigurator.m in Sources */,
+				D0591D6D15C19D6200792EDE /* SongTableViewCell.m in Sources */,
+				D0591D6E15C19D6200792EDE /* PlaceholderTableView.m in Sources */,
+				D0591D6F15C19D6200792EDE /* Configuration.m in Sources */,
+				D0591D7015C19D6200792EDE /* PrivateConstants.m in Sources */,
+				D0591D7115C19D6200792EDE /* HDMasterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1233,6 +1491,112 @@
 					"-fobjc-arc",
 				);
 				PRODUCT_NAME = "Lyrics copy";
+				PROVISIONING_PROFILE = "A474496C-10B9-4C01-A7EC-1871F34BD4D5";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "A474496C-10B9-4C01-A7EC-1871F34BD4D5";
+				SKIP_INSTALL = NO;
+				TARGETED_DEVICE_FAMILY = 2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D0591DC115C19D6200792EDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E487E0840E14CE6BAD9DB39 /* Pods.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Igor Tomych";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Igor Tomych";
+				DSTROOT = /tmp/xcodeproj.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CapoeiraLyrics/CapoeiraLyrics-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"HD_VERSION=1",
+					"LITE_VERSION=1",
+					"$(inherited)",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "CapoeiraLyrics HD Lite-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-framework",
+					SystemConfiguration,
+					"-framework",
+					QuartzCore,
+					"-framework",
+					SystemConfiguration,
+					"-framework",
+					Security,
+					"-framework",
+					QuartzCore,
+					"-framework",
+					SystemConfiguration,
+					"-framework",
+					Security,
+					"-framework",
+					MessageUI,
+					"-framework",
+					Twitter,
+					"-fobjc-arc",
+				);
+				PRODUCT_NAME = "Lyrics HD copy";
+				PROVISIONING_PROFILE = "A474496C-10B9-4C01-A7EC-1871F34BD4D5";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "A474496C-10B9-4C01-A7EC-1871F34BD4D5";
+				SKIP_INSTALL = NO;
+				TARGETED_DEVICE_FAMILY = 2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D0591DC215C19D6200792EDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E487E0840E14CE6BAD9DB39 /* Pods.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Igor Tomych";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Igor Tomych";
+				DSTROOT = /tmp/xcodeproj.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CapoeiraLyrics/CapoeiraLyrics-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"HD_VERSION=1",
+					"LITE_VERSION=1",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "CapoeiraLyrics HD Lite-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-framework",
+					SystemConfiguration,
+					"-framework",
+					QuartzCore,
+					"-framework",
+					SystemConfiguration,
+					"-framework",
+					Security,
+					"-framework",
+					QuartzCore,
+					"-framework",
+					SystemConfiguration,
+					"-framework",
+					Security,
+					"-framework",
+					MessageUI,
+					"-framework",
+					Twitter,
+					"-fobjc-arc",
+				);
+				PRODUCT_NAME = "Lyrics HD copy";
 				PROVISIONING_PROFILE = "A474496C-10B9-4C01-A7EC-1871F34BD4D5";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "A474496C-10B9-4C01-A7EC-1871F34BD4D5";
 				SKIP_INSTALL = NO;
@@ -1500,6 +1864,15 @@
 			buildConfigurations = (
 				D05386E815B75ADD00B5C89E /* Debug */,
 				D05386E915B75ADD00B5C89E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0591DC015C19D6200792EDE /* Build configuration list for PBXNativeTarget "Lyrics HD Lite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0591DC115C19D6200792EDE /* Debug */,
+				D0591DC215C19D6200792EDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
