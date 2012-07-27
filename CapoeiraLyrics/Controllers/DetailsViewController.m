@@ -386,15 +386,15 @@
     [_scrollView addGestureRecognizer:recognizerSwipeRight];
     
     
-    if([Configuration isLiteVersion])
+#ifdef LITE_VERSION
     {
-        if(![Configuration isHDVersion]){
+#ifndef HD_VERSION
             mBannerView = [[SOMABannerView alloc] initWithDimension:kSOMAAdDimensionDefault]; 
 
-        }else{
+#else
             mBannerView = [[SOMABannerView alloc] initWithDimension:kSOMAAdDimensionLeaderboard];
             [mBannerView adSettings].adType = kSOMAAdTypeImage;
-        }
+#endif
         mBannerView.frame = [self makeBannerRect];
         [mBannerView adSettings].adspaceId = [PrivateConstants smaatoAdSpace1];
         [mBannerView adSettings].publisherId = [PrivateConstants smaatoPublisherId]; 
@@ -402,6 +402,7 @@
         [self.view addSubview:mBannerView];
         [mBannerView release];
     }
+#endif
 
     
     // set bg

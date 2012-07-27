@@ -11,8 +11,8 @@
 	<key>CFBundleIconFiles</key>
 	<array>
 		<string>Default.png</string>
-		<string>Icon.png</string>
-		<string>Icon@2x.png</string>
+		<string>Icon~Ipad.png</string>
+		<string>Icon~Ipad@2x.png</string>
 	</array>
 	<key>CFBundleIcons</key>
 	<dict>
@@ -21,8 +21,8 @@
 			<key>CFBundleIconFiles</key>
 			<array>
 				<string>Default.png</string>
-				<string>Icon.png</string>
-				<string>Icon@2x.png</string>
+				<string>Icon~Ipad.png</string>
+				<string>Icon~Ipad@2x.png</string>
 			</array>
 		</dict>
 	</dict>
@@ -45,7 +45,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>fb313661285392611full</string>
+				<string>fb313661285392611hdfull</string>
 			</array>
 		</dict>
 	</array>
@@ -66,8 +66,6 @@
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
-		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
