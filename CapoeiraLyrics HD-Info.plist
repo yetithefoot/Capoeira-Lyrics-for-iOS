@@ -10,9 +10,12 @@
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFiles</key>
 	<array>
-		<string>Default.png</string>
-		<string>Icon~Ipad.png</string>
-		<string>Icon~Ipad@2x.png</string>
+		<string>Icon~ipad.png</string>
+		<string>Icon@2x~ipad.png</string>
+		<string>Default-Landscape~ipad.png</string>
+		<string>Default-Landscape@2x~ipad.png</string>
+		<string>Default-Portrait@2x~ipad.png</string>
+		<string>Default-Portrait~ipad.png</string>
 	</array>
 	<key>CFBundleIcons</key>
 	<dict>
@@ -20,9 +23,12 @@
 		<dict>
 			<key>CFBundleIconFiles</key>
 			<array>
-				<string>Default.png</string>
-				<string>Icon~Ipad.png</string>
-				<string>Icon~Ipad@2x.png</string>
+				<string>Icon~ipad.png</string>
+				<string>Icon@2x~ipad.png</string>
+				<string>Default-Landscape~ipad.png</string>
+				<string>Default-Landscape@2x~ipad.png</string>
+				<string>Default-Portrait@2x~ipad.png</string>
+				<string>Default-Portrait~ipad.png</string>
 			</array>
 		</dict>
 	</dict>
@@ -52,8 +58,6 @@
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
 	<key>LSRequiresIPhoneOS</key>
-	<true/>
-	<key>UIPrerenderedIcon</key>
 	<true/>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>

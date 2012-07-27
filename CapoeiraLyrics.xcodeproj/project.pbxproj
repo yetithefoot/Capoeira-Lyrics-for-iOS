@@ -199,14 +199,18 @@
 		D0591DD315C1D24000792EDE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D084A77B1598B646001EB071 /* QuartzCore.framework */; };
 		D0591DD415C1D25400792EDE /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D084A7A11598B9FC001EB071 /* CoreLocation.framework */; };
 		D0591DD515C1D25A00792EDE /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D084A7791598B636001EB071 /* MediaPlayer.framework */; };
-		D071F03315C29EDC00CA9A6E /* Icon~Ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = D071F03115C29EDB00CA9A6E /* Icon~Ipad.png */; };
-		D071F03415C29EDC00CA9A6E /* Icon~Ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = D071F03115C29EDB00CA9A6E /* Icon~Ipad.png */; };
-		D071F03515C29EDC00CA9A6E /* Icon~Ipad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D071F03215C29EDB00CA9A6E /* Icon~Ipad@2x.png */; };
-		D071F03615C29EDC00CA9A6E /* Icon~Ipad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D071F03215C29EDB00CA9A6E /* Icon~Ipad@2x.png */; };
-		D071F03B15C2A0D300CA9A6E /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = D071F03715C2A0D300CA9A6E /* Default-Landscape@2x~ipad.png */; };
-		D071F03C15C2A0D300CA9A6E /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = D071F03715C2A0D300CA9A6E /* Default-Landscape@2x~ipad.png */; };
-		D071F03D15C2A0D300CA9A6E /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = D071F03815C2A0D300CA9A6E /* Default-Landscape~ipad.png */; };
-		D071F03E15C2A0D300CA9A6E /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = D071F03815C2A0D300CA9A6E /* Default-Landscape~ipad.png */; };
+		D071F04A15C2B17A00CA9A6E /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = D071F04915C2B17A00CA9A6E /* Default-Landscape~ipad.png */; };
+		D071F04C15C2B18500CA9A6E /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = D071F04B15C2B18500CA9A6E /* Default-Landscape@2x~ipad.png */; };
+		D071F05115C2B5B000CA9A6E /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = D071F04915C2B17A00CA9A6E /* Default-Landscape~ipad.png */; };
+		D071F05215C2B5B300CA9A6E /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = D071F04B15C2B18500CA9A6E /* Default-Landscape@2x~ipad.png */; };
+		D071F05D15C2B6A300CA9A6E /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = D071F05B15C2B6A300CA9A6E /* Default-Portrait@2x~ipad.png */; };
+		D071F05E15C2B6A300CA9A6E /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = D071F05B15C2B6A300CA9A6E /* Default-Portrait@2x~ipad.png */; };
+		D071F05F15C2B6A300CA9A6E /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = D071F05C15C2B6A300CA9A6E /* Default-Portrait~ipad.png */; };
+		D071F06015C2B6A300CA9A6E /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = D071F05C15C2B6A300CA9A6E /* Default-Portrait~ipad.png */; };
+		D071F06315C2B88400CA9A6E /* Icon@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = D071F06115C2B88400CA9A6E /* Icon@2x~ipad.png */; };
+		D071F06415C2B88400CA9A6E /* Icon@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = D071F06115C2B88400CA9A6E /* Icon@2x~ipad.png */; };
+		D071F06515C2B88400CA9A6E /* Icon~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = D071F06215C2B88400CA9A6E /* Icon~ipad.png */; };
+		D071F06615C2B88400CA9A6E /* Icon~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = D071F06215C2B88400CA9A6E /* Icon~ipad.png */; };
 		D07E1831157F8BFD00AA5987 /* SongsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D07E1824157F8BFD00AA5987 /* SongsViewController.m */; };
 		D07E1832157F8BFD00AA5987 /* FavouritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D07E1826157F8BFD00AA5987 /* FavouritesViewController.m */; };
 		D07E1837157F8BFD00AA5987 /* SongsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D07E182F157F8BFD00AA5987 /* SongsViewController.xib */; };
@@ -408,10 +412,12 @@
 		D0591DC315C19D6200792EDE /* Lyrics HD Lite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lyrics HD Lite.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0591DC515C19D6200792EDE /* CapoeiraLyrics HD Lite-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "CapoeiraLyrics HD Lite-Info.plist"; path = "/Users/yeti/Developer/Projects/Capoeira-Lyrics-for-iOS/CapoeiraLyrics HD Lite-Info.plist"; sourceTree = "<absolute>"; };
 		D0591DCD15C1D00400792EDE /* PrivateConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrivateConstants.h; sourceTree = "<group>"; };
-		D071F03115C29EDB00CA9A6E /* Icon~Ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon~Ipad.png"; sourceTree = "<group>"; };
-		D071F03215C29EDB00CA9A6E /* Icon~Ipad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon~Ipad@2x.png"; sourceTree = "<group>"; };
-		D071F03715C2A0D300CA9A6E /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
-		D071F03815C2A0D300CA9A6E /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
+		D071F04915C2B17A00CA9A6E /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
+		D071F04B15C2B18500CA9A6E /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
+		D071F05B15C2B6A300CA9A6E /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
+		D071F05C15C2B6A300CA9A6E /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
+		D071F06115C2B88400CA9A6E /* Icon@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x~ipad.png"; sourceTree = "<group>"; };
+		D071F06215C2B88400CA9A6E /* Icon~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon~ipad.png"; sourceTree = "<group>"; };
 		D07E1823157F8BFD00AA5987 /* SongsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SongsViewController.h; sourceTree = "<group>"; };
 		D07E1824157F8BFD00AA5987 /* SongsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongsViewController.m; sourceTree = "<group>"; };
 		D07E1825157F8BFD00AA5987 /* FavouritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavouritesViewController.h; sourceTree = "<group>"; };
@@ -730,10 +736,12 @@
 		D08DB9A9157F4EBE00994BDC = {
 			isa = PBXGroup;
 			children = (
-				D071F03715C2A0D300CA9A6E /* Default-Landscape@2x~ipad.png */,
-				D071F03815C2A0D300CA9A6E /* Default-Landscape~ipad.png */,
-				D071F03115C29EDB00CA9A6E /* Icon~Ipad.png */,
-				D071F03215C29EDB00CA9A6E /* Icon~Ipad@2x.png */,
+				D071F06115C2B88400CA9A6E /* Icon@2x~ipad.png */,
+				D071F06215C2B88400CA9A6E /* Icon~ipad.png */,
+				D071F05B15C2B6A300CA9A6E /* Default-Portrait@2x~ipad.png */,
+				D071F05C15C2B6A300CA9A6E /* Default-Portrait~ipad.png */,
+				D071F04B15C2B18500CA9A6E /* Default-Landscape@2x~ipad.png */,
+				D071F04915C2B17A00CA9A6E /* Default-Landscape~ipad.png */,
 				D084A76D1598AF21001EB071 /* Icon@2x.png */,
 				D084A76B1598AF14001EB071 /* Icon.png */,
 				D08DB9BE157F4EBE00994BDC /* CapoeiraLyrics */,
@@ -1008,10 +1016,12 @@
 				D05386E415B75ADD00B5C89E /* iTunesArtwork in Resources */,
 				D05386E515B75ADD00B5C89E /* iTunesArtwork@2x in Resources */,
 				D053872F15B75EE300B5C89E /* HDMasterViewController.xib in Resources */,
-				D071F03315C29EDC00CA9A6E /* Icon~Ipad.png in Resources */,
-				D071F03515C29EDC00CA9A6E /* Icon~Ipad@2x.png in Resources */,
-				D071F03B15C2A0D300CA9A6E /* Default-Landscape@2x~ipad.png in Resources */,
-				D071F03D15C2A0D300CA9A6E /* Default-Landscape~ipad.png in Resources */,
+				D071F04A15C2B17A00CA9A6E /* Default-Landscape~ipad.png in Resources */,
+				D071F04C15C2B18500CA9A6E /* Default-Landscape@2x~ipad.png in Resources */,
+				D071F05D15C2B6A300CA9A6E /* Default-Portrait@2x~ipad.png in Resources */,
+				D071F05F15C2B6A300CA9A6E /* Default-Portrait~ipad.png in Resources */,
+				D071F06315C2B88400CA9A6E /* Icon@2x~ipad.png in Resources */,
+				D071F06515C2B88400CA9A6E /* Icon~ipad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1082,10 +1092,12 @@
 				D0591DBC15C19D6200792EDE /* iTunesArtwork in Resources */,
 				D0591DBD15C19D6200792EDE /* iTunesArtwork@2x in Resources */,
 				D0591DBE15C19D6200792EDE /* HDMasterViewController.xib in Resources */,
-				D071F03415C29EDC00CA9A6E /* Icon~Ipad.png in Resources */,
-				D071F03615C29EDC00CA9A6E /* Icon~Ipad@2x.png in Resources */,
-				D071F03C15C2A0D300CA9A6E /* Default-Landscape@2x~ipad.png in Resources */,
-				D071F03E15C2A0D300CA9A6E /* Default-Landscape~ipad.png in Resources */,
+				D071F05115C2B5B000CA9A6E /* Default-Landscape~ipad.png in Resources */,
+				D071F05215C2B5B300CA9A6E /* Default-Landscape@2x~ipad.png in Resources */,
+				D071F05E15C2B6A300CA9A6E /* Default-Portrait@2x~ipad.png in Resources */,
+				D071F06015C2B6A300CA9A6E /* Default-Portrait~ipad.png in Resources */,
+				D071F06415C2B88400CA9A6E /* Icon@2x~ipad.png in Resources */,
+				D071F06615C2B88400CA9A6E /* Icon~ipad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1405,8 +1417,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5E487E0840E14CE6BAD9DB39 /* Pods.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Vladislav Tsepelev (573W86D26V)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Vladislav Tsepelev (573W86D26V)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Vladislav Tsepelev";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Vladislav Tsepelev";
 				DSTROOT = /tmp/xcodeproj.dst;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1447,8 +1459,8 @@
 					"-fobjc-arc",
 				);
 				PRODUCT_NAME = "Lyrics HD";
-				PROVISIONING_PROFILE = "B3DB705D-2D44-46CC-BB77-5D6739EEE74A";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B3DB705D-2D44-46CC-BB77-5D6739EEE74A";
+				PROVISIONING_PROFILE = "A8A3C7DB-6DE8-4A7A-936B-9DBFE1970F34";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "A8A3C7DB-6DE8-4A7A-936B-9DBFE1970F34";
 				SKIP_INSTALL = NO;
 				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
@@ -1459,8 +1471,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5E487E0840E14CE6BAD9DB39 /* Pods.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Vladislav Tsepelev (573W86D26V)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Vladislav Tsepelev (573W86D26V)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Vladislav Tsepelev";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Vladislav Tsepelev";
 				DSTROOT = /tmp/xcodeproj.dst;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1499,8 +1511,8 @@
 					"-fobjc-arc",
 				);
 				PRODUCT_NAME = "Lyrics HD";
-				PROVISIONING_PROFILE = "B3DB705D-2D44-46CC-BB77-5D6739EEE74A";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B3DB705D-2D44-46CC-BB77-5D6739EEE74A";
+				PROVISIONING_PROFILE = "A8A3C7DB-6DE8-4A7A-936B-9DBFE1970F34";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "A8A3C7DB-6DE8-4A7A-936B-9DBFE1970F34";
 				SKIP_INSTALL = NO;
 				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
@@ -1553,8 +1565,8 @@
 					"-fobjc-arc",
 				);
 				PRODUCT_NAME = "Lyrics HD Lite";
-				PROVISIONING_PROFILE = "B3DB705D-2D44-46CC-BB77-5D6739EEE74A";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B3DB705D-2D44-46CC-BB77-5D6739EEE74A";
+				PROVISIONING_PROFILE = "9336EFCA-CB1D-4F74-AFC3-9B0E15844DEF";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "9336EFCA-CB1D-4F74-AFC3-9B0E15844DEF";
 				SKIP_INSTALL = NO;
 				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
@@ -1605,8 +1617,8 @@
 					"-fobjc-arc",
 				);
 				PRODUCT_NAME = "Lyrics HD Lite";
-				PROVISIONING_PROFILE = "B3DB705D-2D44-46CC-BB77-5D6739EEE74A";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B3DB705D-2D44-46CC-BB77-5D6739EEE74A";
+				PROVISIONING_PROFILE = "9336EFCA-CB1D-4F74-AFC3-9B0E15844DEF";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "9336EFCA-CB1D-4F74-AFC3-9B0E15844DEF";
 				SKIP_INSTALL = NO;
 				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
