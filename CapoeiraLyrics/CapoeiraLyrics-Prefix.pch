@@ -13,5 +13,8 @@
     #import <Foundation/Foundation.h>
     #import "Configuration.h"
     #import "SVProgressHUD.h"
+    #import "MBProgressHUD.h"
+    #import "YTFExtensions.h"
     #import "EGORefreshTableHeaderView.h"
+
 #endif

@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D004E180164C13BF005AB9F0 /* Icon~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = D071F06215C2B88400CA9A6E /* Icon~ipad.png */; };
+		D004E181164C13C0005AB9F0 /* Icon~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = D071F06215C2B88400CA9A6E /* Icon~ipad.png */; };
+		D004E182164C13C2005AB9F0 /* Icon@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = D071F06115C2B88400CA9A6E /* Icon@2x~ipad.png */; };
+		D004E183164C13C3005AB9F0 /* Icon@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = D071F06115C2B88400CA9A6E /* Icon@2x~ipad.png */; };
+		D004E184164C13D3005AB9F0 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A76D1598AF21001EB071 /* Icon@2x.png */; };
+		D004E185164C13D4005AB9F0 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A76D1598AF21001EB071 /* Icon@2x.png */; };
+		D004E186164C13D7005AB9F0 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A76B1598AF14001EB071 /* Icon.png */; };
+		D004E187164C13D7005AB9F0 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A76B1598AF14001EB071 /* Icon.png */; };
+		D004E1AB164C1EA3005AB9F0 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D004E1AA164C1EA3005AB9F0 /* CoreData.framework */; };
 		D0114E8215851E5100D27777 /* CapoeiraLyricsAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = D0114E8115851E5100D27777 /* CapoeiraLyricsAPI.m */; };
 		D0114E8515851FAC00D27777 /* Song.m in Sources */ = {isa = PBXBuildFile; fileRef = D0114E8415851FAC00D27777 /* Song.m */; };
 		D0114E881585241500D27777 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0114E871585241500D27777 /* BaseViewController.m */; };
@@ -199,6 +208,12 @@
 		D0591DD315C1D24000792EDE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D084A77B1598B646001EB071 /* QuartzCore.framework */; };
 		D0591DD415C1D25400792EDE /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D084A7A11598B9FC001EB071 /* CoreLocation.framework */; };
 		D0591DD515C1D25A00792EDE /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D084A7791598B636001EB071 /* MediaPlayer.framework */; };
+		D05DCB021626FE05007AC7D2 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D05DCB011626FE04007AC7D2 /* Default-568h@2x.png */; };
+		D05DCB041626FF5C007AC7D2 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D05DCB011626FE04007AC7D2 /* Default-568h@2x.png */; };
+		D05DCB48162709CC007AC7D2 /* libFlurry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D05DCB47162709CC007AC7D2 /* libFlurry.a */; };
+		D05DCB4A162709D9007AC7D2 /* libFlurry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D05DCB47162709CC007AC7D2 /* libFlurry.a */; };
+		D05DCB4B162709E4007AC7D2 /* libFlurry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D05DCB47162709CC007AC7D2 /* libFlurry.a */; };
+		D05DCB4C162709F0007AC7D2 /* libFlurry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D05DCB47162709CC007AC7D2 /* libFlurry.a */; };
 		D071F04A15C2B17A00CA9A6E /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = D071F04915C2B17A00CA9A6E /* Default-Landscape~ipad.png */; };
 		D071F04C15C2B18500CA9A6E /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = D071F04B15C2B18500CA9A6E /* Default-Landscape@2x~ipad.png */; };
 		D071F05115C2B5B000CA9A6E /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = D071F04915C2B17A00CA9A6E /* Default-Landscape~ipad.png */; };
@@ -388,6 +403,7 @@
 /* Begin PBXFileReference section */
 		35E8594728BF4B41AECDDE16 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E487E0840E14CE6BAD9DB39 /* Pods.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		D004E1AA164C1EA3005AB9F0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		D0114E8015851E5100D27777 /* CapoeiraLyricsAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CapoeiraLyricsAPI.h; sourceTree = "<group>"; };
 		D0114E8115851E5100D27777 /* CapoeiraLyricsAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CapoeiraLyricsAPI.m; sourceTree = "<group>"; };
 		D0114E8315851FAC00D27777 /* Song.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Song.h; sourceTree = "<group>"; };
@@ -412,6 +428,8 @@
 		D0591DC315C19D6200792EDE /* Lyrics HD Lite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lyrics HD Lite.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0591DC515C19D6200792EDE /* CapoeiraLyrics HD Lite-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "CapoeiraLyrics HD Lite-Info.plist"; path = "/Users/yeti/Developer/Projects/Capoeira-Lyrics-for-iOS/CapoeiraLyrics HD Lite-Info.plist"; sourceTree = "<absolute>"; };
 		D0591DCD15C1D00400792EDE /* PrivateConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrivateConstants.h; sourceTree = "<group>"; };
+		D05DCB011626FE04007AC7D2 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		D05DCB47162709CC007AC7D2 /* libFlurry.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFlurry.a; path = Pods/FlurrySDK/Flurry/libFlurry.a; sourceTree = "<group>"; };
 		D071F04915C2B17A00CA9A6E /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
 		D071F04B15C2B18500CA9A6E /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
 		D071F05B15C2B6A300CA9A6E /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
@@ -519,6 +537,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D05DCB4B162709E4007AC7D2 /* libFlurry.a in Frameworks */,
 				D053869B15B75ADD00B5C89E /* MessageUI.framework in Frameworks */,
 				D053869C15B75ADD00B5C89E /* SystemConfiguration.framework in Frameworks */,
 				D053869D15B75ADD00B5C89E /* Security.framework in Frameworks */,
@@ -534,6 +553,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D05DCB4C162709F0007AC7D2 /* libFlurry.a in Frameworks */,
 				D0591DD515C1D25A00792EDE /* MediaPlayer.framework in Frameworks */,
 				D0591DD415C1D25400792EDE /* CoreLocation.framework in Frameworks */,
 				D0591DD315C1D24000792EDE /* QuartzCore.framework in Frameworks */,
@@ -553,6 +573,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D05DCB4A162709D9007AC7D2 /* libFlurry.a in Frameworks */,
 				D084A7A21598B9FC001EB071 /* CoreLocation.framework in Frameworks */,
 				D084A77C1598B646001EB071 /* QuartzCore.framework in Frameworks */,
 				D084A77A1598B636001EB071 /* MediaPlayer.framework in Frameworks */,
@@ -572,6 +593,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D004E1AB164C1EA3005AB9F0 /* CoreData.framework in Frameworks */,
+				D05DCB48162709CC007AC7D2 /* libFlurry.a in Frameworks */,
 				D030C42315908A0400C85548 /* MessageUI.framework in Frameworks */,
 				D030C421159089FC00C85548 /* SystemConfiguration.framework in Frameworks */,
 				D030C41E159089F600C85548 /* Security.framework in Frameworks */,
@@ -736,6 +759,9 @@
 		D08DB9A9157F4EBE00994BDC = {
 			isa = PBXGroup;
 			children = (
+				D004E1AA164C1EA3005AB9F0 /* CoreData.framework */,
+				D05DCB47162709CC007AC7D2 /* libFlurry.a */,
+				D05DCB011626FE04007AC7D2 /* Default-568h@2x.png */,
 				D071F06115C2B88400CA9A6E /* Icon@2x~ipad.png */,
 				D071F06215C2B88400CA9A6E /* Icon~ipad.png */,
 				D071F05B15C2B6A300CA9A6E /* Default-Portrait@2x~ipad.png */,
@@ -1022,6 +1048,8 @@
 				D071F05F15C2B6A300CA9A6E /* Default-Portrait~ipad.png in Resources */,
 				D071F06315C2B88400CA9A6E /* Icon@2x~ipad.png in Resources */,
 				D071F06515C2B88400CA9A6E /* Icon~ipad.png in Resources */,
+				D004E184164C13D3005AB9F0 /* Icon@2x.png in Resources */,
+				D004E186164C13D7005AB9F0 /* Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1098,6 +1126,8 @@
 				D071F06015C2B6A300CA9A6E /* Default-Portrait~ipad.png in Resources */,
 				D071F06415C2B88400CA9A6E /* Icon@2x~ipad.png in Resources */,
 				D071F06615C2B88400CA9A6E /* Icon~ipad.png in Resources */,
+				D004E185164C13D4005AB9F0 /* Icon@2x.png in Resources */,
+				D004E187164C13D7005AB9F0 /* Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1171,6 +1201,9 @@
 				D0D08D07159AFD56005F6737 /* iTunesArtwork in Resources */,
 				D0D08D09159AFD56005F6737 /* iTunesArtwork@2x in Resources */,
 				D0D08D0A159AFE7B005F6737 /* Icon@2x.png in Resources */,
+				D05DCB041626FF5C007AC7D2 /* Default-568h@2x.png in Resources */,
+				D004E181164C13C0005AB9F0 /* Icon~ipad.png in Resources */,
+				D004E183164C13C3005AB9F0 /* Icon@2x~ipad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1244,6 +1277,9 @@
 				D084A7C8159A0612001EB071 /* logo_ficag.png in Resources */,
 				D0D08D06159AFD56005F6737 /* iTunesArtwork in Resources */,
 				D0D08D08159AFD56005F6737 /* iTunesArtwork@2x in Resources */,
+				D05DCB021626FE05007AC7D2 /* Default-568h@2x.png in Resources */,
+				D004E180164C13BF005AB9F0 /* Icon~ipad.png in Resources */,
+				D004E182164C13C2005AB9F0 /* Icon@2x~ipad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1417,8 +1453,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5E487E0840E14CE6BAD9DB39 /* Pods.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Vladislav Tsepelev";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Vladislav Tsepelev";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Vladislav Tsepelev (573W86D26V)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Vladislav Tsepelev (573W86D26V)";
 				DSTROOT = /tmp/xcodeproj.dst;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1435,6 +1471,10 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "CapoeiraLyrics HD-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Pods/FlurrySDK/Flurry\"",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
@@ -1459,8 +1499,8 @@
 					"-fobjc-arc",
 				);
 				PRODUCT_NAME = "Lyrics HD";
-				PROVISIONING_PROFILE = "A8A3C7DB-6DE8-4A7A-936B-9DBFE1970F34";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "A8A3C7DB-6DE8-4A7A-936B-9DBFE1970F34";
+				PROVISIONING_PROFILE = "9336EFCA-CB1D-4F74-AFC3-9B0E15844DEF";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "9336EFCA-CB1D-4F74-AFC3-9B0E15844DEF";
 				SKIP_INSTALL = NO;
 				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
@@ -1487,6 +1527,10 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "CapoeiraLyrics HD-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Pods/FlurrySDK/Flurry\"",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
@@ -1541,6 +1585,10 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "CapoeiraLyrics HD Lite-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Pods/FlurrySDK/Flurry\"",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
@@ -1577,8 +1625,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5E487E0840E14CE6BAD9DB39 /* Pods.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Vladislav Tsepelev (573W86D26V)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Vladislav Tsepelev (573W86D26V)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Vladislav Tsepelev";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Vladislav Tsepelev";
 				DSTROOT = /tmp/xcodeproj.dst;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1593,6 +1641,10 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "CapoeiraLyrics HD Lite-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Pods/FlurrySDK/Flurry\"",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
@@ -1617,8 +1669,8 @@
 					"-fobjc-arc",
 				);
 				PRODUCT_NAME = "Lyrics HD Lite";
-				PROVISIONING_PROFILE = "9336EFCA-CB1D-4F74-AFC3-9B0E15844DEF";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "9336EFCA-CB1D-4F74-AFC3-9B0E15844DEF";
+				PROVISIONING_PROFILE = "70D7908D-7FC9-4223-A092-BE5944A17330";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "70D7908D-7FC9-4223-A092-BE5944A17330";
 				SKIP_INSTALL = NO;
 				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
@@ -1629,8 +1681,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5E487E0840E14CE6BAD9DB39 /* Pods.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Igor Tomych";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Igor Tomych";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yeti The Foot (MJ5Z4Z7FBU)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yeti The Foot (MJ5Z4Z7FBU)";
 				DSTROOT = /tmp/xcodeproj.dst;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1649,6 +1701,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../Distr/Devel/iSOMA_5.2.1/iSoma.framework/Versions/A\"",
+					"\"$(SRCROOT)/Pods/FlurrySDK/Flurry\"",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -1674,8 +1727,8 @@
 					"-fobjc-arc",
 				);
 				PRODUCT_NAME = "Lyrics Lite";
-				PROVISIONING_PROFILE = "B48450D2-35D6-47D6-B4B4-AAEF92917BB9";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B48450D2-35D6-47D6-B4B4-AAEF92917BB9";
+				PROVISIONING_PROFILE = "D7394FF3-EE9A-4A53-B75C-7B9609DB6FFF";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D7394FF3-EE9A-4A53-B75C-7B9609DB6FFF";
 				SKIP_INSTALL = NO;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1701,6 +1754,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../Distr/Devel/iSOMA_5.2.1/iSoma.framework/Versions/A\"",
+					"\"$(SRCROOT)/Pods/FlurrySDK/Flurry\"",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -1726,8 +1780,8 @@
 					"-fobjc-arc",
 				);
 				PRODUCT_NAME = "Lyrics Lite";
-				PROVISIONING_PROFILE = "B48450D2-35D6-47D6-B4B4-AAEF92917BB9";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B48450D2-35D6-47D6-B4B4-AAEF92917BB9";
+				PROVISIONING_PROFILE = "D03336A0-A25D-4C6A-95E5-79B84858F610";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D03336A0-A25D-4C6A-95E5-79B84858F610";
 				SKIP_INSTALL = NO;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1780,8 +1834,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5E487E0840E14CE6BAD9DB39 /* Pods.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Vladislav Tsepelev";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Vladislav Tsepelev";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Vladislav Tsepelev (573W86D26V)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Vladislav Tsepelev (573W86D26V)";
 				DSTROOT = /tmp/xcodeproj.dst;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1796,7 +1850,11 @@
 				);
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "CapoeiraLyrics/CapoeiraLyrics-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Pods/FlurrySDK/Flurry\"",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
@@ -1821,8 +1879,8 @@
 					"-fobjc-arc",
 				);
 				PRODUCT_NAME = Lyrics;
-				PROVISIONING_PROFILE = "94DF89B1-48D1-468B-920E-397591AE3D0F";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "94DF89B1-48D1-468B-920E-397591AE3D0F";
+				PROVISIONING_PROFILE = "9336EFCA-CB1D-4F74-AFC3-9B0E15844DEF";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "9336EFCA-CB1D-4F74-AFC3-9B0E15844DEF";
 				SKIP_INSTALL = NO;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1844,7 +1902,11 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "FULL_VERSION=1";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "CapoeiraLyrics/CapoeiraLyrics-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Pods/FlurrySDK/Flurry\"",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",

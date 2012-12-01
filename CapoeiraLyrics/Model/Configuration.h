@@ -21,6 +21,7 @@
 +(BOOL) isFullVersion;
 +(BOOL) isLiteVersion;
 +(BOOL) isHDVersion;
++(BOOL) isPhoneVersion;
 +(BOOL) checkForUpdatesAtStart;
 
 -(NSString *) FILEPATH_OFFLINE_SONGS_RESPONSE;

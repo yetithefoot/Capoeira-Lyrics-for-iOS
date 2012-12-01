@@ -58,6 +58,7 @@
     NSString *TEXT_PLAY_VIDEO;
     NSString *TEXT_PLAY_AUDIO;
     NSString *TEXT_CANCEL;
+    NSString *TEXT_OPEN_IN_BROWSER;
     
 #ifdef LITE_VERSION
     SOMABannerView *mBannerView;

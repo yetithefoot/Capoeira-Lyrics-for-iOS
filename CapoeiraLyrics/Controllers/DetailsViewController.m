@@ -116,6 +116,7 @@
         TEXT_UNMAKE_FAVORITE = NSLocalizedString(@"Unmake favorite", @"");
         TEXT_PLAY_VIDEO = NSLocalizedString(@"Open video", @"");
         TEXT_CANCEL = NSLocalizedString(@"Cancel", @"");
+        TEXT_OPEN_IN_BROWSER = NSLocalizedString(@"Open full version", @"");
         
     }
     
@@ -131,6 +132,7 @@
 - (IBAction)btnActionClicked:(id)sender {
     UIActionSheet *popupQuery = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:nil destructiveButtonTitle:nil otherButtonTitles: nil];
     
+    [popupQuery addButtonWithTitle:TEXT_OPEN_IN_BROWSER];
     [popupQuery addButtonWithTitle:TEXT_SHARE_TO_FB];
     [popupQuery addButtonWithTitle:TEXT_SHARE_TO_TWITTER];
     [popupQuery addButtonWithTitle:(self.song.isFavorite?TEXT_UNMAKE_FAVORITE:TEXT_MAKE_FAVORITE)];
@@ -178,9 +180,17 @@
     
     
     
-    if([btnTitle isEqualToString:TEXT_SHARE_TO_FB]){
+    if([btnTitle isEqualToString:TEXT_OPEN_IN_BROWSER]){
         // share to fb
-        NSString * urlString = [NSString stringWithFormat:@"http://capoeiralyrics.info/Songs/Details/%d", _song.identifier];
+        NSString * urlString = [NSString stringWithFormat:@"http://capoeiralyrics.info/Songs/Details/%ld", _song.identifier];
+        NSURL *url = [NSURL URLWithString:urlString];
+        
+        [[UIApplication sharedApplication] openURL:url];
+
+        
+    }else if([btnTitle isEqualToString:TEXT_SHARE_TO_FB]){
+        // share to fb
+        NSString * urlString = [NSString stringWithFormat:@"http://capoeiralyrics.info/Songs/Details/%ld", _song.identifier];
         NSString * message = [NSString stringWithFormat:@"Just learn %@ capoeira song by %@!", _song.name, _song.artist];
         NSURL *url = [NSURL URLWithString:urlString];
         SHKItem *item = [SHKItem URL:url title:message];
@@ -190,7 +200,7 @@
 
     }else if ([btnTitle isEqualToString:TEXT_SHARE_TO_TWITTER]) {
         // share to twitter
-        NSString * urlString = [NSString stringWithFormat:@"http://capoeiralyrics.info/Songs/Details/%d", _song.identifier];
+        NSString * urlString = [NSString stringWithFormat:@"http://capoeiralyrics.info/Songs/Details/%ld", _song.identifier];
         NSString * message = [NSString stringWithFormat:@"Just learn %@ capoeira song by %@!", _song.name, _song.artist];
         NSURL *url = [NSURL URLWithString:urlString];
         SHKItem *item = [SHKItem URL:url title:message];
@@ -292,6 +302,42 @@
     }];
 
     [self relayout];
+}
+
+
+
+-(NSString *) copyrightText{
+    
+    
+    if([_song isArtistUnknown]){
+        return @"This lyric is the Brasilian folklore.\r\n\r\nLyrics provided for educational purposes and personal use only.";
+    }else{
+        return [NSString stringWithFormat:@"Property and copyright of %@.\r\n\r\nLyrics provided for educational purposes and personal use only.", _song.artist];
+    }
+}
+
+
+-(CGRect) infoButtonRect{
+    
+    if([Configuration isFullVersion]){
+    
+        return CGRectMake(self.view.bounds.size.width - 40,
+                          self.view.bounds.size.height -40,
+                          40,
+                          40);
+    }else if([Configuration isPhoneVersion] && [Configuration isLiteVersion]){
+        return CGRectMake(self.view.bounds.size.width - 40,
+                          self.view.bounds.size.height - [self makeBannerRect].size.height - 40,
+                          40,
+                          40);
+        
+    }else if([Configuration isHDVersion] && [Configuration isLiteVersion]){
+        return CGRectMake(self.view.bounds.size.width - 40,
+                          self.view.bounds.size.height - [self makeBannerRect].size.height - 60,
+                          40,
+                          40);
+        
+    }
 }
 
 

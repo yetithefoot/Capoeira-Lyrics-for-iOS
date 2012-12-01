@@ -49,12 +49,44 @@
 }
 
 
+// overridable method
+-(BOOL) shouldShowInfoButton{
+    return YES;
+}
 
+// overridable method
+- (void)presentInfo
+{
+    [SVProgressHUD showSuccessWithStatus:[self copyrightText] duration:4];
+}
+
+// overridable method
+-(NSString *) copyrightText{
+    return @"Lyrics are the property and copyright of their respective owners.\r\n\r\nLyrics provided for educational purposes and personal use only.";
+}
+
+
+-(CGRect) infoButtonRect{
+    return CGRectMake(self.view.bounds.size.width - 40,
+                      self.view.bounds.size.height - 90,
+                      40,
+                      40);
+}
+
+// overridable method
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// hide navigation toolbar
     self.navigationController.navigationBarHidden = YES;
+    
+    if([self shouldShowInfoButton]){
+        UIButton *infoButton = [UIButton buttonWithType:UIButtonTypeInfoDark];
+        infoButton.frame = [self infoButtonRect];
+        infoButton.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleTopMargin;
+        [infoButton addTarget:self action:@selector(presentInfo) forControlEvents:UIControlEventTouchUpInside];
+        [self.view addSubview:infoButton];
+    }
     
     
 }

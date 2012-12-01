@@ -268,21 +268,68 @@ int __lastClickedCell = -1;
 
 #pragma tableview datasource + delegate
 
-//- (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView {
-//    return [[UILocalizedIndexedCollation currentCollation] sectionIndexTitles];
-//}
-//
-//- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-//    if ([[self.states objectAtIndex:section] count] > 0) {
-//        return [[[UILocalizedIndexedCollation currentCollation] sectionTitles] objectAtIndex:section];
-//    }
-//    return nil;
-//}
-//
-//- (NSInteger)tableView:(UITableView *)tableView sectionForSectionIndexTitle:(NSString *)title atIndex:(NSInteger)index
-//{
-//    return [[UILocalizedIndexedCollation currentCollation] sectionForSectionIndexTitleAtIndex:index];
-//}
+- (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView {
+    if (tableView == self.searchDisplayController.searchResultsTableView)
+        return nil;
+	else
+        return [NSArray arrayWithAlphaNumericTitles];
+    
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+        return nil;        
+}
+
+- (NSInteger)tableView:(UITableView *)tableView sectionForSectionIndexTitle:(NSString *)title atIndex:(NSInteger)index
+{
+    if (tableView == self.searchDisplayController.searchResultsTableView)
+        return -1;
+	else{
+
+        
+        NSString * letter = [[NSArray arrayWithAlphaNumericTitles] objectAtIndex:index];
+        NSIndexSet * indexSet = [_songs indexesOfObjectsPassingTest:^(id obj, NSUInteger idx, BOOL *stop)
+         {
+             Song *song = (Song *)obj;
+             if ([song.name hasPrefix:letter]) {
+                 *stop = YES;
+                 return YES;
+             }
+             return NO;
+         }];
+        
+        // scroll to rigth position
+        if(indexSet.count == 0){
+            return -1; // skip scroll
+        }
+        else 
+        if([indexSet firstIndex] == 0) {
+            [tableView scrollsToTop];
+    
+            
+            MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:NO];
+            hud.mode = MBProgressHUDModeText;
+            hud.animationType = MBProgressHUDAnimationFade;
+            hud.labelText = @"A";
+            [hud show:YES];
+            [hud hide:YES afterDelay:0.7];
+            
+            
+        }else{
+            [tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:[indexSet firstIndex] inSection:0] atScrollPosition:UITableViewScrollPositionTop animated:YES];
+            MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:NO];
+            hud.mode = MBProgressHUDModeText;
+            hud.animationType = MBProgressHUDAnimationFade;
+            hud.labelText = letter;
+            [hud show:YES];
+            [hud hide:YES afterDelay:0.7];
+        }
+        
+        return [indexSet firstIndex];
+        
+    }
+}
+
 
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{

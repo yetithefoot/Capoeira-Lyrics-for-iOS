@@ -72,6 +72,17 @@
     return [[Configuration sharedInstance].favoriteSongsIds containsObject:boxed_identifier];
 }
 
+-(BOOL)isArtistUnknown{
+    if(!artist) return YES;
+    if([artist isEqualToString:@""]) return YES;
+    if([artist isEqualToString:@"Unknown artist"]) return YES;
+    
+    return NO;
+    
+    
+    
+}
+
 -(void)setFavorite:(BOOL)aFavorite{
     // load file with favorites into dictionary
     // add song to favorites

@@ -37,6 +37,7 @@ static Configuration* _instance;
 #endif  
 }
 
+
 +(BOOL) isLiteVersion{
 #ifdef LITE_VERSION
     return YES;
@@ -51,6 +52,10 @@ static Configuration* _instance;
 #else
     return NO;
 #endif      
+}
+
++(BOOL) isPhoneVersion{
+    return ![Configuration isHDVersion];
 }
 
 

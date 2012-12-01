@@ -1,4 +1,8 @@
-OTHER_LDFLAGS = -ObjC -all_load -framework SystemConfiguration -framework QuartzCore -framework SystemConfiguration -framework Security -framework QuartzCore -framework SystemConfiguration -framework Security -framework MessageUI -framework Twitter
-HEADER_SEARCH_PATHS = "$(PODS_ROOT)/Headers" "$(PODS_ROOT)/Headers/AFNetworking" "$(PODS_ROOT)/Headers/EGOTableViewPullRefresh" "$(PODS_ROOT)/Headers/Facebook-iOS-SDK" "$(PODS_ROOT)/Headers/JSONKit" "$(PODS_ROOT)/Headers/Reachability" "$(PODS_ROOT)/Headers/SBJson" "$(PODS_ROOT)/Headers/SSKeychain" "$(PODS_ROOT)/Headers/SVProgressHUD" "$(PODS_ROOT)/Headers/ShareKit" "$(PODS_ROOT)/Headers/TTTAttributedLabel"
+PODS_BUILD_HEADERS_SEARCH_PATHS = "${PODS_ROOT}/BuildHeaders" "${PODS_ROOT}/BuildHeaders/AFNetworking" "${PODS_ROOT}/BuildHeaders/EGOTableViewPullRefresh" "${PODS_ROOT}/BuildHeaders/Facebook-iOS-SDK" "${PODS_ROOT}/BuildHeaders/FlurrySDK" "${PODS_ROOT}/BuildHeaders/JSONKit" "${PODS_ROOT}/BuildHeaders/MBProgressHUD" "${PODS_ROOT}/BuildHeaders/Reachability" "${PODS_ROOT}/BuildHeaders/SBJson" "${PODS_ROOT}/BuildHeaders/SSKeychain" "${PODS_ROOT}/BuildHeaders/SVProgressHUD" "${PODS_ROOT}/BuildHeaders/ShareKit" "${PODS_ROOT}/BuildHeaders/TTTAttributedLabel" "${PODS_ROOT}/BuildHeaders/YTFExtensions"
+OTHER_LDFLAGS = -ObjC -lFlurry -framework CoreData -framework CoreGraphics -framework CoreText -framework Foundation -framework MessageUI -framework QuartzCore -framework Security -framework SystemConfiguration -framework Twitter -framework UIKit
+LIBRARY_SEARCH_PATHS = "$(PODS_ROOT)/FlurrySDK/Flurry"
 ALWAYS_SEARCH_USER_PATHS = YES
-PODS_ROOT = $(SRCROOT)/Pods
+PODS_ROOT = ${SRCROOT}/Pods
+HEADER_SEARCH_PATHS = ${PODS_HEADERS_SEARCH_PATHS}
+PODS_HEADERS_SEARCH_PATHS = ${PODS_PUBLIC_HEADERS_SEARCH_PATHS}
+PODS_PUBLIC_HEADERS_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/AFNetworking" "${PODS_ROOT}/Headers/EGOTableViewPullRefresh" "${PODS_ROOT}/Headers/Facebook-iOS-SDK" "${PODS_ROOT}/Headers/FlurrySDK" "${PODS_ROOT}/Headers/JSONKit" "${PODS_ROOT}/Headers/MBProgressHUD" "${PODS_ROOT}/Headers/Reachability" "${PODS_ROOT}/Headers/SBJson" "${PODS_ROOT}/Headers/SSKeychain" "${PODS_ROOT}/Headers/SVProgressHUD" "${PODS_ROOT}/Headers/ShareKit" "${PODS_ROOT}/Headers/TTTAttributedLabel" "${PODS_ROOT}/Headers/YTFExtensions"

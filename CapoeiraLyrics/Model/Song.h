@@ -19,6 +19,8 @@
 @property (nonatomic, retain) NSString *audioUrl;
 @property (nonatomic, retain) NSString *videoUrl;
 @property (nonatomic, assign, getter = isFavorite) BOOL favorite;
+@property (nonatomic, assign, getter = isArtistUnknown) BOOL unknownArtist;
+
 
 -(id) initWithDictionary: (NSDictionary *) dict;
 +(id) songWithDictionary: (NSDictionary *) dict;

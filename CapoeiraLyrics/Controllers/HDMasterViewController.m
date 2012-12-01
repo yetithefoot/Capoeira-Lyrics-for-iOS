@@ -199,6 +199,10 @@
 }
 
 
+-(BOOL) shouldShowInfoButton{
+    return NO;
+}
+
 #pragma mark -
 #pragma mark UIScrollViewDelegate Methods
 

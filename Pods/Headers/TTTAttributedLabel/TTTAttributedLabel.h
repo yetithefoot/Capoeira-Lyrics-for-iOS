@@ -1,1 +1,1 @@
-../../TTTAttributedLabel/TTTAttributedLabel.h
+../../TTTAttributedLabel/TTTAttributedLabel/TTTAttributedLabel.h

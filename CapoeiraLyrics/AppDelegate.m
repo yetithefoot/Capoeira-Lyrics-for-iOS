@@ -26,6 +26,9 @@
 
 #endif
 
+#import <FlurrySDK/Flurry.h>
+#import "PrivateConstants.h"
+
 
 @implementation AppDelegate
 
@@ -50,6 +53,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    // integrate Flurry SDK
+    [Flurry startSession:[PrivateConstants flurryAppKey]];
+    
+    
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     
     
