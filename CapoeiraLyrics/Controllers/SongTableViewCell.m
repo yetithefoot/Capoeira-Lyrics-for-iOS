@@ -99,6 +99,7 @@
     
     _imageViewLogo.image = [self cellImageForSong:aSong];
     
+    
     // refresh icons depends on flags
     [self refreshIcons];
 }

@@ -30,8 +30,8 @@ static CapoeiraLyricsAPI * _instance;
     Configuration * cfg = [Configuration sharedInstance];
     NSString * urlString = [NSString stringWithFormat:@"%@/JSONAPI/AllSongsFull?token=%@", cfg.serverUrl, cfg.securityToken];
     NSURL *url = [NSURL URLWithString:urlString];
-    NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+    //[request setValue:@"gzip" forHTTPHeaderField:@"Accept-Encoding"];
     
     
     
@@ -76,7 +76,7 @@ static CapoeiraLyricsAPI * _instance;
                 [self.delegate performSelector:@selector(getAllSongsFullDidFail)];
             }
         }];
-    
+
     [operation start];
 }
 

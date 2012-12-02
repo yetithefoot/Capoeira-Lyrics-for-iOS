@@ -9,6 +9,7 @@
 #import "SongsViewController.h"
 #import "AFJSONRequestOperation.h"
 
+
 #import "DetailsViewController.h"
 #import "FavouritesViewController.h"
 
@@ -101,6 +102,22 @@
 		[view release];
 		
 	}
+    
+    
+    // tune index view
+    CGRect rect = CGRectMake(self.view.frame.size.width-34, 82.0, 28.0, [[UIScreen mainScreen] bounds].size.height-156);
+    
+    _indexBar = [[CMIndexBar alloc] initWithFrame:rect];
+
+    NSMutableArray * indexes = [NSMutableArray arrayWithArray:[NSArray arrayWithAlphaNumericTitles]];
+    [indexes removeLastObject];
+    [_indexBar setIndexes:indexes];
+    [self.view addSubview:_indexBar];
+    _indexBar.delegate = self;
+
+
+    
+    
 	
 	//  update the last update date
 	[_refreshHeaderView refreshLastUpdatedDate];
@@ -155,6 +172,10 @@
     _tabBar = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
+}
+
+-(CGRect) infoButtonRect{
+    return CGRectZero;
 }
 
 #pragma mark -
@@ -268,67 +289,60 @@ int __lastClickedCell = -1;
 
 #pragma tableview datasource + delegate
 
-- (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView {
-    if (tableView == self.searchDisplayController.searchResultsTableView)
-        return nil;
-	else
-        return [NSArray arrayWithAlphaNumericTitles];
-    
-}
+
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
         return nil;        
 }
 
-- (NSInteger)tableView:(UITableView *)tableView sectionForSectionIndexTitle:(NSString *)title atIndex:(NSInteger)index
-{
-    if (tableView == self.searchDisplayController.searchResultsTableView)
-        return -1;
-	else{
+- (void)indexSelectionDidChange:(CMIndexBar *)IndexBar:(int)index:(NSString*)title{
 
-        
+    index--;
+    
         NSString * letter = [[NSArray arrayWithAlphaNumericTitles] objectAtIndex:index];
         NSIndexSet * indexSet = [_songs indexesOfObjectsPassingTest:^(id obj, NSUInteger idx, BOOL *stop)
-         {
-             Song *song = (Song *)obj;
-             if ([song.name hasPrefix:letter]) {
-                 *stop = YES;
-                 return YES;
-             }
-             return NO;
-         }];
+                                 {
+                                     Song *song = (Song *)obj;
+                                     if ([song.name hasPrefix:letter]) {
+                                         *stop = YES;
+                                         return YES;
+                                     }
+                                     return NO;
+                                 }];
         
         // scroll to rigth position
         if(indexSet.count == 0){
-            return -1; // skip scroll
+
         }
-        else 
-        if([indexSet firstIndex] == 0) {
-            [tableView scrollsToTop];
+        else
+            /*if([indexSet firstIndex] == 0) {
+                [_tableSongs scrollsToTop];
+                
+                
+                MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:NO];
+                hud.mode = MBProgressHUDModeText;
+                hud.animationType = MBProgressHUDAnimationFade;
+                hud.labelText = @"A";
+                [hud show:YES];
+                [hud hide:YES afterDelay:0.7];
+                
+                
+            }else*/{
+                [_tableSongs scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:[indexSet firstIndex] inSection:0] atScrollPosition:UITableViewScrollPositionTop animated:YES];
+                MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:NO];
+                hud.mode = MBProgressHUDModeText;
+                hud.animationType = MBProgressHUDAnimationFade;
+                hud.labelText = letter;
+                [hud show:YES];
+                [hud hide:YES afterDelay:0.7];
+            }
+        
+
+        
     
-            
-            MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:NO];
-            hud.mode = MBProgressHUDModeText;
-            hud.animationType = MBProgressHUDAnimationFade;
-            hud.labelText = @"A";
-            [hud show:YES];
-            [hud hide:YES afterDelay:0.7];
-            
-            
-        }else{
-            [tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:[indexSet firstIndex] inSection:0] atScrollPosition:UITableViewScrollPositionTop animated:YES];
-            MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:NO];
-            hud.mode = MBProgressHUDModeText;
-            hud.animationType = MBProgressHUDAnimationFade;
-            hud.labelText = letter;
-            [hud show:YES];
-            [hud hide:YES afterDelay:0.7];
-        }
-        
-        return [indexSet firstIndex];
-        
-    }
 }
+
+
 
 
 
@@ -372,6 +386,9 @@ int __lastClickedCell = -1;
     
     
     [cell setSong:song];
+    CGRect rect = cell.frame;
+    rect.size.width = 320;
+    cell.frame = rect;
     
     // set favorite icon
 
@@ -473,6 +490,14 @@ int __lastClickedCell = -1;
 }
 
 #pragma mark UISearchDisplayController Delegate Methods
+
+-(void)searchDisplayControllerWillBeginSearch:(UISearchDisplayController *)controller{
+    _indexBar.hidden = YES;
+}
+
+-(void)searchDisplayControllerWillEndSearch:(UISearchDisplayController *)controller{
+    _indexBar.hidden = NO;
+}
 
 - (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString
 {

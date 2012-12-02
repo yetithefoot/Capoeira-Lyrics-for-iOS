@@ -16,6 +16,12 @@
 		D004E186164C13D7005AB9F0 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A76B1598AF14001EB071 /* Icon.png */; };
 		D004E187164C13D7005AB9F0 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D084A76B1598AF14001EB071 /* Icon.png */; };
 		D004E1AB164C1EA3005AB9F0 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D004E1AA164C1EA3005AB9F0 /* CoreData.framework */; };
+		D00BD81B166AD327000658FD /* CMIndexBar.h in Headers */ = {isa = PBXBuildFile; fileRef = D00BD819166AD327000658FD /* CMIndexBar.h */; };
+		D00BD81C166AD327000658FD /* CMIndexBar.h in Headers */ = {isa = PBXBuildFile; fileRef = D00BD819166AD327000658FD /* CMIndexBar.h */; };
+		D00BD81D166AD327000658FD /* CMIndexBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D00BD81A166AD327000658FD /* CMIndexBar.m */; };
+		D00BD81E166AD327000658FD /* CMIndexBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D00BD81A166AD327000658FD /* CMIndexBar.m */; };
+		D00BD81F166AD327000658FD /* CMIndexBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D00BD81A166AD327000658FD /* CMIndexBar.m */; };
+		D00BD820166AD327000658FD /* CMIndexBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D00BD81A166AD327000658FD /* CMIndexBar.m */; };
 		D0114E8215851E5100D27777 /* CapoeiraLyricsAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = D0114E8115851E5100D27777 /* CapoeiraLyricsAPI.m */; };
 		D0114E8515851FAC00D27777 /* Song.m in Sources */ = {isa = PBXBuildFile; fileRef = D0114E8415851FAC00D27777 /* Song.m */; };
 		D0114E881585241500D27777 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0114E871585241500D27777 /* BaseViewController.m */; };
@@ -404,6 +410,8 @@
 		35E8594728BF4B41AECDDE16 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E487E0840E14CE6BAD9DB39 /* Pods.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		D004E1AA164C1EA3005AB9F0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D00BD819166AD327000658FD /* CMIndexBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMIndexBar.h; sourceTree = "<group>"; };
+		D00BD81A166AD327000658FD /* CMIndexBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMIndexBar.m; sourceTree = "<group>"; };
 		D0114E8015851E5100D27777 /* CapoeiraLyricsAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CapoeiraLyricsAPI.h; sourceTree = "<group>"; };
 		D0114E8115851E5100D27777 /* CapoeiraLyricsAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CapoeiraLyricsAPI.m; sourceTree = "<group>"; };
 		D0114E8315851FAC00D27777 /* Song.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Song.h; sourceTree = "<group>"; };
@@ -842,6 +850,8 @@
 		D0B83F231588B3B60075C2F0 /* Controls */ = {
 			isa = PBXGroup;
 			children = (
+				D00BD819166AD327000658FD /* CMIndexBar.h */,
+				D00BD81A166AD327000658FD /* CMIndexBar.m */,
 				D0B83F241588B3B70075C2F0 /* TagsView.h */,
 				D0B83F251588B3B70075C2F0 /* TagsView.m */,
 			);
@@ -857,6 +867,7 @@
 			files = (
 				D0591DD115C1D0F600792EDE /* Configuration.h in Headers */,
 				D0591DD015C1D0EF00792EDE /* PrivateConstants.h in Headers */,
+				D00BD81C166AD327000658FD /* CMIndexBar.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -866,6 +877,7 @@
 			files = (
 				D084A7CC159A0ECE001EB071 /* Configuration.h in Headers */,
 				D0591DCE15C1D00400792EDE /* PrivateConstants.h in Headers */,
+				D00BD81B166AD327000658FD /* CMIndexBar.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1365,6 +1377,7 @@
 				D053869815B75ADD00B5C89E /* Configuration.m in Sources */,
 				D053869915B75ADD00B5C89E /* PrivateConstants.m in Sources */,
 				D053873515B75EF600B5C89E /* HDMasterViewController.m in Sources */,
+				D00BD81F166AD327000658FD /* CMIndexBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1388,6 +1401,7 @@
 				D0591D6F15C19D6200792EDE /* Configuration.m in Sources */,
 				D0591D7015C19D6200792EDE /* PrivateConstants.m in Sources */,
 				D0591D7115C19D6200792EDE /* HDMasterViewController.m in Sources */,
+				D00BD820166AD327000658FD /* CMIndexBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1410,6 +1424,7 @@
 				D084A70D15976097001EB071 /* PlaceholderTableView.m in Sources */,
 				D084A7CE159A0ECE001EB071 /* Configuration.m in Sources */,
 				D084A7D3159A0F61001EB071 /* PrivateConstants.m in Sources */,
+				D00BD81E166AD327000658FD /* CMIndexBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1432,6 +1447,7 @@
 				D084A6F61593704D001EB071 /* PlaceholderTableView.m in Sources */,
 				D084A7CD159A0ECE001EB071 /* Configuration.m in Sources */,
 				D084A7D2159A0F61001EB071 /* PrivateConstants.m in Sources */,
+				D00BD81D166AD327000658FD /* CMIndexBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
